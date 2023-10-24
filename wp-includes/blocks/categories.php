@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Server-side rendering of the `core/categories` block.
  *
@@ -12,46 +13,47 @@
  *
  * @return string Returns the categories list/dropdown markup.
  */
-function render_block_core_categories( $attributes ) {
+function render_block_core_categories($attributes)
+{
 	static $block_id = 0;
 	++$block_id;
 
 	$args = array(
 		'echo'         => false,
-		'hierarchical' => ! empty( $attributes['showHierarchy'] ),
+		'hierarchical' => !empty($attributes['showHierarchy']),
 		'orderby'      => 'name',
-		'show_count'   => ! empty( $attributes['showPostCounts'] ),
+		'show_count'   => !empty($attributes['showPostCounts']),
 		'title_li'     => '',
-		'hide_empty'   => empty( $attributes['showEmpty'] ),
+		'hide_empty'   => empty($attributes['showEmpty']),
 	);
-	if ( ! empty( $attributes['showOnlyTopLevel'] ) && $attributes['showOnlyTopLevel'] ) {
+	if (!empty($attributes['showOnlyTopLevel']) && $attributes['showOnlyTopLevel']) {
 		$args['parent'] = 0;
 	}
 
-	if ( ! empty( $attributes['displayAsDropdown'] ) ) {
+	if (!empty($attributes['displayAsDropdown'])) {
 		$id                       = 'wp-block-categories-' . $block_id;
 		$args['id']               = $id;
-		$args['show_option_none'] = __( 'Select Category' );
-		$wrapper_markup           = '<div %1$s><label class="screen-reader-text" for="' . esc_attr( $id ) . '">' . __( 'Categories' ) . '</label>%2$s</div>';
-		$items_markup             = wp_dropdown_categories( $args );
+		$args['show_option_none'] = __('Select Category');
+		$wrapper_markup           = '<div %1$s><label class="screen-reader-text" for="' . esc_attr($id) . '">' . __('Categories') . '</label>%2$s</div>';
+		$items_markup             = wp_dropdown_categories($args);
 		$type                     = 'dropdown';
 
-		if ( ! is_admin() ) {
+		if (!is_admin()) {
 			// Inject the dropdown script immediately after the select dropdown.
 			$items_markup = preg_replace(
 				'#(?<=</select>)#',
-				build_dropdown_script_block_core_categories( $id ),
+				build_dropdown_script_block_core_categories($id),
 				$items_markup,
 				1
 			);
 		}
 	} else {
 		$wrapper_markup = '<ul %1$s>%2$s</ul>';
-		$items_markup   = wp_list_categories( $args );
+		$items_markup   = wp_list_categories($args);
 		$type           = 'list';
 	}
 
-	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => "wp-block-categories-{$type}" ) );
+	$wrapper_attributes = get_block_wrapper_attributes(array('class' => "wp-block-categories-{$type} list-unstyled quick-links"));
 
 	return sprintf(
 		$wrapper_markup,
@@ -67,30 +69,33 @@ function render_block_core_categories( $attributes ) {
  *
  * @return string Returns the dropdown onChange redirection script.
  */
-function build_dropdown_script_block_core_categories( $dropdown_id ) {
+function build_dropdown_script_block_core_categories($dropdown_id)
+{
 	ob_start();
-	?>
+?>
 	<script type='text/javascript'>
-	/* <![CDATA[ */
-	( function() {
-		var dropdown = document.getElementById( '<?php echo esc_js( $dropdown_id ); ?>' );
-		function onCatChange() {
-			if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
-				location.href = "<?php echo esc_url( home_url() ); ?>/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		/* <![CDATA[ */
+		(function() {
+			var dropdown = document.getElementById('<?php echo esc_js($dropdown_id); ?>');
+
+			function onCatChange() {
+				if (dropdown.options[dropdown.selectedIndex].value > 0) {
+					location.href = "<?php echo esc_url(home_url()); ?>/?cat=" + dropdown.options[dropdown.selectedIndex].value;
+				}
 			}
-		}
-		dropdown.onchange = onCatChange;
-	})();
-	/* ]]> */
+			dropdown.onchange = onCatChange;
+		})();
+		/* ]]> */
 	</script>
-	<?php
+<?php
 	return ob_get_clean();
 }
 
 /**
  * Registers the `core/categories` block on server.
  */
-function register_block_core_categories() {
+function register_block_core_categories()
+{
 	register_block_type_from_metadata(
 		__DIR__ . '/categories',
 		array(
@@ -98,4 +103,4 @@ function register_block_core_categories() {
 		)
 	);
 }
-add_action( 'init', 'register_block_core_categories' );
+add_action('init', 'register_block_core_categories');
