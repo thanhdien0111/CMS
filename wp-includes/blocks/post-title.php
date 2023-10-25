@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Server-side rendering of the `core/post-title` block.
  *
@@ -16,8 +17,9 @@
  *
  * @return string Returns the filtered post title for the current post wrapped inside "h1" tags.
  */
-function render_block_core_post_title( $attributes, $content, $block ) {
-	if ( ! isset( $block->context['postId'] ) ) {
+function render_block_core_post_title($attributes, $content, $block)
+{
+	if (!isset($block->context['postId'])) {
 		return '';
 	}
 
@@ -27,28 +29,28 @@ function render_block_core_post_title( $attributes, $content, $block ) {
 	 */
 	$title = get_the_title();
 
-	if ( ! $title ) {
+	if (!$title) {
 		return '';
 	}
 
 	$tag_name = 'h2';
-	if ( isset( $attributes['level'] ) ) {
+	if (isset($attributes['level'])) {
 		$tag_name = 'h' . $attributes['level'];
 	}
 
-	if ( isset( $attributes['isLink'] ) && $attributes['isLink'] ) {
-		$rel   = ! empty( $attributes['rel'] ) ? 'rel="' . esc_attr( $attributes['rel'] ) . '"' : '';
-		$title = sprintf( '<a href="%1$s" target="%2$s" %3$s>%4$s</a>', get_the_permalink( $block->context['postId'] ), esc_attr( $attributes['linkTarget'] ), $rel, $title );
+	if (isset($attributes['isLink']) && $attributes['isLink']) {
+		$rel   = !empty($attributes['rel']) ? 'rel="' . esc_attr($attributes['rel']) . '"' : '';
+		$title = sprintf('<a href="%1$s" target="%2$s" %3$s>%4$s</a>', get_the_permalink($block->context['postId']), esc_attr($attributes['linkTarget']), $rel, $title);
 	}
 
 	$classes = array();
-	if ( isset( $attributes['textAlign'] ) ) {
+	if (isset($attributes['textAlign'])) {
 		$classes[] = 'has-text-align-' . $attributes['textAlign'];
 	}
-	if ( isset( $attributes['style']['elements']['link']['color']['text'] ) ) {
+	if (isset($attributes['style']['elements']['link']['color']['text'])) {
 		$classes[] = 'has-link-color';
 	}
-	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => implode( ' ', $classes ) ) );
+	$wrapper_attributes = get_block_wrapper_attributes(array('class' => implode(' ', $classes)));
 
 	return sprintf(
 		'<%1$s %2$s>%3$s</%1$s>',
@@ -61,7 +63,8 @@ function render_block_core_post_title( $attributes, $content, $block ) {
 /**
  * Registers the `core/post-title` block on the server.
  */
-function register_block_core_post_title() {
+function register_block_core_post_title()
+{
 	register_block_type_from_metadata(
 		__DIR__ . '/post-title',
 		array(
@@ -69,4 +72,4 @@ function register_block_core_post_title() {
 		)
 	);
 }
-add_action( 'init', 'register_block_core_post_title' );
+add_action('init', 'register_block_core_post_title');

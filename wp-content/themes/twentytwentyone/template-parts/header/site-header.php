@@ -155,6 +155,13 @@
 					<button type="submit" class="btn btn-dark my-2 my-sm-0 btn_s">Submit</button>
 				</form>
 			</ul>
+
+			<ul class="navbar-nav nav_a">
+				<li>Thể thao</li>
+				<li>Khoa học</li>
+				<li>Tin tức</li>
+			</ul>
+
 			<ul class="navbar-nav nav_a">
 				<li class="nav-item">
 					<a class="nav-link" href="#">
@@ -182,7 +189,6 @@
 				</li>
 
 			</ul>
-
 		</div>
 	</div>
 </nav>
