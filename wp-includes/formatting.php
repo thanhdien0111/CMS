@@ -81,7 +81,11 @@ function wptexturize( $text, $reset = false ) {
 		}
 
 		/* translators: Opening curly double quote. */
+<<<<<<< HEAD
 		$opening_quote = _x( '&#8220;', 'opening curly double quote' );
+=======
+		$opening_quote = _x( '&#820;', 'opening curly double quote' );
+>>>>>>> D-39-Thuy-module-2,5
 		/* translators: Closing curly double quote. */
 		$closing_quote = _x( '&#8221;', 'closing curly double quote' );
 
@@ -3990,7 +3994,11 @@ function wp_trim_excerpt( $text = '', $post = null ) {
 		}
 
 		/* translators: Maximum number of words used in a post excerpt. */
+<<<<<<< HEAD
 		$excerpt_length = (int) _x( '55', 'excerpt_length' );
+=======
+		$excerpt_length = (int) _x( '20', 'excerpt_length' );
+>>>>>>> D-39-Thuy-module-2,5
 
 		/**
 		 * Filters the maximum number of words in a post excerpt.
