@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 === Akismet Anti-Spam ===
+=======
+=== Akismet Anti-spam ===
+>>>>>>> D-12-Dien
 
 == Archived Changelog Entries ==
 

@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> D-12-Dien
 /**
  * The template for displaying 404 pages (not found)
  *
@@ -12,6 +16,7 @@
 get_header();
 ?>
 
+<<<<<<< HEAD
 	<header class="page-header alignwide">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing here', 'twentytwentyone' ); ?></h1>
 	</header><!-- .page-header -->
@@ -25,3 +30,20 @@ get_header();
 
 <?php
 get_footer();
+=======
+<header class="page-header alignwide">
+    <h1 class="page-title"><?php esc_html_e('Nothing here', 'twentytwentyone'); ?></h1>
+</header><!-- .page-header -->
+
+<div class="error-404 not-found default-max-width">
+    <div class="page-content1">
+        <p><?php esc_html_e('It looks like nothing was found at this location. Maybe try a search?', 'twentytwentyone'); ?>
+        </p>
+        <?php  //get_search_form();
+		?>
+    </div><!-- .page-content -->
+</div><!-- .error-404 -->
+
+<?php
+get_footer();
+>>>>>>> D-12-Dien

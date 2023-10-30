@@ -151,7 +151,11 @@
 								<div class="akismet-settings__row-input">
 									<fieldset>
 										<legend class="screen-reader-text">
+<<<<<<< HEAD
 											<span><?php esc_html_e( 'Akismet anti-spam strictness', 'akismet' ); ?></span>
+=======
+											<span><?php esc_html_e( 'Akismet Anti-spam strictness', 'akismet' ); ?></span>
+>>>>>>> D-12-Dien
 										</legend>
 										<div>
 											<label class="akismet-settings__row-input-label" for="akismet_strictness_1">

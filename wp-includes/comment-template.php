@@ -2577,7 +2577,11 @@ function comment_form( $args = array(), $post = null ) {
 	$defaults = array(
 		'fields'               => $fields,
 		'comment_field'        => sprintf(
+<<<<<<< HEAD
 			'<p class="comment-form-comment">%s %s</p>',
+=======
+			'<p class="comment-form-comment 111111">%s %s</p>',
+>>>>>>> D-12-Dien
 			sprintf(
 				'<label for="comment">%s%s</label>',
 				_x( 'Comment', 'noun' ),

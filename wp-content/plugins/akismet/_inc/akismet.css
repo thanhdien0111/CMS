@@ -99,6 +99,7 @@ table.comments td.comment p a:after {
 	font-size: 120%;
 	margin-top: .5rem;
 }
+<<<<<<< HEAD
 .akismet-alert {
 	padding: 0.4em 1em 1.4em 1em;
 	box-sizing: border-box;
@@ -127,6 +128,8 @@ table.comments td.comment p a:after {
 .akismet-alert p.akismet-description a {
 	color: #fff;
 }
+=======
+>>>>>>> D-12-Dien
 
 .akismet-new-snapshot {
 	margin-top: 1em;
@@ -141,11 +144,14 @@ table.comments td.comment p a:after {
     margin: 0;
 }
 
+<<<<<<< HEAD
 .new-snapspot ul {
 	font-size: 12px;
 	width: 100%;
 }
 
+=======
+>>>>>>> D-12-Dien
 .akismet-new-snapshot ul li {
     color: #999;
     font-size: 11px;
@@ -289,7 +295,11 @@ table.comments td.comment p a:after {
 	.akismet_activate .aa_a {
 		display: none;
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> D-12-Dien
 	.akismet_activate .aa_button_container {
 		width: 100%;
 	}
@@ -305,7 +315,11 @@ table.comments td.comment p a:after {
 	#akismet_setup_prompt .aa_description {
 		display: none;
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> D-12-Dien
 	.akismet_activate {
 		min-width: 0;
 	}
@@ -478,7 +492,11 @@ table.comments td.comment p a:after {
 	width: 54px;
 	height: 54px;
 }
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> D-12-Dien
 .akismet-box p:after {
 	content: ".";
 	display: block;
@@ -522,6 +540,7 @@ table.comments td.comment p a:after {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .akismet-enter-api-key-box {
 	margin: 1.5rem 0;
 }
@@ -531,6 +550,8 @@ table.comments td.comment p a:after {
 	margin-top: 1.5rem;
 }
 
+=======
+>>>>>>> D-12-Dien
 .akismet-box .akismet-toggles {
 	margin: 3rem 0;
 }
@@ -539,10 +560,13 @@ table.comments td.comment p a:after {
 	display: none;
 }
 
+<<<<<<< HEAD
 .akismet-box .enter-api-key p {
 	padding: 0 1.5rem;
 }
 
+=======
+>>>>>>> D-12-Dien
 .akismet-button, .akismet-button:hover, .akismet-button:visited {
 	background: white;
 	border-color: #c8d7e1;
@@ -670,9 +694,20 @@ div.error.akismet-usage-limit-alert {
 }
 
 .akismet-usage-limit-alert .akismet-usage-limit-cta {
+<<<<<<< HEAD
 	text-align: right;
 }
 
+=======
+	border-color: none;
+	text-align: right;
+}
+
+#akismet-plugin-container .akismet-usage-limit-cta a {
+	color: #d63638;
+}
+
+>>>>>>> D-12-Dien
 @media (max-width: 550px) {
 	div.error.akismet-usage-limit-alert {
 		display: block;
