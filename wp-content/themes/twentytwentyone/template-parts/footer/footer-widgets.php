@@ -9,10 +9,10 @@
  */
 
 if (is_active_sidebar('sidebar-1')) : ?>
-	<div class="container">
-		<aside class="widget-area">
-			<?php dynamic_sidebar('sidebar-1'); ?>
-		</aside><!-- .widget-area -->
-	</div>
+
+	<aside class="widget-area">
+		<?php dynamic_sidebar('sidebar-1'); ?>
+	</aside><!-- .widget-area -->
+
 <?php
 endif;

@@ -53,6 +53,7 @@ function render_block_core_categories($attributes)
 		$type           = 'list';
 	}
 
+	// hover
 	$wrapper_attributes = get_block_wrapper_attributes(array('class' => "wp-block-categories-{$type} list-unstyled quick-links"));
 
 	return sprintf(

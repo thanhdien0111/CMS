@@ -155,9 +155,9 @@ class Walker_Category extends Walker
 				$attributes .= ' ' . $attr . '="' . $value . '"';
 			}
 		}
-
+		// đường thẳng gạch dưới mỗi categories
 		$link = sprintf(
-			'<a%s><i class="fa fa-angle-double-right"></i>%s</a>',
+			'<div class="border-bottom"><a%s>%s</a></div>',
 			$attributes,
 			$cat_name
 		);
@@ -202,7 +202,7 @@ class Walker_Category extends Walker
 		if ('list' === $args['style']) {
 			$output     .= "\t<li";
 			$css_classes = array(
-				'cat-item',
+				'category-list cat-item',
 				'cat-item-' . $category->term_id,
 			);
 
@@ -233,6 +233,7 @@ class Walker_Category extends Walker
 						$_current_term = get_term($_current_term->parent, $category->taxonomy);
 					}
 				}
+				// $_SESSION['categories-detail'] = $output ;
 			}
 
 			/**
@@ -282,4 +283,3 @@ class Walker_Category extends Walker
 		$output .= "</li>\n";
 	}
 }
-// hello
