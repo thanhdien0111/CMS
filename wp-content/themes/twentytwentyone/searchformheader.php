@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> D-01-LanAnh
 /**
  * The searchform.php template.
  *
@@ -22,6 +26,7 @@ $twentytwentyone_unique_id = wp_unique_id('search-form-');
 $twentytwentyone_aria_label = !empty($args['aria_label']) ? 'aria-label="' . esc_attr($args['aria_label']) . '"' : '';
 ?>
 
+<<<<<<< HEAD
 <form role="search" <?php echo $twentytwentyone_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above.  ?> method="get" class="form-inline search_header" action="<?php echo esc_url(home_url('/')); ?>">
 	<div class="form-group">
 	<input type="text" id="<?php echo esc_attr($twentytwentyone_unique_id); ?>" class="form-control search-menu" value="<?php echo get_search_query(); ?>" name="s" placeholder="Search"/>
@@ -29,3 +34,14 @@ $twentytwentyone_aria_label = !empty($args['aria_label']) ? 'aria-label="' . esc
 	</div>
 	<button class="btn btn-default" type="submit"><?php echo esc_attr_x('Search', 'submit button', 'twentytwentyone'); ?></button>
 </form>
+=======
+<form role="search" <?php echo $twentytwentyone_aria_label; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped above.  
+					?> method="get" class="form-inline search_header" action="<?php echo esc_url(home_url('/')); ?>">
+	<div class="form-group">
+		<input type="text" id="<?php echo esc_attr($twentytwentyone_unique_id); ?>" class="form-control search-menu" value="<?php echo get_search_query(); ?>" name="s" placeholder="Search" />
+
+	</div>
+	<!-- Sửa chữ search thành submit -->
+	<button class="btn btn-default" type="submit"><?php echo esc_attr_x('Submit', 'submit button', 'twentytwentyone'); ?></button>
+</form>
+>>>>>>> D-01-LanAnh

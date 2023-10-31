@@ -386,6 +386,7 @@ jQuery( function ( $ ) {
 	 * Shows the Enter API key form
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$( '.akismet-enter-api-key-box a' ).on( 'click', function ( e ) {
 		e.preventDefault();
 
@@ -396,6 +397,12 @@ jQuery( function ( $ ) {
 
 		var div = $( '.akismet-enter-api-key-box__form-wrapper' );
 >>>>>>> D-12-Dien
+=======
+	$( '.akismet-enter-api-key-box__reveal' ).on( 'click', function ( e ) {
+		e.preventDefault();
+
+		var div = $( '.akismet-enter-api-key-box__form-wrapper' );
+>>>>>>> D-01-LanAnh
 		div.show( 500 );
 		div.find( 'input[name=key]' ).focus();
 

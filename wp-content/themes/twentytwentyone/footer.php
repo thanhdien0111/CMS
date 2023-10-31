@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+=======
+>>>>>>> D-01-LanAnh
 <?php
 
 =======
@@ -22,6 +25,7 @@
 ?>
 <<<<<<< HEAD
 </main><!-- #main -->
+
 </div><!-- #primary -->
 </div><!-- #content -->
 
@@ -109,6 +113,10 @@
 		font-weight: 700;
 	}
 
+	.footer-navigation {
+		margin-top: -40px;
+	}
+
 	@media (max-width:767px) {
 		#footer h5 {
 			padding-left: 0;
@@ -141,33 +149,32 @@
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
 >>>>>>> D-12-Dien
 				<ul class="footer-navigation-wrapper">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'items_wrap'     => '%3$s',
-							'container'      => false,
-							'depth'          => 1,
-							'link_before'    => '<span>',
-							'link_after'     => '</span>',
-							'fallback_cb'    => false,
-						)
-					);
-					?>
+					<!-- <?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'footer',
+									'items_wrap'     => '%3$s',
+									'container'      => false,
+									'depth'          => 1,
+									'link_before'    => '<span>',
+									'link_after'     => '</span>',
+									'fallback_cb'    => false,
+								)
+							);
+							?> -->
 				</ul><!-- .footer-navigation-wrapper -->
 			</nav><!-- .footer-navigation -->
 		<?php endif; ?>
 <<<<<<< HEAD
 		<!-- Footer -->
 
-
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 					<ul class="list-unstyled list-inline social text-center">
-						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.facebook.com/suminguyen3120/"><i class="fa fa-facebook"></i></a></li>
 						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/nnlananh_20_3/"><i class="fa fa-instagram"></i></a></li>
 						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
 						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i>
 							</a></li>
@@ -189,7 +196,6 @@
 	</footer>
 
 </section>
-
 </body>
 
 </html>

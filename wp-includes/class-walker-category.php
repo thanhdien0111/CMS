@@ -210,13 +210,17 @@ class Walker_Category extends Walker {
 				$attributes .= ' ' . $attr . '="' . $value . '"';
 			}
 		}
-
+		// đường thẳng gạch dưới mỗi categories
 		$link = sprintf(
+<<<<<<< HEAD
 <<<<<<< HEAD
 			'<a%s><i class="fa fa-angle-double-right"></i>%s</a>',
 =======
 			'<a%s>%s</a>',
 >>>>>>> D-12-Dien
+=======
+			'<div class="border-bottom"><a%s>%s</a></div>',
+>>>>>>> D-01-LanAnh
 			$attributes,
 			$cat_name
 		);
@@ -299,7 +303,7 @@ class Walker_Category extends Walker {
 >>>>>>> D-12-Dien
 			$output     .= "\t<li";
 			$css_classes = array(
-				'cat-item',
+				'category-list cat-item',
 				'cat-item-' . $category->term_id,
 			);
 
@@ -351,6 +355,7 @@ class Walker_Category extends Walker {
 >>>>>>> D-12-Dien
 					}
 				}
+				// $_SESSION['categories-detail'] = $output ;
 			}
 
 			/**

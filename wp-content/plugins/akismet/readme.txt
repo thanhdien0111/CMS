@@ -1,17 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Akismet Anti-Spam: Spam Protection ===
 =======
 === Akismet Anti-spam: Spam Protection ===
 >>>>>>> D-12-Dien
+=======
+=== Akismet Anti-spam: Spam Protection ===
+>>>>>>> D-01-LanAnh
 Contributors: matt, ryan, andy, mdawaffe, tellyworth, josephscott, lessbloat, eoigal, cfinke, automattic, jgs, procifer, stephdau, kbrownkd, bluefuton, akismetantispam
 Tags: comments, spam, antispam, anti-spam, contact form, anti spam, comment moderation, comment spam, contact form spam, spam comments
 Requires at least: 5.8
 Tested up to: 6.3
 <<<<<<< HEAD
+<<<<<<< HEAD
 Stable tag: 5.2
 =======
 Stable tag: 5.3
 >>>>>>> D-12-Dien
+=======
+Stable tag: 5.3
+>>>>>>> D-01-LanAnh
 License: GPLv2 or later
 
 The best anti-spam protection to block spam comments and spam in a contact form. The most trusted antispam solution for WordPress and WooCommerce.
@@ -41,7 +49,10 @@ Upload the Akismet plugin to your blog, activate it, and then enter your Akismet
 == Changelog ==
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> D-01-LanAnh
 = 5.3 =
 *Release Date - 14 September 2023*
 
@@ -52,7 +63,10 @@ Upload the Akismet plugin to your blog, activate it, and then enter your Akismet
 * Add new filter hooks for Fluent Forms.
 * Fix issue with PHP 8.1 compatibility.
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-01-LanAnh
 = 5.2 =
 *Release Date - 21 June 2023*
 

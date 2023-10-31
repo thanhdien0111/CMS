@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Akismet Anti-Spam ===
 =======
 === Akismet Anti-spam ===
 >>>>>>> D-12-Dien
+=======
+=== Akismet Anti-spam ===
+>>>>>>> D-01-LanAnh
 
 == Archived Changelog Entries ==
 

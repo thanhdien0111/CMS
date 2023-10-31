@@ -17,14 +17,16 @@
 
 <<<<<<< HEAD
 <section class="no-results not-found">
-	<header class="page-header alignwide">
+	
+<header class="page-header alignwide">
+		
 		<?php if ( is_search() ) : ?>
 
 			<h1 class="page-title">
 				<?php
 				printf(
 					/* translators: %s: Search term. */
-					esc_html__( 'Results for "%s"', 'twentytwentyone' ),
+					esc_html__( 'Search:"%s"', 'twentytwentyone' ),
 					'<span class="page-description search-term">' . esc_html( get_search_query() ) . '</span>'
 				);
 				?>
@@ -95,7 +97,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentytwentyone' ); ?></p>
+			<p><?php esc_html_e( 'We could not find any results for your seach.You can give it another try through the search form below ', 'twentytwentyone' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>

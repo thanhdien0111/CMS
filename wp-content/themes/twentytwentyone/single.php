@@ -1,8 +1,12 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-01-LanAnh
 /**
  * The template for displaying all single posts
  *
@@ -17,11 +21,16 @@ get_header();
 
 /* Start the Loop */
 <<<<<<< HEAD
+<<<<<<< HEAD
 while ( have_posts() ) :
+=======
+while (have_posts()) :
+>>>>>>> D-01-LanAnh
 	the_post();
 
-	get_template_part( 'template-parts/content/content-single' );
+	get_template_part('template-parts/content/content-single');
 
+<<<<<<< HEAD
 	if ( is_attachment() ) {
 =======
 while (have_posts()) :
@@ -31,21 +40,30 @@ while (have_posts()) :
 
 	if (is_attachment()) {
 >>>>>>> D-12-Dien
+=======
+	if (is_attachment()) {
+>>>>>>> D-01-LanAnh
 		// Parent post navigation.
 		the_post_navigation(
 			array(
 				/* translators: %s: Parent post link. */
+<<<<<<< HEAD
 <<<<<<< HEAD
 				'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentytwentyone' ), '%title' ),
 =======
 
 				'prev_text' => sprintf(__('<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twen-tytwentyone'), '%title'),
 >>>>>>> D-12-Dien
+=======
+				'prev_text' => sprintf(__('<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentytwentyone'), '%title'),
+>>>>>>> D-01-LanAnh
 			)
 		);
 	}
 
+
 	// If comments are open or there is at least one comment, load up the comment template.
+<<<<<<< HEAD
 <<<<<<< HEAD
 	if ( comments_open() || get_comments_number() ) {
 =======
@@ -53,17 +71,33 @@ while (have_posts()) :
 >>>>>>> D-12-Dien
 		comments_template();
 	}
+=======
+	// if (comments_open() || get_comments_number()) {
+	// 	comments_template();
+	// }
+>>>>>>> D-01-LanAnh
 
+	// module 7 (Prev - Next Post)
 	// Previous/next post navigation.
+<<<<<<< HEAD
 <<<<<<< HEAD
 	$twentytwentyone_next = is_rtl() ? twenty_twenty_one_get_icon_svg( 'ui', 'arrow_left' ) : twenty_twenty_one_get_icon_svg( 'ui', 'arrow_right' );
 	$twentytwentyone_prev = is_rtl() ? twenty_twenty_one_get_icon_svg( 'ui', 'arrow_right' ) : twenty_twenty_one_get_icon_svg( 'ui', 'arrow_left' );
+=======
+	$twentytwentyone_next = is_rtl() ? twenty_twenty_one_get_icon_svg('ui', 'arrow_left') : twenty_twenty_one_get_icon_svg('ui', 'arrow_right');
+	$twentytwentyone_prev = is_rtl() ? twenty_twenty_one_get_icon_svg('ui', 'arrow_right') : twenty_twenty_one_get_icon_svg('ui', 'arrow_left');
+>>>>>>> D-01-LanAnh
 
-	$twentytwentyone_next_label     = esc_html__( 'Next post', 'twentytwentyone' );
-	$twentytwentyone_previous_label = esc_html__( 'Previous post', 'twentytwentyone' );
+	$twentytwentyone_next_label = esc_html__('Next post ', 'twentytwentyone');
+	$twentytwentyone_previous_label = esc_html__('Previous post', 'twentytwentyone');
 
+
+	$post_day = get_the_date('d', $post->ID);
+	$post_month = get_the_date('m', $post->ID);
+	$post_year = get_the_date('y', $post->ID);
 	the_post_navigation(
 		array(
+<<<<<<< HEAD
 			'next_text' => '<p class="meta-nav">' . $twentytwentyone_next_label . $twentytwentyone_next . '</p><p class="post-title">%title</p>',
 			'prev_text' => '<p class="meta-nav">' . $twentytwentyone_prev . $twentytwentyone_previous_label . '</p><p class="post-title">%title</p>',
 =======
@@ -117,8 +151,36 @@ while (have_posts()) :
       </div>
     </div>',
 >>>>>>> D-12-Dien
+=======
+
+			'next_text' => '<p class="meta-nav">' . $twentytwentyone_next_label  . '</p>
+			<span class="timeclick">
+			<div class="calender-binh">
+				<div class="day-binh">' . $post_day . '</div>
+				<div class="month-binh">' . $post_month . '</div>
+				<div class="yearnav">' . $post_year . '</div>
+				</div>
+			</span>
+		<p class="post-title nav-linkcustom indent">%title</p>',
+			'prev_text' => '<p class="meta-nav">' . $twentytwentyone_previous_label . '</p>
+			<span class="timeclick">
+			<div class="calender-binh">
+				<div class="day-binh">' . $post_day . '</div>
+				<div class="month-binh">' . $post_month . '</div>
+				<div class="yearnav">' . $post_year . '</div>
+				</div>
+			</span>
+			<p class="post-title nav-linkcustom indent">%title</p>',
+>>>>>>> D-01-LanAnh
 		)
 	);
+
+
+	// If comments are open or there is at least one comment, load up the comment template.
+	if (comments_open() || get_comments_number()) {
+		comments_template();
+	}
+	// module 7 (Prev - Next Post)
 endwhile; // End of the loop.
 
 get_footer();

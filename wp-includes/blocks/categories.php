@@ -87,6 +87,7 @@ function render_block_core_categories( $attributes ) {
 		$type           = 'list';
 	}
 
+<<<<<<< HEAD
 	$wrapper_attributes = get_block_wrapper_attributes(array('class' =>
 	"wp-block-categories-{$type} list-unstyled quick-links"));
 =======
@@ -96,6 +97,10 @@ function render_block_core_categories( $attributes ) {
 
 	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => "wp-block-categories-{$type}" ) );
 >>>>>>> D-12-Dien
+=======
+	// hover
+	$wrapper_attributes = get_block_wrapper_attributes(array('class' => "wp-block-categories-{$type} list-unstyled quick-links"));
+>>>>>>> D-01-LanAnh
 
 	return sprintf(
 		$wrapper_markup,

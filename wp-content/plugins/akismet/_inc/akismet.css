@@ -100,6 +100,7 @@ table.comments td.comment p a:after {
 	margin-top: .5rem;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .akismet-alert {
 	padding: 0.4em 1em 1.4em 1em;
 	box-sizing: border-box;
@@ -130,6 +131,8 @@ table.comments td.comment p a:after {
 }
 =======
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-01-LanAnh
 
 .akismet-new-snapshot {
 	margin-top: 1em;
@@ -145,6 +148,7 @@ table.comments td.comment p a:after {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .new-snapspot ul {
 	font-size: 12px;
 	width: 100%;
@@ -152,6 +156,8 @@ table.comments td.comment p a:after {
 
 =======
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-01-LanAnh
 .akismet-new-snapshot ul li {
     color: #999;
     font-size: 11px;
@@ -296,10 +302,14 @@ table.comments td.comment p a:after {
 		display: none;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-01-LanAnh
 	.akismet_activate .aa_button_container {
 		width: 100%;
 	}
@@ -316,10 +326,14 @@ table.comments td.comment p a:after {
 		display: none;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-01-LanAnh
 	.akismet_activate {
 		min-width: 0;
 	}
@@ -493,10 +507,14 @@ table.comments td.comment p a:after {
 	height: 54px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-01-LanAnh
 .akismet-box p:after {
 	content: ".";
 	display: block;
@@ -541,6 +559,7 @@ table.comments td.comment p a:after {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .akismet-enter-api-key-box {
 	margin: 1.5rem 0;
 }
@@ -552,6 +571,8 @@ table.comments td.comment p a:after {
 
 =======
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-01-LanAnh
 .akismet-box .akismet-toggles {
 	margin: 3rem 0;
 }
@@ -561,12 +582,15 @@ table.comments td.comment p a:after {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .akismet-box .enter-api-key p {
 	padding: 0 1.5rem;
 }
 
 =======
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-01-LanAnh
 .akismet-button, .akismet-button:hover, .akismet-button:visited {
 	background: white;
 	border-color: #c8d7e1;
@@ -695,6 +719,7 @@ div.error.akismet-usage-limit-alert {
 
 .akismet-usage-limit-alert .akismet-usage-limit-cta {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	text-align: right;
 }
 
@@ -703,11 +728,20 @@ div.error.akismet-usage-limit-alert {
 	text-align: right;
 }
 
+=======
+	border-color: none;
+	text-align: right;
+}
+
+>>>>>>> D-01-LanAnh
 #akismet-plugin-container .akismet-usage-limit-cta a {
 	color: #d63638;
 }
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-01-LanAnh
 @media (max-width: 550px) {
 	div.error.akismet-usage-limit-alert {
 		display: block;

@@ -4000,6 +4000,7 @@ function wp_trim_excerpt( $text = '', $post = null ) {
 		/* translators: Maximum number of words used in a post excerpt. */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$excerpt_length = (int) _x( '55', 'excerpt_length' );
 =======
 		$excerpt_length = (int) _x( '20', 'excerpt_length' );
@@ -4007,6 +4008,9 @@ function wp_trim_excerpt( $text = '', $post = null ) {
 =======
 		$excerpt_length = (int) _x( '55', 'excerpt_length' );
 >>>>>>> D-12-Dien
+=======
+		$excerpt_length = (int) _x( '30', 'excerpt_length' );
+>>>>>>> D-01-LanAnh
 
 		/**
 		 * Filters the maximum number of words in a post excerpt.

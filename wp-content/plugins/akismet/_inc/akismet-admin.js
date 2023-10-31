@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 jQuery( function ( $ ) {
 	$( document ).ready(function() {		
 		// Main settings form - enable submit button when something in the form is changed
@@ -21,11 +22,16 @@ jQuery( function ( $ ) {
 		}
 	});	 
 =======
+=======
+>>>>>>> D-01-LanAnh
 document.addEventListener( 'DOMContentLoaded', function() {
 	// Prevent aggressive iframe caching in Firefox
 	var statsIframe = document.getElementById( 'stats-iframe' );
 	if ( statsIframe ) {
 		statsIframe.contentWindow.location.href = statsIframe.src;
 	}
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-01-LanAnh
 } );

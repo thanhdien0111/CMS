@@ -1,14 +1,21 @@
 
 # BEGIN WordPress
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Các nội dung nằm giữa "BEGIN WordPress" và "END WordPress" được tạo ra tự động, và chỉ nên được thay đổi thông qua các filter của WordPress. Mọi thay đổi tới thành phần này có thể sẽ bị mất và ghi đè.
+=======
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+>>>>>>> D-01-LanAnh
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /CMS/
+RewriteBase /wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+<<<<<<< HEAD
 RewriteRule . /CMS/index.php [L]
 =======
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
@@ -23,6 +30,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /wordpress/index.php [L]
 >>>>>>> D-12-Dien
+=======
+RewriteRule . /wordpress/index.php [L]
+>>>>>>> D-01-LanAnh
 </IfModule>
 
 # END WordPress
