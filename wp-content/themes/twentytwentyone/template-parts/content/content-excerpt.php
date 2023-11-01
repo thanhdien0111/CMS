@@ -1,8 +1,12 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * Template part for displaying post archives and search results
  *
@@ -15,6 +19,7 @@
 
 ?>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,6 +40,8 @@
 <<<<<<< HEAD
 
 =======
+=======
+>>>>>>> D-29-Oanh
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="list_new_view" style="margin: 0 auto;">
 		<div class=" row">
@@ -52,6 +59,7 @@
 			</div>
 		</div>
 	</div>
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 	<footer class="entry-footer default-max-width">
 		<?php twenty_twenty_one_entry_meta_footer(); ?>
@@ -92,6 +100,12 @@
 </article><!-- #post-${ID} -->
 >>>>>>> D-39-Thuy-module-2,5
 =======
+=======
+	<footer class="entry-footer default-max-width">
+		<?php twenty_twenty_one_entry_meta_footer(); ?>
+	</footer><!-- .entry-footer -->
+</article><!-- #post-${ID} -->
+>>>>>>> D-29-Oanh
 
 <style>
 	.list_new_view {
@@ -107,13 +121,20 @@
 		color: #000000;
 	}
 
+<<<<<<< HEAD
 	h4 {
 		background-color: #ffffff;
 		color: #000000;
+=======
+	header-detail {
+		background-color: white;
+		color: blue;
+>>>>>>> D-29-Oanh
 		font-size: 18px;
 		font-weight: bold;
 	}
 
+<<<<<<< HEAD
 	p {
 		color: #000000;
 		font-size: 14px;
@@ -123,6 +144,8 @@
 		text-decoration: none;
 	}
 
+=======
+>>>>>>> D-29-Oanh
 	.row {
 
 		display: flex;
@@ -133,5 +156,9 @@
 		margin-bottom: 10px;
 		border-right: 1px solid black;
 	}
+<<<<<<< HEAD
 </style>
 >>>>>>> D-12-Dien
+=======
+</style>
+>>>>>>> D-29-Oanh

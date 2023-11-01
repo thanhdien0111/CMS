@@ -83,6 +83,7 @@ function wptexturize( $text, $reset = false ) {
 		/* translators: Opening curly double quote. */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$opening_quote = _x( '&#8220;', 'opening curly double quote' );
 =======
 		$opening_quote = _x( '&#820;', 'opening curly double quote' );
@@ -90,6 +91,9 @@ function wptexturize( $text, $reset = false ) {
 =======
 		$opening_quote = _x( '&#8220;', 'opening curly double quote' );
 >>>>>>> D-12-Dien
+=======
+		$opening_quote = _x( '&#8220;', 'opening curly double quote' );
+>>>>>>> D-29-Oanh
 		/* translators: Closing curly double quote. */
 		$closing_quote = _x( '&#8221;', 'closing curly double quote' );
 
@@ -4001,6 +4005,7 @@ function wp_trim_excerpt( $text = '', $post = null ) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$excerpt_length = (int) _x( '55', 'excerpt_length' );
 =======
 		$excerpt_length = (int) _x( '20', 'excerpt_length' );
@@ -4011,6 +4016,9 @@ function wp_trim_excerpt( $text = '', $post = null ) {
 =======
 		$excerpt_length = (int) _x( '30', 'excerpt_length' );
 >>>>>>> D-01-LanAnh
+=======
+		$excerpt_length = (int) _x( '55', 'excerpt_length' );
+>>>>>>> D-29-Oanh
 
 		/**
 		 * Filters the maximum number of words in a post excerpt.

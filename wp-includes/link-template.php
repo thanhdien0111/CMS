@@ -3009,6 +3009,7 @@ function _navigation_markup( $links, $css_class = 'posts-navigation', $screen_re
 	$template = '
 	<nav class="navigation %1$s" aria-label="%4$s">
 		<h2 class="screen-reader-text">%2$s</h2>
+<<<<<<< HEAD
 		<div class="container">
 		<div class="row"> 
 		<div class="col-md-1"></div>
@@ -3021,6 +3022,9 @@ function _navigation_markup( $links, $css_class = 'posts-navigation', $screen_re
 		</div>
 		
 		</div>
+=======
+		<div class="nav-links">%3$s</div>
+>>>>>>> D-29-Oanh
 	</nav>';
 
 	/**

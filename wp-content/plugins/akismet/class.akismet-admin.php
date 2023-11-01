@@ -61,6 +61,7 @@ class Akismet_Admin {
 		add_filter( 'comment_row_actions', array( 'Akismet_Admin', 'comment_row_action' ), 10, 2 );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -71,15 +72,20 @@ class Akismet_Admin {
 <<<<<<< HEAD
 		
 =======
+=======
+>>>>>>> D-29-Oanh
 
 		add_filter( 'plugin_action_links_'.plugin_basename( plugin_dir_path( __FILE__ ) . 'akismet.php'), array( 'Akismet_Admin', 'admin_plugin_settings_link' ) );
 
 		add_filter( 'wxr_export_skip_commentmeta', array( 'Akismet_Admin', 'exclude_commentmeta_from_export' ), 10, 3 );
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		add_filter( 'all_plugins', array( 'Akismet_Admin', 'modify_plugin_description' ) );
 
 		// priority=1 because we need ours to run before core's comment anonymizer runs, and that's registered at priority=10
@@ -103,6 +109,7 @@ class Akismet_Admin {
 				__( 'Akismet', 'akismet' ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				__( 'We collect information about visitors who comment on Sites that use our Akismet anti-spam service. The information we collect depends on how the User sets up Akismet for the Site, but typically includes the commenter\'s IP address, user agent, referrer, and Site URL (along with other information directly provided by the commenter such as their name, username, email address, and the comment itself).', 'akismet' )
 =======
 				__( 'We collect information about visitors who comment on Sites that use our Akismet Anti-spam service. The information we collect depends on how the User sets up Akismet for the Site, but typically includes the commenter\'s IP address, user agent, referrer, and Site URL (along with other information directly provided by the commenter such as their name, username, email address, and the comment itself).', 'akismet' )
@@ -110,6 +117,9 @@ class Akismet_Admin {
 =======
 				__( 'We collect information about visitors who comment on Sites that use our Akismet Anti-spam service. The information we collect depends on how the User sets up Akismet for the Site, but typically includes the commenter\'s IP address, user agent, referrer, and Site URL (along with other information directly provided by the commenter such as their name, username, email address, and the comment itself).', 'akismet' )
 >>>>>>> D-01-LanAnh
+=======
+				__( 'We collect information about visitors who comment on Sites that use our Akismet Anti-spam service. The information we collect depends on how the User sets up Akismet for the Site, but typically includes the commenter\'s IP address, user agent, referrer, and Site URL (along with other information directly provided by the commenter such as their name, username, email address, and the comment itself).', 'akismet' )
+>>>>>>> D-29-Oanh
 			);
 		}
 	}
@@ -128,17 +138,21 @@ class Akismet_Admin {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	public static function admin_plugin_settings_link( $links ) { 
   		$settings_link = '<a href="'.esc_url( self::get_page_url() ).'">'.__('Settings', 'akismet').'</a>';
   		array_unshift( $links, $settings_link ); 
   		return $links; 
 =======
+=======
+>>>>>>> D-29-Oanh
 
 	public static function admin_plugin_settings_link( $links ) {
   		$settings_link = '<a href="'.esc_url( self::get_page_url() ).'">'.__('Settings', 'akismet').'</a>';
 		array_unshift( $links, $settings_link );
 		return $links;
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -147,10 +161,13 @@ class Akismet_Admin {
 		array_unshift( $links, $settings_link );
 		return $links;
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	public static function load_menu() {
 		if ( class_exists( 'Jetpack' ) ) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$hook = add_submenu_page( 'jetpack', __( 'Akismet Anti-Spam' , 'akismet'), __( 'Akismet Anti-Spam' , 'akismet'), 'manage_options', 'akismet-key-config', array( 'Akismet_Admin', 'display_page' ) );
@@ -164,16 +181,21 @@ class Akismet_Admin {
 <<<<<<< HEAD
 		
 =======
+=======
+>>>>>>> D-29-Oanh
 			$hook = add_submenu_page( 'jetpack', __( 'Akismet Anti-spam', 'akismet' ), __( 'Akismet Anti-spam', 'akismet' ), 'manage_options', 'akismet-key-config', array( 'Akismet_Admin', 'display_page' ) );
 		}
 		else {
 			$hook = add_options_page( __( 'Akismet Anti-spam', 'akismet' ), __( 'Akismet Anti-spam', 'akismet' ), 'manage_options', 'akismet-key-config', array( 'Akismet_Admin', 'display_page' ) );
 		}
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		if ( $hook ) {
 			add_action( "load-$hook", array( 'Akismet_Admin', 'admin_help' ) );
 		}
@@ -193,6 +215,7 @@ class Akismet_Admin {
 		) ) ) ) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			wp_register_style( 'akismet', plugin_dir_url( __FILE__ ) . '_inc/akismet.css', array(), filemtime( dirname( __FILE__ ) . '/_inc/akismet.css' ) );
 =======
 			$akismet_css_path = is_rtl() ? '_inc/rtl/akismet-rtl.css' : '_inc/akismet.css';
@@ -202,11 +225,16 @@ class Akismet_Admin {
 			$akismet_css_path = is_rtl() ? '_inc/rtl/akismet-rtl.css' : '_inc/akismet.css';
 			wp_register_style( 'akismet', plugin_dir_url( __FILE__ ) . $akismet_css_path, array(), filemtime( dirname( __FILE__ ) . '/' . $akismet_css_path ) );
 >>>>>>> D-01-LanAnh
+=======
+			$akismet_css_path = is_rtl() ? '_inc/rtl/akismet-rtl.css' : '_inc/akismet.css';
+			wp_register_style( 'akismet', plugin_dir_url( __FILE__ ) . $akismet_css_path, array(), filemtime( dirname( __FILE__ ) . '/' . $akismet_css_path ) );
+>>>>>>> D-29-Oanh
 			wp_enqueue_style( 'akismet' );
 
 			wp_register_style( 'akismet-font-inter', plugin_dir_url( __FILE__ ) . '_inc/fonts/inter.css', array(), filemtime( dirname( __FILE__ ) . '/_inc/fonts/inter.css' ) );
 			wp_enqueue_style( 'akismet-font-inter' );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			wp_register_style( 'akismet-admin', plugin_dir_url( __FILE__ ) . '_inc/akismet-admin.css', array(), filemtime( dirname( __FILE__ ) . '/_inc/akismet-admin.css' ) );
@@ -218,11 +246,16 @@ class Akismet_Admin {
 			$akismet_admin_css_path = is_rtl() ? '_inc/rtl/akismet-admin-rtl.css' : '_inc/akismet-admin.css';
 			wp_register_style( 'akismet-admin', plugin_dir_url( __FILE__ ) . $akismet_admin_css_path, array(), filemtime( dirname( __FILE__ ) . '/' . $akismet_admin_css_path ) );
 >>>>>>> D-01-LanAnh
+=======
+			$akismet_admin_css_path = is_rtl() ? '_inc/rtl/akismet-admin-rtl.css' : '_inc/akismet-admin.css';
+			wp_register_style( 'akismet-admin', plugin_dir_url( __FILE__ ) . $akismet_admin_css_path, array(), filemtime( dirname( __FILE__ ) . '/' . $akismet_admin_css_path ) );
+>>>>>>> D-29-Oanh
 			wp_enqueue_style( 'akismet-admin' );
 
 			wp_register_script( 'akismet.js', plugin_dir_url( __FILE__ ) . '_inc/akismet.js', array( 'jquery' ), AKISMET_VERSION );
 			wp_enqueue_script( 'akismet.js' );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			wp_register_script( 'akismet-admin.js', plugin_dir_url( __FILE__ ) . '_inc/akismet-admin.js', array( 'jquery' ), filemtime( dirname( __FILE__ ) . '/_inc/akismet-admin.js' ) );
@@ -238,6 +271,11 @@ class Akismet_Admin {
 			wp_enqueue_script( 'akismet-admin.js' );
 
 >>>>>>> D-01-LanAnh
+=======
+			wp_register_script( 'akismet-admin.js', plugin_dir_url( __FILE__ ) . '_inc/akismet-admin.js', array(), filemtime( dirname( __FILE__ ) . '/_inc/akismet-admin.js' ) );
+			wp_enqueue_script( 'akismet-admin.js' );
+
+>>>>>>> D-29-Oanh
 			$inline_js = array(
 				'comment_author_url_nonce' => wp_create_nonce( 'comment_author_url_nonce' ),
 				'strings' => array(
@@ -393,6 +431,7 @@ class Akismet_Admin {
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -400,6 +439,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		$new_key = preg_replace( '/[^a-f0-9]/i', '', $_POST['key'] );
 		$old_key = Akismet::get_api_key();
 
@@ -423,17 +465,21 @@ class Akismet_Admin {
 			$akismet_user = self::get_akismet_user( $api_key );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			
 			if ( $akismet_user ) {				
 				if ( in_array( $akismet_user->status, array( 'active', 'active-dunning', 'no-sub' ) ) )
 					update_option( 'wordpress_api_key', $api_key );
 				
 =======
+=======
+>>>>>>> D-29-Oanh
 
 			if ( $akismet_user ) {
 				if ( in_array( $akismet_user->status, array( 'active', 'active-dunning', 'no-sub' ) ) )
 					update_option( 'wordpress_api_key', $api_key );
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -442,6 +488,8 @@ class Akismet_Admin {
 					update_option( 'wordpress_api_key', $api_key );
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				if ( $akismet_user->status == 'active' )
 					self::$notices['status'] = 'new-key-valid';
 				elseif ( $akismet_user->status == 'notice' )
@@ -516,6 +564,7 @@ class Akismet_Admin {
 		$comments_count = wp_count_comments();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -523,6 +572,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		echo '</div>';
 		echo '<div class="alignleft actions">';
 
@@ -565,6 +617,7 @@ class Akismet_Admin {
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -572,6 +625,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		if ( ! wp_verify_nonce( $_POST['nonce'], 'akismet_check_for_spam' ) ) {
 			wp_send_json( array(
 				'error' => __( 'You don&#8217;t have permission to do that.', 'akismet' ),
@@ -594,15 +650,19 @@ class Akismet_Admin {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	public static function recheck_queue_portion( $start = 0, $limit = 100 ) {
 		global $wpdb;
 		
 =======
+=======
+>>>>>>> D-29-Oanh
 
 	public static function recheck_queue_portion( $start = 0, $limit = 100 ) {
 		global $wpdb;
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -610,6 +670,8 @@ class Akismet_Admin {
 		global $wpdb;
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$paginate = '';
 
 		if ( $limit <= 0 ) {
@@ -717,6 +779,7 @@ class Akismet_Admin {
 		$show_user_comments_option = get_option( 'akismet_show_user_comments_approved' );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -724,21 +787,28 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		if ( $show_user_comments_option === false ) {
 			// Default to active if the user hasn't made a decision.
 			$show_user_comments_option = '1';
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 		$show_user_comments = apply_filters( 'akismet_show_user_comments_approved', $show_user_comments_option );
 		$show_user_comments = $show_user_comments === 'false' ? false : $show_user_comments; //option used to be saved as 'false' / 'true'
 		
 =======
+=======
+>>>>>>> D-29-Oanh
 
 		$show_user_comments = apply_filters( 'akismet_show_user_comments_approved', $show_user_comments_option );
 		$show_user_comments = $show_user_comments === 'false' ? false : $show_user_comments; //option used to be saved as 'false' / 'true'
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -746,6 +816,8 @@ class Akismet_Admin {
 		$show_user_comments = $show_user_comments === 'false' ? false : $show_user_comments; //option used to be saved as 'false' / 'true'
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		if ( $show_user_comments ) {
 			$comment_count = Akismet::get_user_comments_approved( $comment->user_id, $comment->comment_author_email, $comment->comment_author, $comment->comment_author_url );
 			$comment_count = intval( $comment_count );
@@ -768,6 +840,7 @@ class Akismet_Admin {
 					// 1) Save space.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					// 2) The message can be translated into the current language of the blog, not stuck 
 =======
 					// 2) The message can be translated into the current language of the blog, not stuck
@@ -775,6 +848,9 @@ class Akismet_Admin {
 =======
 					// 2) The message can be translated into the current language of the blog, not stuck
 >>>>>>> D-01-LanAnh
+=======
+					// 2) The message can be translated into the current language of the blog, not stuck
+>>>>>>> D-29-Oanh
 					//    in the language of the blog when the comment was made.
 					$message = esc_html( $row['message'] );
 				} else if ( ! empty( $row['event'] ) ) {
@@ -863,6 +939,7 @@ class Akismet_Admin {
 					if ( isset( $row['time'] ) ) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 						$time = gmdate( 'D d M Y @ h:i:s a', $row['time'] ) . ' GMT';
 =======
 						$time = gmdate( 'D d M Y @ h:i:s a', (int) $row['time'] ) . ' GMT';
@@ -870,6 +947,9 @@ class Akismet_Admin {
 =======
 						$time = gmdate( 'D d M Y @ h:i:s a', (int) $row['time'] ) . ' GMT';
 >>>>>>> D-01-LanAnh
+=======
+						$time = gmdate( 'D d M Y @ h:i:s a', (int) $row['time'] ) . ' GMT';
+>>>>>>> D-29-Oanh
 
 						/* translators: The placeholder is an amount of time, like "7 seconds" or "3 days" returned by the function human_time_diff(). */
 						$time_html = '<span style="color: #999;" alt="' . esc_attr( $time ) . '" title="' . esc_attr( $time ) . '">' . sprintf( esc_html__( '%s ago', 'akismet' ), human_time_diff( $row['time'] ) ) . '</span>';
@@ -930,6 +1010,7 @@ class Akismet_Admin {
 	public static function check_server_ip_connectivity() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -945,6 +1026,8 @@ class Akismet_Admin {
 <<<<<<< HEAD
 				
 =======
+=======
+>>>>>>> D-29-Oanh
 
 		$servers = $ips = array();
 
@@ -955,10 +1038,13 @@ class Akismet_Admin {
 			if ( $ips && is_array($ips) && count($ips) ) {
 				$api_key = Akismet::get_api_key();
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				foreach ( $ips as $ip ) {
 					$response = Akismet::verify_key( $api_key, $ip );
 					// even if the key is invalid, at least we know we have connectivity
@@ -971,6 +1057,7 @@ class Akismet_Admin {
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -983,6 +1070,8 @@ class Akismet_Admin {
 <<<<<<< HEAD
 		
 =======
+=======
+>>>>>>> D-29-Oanh
 
 		return $servers;
 	}
@@ -990,10 +1079,13 @@ class Akismet_Admin {
 	// Simpler connectivity check
 	public static function check_server_connectivity($cache_timeout = 86400) {
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$debug = array();
 		$debug[ 'PHP_VERSION' ]         = PHP_VERSION;
 		$debug[ 'WORDPRESS_VERSION' ]   = $GLOBALS['wp_version'];
@@ -1003,6 +1095,7 @@ class Akismet_Admin {
 		$debug[ 'HOME_URL' ]            = home_url();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -1010,6 +1103,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		$servers = get_option('akismet_available_servers');
 		if ( (time() - get_option('akismet_connectivity_time') < $cache_timeout) && $servers !== false ) {
 			$servers = self::check_server_ip_connectivity();
@@ -1029,6 +1125,7 @@ class Akismet_Admin {
 		$debug[ 'Test Connection' ] = $response;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -1044,6 +1141,8 @@ class Akismet_Admin {
 <<<<<<< HEAD
 	// Check the server connectivity and store the available servers in an option. 
 =======
+=======
+>>>>>>> D-29-Oanh
 
 		Akismet::log( $debug );
 
@@ -1054,10 +1153,13 @@ class Akismet_Admin {
 	}
 
 	// Check the server connectivity and store the available servers in an option.
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	// Check the server connectivity and store the available servers in an option.
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	public static function get_server_connectivity($cache_timeout = 86400) {
 		return self::check_server_connectivity( $cache_timeout );
 	}
@@ -1074,15 +1176,19 @@ class Akismet_Admin {
 			'status' => 'hold',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			
 			// This is the commentmeta that is saved when a comment couldn't be checked.
 			'meta_key' => 'akismet_error',
 			
 =======
+=======
+>>>>>>> D-29-Oanh
 
 			// This is the commentmeta that is saved when a comment couldn't be checked.
 			'meta_key' => 'akismet_error',
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -1090,6 +1196,8 @@ class Akismet_Admin {
 			'meta_key' => 'akismet_error',
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			// We only need to know whether at least one comment is waiting for a check.
 			'number' => 1,
 		) );
@@ -1111,6 +1219,7 @@ class Akismet_Admin {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
@@ -1118,6 +1227,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 	public static function get_akismet_user( $api_key ) {
 		$akismet_user = false;
 
@@ -1133,6 +1245,7 @@ class Akismet_Admin {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
@@ -1140,6 +1253,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 	public static function get_stats( $api_key ) {
 		$stat_totals = array();
 
@@ -1155,6 +1271,7 @@ class Akismet_Admin {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
@@ -1162,6 +1279,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 	public static function verify_wpcom_key( $api_key, $user_id, $extra = array() ) {
 		$akismet_account = Akismet::http_post( Akismet::build_query( array_merge( array(
 			'user_id'          => $user_id,
@@ -1173,6 +1293,7 @@ class Akismet_Admin {
 			$akismet_account = json_decode( $akismet_account[1] );
 
 		Akismet::log( compact( 'akismet_account' ) );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		
@@ -1190,6 +1311,8 @@ class Akismet_Admin {
 <<<<<<< HEAD
 							
 =======
+=======
+>>>>>>> D-29-Oanh
 
 		return $akismet_account;
 	}
@@ -1200,16 +1323,20 @@ class Akismet_Admin {
 			if ( isset( $jetpack_user['user_id'] ) && isset(  $jetpack_user['api_key'] ) ) {
 				$akismet_user = self::verify_wpcom_key( $jetpack_user['api_key'], $jetpack_user['user_id'], array( 'action' => 'connect_jetpack_user' ) );
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				if ( is_object( $akismet_user ) ) {
 					self::save_key( $akismet_user->api_key );
 					return in_array( $akismet_user->status, array( 'active', 'active-dunning', 'no-sub' ) );
 				}
 			}
 		}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		
@@ -1219,6 +1346,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		return false;
 	}
 
@@ -1294,6 +1424,7 @@ class Akismet_Admin {
 		//if jetpack, get verified api key by using connected wpcom user id
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		//if no jetpack, get verified api key by using an akismet token	
 =======
 		//if no jetpack, get verified api key by using an akismet token
@@ -1301,6 +1432,9 @@ class Akismet_Admin {
 =======
 		//if no jetpack, get verified api key by using an akismet token
 >>>>>>> D-01-LanAnh
+=======
+		//if no jetpack, get verified api key by using an akismet token
+>>>>>>> D-29-Oanh
 
 		$akismet_user = false;
 
@@ -1344,6 +1478,7 @@ class Akismet_Admin {
 		$akismet_user = self::get_akismet_user( $api_key );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -1351,6 +1486,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		if ( ! $akismet_user ) {
 			// This could happen if the user's key became invalid after it was previously valid and successfully set up.
 			self::$notices['status'] = 'existing-key-invalid';
@@ -1367,6 +1505,7 @@ class Akismet_Admin {
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -1374,6 +1513,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		// Sync the local "Total spam blocked" count with the authoritative count from the server.
 		if ( isset( $stat_totals['all'], $stat_totals['all']->spam ) ) {
 			update_option( 'akismet_spam_count', $stat_totals['all']->spam );
@@ -1401,17 +1543,21 @@ class Akismet_Admin {
 				}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				
 				$notices[] =  array( 'type' => 'active-notice', 'time_saved' => $time_saved );
 			}
 		}
 		
 =======
+=======
+>>>>>>> D-29-Oanh
 
 				$notices[] =  array( 'type' => 'active-notice', 'time_saved' => $time_saved );
 			}
 		}
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -1420,6 +1566,8 @@ class Akismet_Admin {
 		}
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		if ( !isset( self::$notices['status'] ) && in_array( $akismet_user->status, array( 'cancelled', 'suspended', 'missing', 'no-sub' ) ) ) {
 			$notices[] = array( 'type' => $akismet_user->status );
 		}
@@ -1448,6 +1596,7 @@ class Akismet_Admin {
 		$notices[] = array( 'type' => 'new-key-failed' );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$notices[] = array( 'type' => 'usage-limit', 'api_calls' => '15000', 'usage_limit' => '10000', 'upgrade_plan' => 'Enterprise', 'upgrade_url' => 'https://akismet.com/account/' );
 =======
 		$notices[] = array( 'type' => 'usage-limit', 'api_calls' => '15000', 'usage_limit' => '10000', 'upgrade_plan' => 'Enterprise', 'upgrade_url' => 'https://akismet.com/account/', 'code' => 10502 );
@@ -1458,15 +1607,20 @@ class Akismet_Admin {
 <<<<<<< HEAD
 		
 =======
+=======
+>>>>>>> D-29-Oanh
 		$notices[] = array( 'type' => 'usage-limit', 'api_calls' => '15000', 'usage_limit' => '10000', 'upgrade_plan' => 'Enterprise', 'upgrade_url' => 'https://akismet.com/account/', 'code' => 10502 );
 		$notices[] = array( 'type' => 'spam-check-cron-disabled' );
 		$notices[] = array( 'type' => 'alert', 'code' => 123 );
 		*/
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		Akismet::log( compact( 'stat_totals', 'akismet_user' ) );
 		Akismet::view( 'config', compact( 'api_key', 'akismet_user', 'stat_totals', 'notices' ) );
 	}
@@ -1498,17 +1652,21 @@ class Akismet_Admin {
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 		if ( isset( $_GET['akismet_recheck_complete'] ) ) {
 			$recheck_count = (int) $_GET['recheck_count'];
 			$spam_count = (int) $_GET['spam_count'];
 			
 =======
+=======
+>>>>>>> D-29-Oanh
 
 		if ( isset( $_GET['akismet_recheck_complete'] ) ) {
 			$recheck_count = (int) $_GET['recheck_count'];
 			$spam_count = (int) $_GET['spam_count'];
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -1517,6 +1675,8 @@ class Akismet_Admin {
 			$spam_count = (int) $_GET['spam_count'];
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			if ( $recheck_count === 0 ) {
 				$message = __( 'There were no comments to check. Akismet will only check comments awaiting moderation.', 'akismet' );
 			}
@@ -1525,6 +1685,7 @@ class Akismet_Admin {
 				$message .= ' ';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			
 =======
 
@@ -1532,6 +1693,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 				if ( $spam_count === 0 ) {
 					$message .= __( 'No comments were caught as spam.', 'akismet' );
 				}
@@ -1541,6 +1705,7 @@ class Akismet_Admin {
 			}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			
 =======
 
@@ -1548,6 +1713,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 			echo '<div class="notice notice-success"><p>' . esc_html( $message ) . '</p></div>';
 		}
 		else if ( isset( $_GET['akismet_recheck_error'] ) ) {
@@ -1563,6 +1731,7 @@ class Akismet_Admin {
 			foreach ( self::$notices as $index => $type ) {
 				if ( is_object( $type ) ) {
 					$notice_header = $notice_text = '';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 					
@@ -1583,6 +1752,8 @@ class Akismet_Admin {
 <<<<<<< HEAD
 						
 =======
+=======
+>>>>>>> D-29-Oanh
 
 					if ( property_exists( $type, 'notice_header' ) ) {
 						$notice_header = wp_kses( $type->notice_header, self::$allowed );
@@ -1596,15 +1767,19 @@ class Akismet_Admin {
 						$type = wp_kses( $type->status, self::$allowed );
 						Akismet::view( 'notice', compact( 'type', 'notice_header', 'notice_text' ) );
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 						unset( self::$notices[ $index ] );
 					}
 				}
 				else {
 					Akismet::view( 'notice', compact( 'type' ) );
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 					
@@ -1614,6 +1789,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 					unset( self::$notices[ $index ] );
 				}
 			}
@@ -1647,6 +1825,7 @@ class Akismet_Admin {
 				$second_response_value = array_shift( $responses[1] );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				
 =======
 
@@ -1654,6 +1833,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 				// If WPCOM ever reaches 100 billion users, this will fail. :-)
 				if ( preg_match( '/^[a-f0-9]{12}$/i', $first_response_value ) ) {
 					$api_key = $first_response_value;
@@ -1665,6 +1847,7 @@ class Akismet_Admin {
 				}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				
 =======
 
@@ -1672,11 +1855,15 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 				return compact( 'api_key', 'user_id' );
 			}
 		}
 		return false;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	
@@ -1686,6 +1873,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 	/**
 	 * Some commentmeta isn't useful in an export file. Suppress it (when supported).
 	 *
@@ -1700,15 +1890,19 @@ class Akismet_Admin {
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 		return $exclude;
 	}
 	
 =======
+=======
+>>>>>>> D-29-Oanh
 
 		return $exclude;
 	}
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -1716,6 +1910,8 @@ class Akismet_Admin {
 	}
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	/**
 	 * When Akismet is active, remove the "Activate Akismet" step from the plugin description.
 	 */
@@ -1730,6 +1926,7 @@ class Akismet_Admin {
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -1737,6 +1934,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		return $all_plugins;
 	}
 
@@ -1747,6 +1947,7 @@ class Akismet_Admin {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
@@ -1754,6 +1955,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 	public static function register_personal_data_eraser( $erasers ) {
 		$erasers['akismet'] = array(
 			'eraser_friendly_name' => __( 'Akismet', 'akismet' ),
@@ -1764,6 +1968,7 @@ class Akismet_Admin {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
@@ -1771,12 +1976,16 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 	/**
 	 * When a user requests that their personal data be removed, Akismet has a duty to discard
 	 * any personal data we store outside of the comment itself. Right now, that is limited
 	 * to the copy of the comment we store in the akismet_as_submitted commentmeta.
 	 *
 	 * FWIW, this information would be automatically deleted after 15 days.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	 * 
@@ -1786,6 +1995,9 @@ class Akismet_Admin {
 =======
 	 *
 >>>>>>> D-01-LanAnh
+=======
+	 *
+>>>>>>> D-29-Oanh
 	 * @param $email_address string The email address of the user who has requested erasure.
 	 * @param $page int This function can (and will) be called multiple times to prevent timeouts,
 	 *                  so this argument is used for pagination.
@@ -1796,6 +2008,7 @@ class Akismet_Admin {
 		$items_removed = false;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -1803,6 +2016,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		$number = 50;
 		$page = (int) $page;
 
@@ -1820,6 +2036,7 @@ class Akismet_Admin {
 			$comment_as_submitted = get_comment_meta( $comment->comment_ID, 'akismet_as_submitted', true );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			
 =======
 
@@ -1827,6 +2044,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 			if ( $comment_as_submitted ) {
 				delete_comment_meta( $comment->comment_ID, 'akismet_as_submitted' );
 				$items_removed = true;
@@ -1837,6 +2057,7 @@ class Akismet_Admin {
 		$done = ( is_countable( $comments ) ? count( $comments ) : 0 ) < $number;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 =======
 
@@ -1844,6 +2065,9 @@ class Akismet_Admin {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 		return array(
 			'items_removed' => $items_removed,
 			'items_retained' => false, // always false in this example
@@ -1853,9 +2077,12 @@ class Akismet_Admin {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Return an array of HTML elements that are allowed in a notice.
@@ -1866,7 +2093,10 @@ class Akismet_Admin {
 		return self::$allowed;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }

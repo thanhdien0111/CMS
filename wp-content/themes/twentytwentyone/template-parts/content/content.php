@@ -1,8 +1,12 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * Template part for displaying posts
  *
@@ -17,6 +21,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<header class="entry-header">
 		<?php if ( is_singular() ) : ?>
 			<?php the_title( '<h1 class="entry-title default-max-width">', '</h1>' ); ?>
@@ -30,6 +35,8 @@
 	<div class="entry-content">
 		<?php
 =======
+=======
+>>>>>>> D-29-Oanh
 
     <header class="entry-header">
         <?php if (is_singular()) : ?>
@@ -43,13 +50,17 @@
 
     <div class="entry-content ">
         <?php
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		the_content(
 			twenty_twenty_one_continue_reading_text()
 		);
 
 		wp_link_pages(
 			array(
+<<<<<<< HEAD
 <<<<<<< HEAD
 				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
 				'after'    => '</nav>',
@@ -66,6 +77,8 @@
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
 =======
+=======
+>>>>>>> D-29-Oanh
 				'before'   => '<nav class="page-links " aria-label="' . esc_attr__('Page', 'twentytwentyone') . '">',
 				'after'    => '</nav>',
 				/* translators: %: Page number. */
@@ -78,5 +91,9 @@
     <footer class="entry-footer   default-max-width">
         <?php twenty_twenty_one_entry_meta_footer(); ?>
     </footer><!-- .entry-footer -->
+<<<<<<< HEAD
 </article><!-- #post-<?php the_ID(); ?> -->
 >>>>>>> D-12-Dien
+=======
+</article><!-- #post-<?php the_ID(); ?> -->
+>>>>>>> D-29-Oanh

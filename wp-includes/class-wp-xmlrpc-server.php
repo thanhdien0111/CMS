@@ -4995,7 +4995,11 @@ class wp_xmlrpc_server extends IXR_Server {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Retrieves the list of /s.
+=======
+	 * Retrieves the list of recent posts.
+>>>>>>> D-29-Oanh
 	 *
 	 * @since 1.5.0
 	 *

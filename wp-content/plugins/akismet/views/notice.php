@@ -1,6 +1,7 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> D-01-LanAnh
@@ -22,6 +23,8 @@ $kses_allow_strong = array( 'strong' => true );
 <<<<<<< HEAD
 <?php if ( $type == 'plugin' ) : ?>
 =======
+=======
+>>>>>>> D-29-Oanh
 //phpcs:disable VariableAnalysis
 // There are "undefined" variables here because they're defined in the code that includes this file as a template.
 $kses_allow_link   = array(
@@ -38,10 +41,13 @@ $kses_allow_strong = array( 'strong' => true );
  */
 ?>
 <?php if ( $type === 'plugin' ) : ?>
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 <?php if ( $type === 'plugin' ) : ?>
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 <div class="updated" id="akismet_setup_prompt">
 	<form name="akismet_activate" action="<?php echo esc_url( Akismet_Admin::get_page_url() ); ?>" method="POST">
 		<div class="akismet_activate">
@@ -51,6 +57,7 @@ $kses_allow_strong = array( 'strong' => true );
 					<input type="submit" class="aa_button" value="<?php esc_attr_e( 'Set up your Akismet account', 'akismet' ); ?>" />
 				</div>
 			</div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			<div class="aa_description"><?php _e('<strong>Almost done</strong> - configure Akismet and say goodbye to spam', 'akismet');?></div>
@@ -79,6 +86,8 @@ $kses_allow_strong = array( 'strong' => true );
 <<<<<<< HEAD
 <?php elseif ( $type == 'spam-check-cron-disabled' ) : ?>
 =======
+=======
+>>>>>>> D-29-Oanh
 			<div class="aa_description">
 				<?php
 				echo wp_kses(
@@ -101,15 +110,19 @@ $kses_allow_strong = array( 'strong' => true );
 </div>
 
 <?php elseif ( $type === 'spam-check-cron-disabled' ) : ?>
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
 <?php elseif ( $type === 'spam-check-cron-disabled' ) : ?>
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 <div class="notice notice-warning">
 	<p><strong><?php esc_html_e( 'Akismet has detected a problem.', 'akismet' ); ?></strong></p>
 	<p><?php esc_html_e( 'WP-Cron has been disabled using the DISABLE_WP_CRON constant. Comment rechecks may not work properly.', 'akismet' ); ?></p>
 </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <?php elseif ( $type == 'alert' ) : ?>
@@ -132,6 +145,8 @@ $kses_allow_strong = array( 'strong' => true );
 
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> D-29-Oanh
 
 <?php elseif ( $type === 'alert' ) : ?>
 <div class="error">
@@ -146,8 +161,11 @@ $kses_allow_strong = array( 'strong' => true );
 	</p>
 </div>
 
+<<<<<<< HEAD
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 <?php elseif ( $type === 'notice' ) : ?>
 <div class="akismet-alert is-bad">
 	<h3 class="akismet-alert__heading"><?php echo wp_kses( $notice_header, Akismet_Admin::get_notice_kses_allowed_elements() ); ?></h3>
@@ -307,15 +325,19 @@ $kses_allow_strong = array( 'strong' => true );
 	<p>
 		<?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		echo wp_kses(
 			sprintf(
 				/* translators: The placeholder is a URL. */
 				__( 'The connection to akismet.com could not be established. Please refer to <a href="%s" target="_blank">our guide about firewalls</a> and check your server configuration.', 'akismet' ),
 				'https://blog.akismet.com/akismet-hosting-faq/'
 			),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			array(
@@ -334,6 +356,8 @@ $kses_allow_strong = array( 'strong' => true );
 <<<<<<< HEAD
 <?php elseif ( $type == 'usage-limit' && isset( Akismet::$limit_notices[ $code ] ) ) : ?>
 =======
+=======
+>>>>>>> D-29-Oanh
 			$kses_allow_link
 		);
 		?>
@@ -341,11 +365,14 @@ $kses_allow_strong = array( 'strong' => true );
 </div>
 
 <?php elseif ( $type === 'usage-limit' && isset( Akismet::$limit_notices[ $code ] ) ) : ?>
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
 <?php elseif ( $type === 'usage-limit' && isset( Akismet::$limit_notices[ $code ] ) ) : ?>
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 <div class="error akismet-usage-limit-alert">
 	<div class="akismet-usage-limit-logo">
 		<img src="<?php echo esc_url( plugins_url( '../_inc/img/logo-a-2x.png', __FILE__ ) ); ?>" alt="Akismet logo" />

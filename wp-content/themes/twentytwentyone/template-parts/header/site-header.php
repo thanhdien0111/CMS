@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -97,6 +98,8 @@ $wrapper_classes .= has_nav_menu('primary') ? ' has-menu' : '';
 	</div>
 </nav>
 =======
+=======
+>>>>>>> D-29-Oanh
 <?php
 /**
  * Displays the site header.
@@ -118,6 +121,7 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 	<?php get_template_part( 'template-parts/header/site-nav' ); ?>
 
 </header><!-- #masthead -->
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
       <ul class="navbar-nav ml-auto">
@@ -152,3 +156,5 @@ $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
   </nav>
 </header><!-- #masthead -->
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh

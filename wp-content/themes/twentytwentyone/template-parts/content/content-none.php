@@ -1,8 +1,12 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * Template part for displaying a message that posts cannot be found
  *
@@ -15,6 +19,7 @@
 
 ?>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <section class="no-results not-found">
 	
@@ -49,6 +54,8 @@
 					/* translators: %s: Link to WP admin new post page. */
 					__( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'twentytwentyone' ),
 =======
+=======
+>>>>>>> D-29-Oanh
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <section class="no-results not-found">
@@ -83,13 +90,17 @@
 				'<p>' . wp_kses(
 					/* translators: %s: Link to WP admin new post page. */
 					__('Ready to publish your first post? <a href="%s">Get started here</a>.', 'twentytwentyone'),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					array(
 						'a' => array(
 							'href' => array(),
 						),
 					)
 				) . '</p>',
+<<<<<<< HEAD
 <<<<<<< HEAD
 				esc_url( admin_url( 'post-new.php' ) )
 			);
@@ -109,6 +120,8 @@
 	</div><!-- .page-content -->
 </section><!-- .no-results -->
 =======
+=======
+>>>>>>> D-29-Oanh
 				esc_url(admin_url('post-new.php'))
 			);
 			?>
@@ -140,5 +153,9 @@
 
     </div><!-- .page-content -->
 
+<<<<<<< HEAD
 </section><!-- .no-results -->
 >>>>>>> D-12-Dien
+=======
+</section><!-- .no-results -->
+>>>>>>> D-29-Oanh

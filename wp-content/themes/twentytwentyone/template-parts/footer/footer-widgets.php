@@ -1,8 +1,11 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 /**
  * Displays the footer widget area.
  *
@@ -12,6 +15,7 @@
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 if (is_active_sidebar('sidebar-1')) : ?>
 
 	<aside class="widget-area">
@@ -20,6 +24,8 @@ if (is_active_sidebar('sidebar-1')) : ?>
 
 <?php
 =======
+=======
+>>>>>>> D-29-Oanh
 if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 
 	<aside class="widget-area">
@@ -43,5 +49,8 @@ if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
 	</aside><!-- .widget-area -->
 
 	<?php
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 endif;

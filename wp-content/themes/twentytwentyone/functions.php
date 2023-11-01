@@ -348,7 +348,11 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_setup' );
  * @return void
  */
 function twenty_twenty_one_widgets_init() {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> D-29-Oanh
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Footer', 'twentytwentyone' ),
@@ -362,7 +366,10 @@ function twenty_twenty_one_widgets_init() {
 	);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> D-29-Oanh
 
 	register_sidebar(
 		array(
@@ -370,6 +377,7 @@ function twenty_twenty_one_widgets_init() {
 			'id'            => 'sidebar-2',
 			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'twentytwentyone' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+<<<<<<< HEAD
 =======
 	//Moudul comment 12
 	register_sidebar(
@@ -379,16 +387,21 @@ function twenty_twenty_one_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'twentytwentyone' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s comment-12">',
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)
 	);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 add_action( 'widgets_init', 'twenty_twenty_one_widgets_init' );
 

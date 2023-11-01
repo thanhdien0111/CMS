@@ -12,18 +12,24 @@
 	--akismet-color-mid-red: #e82c3f;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	--akismet-color-light-blue: #256eff;
 	--akismet-color-notice-light-green: #dbf0e1;
 	--akismet-color-notice-dark-green: #69bf82;
 	--akismet-color-notice-light-red: #ffdbde;
 	--akismet-color-notice-dark-red: #ff6676;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 
 #akismet-plugin-container a {
@@ -32,9 +38,12 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 #akismet-plugin-container button:focus-visible,
 #akismet-plugin-container input:focus-visible {
 	border: 0;
@@ -43,9 +52,12 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 .akismet-masthead {
 	box-shadow: none;
 }
@@ -145,6 +157,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .akismet-box { 
 =======
 .akismet-box {
@@ -152,6 +165,9 @@
 =======
 .akismet-box {
 >>>>>>> D-01-LanAnh
+=======
+.akismet-box {
+>>>>>>> D-29-Oanh
 	border: 0;
 }
 
@@ -161,6 +177,7 @@
 	border-radius: 8px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	overflow: hidden;	
 =======
 	overflow: hidden;
@@ -168,6 +185,9 @@
 =======
 	overflow: hidden;
 >>>>>>> D-01-LanAnh
+=======
+	overflow: hidden;
+>>>>>>> D-29-Oanh
 }
 
 .akismet-card {
@@ -289,6 +309,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .akismet-alert.akismet-active {
 	background-color: var(--akismet-color-mid-green);
 }
@@ -296,6 +317,8 @@
 .akismet-alert.akismet-critical {
 	background-color: var(--akismet-color-mid-red);
 =======
+=======
+>>>>>>> D-29-Oanh
 .akismet-alert {
 	border-left: 8px solid;
 	border-radius: 8px;
@@ -303,6 +326,7 @@
 	padding: 0.2em 1em;
 }
 
+<<<<<<< HEAD
 =======
 .akismet-alert {
 	border-left: 8px solid;
@@ -312,6 +336,8 @@
 }
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 .akismet-alert__heading {
 	font-size: 1em;
 }
@@ -373,9 +399,12 @@ h3.akismet-enter-api-key-box__header {
 	padding-bottom: 1em;
 	text-align: left;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 
 @media screen and (max-width: 782px) {
@@ -384,6 +413,7 @@ h3.akismet-enter-api-key-box__header {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
@@ -391,6 +421,9 @@ h3.akismet-enter-api-key-box__header {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 	.akismet-new-snapshot__number {
 		float: right;
 		font-size: 20px;
@@ -399,6 +432,7 @@ h3.akismet-enter-api-key-box__header {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 =======
 
@@ -406,23 +440,30 @@ h3.akismet-enter-api-key-box__header {
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 	.akismet-new-snapshot__header {
 		font-size: 14px;
 		font-weight: 500;
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	.akismet-new-snapshot__text {
 		font-size: 12px;
 	}
 	
 =======
+=======
+>>>>>>> D-29-Oanh
 
 	.akismet-new-snapshot__text {
 		font-size: 12px;
 	}
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -431,6 +472,8 @@ h3.akismet-enter-api-key-box__header {
 	}
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	.akismet-settings__row input[type="checkbox"],
 	.akismet-settings__row input[type="radio"] {
 		height: 24px;
@@ -438,17 +481,21 @@ h3.akismet-enter-api-key-box__header {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	.akismet-settings__row-label-text {
 		padding-left: 0.8em;
 	}
 	
 =======
+=======
+>>>>>>> D-29-Oanh
 
 	.akismet-settings__row-label-text {
 		padding-left: 0.8em;
 	}
 
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -457,6 +504,8 @@ h3.akismet-enter-api-key-box__header {
 	}
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	.akismet-settings__row input[type="checkbox"],
 	.akismet-settings__row input[type="radio"] {
 		margin-top: 0;

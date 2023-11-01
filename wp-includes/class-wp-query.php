@@ -1,8 +1,12 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * Query API: WP_Query class
  *
@@ -21,11 +25,16 @@
  */
 #[AllowDynamicProperties]
 <<<<<<< HEAD
+<<<<<<< HEAD
 class WP_Query {
 =======
 class WP_Query
 {
 >>>>>>> D-12-Dien
+=======
+class WP_Query
+{
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Query vars set by the user.
@@ -479,6 +488,7 @@ class WP_Query
 	private $stopwords;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private $compat_fields = array( 'query_vars_hash', 'query_vars_changed' );
 
 	private $compat_methods = array( 'init_query_flags', 'parse_tax_query' );
@@ -487,6 +497,11 @@ class WP_Query
 
 	private $compat_methods = array('init_query_flags', 'parse_tax_query');
 >>>>>>> D-12-Dien
+=======
+	private $compat_fields = array('query_vars_hash', 'query_vars_changed');
+
+	private $compat_methods = array('init_query_flags', 'parse_tax_query');
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Resets query flags to false.
@@ -496,11 +511,16 @@ class WP_Query
 	 * @since 2.0.0
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private function init_query_flags() {
 =======
 	private function init_query_flags()
 	{
 >>>>>>> D-12-Dien
+=======
+	private function init_query_flags()
+	{
+>>>>>>> D-29-Oanh
 		$this->is_single            = false;
 		$this->is_preview           = false;
 		$this->is_page              = false;
@@ -537,6 +557,7 @@ class WP_Query
 	 * @since 1.5.0
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function init() {
 		unset( $this->posts );
 		unset( $this->query );
@@ -544,6 +565,8 @@ class WP_Query
 		unset( $this->queried_object );
 		unset( $this->queried_object_id );
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function init()
 	{
 		unset($this->posts);
@@ -551,22 +574,31 @@ class WP_Query
 		$this->query_vars = array();
 		unset($this->queried_object);
 		unset($this->queried_object_id);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		$this->post_count   = 0;
 		$this->current_post = -1;
 		$this->in_the_loop  = false;
 		$this->before_loop  = true;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		unset( $this->request );
 		unset( $this->post );
 		unset( $this->comments );
 		unset( $this->comment );
 =======
+=======
+>>>>>>> D-29-Oanh
 		unset($this->request);
 		unset($this->post);
 		unset($this->comments);
 		unset($this->comment);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		$this->comment_count         = 0;
 		$this->current_comment       = -1;
 		$this->found_posts           = 0;
@@ -582,11 +614,16 @@ class WP_Query
 	 * @since 1.5.0
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function parse_query_vars() {
 =======
 	public function parse_query_vars()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function parse_query_vars()
+	{
+>>>>>>> D-29-Oanh
 		$this->parse_query();
 	}
 
@@ -600,11 +637,16 @@ class WP_Query
 	 * @return array Complete query variables with undefined ones filled in empty.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function fill_query_vars( $query_vars ) {
 =======
 	public function fill_query_vars($query_vars)
 	{
 >>>>>>> D-12-Dien
+=======
+	public function fill_query_vars($query_vars)
+	{
+>>>>>>> D-29-Oanh
 		$keys = array(
 			'error',
 			'm',
@@ -645,6 +687,7 @@ class WP_Query
 		);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		foreach ( $keys as $key ) {
 			if ( ! isset( $query_vars[ $key ] ) ) {
 				$query_vars[ $key ] = '';
@@ -653,6 +696,11 @@ class WP_Query
 			if (!isset($query_vars[$key])) {
 				$query_vars[$key] = '';
 >>>>>>> D-12-Dien
+=======
+		foreach ($keys as $key) {
+			if (!isset($query_vars[$key])) {
+				$query_vars[$key] = '';
+>>>>>>> D-29-Oanh
 			}
 		}
 
@@ -676,6 +724,7 @@ class WP_Query
 		);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		foreach ( $array_keys as $key ) {
 			if ( ! isset( $query_vars[ $key ] ) ) {
 				$query_vars[ $key ] = array();
@@ -684,6 +733,11 @@ class WP_Query
 			if (!isset($query_vars[$key])) {
 				$query_vars[$key] = array();
 >>>>>>> D-12-Dien
+=======
+		foreach ($array_keys as $key) {
+			if (!isset($query_vars[$key])) {
+				$query_vars[$key] = array();
+>>>>>>> D-29-Oanh
 			}
 		}
 
@@ -848,6 +902,7 @@ class WP_Query
 	 * }
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function parse_query( $query = '' ) {
 		if ( ! empty( $query ) ) {
 			$this->init();
@@ -869,6 +924,8 @@ class WP_Query
 
 		if ( ! is_scalar( $qv['p'] ) || (int) $qv['p'] < 0 ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function parse_query($query = '')
 	{
 		if (!empty($query)) {
@@ -890,13 +947,17 @@ class WP_Query
 		}
 
 		if (!is_scalar($qv['p']) || (int) $qv['p'] < 0) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$qv['p']     = 0;
 			$qv['error'] = '404';
 		} else {
 			$qv['p'] = (int) $qv['p'];
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$qv['page_id']  = is_scalar( $qv['page_id'] ) ? absint( $qv['page_id'] ) : 0;
 		$qv['year']     = is_scalar( $qv['year'] ) ? absint( $qv['year'] ) : 0;
@@ -914,6 +975,8 @@ class WP_Query
 		if ( is_scalar( $qv['hour'] ) && '' !== $qv['hour'] ) {
 			$qv['hour'] = absint( $qv['hour'] );
 =======
+=======
+>>>>>>> D-29-Oanh
 		$qv['page_id']  = is_scalar($qv['page_id']) ? absint($qv['page_id']) : 0;
 		$qv['year']     = is_scalar($qv['year']) ? absint($qv['year']) : 0;
 		$qv['monthnum'] = is_scalar($qv['monthnum']) ? absint($qv['monthnum']) : 0;
@@ -929,11 +992,15 @@ class WP_Query
 
 		if (is_scalar($qv['hour']) && '' !== $qv['hour']) {
 			$qv['hour'] = absint($qv['hour']);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		} else {
 			$qv['hour'] = '';
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( is_scalar( $qv['minute'] ) && '' !== $qv['minute'] ) {
 			$qv['minute'] = absint( $qv['minute'] );
@@ -941,10 +1008,15 @@ class WP_Query
 		if (is_scalar($qv['minute']) && '' !== $qv['minute']) {
 			$qv['minute'] = absint($qv['minute']);
 >>>>>>> D-12-Dien
+=======
+		if (is_scalar($qv['minute']) && '' !== $qv['minute']) {
+			$qv['minute'] = absint($qv['minute']);
+>>>>>>> D-29-Oanh
 		} else {
 			$qv['minute'] = '';
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( is_scalar( $qv['second'] ) && '' !== $qv['second'] ) {
 			$qv['second'] = absint( $qv['second'] );
@@ -952,10 +1024,15 @@ class WP_Query
 		if (is_scalar($qv['second']) && '' !== $qv['second']) {
 			$qv['second'] = absint($qv['second']);
 >>>>>>> D-12-Dien
+=======
+		if (is_scalar($qv['second']) && '' !== $qv['second']) {
+			$qv['second'] = absint($qv['second']);
+>>>>>>> D-29-Oanh
 		} else {
 			$qv['second'] = '';
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( is_scalar( $qv['menu_order'] ) && '' !== $qv['menu_order'] ) {
 			$qv['menu_order'] = absint( $qv['menu_order'] );
@@ -963,20 +1040,29 @@ class WP_Query
 		if (is_scalar($qv['menu_order']) && '' !== $qv['menu_order']) {
 			$qv['menu_order'] = absint($qv['menu_order']);
 >>>>>>> D-12-Dien
+=======
+		if (is_scalar($qv['menu_order']) && '' !== $qv['menu_order']) {
+			$qv['menu_order'] = absint($qv['menu_order']);
+>>>>>>> D-29-Oanh
 		} else {
 			$qv['menu_order'] = '';
 		}
 
 		// Fairly large, potentially too large, upper bound for search string lengths.
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! is_scalar( $qv['s'] ) || ( ! empty( $qv['s'] ) && strlen( $qv['s'] ) > 1600 ) ) {
 =======
 		if (!is_scalar($qv['s']) || (!empty($qv['s']) && strlen($qv['s']) > 1600)) {
 >>>>>>> D-12-Dien
+=======
+		if (!is_scalar($qv['s']) || (!empty($qv['s']) && strlen($qv['s']) > 1600)) {
+>>>>>>> D-29-Oanh
 			$qv['s'] = '';
 		}
 
 		// Compat. Map subpost to attachment.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( is_scalar( $qv['subpost'] ) && '' != $qv['subpost'] ) {
 			$qv['attachment'] = $qv['subpost'];
@@ -996,6 +1082,8 @@ class WP_Query
 			$this->is_single = true;
 		} elseif ( '' !== $qv['pagename'] || ! empty( $qv['page_id'] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (is_scalar($qv['subpost']) && '' != $qv['subpost']) {
 			$qv['attachment'] = $qv['subpost'];
 		}
@@ -1013,12 +1101,16 @@ class WP_Query
 		} elseif ($qv['p']) {
 			$this->is_single = true;
 		} elseif ('' !== $qv['pagename'] || !empty($qv['page_id'])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$this->is_page   = true;
 			$this->is_single = false;
 		} else {
 			// Look for archive queries. Dates, categories, authors, search, post type archives.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( isset( $this->query['s'] ) ) {
 				$this->is_search = true;
@@ -1026,45 +1118,64 @@ class WP_Query
 
 			if ( '' !== $qv['second'] ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if (isset($this->query['s'])) {
 				$this->is_search = true;
 			}
 
 			if ('' !== $qv['second']) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$this->is_time = true;
 				$this->is_date = true;
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( '' !== $qv['minute'] ) {
 =======
 			if ('' !== $qv['minute']) {
 >>>>>>> D-12-Dien
+=======
+			if ('' !== $qv['minute']) {
+>>>>>>> D-29-Oanh
 				$this->is_time = true;
 				$this->is_date = true;
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( '' !== $qv['hour'] ) {
 =======
 			if ('' !== $qv['hour']) {
 >>>>>>> D-12-Dien
+=======
+			if ('' !== $qv['hour']) {
+>>>>>>> D-29-Oanh
 				$this->is_time = true;
 				$this->is_date = true;
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( $qv['day'] ) {
 				if ( ! $this->is_date ) {
 					$date = sprintf( '%04d-%02d-%02d', $qv['year'], $qv['monthnum'], $qv['day'] );
 					if ( $qv['monthnum'] && $qv['year'] && ! wp_checkdate( $qv['monthnum'], $qv['day'], $qv['year'], $date ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if ($qv['day']) {
 				if (!$this->is_date) {
 					$date = sprintf('%04d-%02d-%02d', $qv['year'], $qv['monthnum'], $qv['day']);
 					if ($qv['monthnum'] && $qv['year'] && !wp_checkdate($qv['monthnum'], $qv['day'], $qv['year'], $date)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 						$qv['error'] = '404';
 					} else {
 						$this->is_day  = true;
@@ -1074,6 +1185,7 @@ class WP_Query
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( $qv['monthnum'] ) {
 				if ( ! $this->is_date ) {
 					if ( 12 < $qv['monthnum'] ) {
@@ -1082,6 +1194,11 @@ class WP_Query
 				if (!$this->is_date) {
 					if (12 < $qv['monthnum']) {
 >>>>>>> D-12-Dien
+=======
+			if ($qv['monthnum']) {
+				if (!$this->is_date) {
+					if (12 < $qv['monthnum']) {
+>>>>>>> D-29-Oanh
 						$qv['error'] = '404';
 					} else {
 						$this->is_month = true;
@@ -1091,17 +1208,23 @@ class WP_Query
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( $qv['year'] ) {
 				if ( ! $this->is_date ) {
 =======
 			if ($qv['year']) {
 				if (!$this->is_date) {
 >>>>>>> D-12-Dien
+=======
+			if ($qv['year']) {
+				if (!$this->is_date) {
+>>>>>>> D-29-Oanh
 					$this->is_year = true;
 					$this->is_date = true;
 				}
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( $qv['m'] ) {
 				$this->is_date = true;
@@ -1111,6 +1234,8 @@ class WP_Query
 					$this->is_day = true;
 				} elseif ( strlen( $qv['m'] ) > 5 ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if ($qv['m']) {
 				$this->is_date = true;
 				if (strlen($qv['m']) > 9) {
@@ -1118,7 +1243,10 @@ class WP_Query
 				} elseif (strlen($qv['m']) > 7) {
 					$this->is_day = true;
 				} elseif (strlen($qv['m']) > 5) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$this->is_month = true;
 				} else {
 					$this->is_year = true;
@@ -1126,14 +1254,19 @@ class WP_Query
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( $qv['w'] ) {
 =======
 			if ($qv['w']) {
 >>>>>>> D-12-Dien
+=======
+			if ($qv['w']) {
+>>>>>>> D-29-Oanh
 				$this->is_date = true;
 			}
 
 			$this->query_vars_hash = false;
+<<<<<<< HEAD
 <<<<<<< HEAD
 			$this->parse_tax_query( $qv );
 
@@ -1145,6 +1278,8 @@ class WP_Query
 				if ( isset( $tax_query['operator'] ) && 'NOT IN' !== $tax_query['operator'] ) {
 					switch ( $tax_query['taxonomy'] ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			$this->parse_tax_query($qv);
 
 			foreach ($this->tax_query->queries as $tax_query) {
@@ -1154,7 +1289,10 @@ class WP_Query
 
 				if (isset($tax_query['operator']) && 'NOT IN' !== $tax_query['operator']) {
 					switch ($tax_query['taxonomy']) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 						case 'category':
 							$this->is_category = true;
 							break;
@@ -1167,6 +1305,7 @@ class WP_Query
 				}
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 			unset( $tax_query );
 
 			if ( empty( $qv['author'] ) || ( '0' == $qv['author'] ) ) {
@@ -1175,11 +1314,17 @@ class WP_Query
 
 			if (empty($qv['author']) || ('0' == $qv['author'])) {
 >>>>>>> D-12-Dien
+=======
+			unset($tax_query);
+
+			if (empty($qv['author']) || ('0' == $qv['author'])) {
+>>>>>>> D-29-Oanh
 				$this->is_author = false;
 			} else {
 				$this->is_author = true;
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( '' !== $qv['author_name'] ) {
 				$this->is_author = true;
@@ -1189,6 +1334,8 @@ class WP_Query
 				$post_type_obj = get_post_type_object( $qv['post_type'] );
 				if ( ! empty( $post_type_obj->has_archive ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if ('' !== $qv['author_name']) {
 				$this->is_author = true;
 			}
@@ -1196,20 +1343,28 @@ class WP_Query
 			if (!empty($qv['post_type']) && !is_array($qv['post_type'])) {
 				$post_type_obj = get_post_type_object($qv['post_type']);
 				if (!empty($post_type_obj->has_archive)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$this->is_post_type_archive = true;
 				}
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( $this->is_post_type_archive || $this->is_date || $this->is_author || $this->is_category || $this->is_tag || $this->is_tax ) {
 =======
 			if ($this->is_post_type_archive || $this->is_date || $this->is_author || $this->is_category || $this->is_tag || $this->is_tax) {
 >>>>>>> D-12-Dien
+=======
+			if ($this->is_post_type_archive || $this->is_date || $this->is_author || $this->is_category || $this->is_tag || $this->is_tax) {
+>>>>>>> D-29-Oanh
 				$this->is_archive = true;
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( '' != $qv['feed'] ) {
 			$this->is_feed = true;
@@ -1225,6 +1380,8 @@ class WP_Query
 
 		if ( '' != $qv['paged'] && ( (int) $qv['paged'] > 1 ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('' != $qv['feed']) {
 			$this->is_feed = true;
 		}
@@ -1238,11 +1395,15 @@ class WP_Query
 		}
 
 		if ('' != $qv['paged'] && ((int) $qv['paged'] > 1)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$this->is_paged = true;
 		}
 
 		// If we're previewing inside the write screen.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( '' != $qv['preview'] ) {
 			$this->is_preview = true;
@@ -1255,6 +1416,8 @@ class WP_Query
 		if ( str_contains( $qv['feed'], 'comments-' ) ) {
 			$qv['feed']         = str_replace( 'comments-', '', $qv['feed'] );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('' != $qv['preview']) {
 			$this->is_preview = true;
 		}
@@ -1265,12 +1428,16 @@ class WP_Query
 
 		if (str_contains($qv['feed'], 'comments-')) {
 			$qv['feed']         = str_replace('comments-', '', $qv['feed']);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$qv['withcomments'] = 1;
 		}
 
 		$this->is_singular = $this->is_single || $this->is_page || $this->is_attachment;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $this->is_feed && ( ! empty( $qv['withcomments'] ) || ( empty( $qv['withoutcomments'] ) && $this->is_singular ) ) ) {
 			$this->is_comment_feed = true;
@@ -1280,6 +1447,8 @@ class WP_Query
 				|| ( defined( 'REST_REQUEST' ) && REST_REQUEST && $this->is_main_query() )
 				|| $this->is_trackback || $this->is_404 || $this->is_admin || $this->is_robots || $this->is_favicon ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($this->is_feed && (!empty($qv['withcomments']) || (empty($qv['withoutcomments']) && $this->is_singular))) {
 			$this->is_comment_feed = true;
 		}
@@ -1287,11 +1456,15 @@ class WP_Query
 		if (!($this->is_singular || $this->is_archive || $this->is_search || $this->is_feed
 			|| (defined('REST_REQUEST') && REST_REQUEST && $this->is_main_query())
 			|| $this->is_trackback || $this->is_404 || $this->is_admin || $this->is_robots || $this->is_favicon)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$this->is_home = true;
 		}
 
 		// Correct `is_*` for 'page_on_front' and 'page_for_posts'.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $this->is_home && 'page' === get_option( 'show_on_front' ) && get_option( 'page_on_front' ) ) {
 			$_query = wp_parse_args( $this->query );
@@ -1311,6 +1484,8 @@ class WP_Query
 					$qv['page'] = $qv['paged'];
 					unset( $qv['paged'] );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($this->is_home && 'page' === get_option('show_on_front') && get_option('page_on_front')) {
 			$_query = wp_parse_args($this->query);
 			// 'pagename' can be set and empty depending on matched rewrite rules. Ignore an empty 'pagename'.
@@ -1328,11 +1503,15 @@ class WP_Query
 				if (!empty($qv['paged'])) {
 					$qv['page'] = $qv['paged'];
 					unset($qv['paged']);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				}
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( '' !== $qv['pagename'] ) {
 			$this->queried_object = get_page_by_path( $qv['pagename'] );
@@ -1343,6 +1522,8 @@ class WP_Query
 					$post = get_page_by_path( $qv['pagename'], OBJECT, 'post' );
 					if ( $post ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('' !== $qv['pagename']) {
 			$this->queried_object = get_page_by_path($qv['pagename']);
 
@@ -1351,7 +1532,10 @@ class WP_Query
 					// See if we also have a post with the same slug.
 					$post = get_page_by_path($qv['pagename'], OBJECT, 'post');
 					if ($post) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 						$this->queried_object = $post;
 						$this->is_page        = false;
 						$this->is_single      = true;
@@ -1359,6 +1543,7 @@ class WP_Query
 				}
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( ! empty( $this->queried_object ) ) {
 				$this->queried_object_id = (int) $this->queried_object->ID;
@@ -1368,6 +1553,8 @@ class WP_Query
 
 			if ( 'page' === get_option( 'show_on_front' ) && isset( $this->queried_object_id ) && get_option( 'page_for_posts' ) == $this->queried_object_id ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if (!empty($this->queried_object)) {
 				$this->queried_object_id = (int) $this->queried_object->ID;
 			} else {
@@ -1375,21 +1562,29 @@ class WP_Query
 			}
 
 			if ('page' === get_option('show_on_front') && isset($this->queried_object_id) && get_option('page_for_posts') == $this->queried_object_id) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$this->is_page       = false;
 				$this->is_home       = true;
 				$this->is_posts_page = true;
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( isset( $this->queried_object_id ) && get_option( 'wp_page_for_privacy_policy' ) == $this->queried_object_id ) {
 =======
 			if (isset($this->queried_object_id) && get_option('wp_page_for_privacy_policy') == $this->queried_object_id) {
 >>>>>>> D-12-Dien
+=======
+			if (isset($this->queried_object_id) && get_option('wp_page_for_privacy_policy') == $this->queried_object_id) {
+>>>>>>> D-29-Oanh
 				$this->is_privacy_policy = true;
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $qv['page_id'] ) {
 			if ( 'page' === get_option( 'show_on_front' ) && get_option( 'page_for_posts' ) == $qv['page_id'] ) {
@@ -1397,20 +1592,29 @@ class WP_Query
 		if ($qv['page_id']) {
 			if ('page' === get_option('show_on_front') && get_option('page_for_posts') == $qv['page_id']) {
 >>>>>>> D-12-Dien
+=======
+		if ($qv['page_id']) {
+			if ('page' === get_option('show_on_front') && get_option('page_for_posts') == $qv['page_id']) {
+>>>>>>> D-29-Oanh
 				$this->is_page       = false;
 				$this->is_home       = true;
 				$this->is_posts_page = true;
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( get_option( 'wp_page_for_privacy_policy' ) == $qv['page_id'] ) {
 =======
 			if (get_option('wp_page_for_privacy_policy') == $qv['page_id']) {
 >>>>>>> D-12-Dien
+=======
+			if (get_option('wp_page_for_privacy_policy') == $qv['page_id']) {
+>>>>>>> D-29-Oanh
 				$this->is_privacy_policy = true;
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $qv['post_type'] ) ) {
 			if ( is_array( $qv['post_type'] ) ) {
@@ -1430,6 +1634,8 @@ class WP_Query
 
 		if ( $this->is_posts_page && ( ! isset( $qv['withcomments'] ) || ! $qv['withcomments'] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!empty($qv['post_type'])) {
 			if (is_array($qv['post_type'])) {
 				$qv['post_type'] = array_map('sanitize_key', $qv['post_type']);
@@ -1447,13 +1653,17 @@ class WP_Query
 		}
 
 		if ($this->is_posts_page && (!isset($qv['withcomments']) || !$qv['withcomments'])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$this->is_comment_feed = false;
 		}
 
 		$this->is_singular = $this->is_single || $this->is_page || $this->is_attachment;
 		// Done correcting `is_*` for 'page_on_front' and 'page_for_posts'.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( '404' == $qv['error'] ) {
 			$this->set_404();
@@ -1463,6 +1673,8 @@ class WP_Query
 
 		$this->query_vars_hash    = md5( serialize( $this->query_vars ) );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('404' == $qv['error']) {
 			$this->set_404();
 		}
@@ -1470,7 +1682,10 @@ class WP_Query
 		$this->is_embed = $this->is_embed && ($this->is_singular || $this->is_404);
 
 		$this->query_vars_hash    = md5(serialize($this->query_vars));
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		$this->query_vars_changed = false;
 
 		/**
@@ -1481,10 +1696,14 @@ class WP_Query
 		 * @param WP_Query $query The WP_Query instance (passed by reference).
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		do_action_ref_array( 'parse_query', array( &$this ) );
 =======
 		do_action_ref_array('parse_query', array(&$this));
 >>>>>>> D-12-Dien
+=======
+		do_action_ref_array('parse_query', array(&$this));
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -1497,6 +1716,7 @@ class WP_Query
 	 * @param array $q The query variables. Passed by reference.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function parse_tax_query( &$q ) {
 		if ( ! empty( $q['tax_query'] ) && is_array( $q['tax_query'] ) ) {
 =======
@@ -1504,26 +1724,38 @@ class WP_Query
 	{
 		if (!empty($q['tax_query']) && is_array($q['tax_query'])) {
 >>>>>>> D-12-Dien
+=======
+	public function parse_tax_query(&$q)
+	{
+		if (!empty($q['tax_query']) && is_array($q['tax_query'])) {
+>>>>>>> D-29-Oanh
 			$tax_query = $q['tax_query'];
 		} else {
 			$tax_query = array();
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $q['taxonomy'] ) && ! empty( $q['term'] ) ) {
 			$tax_query[] = array(
 				'taxonomy' => $q['taxonomy'],
 				'terms'    => array( $q['term'] ),
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!empty($q['taxonomy']) && !empty($q['term'])) {
 			$tax_query[] = array(
 				'taxonomy' => $q['taxonomy'],
 				'terms'    => array($q['term']),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				'field'    => 'slug',
 			);
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		foreach ( get_taxonomies( array(), 'objects' ) as $taxonomy => $t ) {
 			if ( 'post_tag' === $taxonomy ) {
@@ -1532,18 +1764,24 @@ class WP_Query
 
 			if ( $t->query_var && ! empty( $q[ $t->query_var ] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		foreach (get_taxonomies(array(), 'objects') as $taxonomy => $t) {
 			if ('post_tag' === $taxonomy) {
 				continue; // Handled further down in the $q['tag'] block.
 			}
 
 			if ($t->query_var && !empty($q[$t->query_var])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$tax_query_defaults = array(
 					'taxonomy' => $taxonomy,
 					'field'    => 'slug',
 				);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				if ( ! empty( $t->rewrite['hierarchical'] ) ) {
 					$q[ $t->query_var ] = wp_basename( $q[ $t->query_var ] );
@@ -1563,6 +1801,8 @@ class WP_Query
 							array(
 								'terms' => array( $term ),
 =======
+=======
+>>>>>>> D-29-Oanh
 				if (!empty($t->rewrite['hierarchical'])) {
 					$q[$t->query_var] = wp_basename($q[$t->query_var]);
 				}
@@ -1580,7 +1820,10 @@ class WP_Query
 							$tax_query_defaults,
 							array(
 								'terms' => array($term),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 							)
 						);
 					}
@@ -1589,10 +1832,14 @@ class WP_Query
 						$tax_query_defaults,
 						array(
 <<<<<<< HEAD
+<<<<<<< HEAD
 							'terms' => preg_split( '/[,]+/', $term ),
 =======
 							'terms' => preg_split('/[,]+/', $term),
 >>>>>>> D-12-Dien
+=======
+							'terms' => preg_split('/[,]+/', $term),
+>>>>>>> D-29-Oanh
 						)
 					);
 				}
@@ -1601,16 +1848,22 @@ class WP_Query
 
 		// If query string 'cat' is an array, implode it.
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( is_array( $q['cat'] ) ) {
 			$q['cat'] = implode( ',', $q['cat'] );
 =======
 		if (is_array($q['cat'])) {
 			$q['cat'] = implode(',', $q['cat']);
 >>>>>>> D-12-Dien
+=======
+		if (is_array($q['cat'])) {
+			$q['cat'] = implode(',', $q['cat']);
+>>>>>>> D-29-Oanh
 		}
 
 		// Category stuff.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $q['cat'] ) && ! $this->is_singular ) {
 			$cat_in     = array();
@@ -1630,6 +1883,8 @@ class WP_Query
 
 			if ( ! empty( $cat_in ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!empty($q['cat']) && !$this->is_singular) {
 			$cat_in     = array();
 			$cat_not_in = array();
@@ -1647,7 +1902,10 @@ class WP_Query
 			}
 
 			if (!empty($cat_in)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$tax_query[] = array(
 					'taxonomy'         => 'category',
 					'terms'            => $cat_in,
@@ -1657,10 +1915,14 @@ class WP_Query
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( ! empty( $cat_not_in ) ) {
 =======
 			if (!empty($cat_not_in)) {
 >>>>>>> D-12-Dien
+=======
+			if (!empty($cat_not_in)) {
+>>>>>>> D-29-Oanh
 				$tax_query[] = array(
 					'taxonomy'         => 'category',
 					'terms'            => $cat_not_in,
@@ -1669,6 +1931,7 @@ class WP_Query
 					'include_children' => true,
 				);
 			}
+<<<<<<< HEAD
 <<<<<<< HEAD
 			unset( $cat_array, $cat_in, $cat_not_in );
 		}
@@ -1685,6 +1948,8 @@ class WP_Query
 		if ( ! empty( $q['category__in'] ) ) {
 			$q['category__in'] = array_map( 'absint', array_unique( (array) $q['category__in'] ) );
 =======
+=======
+>>>>>>> D-29-Oanh
 			unset($cat_array, $cat_in, $cat_not_in);
 		}
 
@@ -1699,7 +1964,10 @@ class WP_Query
 
 		if (!empty($q['category__in'])) {
 			$q['category__in'] = array_map('absint', array_unique((array) $q['category__in']));
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$tax_query[]       = array(
 				'taxonomy'         => 'category',
 				'terms'            => $q['category__in'],
@@ -1709,12 +1977,17 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $q['category__not_in'] ) ) {
 			$q['category__not_in'] = array_map( 'absint', array_unique( (array) $q['category__not_in'] ) );
 =======
 		if (!empty($q['category__not_in'])) {
 			$q['category__not_in'] = array_map('absint', array_unique((array) $q['category__not_in']));
 >>>>>>> D-12-Dien
+=======
+		if (!empty($q['category__not_in'])) {
+			$q['category__not_in'] = array_map('absint', array_unique((array) $q['category__not_in']));
+>>>>>>> D-29-Oanh
 			$tax_query[]           = array(
 				'taxonomy'         => 'category',
 				'terms'            => $q['category__not_in'],
@@ -1724,12 +1997,17 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $q['category__and'] ) ) {
 			$q['category__and'] = array_map( 'absint', array_unique( (array) $q['category__and'] ) );
 =======
 		if (!empty($q['category__and'])) {
 			$q['category__and'] = array_map('absint', array_unique((array) $q['category__and']));
 >>>>>>> D-12-Dien
+=======
+		if (!empty($q['category__and'])) {
+			$q['category__and'] = array_map('absint', array_unique((array) $q['category__and']));
+>>>>>>> D-29-Oanh
 			$tax_query[]        = array(
 				'taxonomy'         => 'category',
 				'terms'            => $q['category__and'],
@@ -1741,16 +2019,22 @@ class WP_Query
 
 		// If query string 'tag' is array, implode it.
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( is_array( $q['tag'] ) ) {
 			$q['tag'] = implode( ',', $q['tag'] );
 =======
 		if (is_array($q['tag'])) {
 			$q['tag'] = implode(',', $q['tag']);
 >>>>>>> D-12-Dien
+=======
+		if (is_array($q['tag'])) {
+			$q['tag'] = implode(',', $q['tag']);
+>>>>>>> D-29-Oanh
 		}
 
 		// Tag stuff.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( '' !== $q['tag'] && ! $this->is_singular && $this->query_vars_changed ) {
 			if ( str_contains( $q['tag'], ',' ) ) {
@@ -1768,6 +2052,8 @@ class WP_Query
 			} else {
 				$q['tag']            = sanitize_term_field( 'slug', $q['tag'], 0, 'post_tag', 'db' );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('' !== $q['tag'] && !$this->is_singular && $this->query_vars_changed) {
 			if (str_contains($q['tag'], ',')) {
 				$tags = preg_split('/[,\r\n\t ]+/', $q['tag']);
@@ -1783,11 +2069,15 @@ class WP_Query
 				}
 			} else {
 				$q['tag']            = sanitize_term_field('slug', $q['tag'], 0, 'post_tag', 'db');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$q['tag_slug__in'][] = $q['tag'];
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $q['tag_id'] ) ) {
 			$q['tag_id'] = absint( $q['tag_id'] );
@@ -1795,6 +2085,10 @@ class WP_Query
 		if (!empty($q['tag_id'])) {
 			$q['tag_id'] = absint($q['tag_id']);
 >>>>>>> D-12-Dien
+=======
+		if (!empty($q['tag_id'])) {
+			$q['tag_id'] = absint($q['tag_id']);
+>>>>>>> D-29-Oanh
 			$tax_query[] = array(
 				'taxonomy' => 'post_tag',
 				'terms'    => $q['tag_id'],
@@ -1802,12 +2096,17 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $q['tag__in'] ) ) {
 			$q['tag__in'] = array_map( 'absint', array_unique( (array) $q['tag__in'] ) );
 =======
 		if (!empty($q['tag__in'])) {
 			$q['tag__in'] = array_map('absint', array_unique((array) $q['tag__in']));
 >>>>>>> D-12-Dien
+=======
+		if (!empty($q['tag__in'])) {
+			$q['tag__in'] = array_map('absint', array_unique((array) $q['tag__in']));
+>>>>>>> D-29-Oanh
 			$tax_query[]  = array(
 				'taxonomy' => 'post_tag',
 				'terms'    => $q['tag__in'],
@@ -1815,12 +2114,17 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $q['tag__not_in'] ) ) {
 			$q['tag__not_in'] = array_map( 'absint', array_unique( (array) $q['tag__not_in'] ) );
 =======
 		if (!empty($q['tag__not_in'])) {
 			$q['tag__not_in'] = array_map('absint', array_unique((array) $q['tag__not_in']));
 >>>>>>> D-12-Dien
+=======
+		if (!empty($q['tag__not_in'])) {
+			$q['tag__not_in'] = array_map('absint', array_unique((array) $q['tag__not_in']));
+>>>>>>> D-29-Oanh
 			$tax_query[]      = array(
 				'taxonomy' => 'post_tag',
 				'terms'    => $q['tag__not_in'],
@@ -1829,12 +2133,17 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $q['tag__and'] ) ) {
 			$q['tag__and'] = array_map( 'absint', array_unique( (array) $q['tag__and'] ) );
 =======
 		if (!empty($q['tag__and'])) {
 			$q['tag__and'] = array_map('absint', array_unique((array) $q['tag__and']));
 >>>>>>> D-12-Dien
+=======
+		if (!empty($q['tag__and'])) {
+			$q['tag__and'] = array_map('absint', array_unique((array) $q['tag__and']));
+>>>>>>> D-29-Oanh
 			$tax_query[]   = array(
 				'taxonomy' => 'post_tag',
 				'terms'    => $q['tag__and'],
@@ -1843,12 +2152,17 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $q['tag_slug__in'] ) ) {
 			$q['tag_slug__in'] = array_map( 'sanitize_title_for_query', array_unique( (array) $q['tag_slug__in'] ) );
 =======
 		if (!empty($q['tag_slug__in'])) {
 			$q['tag_slug__in'] = array_map('sanitize_title_for_query', array_unique((array) $q['tag_slug__in']));
 >>>>>>> D-12-Dien
+=======
+		if (!empty($q['tag_slug__in'])) {
+			$q['tag_slug__in'] = array_map('sanitize_title_for_query', array_unique((array) $q['tag_slug__in']));
+>>>>>>> D-29-Oanh
 			$tax_query[]       = array(
 				'taxonomy' => 'post_tag',
 				'terms'    => $q['tag_slug__in'],
@@ -1857,12 +2171,17 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $q['tag_slug__and'] ) ) {
 			$q['tag_slug__and'] = array_map( 'sanitize_title_for_query', array_unique( (array) $q['tag_slug__and'] ) );
 =======
 		if (!empty($q['tag_slug__and'])) {
 			$q['tag_slug__and'] = array_map('sanitize_title_for_query', array_unique((array) $q['tag_slug__and']));
 >>>>>>> D-12-Dien
+=======
+		if (!empty($q['tag_slug__and'])) {
+			$q['tag_slug__and'] = array_map('sanitize_title_for_query', array_unique((array) $q['tag_slug__and']));
+>>>>>>> D-29-Oanh
 			$tax_query[]        = array(
 				'taxonomy' => 'post_tag',
 				'terms'    => $q['tag_slug__and'],
@@ -1872,10 +2191,14 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$this->tax_query = new WP_Tax_Query( $tax_query );
 =======
 		$this->tax_query = new WP_Tax_Query($tax_query);
 >>>>>>> D-12-Dien
+=======
+		$this->tax_query = new WP_Tax_Query($tax_query);
+>>>>>>> D-29-Oanh
 
 		/**
 		 * Fires after taxonomy-related query vars have been parsed.
@@ -1885,10 +2208,14 @@ class WP_Query
 		 * @param WP_Query $query The WP_Query instance.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		do_action( 'parse_tax_query', $this );
 =======
 		do_action('parse_tax_query', $this);
 >>>>>>> D-12-Dien
+=======
+		do_action('parse_tax_query', $this);
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -1902,16 +2229,22 @@ class WP_Query
 	 * @return string WHERE clause.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	protected function parse_search( &$q ) {
 =======
 	protected function parse_search(&$q)
 	{
 >>>>>>> D-12-Dien
+=======
+	protected function parse_search(&$q)
+	{
+>>>>>>> D-29-Oanh
 		global $wpdb;
 
 		$search = '';
 
 		// Added slashes screw with quote grouping when done early, so done later.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$q['s'] = stripslashes( $q['s'] );
 		if ( empty( $_GET['s'] ) && $this->is_main_query() ) {
@@ -1944,6 +2277,8 @@ class WP_Query
 		if ( ! is_array( $search_columns ) ) {
 			$search_columns = array( $search_columns );
 =======
+=======
+>>>>>>> D-29-Oanh
 		$q['s'] = stripslashes($q['s']);
 		if (empty($_GET['s']) && $this->is_main_query()) {
 			$q['s'] = urldecode($q['s']);
@@ -1974,7 +2309,10 @@ class WP_Query
 		$search_columns         = !empty($q['search_columns']) ? $q['search_columns'] : $default_search_columns;
 		if (!is_array($search_columns)) {
 			$search_columns = array($search_columns);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 
 		/**
@@ -1990,18 +2328,24 @@ class WP_Query
 		 * @param WP_Query $query          The current WP_Query instance.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$search_columns = (array) apply_filters( 'post_search_columns', $search_columns, $q['s'], $this );
 
 		// Use only supported search columns.
 		$search_columns = array_intersect( $search_columns, $default_search_columns );
 		if ( empty( $search_columns ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		$search_columns = (array) apply_filters('post_search_columns', $search_columns, $q['s'], $this);
 
 		// Use only supported search columns.
 		$search_columns = array_intersect($search_columns, $default_search_columns);
 		if (empty($search_columns)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$search_columns = $default_search_columns;
 		}
 
@@ -2014,6 +2358,7 @@ class WP_Query
 		 *                                 an empty value disables exclusions.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$exclusion_prefix = apply_filters( 'wp_query_search_exclusion_prefix', '-' );
 
 		foreach ( $q['search_terms'] as $term ) {
@@ -2024,6 +2369,8 @@ class WP_Query
 				$andor_op = 'AND';
 				$term     = substr( $term, 1 );
 =======
+=======
+>>>>>>> D-29-Oanh
 		$exclusion_prefix = apply_filters('wp_query_search_exclusion_prefix', '-');
 
 		foreach ($q['search_terms'] as $term) {
@@ -2033,12 +2380,16 @@ class WP_Query
 				$like_op  = 'NOT LIKE';
 				$andor_op = 'AND';
 				$term     = substr($term, 1);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			} else {
 				$like_op  = 'LIKE';
 				$andor_op = 'OR';
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( $n && ! $exclude ) {
 				$like                        = '%' . $wpdb->esc_like( $term ) . '%';
@@ -2058,6 +2409,8 @@ class WP_Query
 
 			$search .= "$searchand(" . implode( " $andor_op ", $search_columns_parts ) . ')';
 =======
+=======
+>>>>>>> D-29-Oanh
 			if ($n && !$exclude) {
 				$like                        = '%' . $wpdb->esc_like($term) . '%';
 				$q['search_orderby_title'][] = $wpdb->prepare("{$wpdb->posts}.post_title LIKE %s", $like);
@@ -2075,11 +2428,15 @@ class WP_Query
 			}
 
 			$search .= "$searchand(" . implode(" $andor_op ", $search_columns_parts) . ')';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 
 			$searchand = ' AND ';
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $search ) ) {
 			$search = " AND ({$search}) ";
@@ -2089,6 +2446,11 @@ class WP_Query
 			$search = " AND ({$search}) ";
 			if (!is_user_logged_in()) {
 >>>>>>> D-12-Dien
+=======
+		if (!empty($search)) {
+			$search = " AND ({$search}) ";
+			if (!is_user_logged_in()) {
+>>>>>>> D-29-Oanh
 				$search .= " AND ({$wpdb->posts}.post_password = '') ";
 			}
 		}
@@ -2109,6 +2471,7 @@ class WP_Query
 	 * @return string[] Terms that are not stopwords.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	protected function parse_search_terms( $terms ) {
 		$strtolower = function_exists( 'mb_strtolower' ) ? 'mb_strtolower' : 'strtolower';
 =======
@@ -2116,10 +2479,16 @@ class WP_Query
 	{
 		$strtolower = function_exists('mb_strtolower') ? 'mb_strtolower' : 'strtolower';
 >>>>>>> D-12-Dien
+=======
+	protected function parse_search_terms($terms)
+	{
+		$strtolower = function_exists('mb_strtolower') ? 'mb_strtolower' : 'strtolower';
+>>>>>>> D-29-Oanh
 		$checked    = array();
 
 		$stopwords = $this->get_search_stopwords();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		foreach ( $terms as $term ) {
 			// Keep before/after spaces when term is for exact match.
@@ -2136,6 +2505,8 @@ class WP_Query
 
 			if ( in_array( call_user_func( $strtolower, $term ), $stopwords, true ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		foreach ($terms as $term) {
 			// Keep before/after spaces when term is for exact match.
 			if (preg_match('/^".+"$/', $term)) {
@@ -2150,7 +2521,10 @@ class WP_Query
 			}
 
 			if (in_array(call_user_func($strtolower, $term), $stopwords, true)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				continue;
 			}
 
@@ -2168,6 +2542,7 @@ class WP_Query
 	 * @return string[] Stopwords.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	protected function get_search_stopwords() {
 		if ( isset( $this->stopwords ) ) {
 =======
@@ -2175,6 +2550,11 @@ class WP_Query
 	{
 		if (isset($this->stopwords)) {
 >>>>>>> D-12-Dien
+=======
+	protected function get_search_stopwords()
+	{
+		if (isset($this->stopwords)) {
+>>>>>>> D-29-Oanh
 			return $this->stopwords;
 		}
 
@@ -2193,6 +2573,7 @@ class WP_Query
 
 		$stopwords = array();
 <<<<<<< HEAD
+<<<<<<< HEAD
 		foreach ( $words as $word ) {
 			$word = trim( $word, "\r\n\t " );
 			if ( $word ) {
@@ -2201,6 +2582,11 @@ class WP_Query
 			$word = trim($word, "\r\n\t ");
 			if ($word) {
 >>>>>>> D-12-Dien
+=======
+		foreach ($words as $word) {
+			$word = trim($word, "\r\n\t ");
+			if ($word) {
+>>>>>>> D-29-Oanh
 				$stopwords[] = $word;
 			}
 		}
@@ -2213,10 +2599,14 @@ class WP_Query
 		 * @param string[] $stopwords Array of stopwords.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$this->stopwords = apply_filters( 'wp_search_stopwords', $stopwords );
 =======
 		$this->stopwords = apply_filters('wp_search_stopwords', $stopwords);
 >>>>>>> D-12-Dien
+=======
+		$this->stopwords = apply_filters('wp_search_stopwords', $stopwords);
+>>>>>>> D-29-Oanh
 		return $this->stopwords;
 	}
 
@@ -2231,6 +2621,7 @@ class WP_Query
 	 * @return string ORDER BY clause.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	protected function parse_search_order( &$q ) {
 		global $wpdb;
 
@@ -2242,6 +2633,8 @@ class WP_Query
 			if ( ! preg_match( '/(?:\s|^)\-/', $q['s'] ) ) {
 				$like = '%' . $wpdb->esc_like( $q['s'] ) . '%';
 =======
+=======
+>>>>>>> D-29-Oanh
 	protected function parse_search_order(&$q)
 	{
 		global $wpdb;
@@ -2253,12 +2646,16 @@ class WP_Query
 			$like = '';
 			if (!preg_match('/(?:\s|^)\-/', $q['s'])) {
 				$like = '%' . $wpdb->esc_like($q['s']) . '%';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			}
 
 			$search_orderby = '';
 
 			// Sentence match in 'post_title'.
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( $like ) {
 				$search_orderby .= $wpdb->prepare( "WHEN {$wpdb->posts}.post_title LIKE %s THEN 1 ", $like );
@@ -2266,12 +2663,17 @@ class WP_Query
 			if ($like) {
 				$search_orderby .= $wpdb->prepare("WHEN {$wpdb->posts}.post_title LIKE %s THEN 1 ", $like);
 >>>>>>> D-12-Dien
+=======
+			if ($like) {
+				$search_orderby .= $wpdb->prepare("WHEN {$wpdb->posts}.post_title LIKE %s THEN 1 ", $like);
+>>>>>>> D-29-Oanh
 			}
 
 			/*
 			 * Sanity limit, sort as sentence when more than 6 terms
 			 * (few searches are longer than 6 terms and most titles are not).
 			 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( $num_terms < 7 ) {
 				// All words in title.
@@ -2280,17 +2682,23 @@ class WP_Query
 				if ( $num_terms > 1 ) {
 					$search_orderby .= 'WHEN ' . implode( ' OR ', $q['search_orderby_title'] ) . ' THEN 3 ';
 =======
+=======
+>>>>>>> D-29-Oanh
 			if ($num_terms < 7) {
 				// All words in title.
 				$search_orderby .= 'WHEN ' . implode(' AND ', $q['search_orderby_title']) . ' THEN 2 ';
 				// Any word in title, not needed when $num_terms == 1.
 				if ($num_terms > 1) {
 					$search_orderby .= 'WHEN ' . implode(' OR ', $q['search_orderby_title']) . ' THEN 3 ';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				}
 			}
 
 			// Sentence match in 'post_content' and 'post_excerpt'.
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( $like ) {
 				$search_orderby .= $wpdb->prepare( "WHEN {$wpdb->posts}.post_excerpt LIKE %s THEN 4 ", $like );
@@ -2299,22 +2707,31 @@ class WP_Query
 
 			if ( $search_orderby ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if ($like) {
 				$search_orderby .= $wpdb->prepare("WHEN {$wpdb->posts}.post_excerpt LIKE %s THEN 4 ", $like);
 				$search_orderby .= $wpdb->prepare("WHEN {$wpdb->posts}.post_content LIKE %s THEN 5 ", $like);
 			}
 
 			if ($search_orderby) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$search_orderby = '(CASE ' . $search_orderby . 'ELSE 6 END)';
 			}
 		} else {
 			// Single word or sentence search.
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$search_orderby = reset( $q['search_orderby_title'] ) . ' DESC';
 =======
 			$search_orderby = reset($q['search_orderby_title']) . ' DESC';
 >>>>>>> D-12-Dien
+=======
+			$search_orderby = reset($q['search_orderby_title']) . ' DESC';
+>>>>>>> D-29-Oanh
 		}
 
 		return $search_orderby;
@@ -2331,11 +2748,16 @@ class WP_Query
 	 * @return string|false Table-prefixed value to used in the ORDER clause. False otherwise.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	protected function parse_orderby( $orderby ) {
 =======
 	protected function parse_orderby($orderby)
 	{
 >>>>>>> D-12-Dien
+=======
+	protected function parse_orderby($orderby)
+	{
+>>>>>>> D-29-Oanh
 		global $wpdb;
 
 		// Used to filter values.
@@ -2367,16 +2789,22 @@ class WP_Query
 		$primary_meta_query = false;
 		$meta_clauses       = $this->meta_query->get_clauses();
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $meta_clauses ) ) {
 			$primary_meta_query = reset( $meta_clauses );
 
 			if ( ! empty( $primary_meta_query['key'] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!empty($meta_clauses)) {
 			$primary_meta_query = reset($meta_clauses);
 
 			if (!empty($primary_meta_query['key'])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$primary_meta_key = $primary_meta_query['key'];
 				$allowed_keys[]   = $primary_meta_key;
 			}
@@ -2384,14 +2812,19 @@ class WP_Query
 			$allowed_keys[] = 'meta_value';
 			$allowed_keys[] = 'meta_value_num';
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$allowed_keys   = array_merge( $allowed_keys, array_keys( $meta_clauses ) );
 =======
 			$allowed_keys   = array_merge($allowed_keys, array_keys($meta_clauses));
 >>>>>>> D-12-Dien
+=======
+			$allowed_keys   = array_merge($allowed_keys, array_keys($meta_clauses));
+>>>>>>> D-29-Oanh
 		}
 
 		// If RAND() contains a seed value, sanitize and add to allowed keys.
 		$rand_with_seed = false;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( preg_match( '/RAND\(([0-9]+)\)/i', $orderby, $matches ) ) {
 			$orderby        = sprintf( 'RAND(%s)', (int) $matches[1] );
@@ -2399,25 +2832,37 @@ class WP_Query
 		if (preg_match('/RAND\(([0-9]+)\)/i', $orderby, $matches)) {
 			$orderby        = sprintf('RAND(%s)', (int) $matches[1]);
 >>>>>>> D-12-Dien
+=======
+		if (preg_match('/RAND\(([0-9]+)\)/i', $orderby, $matches)) {
+			$orderby        = sprintf('RAND(%s)', (int) $matches[1]);
+>>>>>>> D-29-Oanh
 			$allowed_keys[] = $orderby;
 			$rand_with_seed = true;
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! in_array( $orderby, $allowed_keys, true ) ) {
 =======
 		if (!in_array($orderby, $allowed_keys, true)) {
 >>>>>>> D-12-Dien
+=======
+		if (!in_array($orderby, $allowed_keys, true)) {
+>>>>>>> D-29-Oanh
 			return false;
 		}
 
 		$orderby_clause = '';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		switch ( $orderby ) {
 =======
 		switch ($orderby) {
 >>>>>>> D-12-Dien
+=======
+		switch ($orderby) {
+>>>>>>> D-29-Oanh
 			case 'post_name':
 			case 'post_author':
 			case 'post_date':
@@ -2436,10 +2881,14 @@ class WP_Query
 			case $primary_meta_key:
 			case 'meta_value':
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if ( ! empty( $primary_meta_query['type'] ) ) {
 =======
 				if (!empty($primary_meta_query['type'])) {
 >>>>>>> D-12-Dien
+=======
+				if (!empty($primary_meta_query['type'])) {
+>>>>>>> D-29-Oanh
 					$orderby_clause = "CAST({$primary_meta_query['alias']}.meta_value AS {$primary_meta_query['cast']})";
 				} else {
 					$orderby_clause = "{$primary_meta_query['alias']}.meta_value";
@@ -2449,6 +2898,7 @@ class WP_Query
 				$orderby_clause = "{$primary_meta_query['alias']}.meta_value+0";
 				break;
 			case 'post__in':
+<<<<<<< HEAD
 <<<<<<< HEAD
 				if ( ! empty( $this->query_vars['post__in'] ) ) {
 					$orderby_clause = "FIELD({$wpdb->posts}.ID," . implode( ',', array_map( 'absint', $this->query_vars['post__in'] ) ) . ')';
@@ -2464,6 +2914,8 @@ class WP_Query
 					$post_name__in        = array_map( 'sanitize_title_for_query', $this->query_vars['post_name__in'] );
 					$post_name__in_string = "'" . implode( "','", $post_name__in ) . "'";
 =======
+=======
+>>>>>>> D-29-Oanh
 				if (!empty($this->query_vars['post__in'])) {
 					$orderby_clause = "FIELD({$wpdb->posts}.ID," . implode(',', array_map('absint', $this->query_vars['post__in'])) . ')';
 				}
@@ -2477,11 +2929,15 @@ class WP_Query
 				if (!empty($this->query_vars['post_name__in'])) {
 					$post_name__in        = array_map('sanitize_title_for_query', $this->query_vars['post_name__in']);
 					$post_name__in_string = "'" . implode("','", $post_name__in) . "'";
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$orderby_clause       = "FIELD( {$wpdb->posts}.post_name," . $post_name__in_string . ' )';
 				}
 				break;
 			default:
+<<<<<<< HEAD
 <<<<<<< HEAD
 				if ( array_key_exists( $orderby, $meta_clauses ) ) {
 					// $orderby corresponds to a meta_query clause.
@@ -2493,6 +2949,8 @@ class WP_Query
 					// Default: order by post field.
 					$orderby_clause = "{$wpdb->posts}.post_" . sanitize_key( $orderby );
 =======
+=======
+>>>>>>> D-29-Oanh
 				if (array_key_exists($orderby, $meta_clauses)) {
 					// $orderby corresponds to a meta_query clause.
 					$meta_clause    = $meta_clauses[$orderby];
@@ -2502,7 +2960,10 @@ class WP_Query
 				} else {
 					// Default: order by post field.
 					$orderby_clause = "{$wpdb->posts}.post_" . sanitize_key($orderby);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				}
 
 				break;
@@ -2520,6 +2981,7 @@ class WP_Query
 	 * @return string The sanitized 'order' query variable.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	protected function parse_order( $order ) {
 		if ( ! is_string( $order ) || empty( $order ) ) {
 			return 'DESC';
@@ -2527,6 +2989,8 @@ class WP_Query
 
 		if ( 'ASC' === strtoupper( $order ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	protected function parse_order($order)
 	{
 		if (!is_string($order) || empty($order)) {
@@ -2534,7 +2998,10 @@ class WP_Query
 		}
 
 		if ('ASC' === strtoupper($order)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return 'ASC';
 		} else {
 			return 'DESC';
@@ -2547,11 +3014,16 @@ class WP_Query
 	 * @since 2.0.0
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function set_404() {
 =======
 	public function set_404()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function set_404()
+	{
+>>>>>>> D-29-Oanh
 		$is_feed = $this->is_feed;
 
 		$this->init_query_flags();
@@ -2567,10 +3039,14 @@ class WP_Query
 		 * @param WP_Query $query The WP_Query instance (passed by reference).
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		do_action_ref_array( 'set_404', array( $this ) );
 =======
 		do_action_ref_array('set_404', array($this));
 >>>>>>> D-12-Dien
+=======
+		do_action_ref_array('set_404', array($this));
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -2585,15 +3061,21 @@ class WP_Query
 	 * @return mixed Contents of the query variable.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function get( $query_var, $default_value = '' ) {
 		if ( isset( $this->query_vars[ $query_var ] ) ) {
 			return $this->query_vars[ $query_var ];
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function get($query_var, $default_value = '')
 	{
 		if (isset($this->query_vars[$query_var])) {
 			return $this->query_vars[$query_var];
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 
 		return $default_value;
@@ -2608,6 +3090,7 @@ class WP_Query
 	 * @param mixed  $value     Query variable value.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function set( $query_var, $value ) {
 		$this->query_vars[ $query_var ] = $value;
 =======
@@ -2615,6 +3098,11 @@ class WP_Query
 	{
 		$this->query_vars[$query_var] = $value;
 >>>>>>> D-12-Dien
+=======
+	public function set($query_var, $value)
+	{
+		$this->query_vars[$query_var] = $value;
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -2630,11 +3118,16 @@ class WP_Query
 	 * @return WP_Post[]|int[] Array of post objects or post IDs.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function get_posts() {
 =======
 	public function get_posts()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function get_posts()
+	{
+>>>>>>> D-29-Oanh
 		global $wpdb;
 
 		$this->parse_query();
@@ -2651,20 +3144,28 @@ class WP_Query
 		 * @param WP_Query $query The WP_Query instance (passed by reference).
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		do_action_ref_array( 'pre_get_posts', array( &$this ) );
 =======
 		do_action_ref_array('pre_get_posts', array(&$this));
 >>>>>>> D-12-Dien
+=======
+		do_action_ref_array('pre_get_posts', array(&$this));
+>>>>>>> D-29-Oanh
 
 		// Shorthand.
 		$q = &$this->query_vars;
 
 		// Fill again in case 'pre_get_posts' unset some vars.
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$q = $this->fill_query_vars( $q );
 =======
 		$q = $this->fill_query_vars($q);
 >>>>>>> D-12-Dien
+=======
+		$q = $this->fill_query_vars($q);
+>>>>>>> D-29-Oanh
 
 		/**
 		 * Filters whether an attachment query should include filenames or not.
@@ -2673,6 +3174,7 @@ class WP_Query
 		 *
 		 * @param bool $allow_query_attachment_by_filename Whether or not to include filenames.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$this->allow_query_attachment_by_filename = apply_filters( 'wp_allow_query_attachment_by_filename', false );
 		remove_all_filters( 'wp_allow_query_attachment_by_filename' );
@@ -2689,6 +3191,8 @@ class WP_Query
 		}
 		unset( $hash );
 =======
+=======
+>>>>>>> D-29-Oanh
 		$this->allow_query_attachment_by_filename = apply_filters('wp_allow_query_attachment_by_filename', false);
 		remove_all_filters('wp_allow_query_attachment_by_filename');
 
@@ -2703,7 +3207,10 @@ class WP_Query
 			$this->query_vars_hash    = $hash;
 		}
 		unset($hash);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 
 		// First let's clear some variables.
 		$distinct         = '';
@@ -2718,34 +3225,47 @@ class WP_Query
 		$page             = 1;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( isset( $q['caller_get_posts'] ) ) {
 =======
 		if (isset($q['caller_get_posts'])) {
 >>>>>>> D-12-Dien
+=======
+		if (isset($q['caller_get_posts'])) {
+>>>>>>> D-29-Oanh
 			_deprecated_argument(
 				'WP_Query',
 				'3.1.0',
 				sprintf(
 					/* translators: 1: caller_get_posts, 2: ignore_sticky_posts */
 <<<<<<< HEAD
+<<<<<<< HEAD
 					__( '%1$s is deprecated. Use %2$s instead.' ),
 =======
 					__('%1$s is deprecated. Use %2$s instead.'),
 >>>>>>> D-12-Dien
+=======
+					__('%1$s is deprecated. Use %2$s instead.'),
+>>>>>>> D-29-Oanh
 					'<code>caller_get_posts</code>',
 					'<code>ignore_sticky_posts</code>'
 				)
 			);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( ! isset( $q['ignore_sticky_posts'] ) ) {
 =======
 			if (!isset($q['ignore_sticky_posts'])) {
 >>>>>>> D-12-Dien
+=======
+			if (!isset($q['ignore_sticky_posts'])) {
+>>>>>>> D-29-Oanh
 				$q['ignore_sticky_posts'] = $q['caller_get_posts'];
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! isset( $q['ignore_sticky_posts'] ) ) {
 			$q['ignore_sticky_posts'] = false;
@@ -2780,6 +3300,8 @@ class WP_Query
 		if ( ! isset( $q['post_type'] ) ) {
 			if ( $this->is_search ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!isset($q['ignore_sticky_posts'])) {
 			$q['ignore_sticky_posts'] = false;
 		}
@@ -2812,13 +3334,17 @@ class WP_Query
 
 		if (!isset($q['post_type'])) {
 			if ($this->is_search) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$q['post_type'] = 'any';
 			} else {
 				$q['post_type'] = '';
 			}
 		}
 		$post_type = $q['post_type'];
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( empty( $q['posts_per_page'] ) ) {
 			$q['posts_per_page'] = get_option( 'posts_per_page' );
@@ -2833,6 +3359,8 @@ class WP_Query
 		if ( ! isset( $q['nopaging'] ) ) {
 			if ( -1 == $q['posts_per_page'] ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (empty($q['posts_per_page'])) {
 			$q['posts_per_page'] = get_option('posts_per_page');
 		}
@@ -2845,13 +3373,17 @@ class WP_Query
 		}
 		if (!isset($q['nopaging'])) {
 			if (-1 == $q['posts_per_page']) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$q['nopaging'] = true;
 			} else {
 				$q['nopaging'] = false;
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $this->is_feed ) {
 			// This overrides 'posts_per_page'.
@@ -2860,17 +3392,23 @@ class WP_Query
 			} else {
 				$q['posts_per_page'] = get_option( 'posts_per_rss' );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($this->is_feed) {
 			// This overrides 'posts_per_page'.
 			if (!empty($q['posts_per_rss'])) {
 				$q['posts_per_page'] = $q['posts_per_rss'];
 			} else {
 				$q['posts_per_page'] = get_option('posts_per_rss');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			}
 			$q['nopaging'] = false;
 		}
 		$q['posts_per_page'] = (int) $q['posts_per_page'];
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $q['posts_per_page'] < -1 ) {
 			$q['posts_per_page'] = abs( $q['posts_per_page'] );
@@ -2896,6 +3434,8 @@ class WP_Query
 		// If true, forcibly turns off SQL_CALC_FOUND_ROWS even when limits are present.
 		if ( isset( $q['no_found_rows'] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($q['posts_per_page'] < -1) {
 			$q['posts_per_page'] = abs($q['posts_per_page']);
 		} elseif (0 == $q['posts_per_page']) {
@@ -2919,17 +3459,24 @@ class WP_Query
 
 		// If true, forcibly turns off SQL_CALC_FOUND_ROWS even when limits are present.
 		if (isset($q['no_found_rows'])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$q['no_found_rows'] = (bool) $q['no_found_rows'];
 		} else {
 			$q['no_found_rows'] = false;
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		switch ( $q['fields'] ) {
 =======
 		switch ($q['fields']) {
 >>>>>>> D-12-Dien
+=======
+		switch ($q['fields']) {
+>>>>>>> D-29-Oanh
 			case 'ids':
 				$fields = "{$wpdb->posts}.ID";
 				break;
@@ -2940,6 +3487,7 @@ class WP_Query
 				$fields = "{$wpdb->posts}.*";
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( '' !== $q['menu_order'] ) {
 			$where .= " AND {$wpdb->posts}.menu_order = " . $q['menu_order'];
@@ -2962,6 +3510,8 @@ class WP_Query
 			if ( strlen( $q['m'] ) > 13 ) {
 				$where .= " AND SECOND({$wpdb->posts}.post_date)=" . substr( $q['m'], 12, 2 );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('' !== $q['menu_order']) {
 			$where .= " AND {$wpdb->posts}.menu_order = " . $q['menu_order'];
 		}
@@ -2982,13 +3532,17 @@ class WP_Query
 			}
 			if (strlen($q['m']) > 13) {
 				$where .= " AND SECOND({$wpdb->posts}.post_date)=" . substr($q['m'], 12, 2);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			}
 		}
 
 		// Handle the other individual date parameters.
 		$date_parameters = array();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( '' !== $q['hour'] ) {
 			$date_parameters['hour'] = $q['hour'];
@@ -3028,6 +3582,8 @@ class WP_Query
 		if ( ! empty( $q['date_query'] ) ) {
 			$this->date_query = new WP_Date_Query( $q['date_query'] );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('' !== $q['hour']) {
 			$date_parameters['hour'] = $q['hour'];
 		}
@@ -3065,11 +3621,15 @@ class WP_Query
 		// Handle complex date queries.
 		if (!empty($q['date_query'])) {
 			$this->date_query = new WP_Date_Query($q['date_query']);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$where           .= $this->date_query->get_sql();
 		}
 
 		// If we've got a post_type AND it's not "any" post_type.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $q['post_type'] ) && 'any' !== $q['post_type'] ) {
 			foreach ( (array) $q['post_type'] as $_post_type ) {
@@ -3085,6 +3645,8 @@ class WP_Query
 					// Hierarchical post types will operate through 'pagename'.
 					$q['pagename'] = $q[ $ptype_obj->query_var ];
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!empty($q['post_type']) && 'any' !== $q['post_type']) {
 			foreach ((array) $q['post_type'] as $_post_type) {
 				$ptype_obj = get_post_type_object($_post_type);
@@ -3098,13 +3660,17 @@ class WP_Query
 				} else {
 					// Hierarchical post types will operate through 'pagename'.
 					$q['pagename'] = $q[$ptype_obj->query_var];
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$q['name']     = '';
 				}
 
 				// Only one request for a slug is possible, this is why name & pagename are overwritten above.
 				break;
 			} // End foreach.
+<<<<<<< HEAD
 <<<<<<< HEAD
 			unset( $ptype_obj );
 		}
@@ -3139,6 +3705,8 @@ class WP_Query
 				}
 				if ( ! empty( $reqpage ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			unset($ptype_obj);
 		}
 
@@ -3171,13 +3739,17 @@ class WP_Query
 					$reqpage = get_page_by_path($q['pagename']);
 				}
 				if (!empty($reqpage)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$reqpage = $reqpage->ID;
 				} else {
 					$reqpage = 0;
 				}
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			$page_for_posts = get_option( 'page_for_posts' );
 			if ( ( 'page' !== get_option( 'show_on_front' ) ) || empty( $page_for_posts ) || ( $reqpage != $page_for_posts ) ) {
@@ -3187,6 +3759,8 @@ class WP_Query
 				$reqpage_obj   = get_post( $reqpage );
 				if ( is_object( $reqpage_obj ) && 'attachment' === $reqpage_obj->post_type ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			$page_for_posts = get_option('page_for_posts');
 			if (('page' !== get_option('show_on_front')) || empty($page_for_posts) || ($reqpage != $page_for_posts)) {
 				$q['pagename'] = sanitize_title_for_query(wp_basename($q['pagename']));
@@ -3194,7 +3768,10 @@ class WP_Query
 				$where        .= " AND ({$wpdb->posts}.ID = '$reqpage')";
 				$reqpage_obj   = get_post($reqpage);
 				if (is_object($reqpage_obj) && 'attachment' === $reqpage_obj->post_type) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$this->is_attachment = true;
 					$post_type           = 'attachment';
 					$q['post_type']      = 'attachment';
@@ -3202,6 +3779,7 @@ class WP_Query
 					$q['attachment_id']  = $reqpage;
 				}
 			}
+<<<<<<< HEAD
 <<<<<<< HEAD
 		} elseif ( '' !== $q['attachment'] ) {
 			$q['attachment'] = sanitize_title_for_query( wp_basename( $q['attachment'] ) );
@@ -3211,6 +3789,8 @@ class WP_Query
 			$q['post_name__in'] = array_map( 'sanitize_title_for_query', $q['post_name__in'] );
 			$post_name__in      = "'" . implode( "','", $q['post_name__in'] ) . "'";
 =======
+=======
+>>>>>>> D-29-Oanh
 		} elseif ('' !== $q['attachment']) {
 			$q['attachment'] = sanitize_title_for_query(wp_basename($q['attachment']));
 			$q['name']       = $q['attachment'];
@@ -3218,11 +3798,15 @@ class WP_Query
 		} elseif (is_array($q['post_name__in']) && !empty($q['post_name__in'])) {
 			$q['post_name__in'] = array_map('sanitize_title_for_query', $q['post_name__in']);
 			$post_name__in      = "'" . implode("','", $q['post_name__in']) . "'";
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$where             .= " AND {$wpdb->posts}.post_name IN ($post_name__in)";
 		}
 
 		// If an attachment is requested by number, let it supersede any post number.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $q['attachment_id'] ) {
 			$q['p'] = absint( $q['attachment_id'] );
@@ -3252,6 +3836,8 @@ class WP_Query
 		if ( $q['page_id'] ) {
 			if ( ( 'page' !== get_option( 'show_on_front' ) ) || ( get_option( 'page_for_posts' ) != $q['page_id'] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($q['attachment_id']) {
 			$q['p'] = absint($q['attachment_id']);
 		}
@@ -3279,7 +3865,10 @@ class WP_Query
 
 		if ($q['page_id']) {
 			if (('page' !== get_option('show_on_front')) || (get_option('page_for_posts') != $q['page_id'])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$q['p'] = $q['page_id'];
 				$where  = " AND {$wpdb->posts}.ID = " . $q['page_id'];
 			}
@@ -3287,18 +3876,24 @@ class WP_Query
 
 		// If a search pattern is specified, load the posts that match.
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( strlen( $q['s'] ) ) {
 			$search = $this->parse_search( $q );
 		}
 
 		if ( ! $q['suppress_filters'] ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (strlen($q['s'])) {
 			$search = $this->parse_search($q);
 		}
 
 		if (!$q['suppress_filters']) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the search SQL that is used in the WHERE clause of WP_Query.
 			 *
@@ -3307,6 +3902,7 @@ class WP_Query
 			 * @param string   $search Search SQL for WHERE clause.
 			 * @param WP_Query $query  The current WP_Query object.
 			 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 			$search = apply_filters_ref_array( 'posts_search', array( $search, &$this ) );
 		}
@@ -3317,6 +3913,8 @@ class WP_Query
 
 			$clauses = $this->tax_query->get_sql( $wpdb->posts, 'ID' );
 =======
+=======
+>>>>>>> D-29-Oanh
 			$search = apply_filters_ref_array('posts_search', array($search, &$this));
 		}
 
@@ -3325,12 +3923,16 @@ class WP_Query
 			$this->parse_tax_query($q);
 
 			$clauses = $this->tax_query->get_sql($wpdb->posts, 'ID');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 
 			$join  .= $clauses['join'];
 			$where .= $clauses['where'];
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $this->is_tax ) {
 			if ( empty( $post_type ) ) {
@@ -3347,6 +3949,8 @@ class WP_Query
 					$post_type = 'any';
 				} elseif ( count( $post_type ) === 1 ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($this->is_tax) {
 			if (empty($post_type)) {
 				// Do a fully inclusive search for currently registered post types of queried taxonomies.
@@ -3361,16 +3965,23 @@ class WP_Query
 				if (!$post_type) {
 					$post_type = 'any';
 				} elseif (count($post_type) === 1) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$post_type = $post_type[0];
 				}
 
 				$post_status_join = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			} elseif ( in_array( 'attachment', (array) $post_type, true ) ) {
 =======
 			} elseif (in_array('attachment', (array) $post_type, true)) {
 >>>>>>> D-12-Dien
+=======
+			} elseif (in_array('attachment', (array) $post_type, true)) {
+>>>>>>> D-29-Oanh
 				$post_status_join = true;
 			}
 		}
@@ -3380,15 +3991,20 @@ class WP_Query
 		 * 'category_name' vars are set for backward compatibility.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $this->tax_query->queried_terms ) ) {
 =======
 		if (!empty($this->tax_query->queried_terms)) {
 >>>>>>> D-12-Dien
+=======
+		if (!empty($this->tax_query->queried_terms)) {
+>>>>>>> D-29-Oanh
 
 			/*
 			 * Set 'taxonomy', 'term', and 'term_id' to the
 			 * first taxonomy other than 'post_tag' or 'category'.
 			 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( ! isset( $q['taxonomy'] ) ) {
 				foreach ( $this->tax_query->queried_terms as $queried_taxonomy => $queried_items ) {
@@ -3401,6 +4017,8 @@ class WP_Query
 
 						if ( 'slug' === $queried_items['field'] ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if (!isset($q['taxonomy'])) {
 				foreach ($this->tax_query->queried_terms as $queried_taxonomy => $queried_items) {
 					if (empty($queried_items['terms'][0])) {
@@ -3411,7 +4029,10 @@ class WP_Query
 						$q['taxonomy'] = $queried_taxonomy;
 
 						if ('slug' === $queried_items['field']) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 							$q['term'] = $queried_items['terms'][0];
 						} else {
 							$q['term_id'] = $queried_items['terms'][0];
@@ -3424,6 +4045,7 @@ class WP_Query
 			}
 
 			// 'cat', 'category_name', 'tag_id'.
+<<<<<<< HEAD
 <<<<<<< HEAD
 			foreach ( $this->tax_query->queried_terms as $queried_taxonomy => $queried_items ) {
 				if ( empty( $queried_items['terms'][0] ) ) {
@@ -3446,6 +4068,8 @@ class WP_Query
 					}
 					unset( $the_tag );
 =======
+=======
+>>>>>>> D-29-Oanh
 			foreach ($this->tax_query->queried_terms as $queried_taxonomy => $queried_items) {
 				if (empty($queried_items['terms'][0])) {
 					continue;
@@ -3466,21 +4090,29 @@ class WP_Query
 						$this->set('tag_id', $the_tag->term_id);
 					}
 					unset($the_tag);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				}
 			}
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $this->tax_query->queries ) || ! empty( $this->meta_query->queries ) || ! empty( $this->allow_query_attachment_by_filename ) ) {
 =======
 		if (!empty($this->tax_query->queries) || !empty($this->meta_query->queries) || !empty($this->allow_query_attachment_by_filename)) {
 >>>>>>> D-12-Dien
+=======
+		if (!empty($this->tax_query->queries) || !empty($this->meta_query->queries) || !empty($this->allow_query_attachment_by_filename)) {
+>>>>>>> D-29-Oanh
 			$groupby = "{$wpdb->posts}.ID";
 		}
 
 		// Author/user stuff.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $q['author'] ) && '0' != $q['author'] ) {
 			$q['author'] = addslashes_gpc( '' . urldecode( $q['author'] ) );
@@ -3498,6 +4130,8 @@ class WP_Query
 		} elseif ( ! empty( $q['author__in'] ) ) {
 			$author__in = implode( ',', array_map( 'absint', array_unique( (array) $q['author__in'] ) ) );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!empty($q['author']) && '0' != $q['author']) {
 			$q['author'] = addslashes_gpc('' . urldecode($q['author']));
 			$authors     = array_unique(array_map('intval', preg_split('/[,\s]+/', $q['author'])));
@@ -3513,12 +4147,16 @@ class WP_Query
 			$where         .= " AND {$wpdb->posts}.post_author NOT IN ($author__not_in) ";
 		} elseif (!empty($q['author__in'])) {
 			$author__in = implode(',', array_map('absint', array_unique((array) $q['author__in'])));
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$where     .= " AND {$wpdb->posts}.post_author IN ($author__in) ";
 		}
 
 		// Author stuff for nice URLs.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( '' !== $q['author_name'] ) {
 			if ( str_contains( $q['author_name'], '/' ) ) {
@@ -3542,6 +4180,8 @@ class WP_Query
 			// Numeric comment count is converted to array format.
 			if ( is_numeric( $q['comment_count'] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('' !== $q['author_name']) {
 			if (str_contains($q['author_name'], '/')) {
 				$q['author_name'] = explode('/', $q['author_name']);
@@ -3563,17 +4203,24 @@ class WP_Query
 		if (isset($q['comment_count'])) {
 			// Numeric comment count is converted to array format.
 			if (is_numeric($q['comment_count'])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$q['comment_count'] = array(
 					'value' => (int) $q['comment_count'],
 				);
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( isset( $q['comment_count']['value'] ) ) {
 =======
 			if (isset($q['comment_count']['value'])) {
 >>>>>>> D-12-Dien
+=======
+			if (isset($q['comment_count']['value'])) {
+>>>>>>> D-29-Oanh
 				$q['comment_count'] = array_merge(
 					array(
 						'compare' => '=',
@@ -3583,6 +4230,7 @@ class WP_Query
 
 				// Fallback for invalid compare operators is '='.
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$compare_operators = array( '=', '!=', '>', '>=', '<', '<=' );
 				if ( ! in_array( $q['comment_count']['compare'], $compare_operators, true ) ) {
 					$q['comment_count']['compare'] = '=';
@@ -3590,18 +4238,24 @@ class WP_Query
 
 				$where .= $wpdb->prepare( " AND {$wpdb->posts}.comment_count {$q['comment_count']['compare']} %d", $q['comment_count']['value'] );
 =======
+=======
+>>>>>>> D-29-Oanh
 				$compare_operators = array('=', '!=', '>', '>=', '<', '<=');
 				if (!in_array($q['comment_count']['compare'], $compare_operators, true)) {
 					$q['comment_count']['compare'] = '=';
 				}
 
 				$where .= $wpdb->prepare(" AND {$wpdb->posts}.comment_count {$q['comment_count']['compare']} %d", $q['comment_count']['value']);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			}
 		}
 
 		// MIME-Type stuff for attachment browsing.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( isset( $q['post_mime_type'] ) && '' !== $q['post_mime_type'] ) {
 			$whichmimetype = wp_post_mime_type_where( $q['post_mime_type'], $wpdb->posts );
@@ -3615,6 +4269,8 @@ class WP_Query
 		if ( ! empty( $this->meta_query->queries ) ) {
 			$clauses = $this->meta_query->get_sql( 'post', $wpdb->posts, 'ID', $this );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (isset($q['post_mime_type']) && '' !== $q['post_mime_type']) {
 			$whichmimetype = wp_post_mime_type_where($q['post_mime_type'], $wpdb->posts);
 		}
@@ -3626,11 +4282,15 @@ class WP_Query
 
 		if (!empty($this->meta_query->queries)) {
 			$clauses = $this->meta_query->get_sql('post', $wpdb->posts, 'ID', $this);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$join   .= $clauses['join'];
 			$where  .= $clauses['where'];
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$rand = ( isset( $q['orderby'] ) && 'rand' === $q['orderby'] );
 		if ( ! isset( $q['order'] ) ) {
@@ -3643,6 +4303,8 @@ class WP_Query
 		$force_asc = array( 'post__in', 'post_name__in', 'post_parent__in' );
 		if ( isset( $q['orderby'] ) && in_array( $q['orderby'], $force_asc, true ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		$rand = (isset($q['orderby']) && 'rand' === $q['orderby']);
 		if (!isset($q['order'])) {
 			$q['order'] = $rand ? '' : 'DESC';
@@ -3653,29 +4315,41 @@ class WP_Query
 		// These values of orderby should ignore the 'order' parameter.
 		$force_asc = array('post__in', 'post_name__in', 'post_parent__in');
 		if (isset($q['orderby']) && in_array($q['orderby'], $force_asc, true)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$q['order'] = '';
 		}
 
 		// Order by.
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( empty( $q['orderby'] ) ) {
 =======
 		if (empty($q['orderby'])) {
 >>>>>>> D-12-Dien
+=======
+		if (empty($q['orderby'])) {
+>>>>>>> D-29-Oanh
 			/*
 			 * Boolean false or empty array blanks out ORDER BY,
 			 * while leaving the value unset or otherwise empty sets the default.
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( isset( $q['orderby'] ) && ( is_array( $q['orderby'] ) || false === $q['orderby'] ) ) {
 =======
 			if (isset($q['orderby']) && (is_array($q['orderby']) || false === $q['orderby'])) {
 >>>>>>> D-12-Dien
+=======
+			if (isset($q['orderby']) && (is_array($q['orderby']) || false === $q['orderby'])) {
+>>>>>>> D-29-Oanh
 				$orderby = '';
 			} else {
 				$orderby = "{$wpdb->posts}.post_date " . $q['order'];
 			}
+<<<<<<< HEAD
 <<<<<<< HEAD
 		} elseif ( 'none' === $q['orderby'] ) {
 			$orderby = '';
@@ -3703,6 +4377,8 @@ class WP_Query
 					// Only allow certain values for safety.
 					if ( ! $parsed ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		} elseif ('none' === $q['orderby']) {
 			$orderby = '';
 		} else {
@@ -3727,12 +4403,16 @@ class WP_Query
 					$parsed = $this->parse_orderby($orderby);
 					// Only allow certain values for safety.
 					if (!$parsed) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 						continue;
 					}
 
 					$orderby_array[] = $parsed;
 				}
+<<<<<<< HEAD
 <<<<<<< HEAD
 				$orderby = implode( ' ' . $q['order'] . ', ', $orderby_array );
 
@@ -3740,18 +4420,24 @@ class WP_Query
 					$orderby = "{$wpdb->posts}.post_date " . $q['order'];
 				} elseif ( ! empty( $q['order'] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 				$orderby = implode(' ' . $q['order'] . ', ', $orderby_array);
 
 				if (empty($orderby)) {
 					$orderby = "{$wpdb->posts}.post_date " . $q['order'];
 				} elseif (!empty($q['order'])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$orderby .= " {$q['order']}";
 				}
 			}
 		}
 
 		// Order search results by relevance only when another "orderby" is not specified in the query.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $q['s'] ) ) {
 			$search_orderby = '';
@@ -3761,6 +4447,8 @@ class WP_Query
 
 			if ( ! $q['suppress_filters'] ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!empty($q['s'])) {
 			$search_orderby = '';
 			if (!empty($q['search_orderby_title']) && (empty($q['orderby']) && !$this->is_feed) || (isset($q['orderby']) && 'relevance' === $q['orderby'])) {
@@ -3768,7 +4456,10 @@ class WP_Query
 			}
 
 			if (!$q['suppress_filters']) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				/**
 				 * Filters the ORDER BY used when ordering search results.
 				 *
@@ -3778,20 +4469,27 @@ class WP_Query
 				 * @param WP_Query $query          The current WP_Query instance.
 				 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$search_orderby = apply_filters( 'posts_search_orderby', $search_orderby, $this );
 			}
 
 			if ( $search_orderby ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 				$search_orderby = apply_filters('posts_search_orderby', $search_orderby, $this);
 			}
 
 			if ($search_orderby) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$orderby = $orderby ? $search_orderby . ', ' . $orderby : $search_orderby;
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( is_array( $post_type ) && count( $post_type ) > 1 ) {
 			$post_type_cap = 'multiple_post_type';
@@ -3802,6 +4500,8 @@ class WP_Query
 			$post_type_object = get_post_type_object( $post_type );
 			if ( empty( $post_type_object ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (is_array($post_type) && count($post_type) > 1) {
 			$post_type_cap = 'multiple_post_type';
 		} else {
@@ -3810,11 +4510,15 @@ class WP_Query
 			}
 			$post_type_object = get_post_type_object($post_type);
 			if (empty($post_type_object)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$post_type_cap = $post_type;
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( isset( $q['post_password'] ) ) {
 			$where .= $wpdb->prepare( " AND {$wpdb->posts}.post_password = %s", $q['post_password'] );
@@ -3857,6 +4561,8 @@ class WP_Query
 			$post_type_where  = " AND {$wpdb->posts}.post_type = 'post'";
 			$post_type_object = get_post_type_object( 'post' );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (isset($q['post_password'])) {
 			$where .= $wpdb->prepare(" AND {$wpdb->posts}.post_password = %s", $q['post_password']);
 			if (empty($q['perm'])) {
@@ -3897,17 +4603,24 @@ class WP_Query
 		} else {
 			$post_type_where  = " AND {$wpdb->posts}.post_type = 'post'";
 			$post_type_object = get_post_type_object('post');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 
 		$edit_cap = 'edit_post';
 		$read_cap = 'read_post';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! empty( $post_type_object ) ) {
 =======
 		if (!empty($post_type_object)) {
 >>>>>>> D-12-Dien
+=======
+		if (!empty($post_type_object)) {
+>>>>>>> D-29-Oanh
 			$edit_others_cap  = $post_type_object->cap->edit_others_posts;
 			$read_private_cap = $post_type_object->cap->read_private_posts;
 		} else {
@@ -3919,6 +4632,7 @@ class WP_Query
 
 		$q_status = array();
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( $skip_post_status ) {
 			$where .= $post_type_where;
 		} elseif ( ! empty( $q['post_status'] ) ) {
@@ -3927,11 +4641,17 @@ class WP_Query
 			$where .= $post_type_where;
 		} elseif (!empty($q['post_status'])) {
 >>>>>>> D-12-Dien
+=======
+		if ($skip_post_status) {
+			$where .= $post_type_where;
+		} elseif (!empty($q['post_status'])) {
+>>>>>>> D-29-Oanh
 
 			$where .= $post_type_where;
 
 			$statuswheres = array();
 			$q_status     = $q['post_status'];
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( ! is_array( $q_status ) ) {
 				$q_status = explode( ',', $q_status );
@@ -3939,10 +4659,15 @@ class WP_Query
 			if (!is_array($q_status)) {
 				$q_status = explode(',', $q_status);
 >>>>>>> D-12-Dien
+=======
+			if (!is_array($q_status)) {
+				$q_status = explode(',', $q_status);
+>>>>>>> D-29-Oanh
 			}
 			$r_status = array();
 			$p_status = array();
 			$e_status = array();
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( in_array( 'any', $q_status, true ) ) {
 				foreach ( get_post_stati( array( 'exclude_from_search' => true ) ) as $status ) {
@@ -3952,10 +4677,16 @@ class WP_Query
 				foreach (get_post_stati(array('exclude_from_search' => true)) as $status) {
 					if (!in_array($status, $q_status, true)) {
 >>>>>>> D-12-Dien
+=======
+			if (in_array('any', $q_status, true)) {
+				foreach (get_post_stati(array('exclude_from_search' => true)) as $status) {
+					if (!in_array($status, $q_status, true)) {
+>>>>>>> D-29-Oanh
 						$e_status[] = "{$wpdb->posts}.post_status <> '$status'";
 					}
 				}
 			} else {
+<<<<<<< HEAD
 <<<<<<< HEAD
 				foreach ( get_post_stati() as $status ) {
 					if ( in_array( $status, $q_status, true ) ) {
@@ -3965,6 +4696,11 @@ class WP_Query
 					if (in_array($status, $q_status, true)) {
 						if ('private' === $status) {
 >>>>>>> D-12-Dien
+=======
+				foreach (get_post_stati() as $status) {
+					if (in_array($status, $q_status, true)) {
+						if ('private' === $status) {
+>>>>>>> D-29-Oanh
 							$p_status[] = "{$wpdb->posts}.post_status = '$status'";
 						} else {
 							$r_status[] = "{$wpdb->posts}.post_status = '$status'";
@@ -3973,6 +4709,7 @@ class WP_Query
 				}
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( empty( $q['perm'] ) || 'readable' !== $q['perm'] ) {
 				$r_status = array_merge( $r_status, $p_status );
@@ -4038,6 +4775,8 @@ class WP_Query
 					// Add protected states that should show in the admin all list.
 					if ( $this->is_admin ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if (empty($q['perm']) || 'readable' !== $q['perm']) {
 				$r_status = array_merge($r_status, $p_status);
 				unset($p_status);
@@ -4101,7 +4840,10 @@ class WP_Query
 
 					// Add protected states that should show in the admin all list.
 					if ($this->is_admin) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 						$admin_all_statuses = get_post_stati(
 							array(
 								'protected'              => true,
@@ -4109,15 +4851,20 @@ class WP_Query
 							)
 						);
 <<<<<<< HEAD
+<<<<<<< HEAD
 						foreach ( $admin_all_statuses as $admin_all_status ) {
 =======
 						foreach ($admin_all_statuses as $admin_all_status) {
 >>>>>>> D-12-Dien
+=======
+						foreach ($admin_all_statuses as $admin_all_status) {
+>>>>>>> D-29-Oanh
 							$type_where .= " OR {$wpdb->posts}.post_status = '$admin_all_status'";
 						}
 					}
 
 					// Add private states that are visible to current user.
+<<<<<<< HEAD
 <<<<<<< HEAD
 					if ( is_user_logged_in() && $queried_post_type_object instanceof WP_Post_Type ) {
 						$read_private_cap = $queried_post_type_object->cap->read_private_posts;
@@ -4125,12 +4872,17 @@ class WP_Query
 						foreach ( $private_statuses as $private_status ) {
 							$type_where .= current_user_can( $read_private_cap ) ? " \nOR {$wpdb->posts}.post_status = '$private_status'" : " \nOR ({$wpdb->posts}.post_author = $user_id AND {$wpdb->posts}.post_status = '$private_status')";
 =======
+=======
+>>>>>>> D-29-Oanh
 					if (is_user_logged_in() && $queried_post_type_object instanceof WP_Post_Type) {
 						$read_private_cap = $queried_post_type_object->cap->read_private_posts;
 						$private_statuses = get_post_stati(array('private' => true));
 						foreach ($private_statuses as $private_status) {
 							$type_where .= current_user_can($read_private_cap) ? " \nOR {$wpdb->posts}.post_status = '$private_status'" : " \nOR ({$wpdb->posts}.post_author = $user_id AND {$wpdb->posts}.post_status = '$private_status')";
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 						}
 					}
 
@@ -4140,12 +4892,17 @@ class WP_Query
 				}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if ( ! empty( $status_type_clauses ) ) {
 					$where .= ' AND (' . implode( ' OR ', $status_type_clauses ) . ')';
 =======
 				if (!empty($status_type_clauses)) {
 					$where .= ' AND (' . implode(' OR ', $status_type_clauses) . ')';
 >>>>>>> D-12-Dien
+=======
+				if (!empty($status_type_clauses)) {
+					$where .= ' AND (' . implode(' OR ', $status_type_clauses) . ')';
+>>>>>>> D-29-Oanh
 				}
 			} else {
 				$where .= ' AND 1=0 ';
@@ -4159,10 +4916,14 @@ class WP_Query
 		 * manipulations to them are reflected in the paging by day queries.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! $q['suppress_filters'] ) {
 =======
 		if (!$q['suppress_filters']) {
 >>>>>>> D-12-Dien
+=======
+		if (!$q['suppress_filters']) {
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the WHERE clause of the query.
 			 *
@@ -4172,10 +4933,14 @@ class WP_Query
 			 * @param WP_Query $query The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$where = apply_filters_ref_array( 'posts_where', array( $where, &$this ) );
 =======
 			$where = apply_filters_ref_array('posts_where', array($where, &$this));
 >>>>>>> D-12-Dien
+=======
+			$where = apply_filters_ref_array('posts_where', array($where, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the JOIN clause of the query.
@@ -4186,6 +4951,7 @@ class WP_Query
 			 * @param WP_Query $query The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$join = apply_filters_ref_array( 'posts_join', array( $join, &$this ) );
 		}
 
@@ -4194,6 +4960,8 @@ class WP_Query
 			$page = absint( $q['paged'] );
 			if ( ! $page ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			$join = apply_filters_ref_array('posts_join', array($join, &$this));
 		}
 
@@ -4201,11 +4969,15 @@ class WP_Query
 		if (empty($q['nopaging']) && !$this->is_singular) {
 			$page = absint($q['paged']);
 			if (!$page) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$page = 1;
 			}
 
 			// If 'offset' is provided, it takes precedence over 'paged'.
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( isset( $q['offset'] ) && is_numeric( $q['offset'] ) ) {
 				$q['offset'] = absint( $q['offset'] );
@@ -4213,17 +4985,23 @@ class WP_Query
 			} else {
 				$pgstrt = absint( ( $page - 1 ) * $q['posts_per_page'] ) . ', ';
 =======
+=======
+>>>>>>> D-29-Oanh
 			if (isset($q['offset']) && is_numeric($q['offset'])) {
 				$q['offset'] = absint($q['offset']);
 				$pgstrt      = $q['offset'] . ', ';
 			} else {
 				$pgstrt = absint(($page - 1) * $q['posts_per_page']) . ', ';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			}
 			$limits = 'LIMIT ' . $pgstrt . $q['posts_per_page'];
 		}
 
 		// Comments feeds.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $this->is_comment_feed && ! $this->is_singular ) {
 			if ( $this->is_archive || $this->is_search ) {
@@ -4231,6 +5009,10 @@ class WP_Query
 		if ($this->is_comment_feed && !$this->is_singular) {
 			if ($this->is_archive || $this->is_search) {
 >>>>>>> D-12-Dien
+=======
+		if ($this->is_comment_feed && !$this->is_singular) {
+			if ($this->is_archive || $this->is_search) {
+>>>>>>> D-29-Oanh
 				$cjoin    = "JOIN {$wpdb->posts} ON ( {$wpdb->comments}.comment_post_ID = {$wpdb->posts}.ID ) $join ";
 				$cwhere   = "WHERE comment_approved = '1' $where";
 				$cgroupby = "{$wpdb->comments}.comment_id";
@@ -4241,10 +5023,14 @@ class WP_Query
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( ! $q['suppress_filters'] ) {
 =======
 			if (!$q['suppress_filters']) {
 >>>>>>> D-12-Dien
+=======
+			if (!$q['suppress_filters']) {
+>>>>>>> D-29-Oanh
 				/**
 				 * Filters the JOIN clause of the comments feed query before sending.
 				 *
@@ -4254,10 +5040,14 @@ class WP_Query
 				 * @param WP_Query $query The WP_Query instance (passed by reference).
 				 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$cjoin = apply_filters_ref_array( 'comment_feed_join', array( $cjoin, &$this ) );
 =======
 				$cjoin = apply_filters_ref_array('comment_feed_join', array($cjoin, &$this));
 >>>>>>> D-12-Dien
+=======
+				$cjoin = apply_filters_ref_array('comment_feed_join', array($cjoin, &$this));
+>>>>>>> D-29-Oanh
 
 				/**
 				 * Filters the WHERE clause of the comments feed query before sending.
@@ -4268,10 +5058,14 @@ class WP_Query
 				 * @param WP_Query $query  The WP_Query instance (passed by reference).
 				 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$cwhere = apply_filters_ref_array( 'comment_feed_where', array( $cwhere, &$this ) );
 =======
 				$cwhere = apply_filters_ref_array('comment_feed_where', array($cwhere, &$this));
 >>>>>>> D-12-Dien
+=======
+				$cwhere = apply_filters_ref_array('comment_feed_where', array($cwhere, &$this));
+>>>>>>> D-29-Oanh
 
 				/**
 				 * Filters the GROUP BY clause of the comments feed query before sending.
@@ -4282,10 +5076,14 @@ class WP_Query
 				 * @param WP_Query $query    The WP_Query instance (passed by reference).
 				 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$cgroupby = apply_filters_ref_array( 'comment_feed_groupby', array( $cgroupby, &$this ) );
 =======
 				$cgroupby = apply_filters_ref_array('comment_feed_groupby', array($cgroupby, &$this));
 >>>>>>> D-12-Dien
+=======
+				$cgroupby = apply_filters_ref_array('comment_feed_groupby', array($cgroupby, &$this));
+>>>>>>> D-29-Oanh
 
 				/**
 				 * Filters the ORDER BY clause of the comments feed query before sending.
@@ -4296,10 +5094,14 @@ class WP_Query
 				 * @param WP_Query $query    The WP_Query instance (passed by reference).
 				 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$corderby = apply_filters_ref_array( 'comment_feed_orderby', array( 'comment_date_gmt DESC', &$this ) );
 =======
 				$corderby = apply_filters_ref_array('comment_feed_orderby', array('comment_date_gmt DESC', &$this));
 >>>>>>> D-12-Dien
+=======
+				$corderby = apply_filters_ref_array('comment_feed_orderby', array('comment_date_gmt DESC', &$this));
+>>>>>>> D-29-Oanh
 
 				/**
 				 * Filters the LIMIT clause of the comments feed query before sending.
@@ -4309,6 +5111,7 @@ class WP_Query
 				 * @param string   $climits The JOIN clause of the query.
 				 * @param WP_Query $query   The WP_Query instance (passed by reference).
 				 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 				$climits = apply_filters_ref_array( 'comment_feed_limits', array( 'LIMIT ' . get_option( 'posts_per_rss' ), &$this ) );
 			}
@@ -4345,6 +5148,8 @@ class WP_Query
 			$join     = '';
 			if ( $post_ids ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 				$climits = apply_filters_ref_array('comment_feed_limits', array('LIMIT ' . get_option('posts_per_rss'), &$this));
 			}
 
@@ -4379,7 +5184,10 @@ class WP_Query
 			$post_ids = implode(',', $post_ids);
 			$join     = '';
 			if ($post_ids) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$where = "AND {$wpdb->posts}.ID IN ($post_ids) ";
 			} else {
 				$where = 'AND 0';
@@ -4387,20 +5195,28 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$pieces = array( 'where', 'groupby', 'join', 'orderby', 'distinct', 'fields', 'limits' );
 =======
 		$pieces = array('where', 'groupby', 'join', 'orderby', 'distinct', 'fields', 'limits');
 >>>>>>> D-12-Dien
+=======
+		$pieces = array('where', 'groupby', 'join', 'orderby', 'distinct', 'fields', 'limits');
+>>>>>>> D-29-Oanh
 
 		/*
 		 * Apply post-paging filters on where and join. Only plugins that
 		 * manipulate paging queries should use these hooks.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! $q['suppress_filters'] ) {
 =======
 		if (!$q['suppress_filters']) {
 >>>>>>> D-12-Dien
+=======
+		if (!$q['suppress_filters']) {
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the WHERE clause of the query.
 			 *
@@ -4412,10 +5228,14 @@ class WP_Query
 			 * @param WP_Query $query The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$where = apply_filters_ref_array( 'posts_where_paged', array( $where, &$this ) );
 =======
 			$where = apply_filters_ref_array('posts_where_paged', array($where, &$this));
 >>>>>>> D-12-Dien
+=======
+			$where = apply_filters_ref_array('posts_where_paged', array($where, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the GROUP BY clause of the query.
@@ -4426,10 +5246,14 @@ class WP_Query
 			 * @param WP_Query $query   The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$groupby = apply_filters_ref_array( 'posts_groupby', array( $groupby, &$this ) );
 =======
 			$groupby = apply_filters_ref_array('posts_groupby', array($groupby, &$this));
 >>>>>>> D-12-Dien
+=======
+			$groupby = apply_filters_ref_array('posts_groupby', array($groupby, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the JOIN clause of the query.
@@ -4442,10 +5266,14 @@ class WP_Query
 			 * @param WP_Query $query The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$join = apply_filters_ref_array( 'posts_join_paged', array( $join, &$this ) );
 =======
 			$join = apply_filters_ref_array('posts_join_paged', array($join, &$this));
 >>>>>>> D-12-Dien
+=======
+			$join = apply_filters_ref_array('posts_join_paged', array($join, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the ORDER BY clause of the query.
@@ -4456,10 +5284,14 @@ class WP_Query
 			 * @param WP_Query $query   The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$orderby = apply_filters_ref_array( 'posts_orderby', array( $orderby, &$this ) );
 =======
 			$orderby = apply_filters_ref_array('posts_orderby', array($orderby, &$this));
 >>>>>>> D-12-Dien
+=======
+			$orderby = apply_filters_ref_array('posts_orderby', array($orderby, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the DISTINCT clause of the query.
@@ -4470,10 +5302,14 @@ class WP_Query
 			 * @param WP_Query $query    The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$distinct = apply_filters_ref_array( 'posts_distinct', array( $distinct, &$this ) );
 =======
 			$distinct = apply_filters_ref_array('posts_distinct', array($distinct, &$this));
 >>>>>>> D-12-Dien
+=======
+			$distinct = apply_filters_ref_array('posts_distinct', array($distinct, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the LIMIT clause of the query.
@@ -4484,10 +5320,14 @@ class WP_Query
 			 * @param WP_Query $query  The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$limits = apply_filters_ref_array( 'post_limits', array( $limits, &$this ) );
 =======
 			$limits = apply_filters_ref_array('post_limits', array($limits, &$this));
 >>>>>>> D-12-Dien
+=======
+			$limits = apply_filters_ref_array('post_limits', array($limits, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the SELECT clause of the query.
@@ -4498,10 +5338,14 @@ class WP_Query
 			 * @param WP_Query $query  The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$fields = apply_filters_ref_array( 'posts_fields', array( $fields, &$this ) );
 =======
 			$fields = apply_filters_ref_array('posts_fields', array($fields, &$this));
 >>>>>>> D-12-Dien
+=======
+			$fields = apply_filters_ref_array('posts_fields', array($fields, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters all query clauses at once, for convenience.
@@ -4525,6 +5369,7 @@ class WP_Query
 			 * @param WP_Query $query   The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$clauses = (array) apply_filters_ref_array( 'posts_clauses', array( compact( $pieces ), &$this ) );
 
 			$where    = isset( $clauses['where'] ) ? $clauses['where'] : '';
@@ -4535,6 +5380,8 @@ class WP_Query
 			$fields   = isset( $clauses['fields'] ) ? $clauses['fields'] : '';
 			$limits   = isset( $clauses['limits'] ) ? $clauses['limits'] : '';
 =======
+=======
+>>>>>>> D-29-Oanh
 			$clauses = (array) apply_filters_ref_array('posts_clauses', array(compact($pieces), &$this));
 
 			$where    = isset($clauses['where']) ? $clauses['where'] : '';
@@ -4544,7 +5391,10 @@ class WP_Query
 			$distinct = isset($clauses['distinct']) ? $clauses['distinct'] : '';
 			$fields   = isset($clauses['fields']) ? $clauses['fields'] : '';
 			$limits   = isset($clauses['limits']) ? $clauses['limits'] : '';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 
 		/**
@@ -4557,20 +5407,28 @@ class WP_Query
 		 * @param string $selection The assembled selection query.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		do_action( 'posts_selection', $where . $groupby . $orderby . $limits . $join );
 =======
 		do_action('posts_selection', $where . $groupby . $orderby . $limits . $join);
 >>>>>>> D-12-Dien
+=======
+		do_action('posts_selection', $where . $groupby . $orderby . $limits . $join);
+>>>>>>> D-29-Oanh
 
 		/*
 		 * Filters again for the benefit of caching plugins.
 		 * Regular plugins should use the hooks above.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! $q['suppress_filters'] ) {
 =======
 		if (!$q['suppress_filters']) {
 >>>>>>> D-12-Dien
+=======
+		if (!$q['suppress_filters']) {
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the WHERE clause of the query.
 			 *
@@ -4582,10 +5440,14 @@ class WP_Query
 			 * @param WP_Query $query The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$where = apply_filters_ref_array( 'posts_where_request', array( $where, &$this ) );
 =======
 			$where = apply_filters_ref_array('posts_where_request', array($where, &$this));
 >>>>>>> D-12-Dien
+=======
+			$where = apply_filters_ref_array('posts_where_request', array($where, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the GROUP BY clause of the query.
@@ -4598,10 +5460,14 @@ class WP_Query
 			 * @param WP_Query $query   The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$groupby = apply_filters_ref_array( 'posts_groupby_request', array( $groupby, &$this ) );
 =======
 			$groupby = apply_filters_ref_array('posts_groupby_request', array($groupby, &$this));
 >>>>>>> D-12-Dien
+=======
+			$groupby = apply_filters_ref_array('posts_groupby_request', array($groupby, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the JOIN clause of the query.
@@ -4614,10 +5480,14 @@ class WP_Query
 			 * @param WP_Query $query The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$join = apply_filters_ref_array( 'posts_join_request', array( $join, &$this ) );
 =======
 			$join = apply_filters_ref_array('posts_join_request', array($join, &$this));
 >>>>>>> D-12-Dien
+=======
+			$join = apply_filters_ref_array('posts_join_request', array($join, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the ORDER BY clause of the query.
@@ -4630,10 +5500,14 @@ class WP_Query
 			 * @param WP_Query $query   The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$orderby = apply_filters_ref_array( 'posts_orderby_request', array( $orderby, &$this ) );
 =======
 			$orderby = apply_filters_ref_array('posts_orderby_request', array($orderby, &$this));
 >>>>>>> D-12-Dien
+=======
+			$orderby = apply_filters_ref_array('posts_orderby_request', array($orderby, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the DISTINCT clause of the query.
@@ -4646,10 +5520,14 @@ class WP_Query
 			 * @param WP_Query $query    The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$distinct = apply_filters_ref_array( 'posts_distinct_request', array( $distinct, &$this ) );
 =======
 			$distinct = apply_filters_ref_array('posts_distinct_request', array($distinct, &$this));
 >>>>>>> D-12-Dien
+=======
+			$distinct = apply_filters_ref_array('posts_distinct_request', array($distinct, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the SELECT clause of the query.
@@ -4662,10 +5540,14 @@ class WP_Query
 			 * @param WP_Query $query  The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$fields = apply_filters_ref_array( 'posts_fields_request', array( $fields, &$this ) );
 =======
 			$fields = apply_filters_ref_array('posts_fields_request', array($fields, &$this));
 >>>>>>> D-12-Dien
+=======
+			$fields = apply_filters_ref_array('posts_fields_request', array($fields, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters the LIMIT clause of the query.
@@ -4678,10 +5560,14 @@ class WP_Query
 			 * @param WP_Query $query  The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$limits = apply_filters_ref_array( 'post_limits_request', array( $limits, &$this ) );
 =======
 			$limits = apply_filters_ref_array('post_limits_request', array($limits, &$this));
 >>>>>>> D-12-Dien
+=======
+			$limits = apply_filters_ref_array('post_limits_request', array($limits, &$this));
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters all query clauses at once, for convenience.
@@ -4706,6 +5592,7 @@ class WP_Query
 			 * }
 			 * @param WP_Query $query  The WP_Query instance (passed by reference).
 			 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 			$clauses = (array) apply_filters_ref_array( 'posts_clauses_request', array( compact( $pieces ), &$this ) );
 
@@ -4723,6 +5610,8 @@ class WP_Query
 		}
 		if ( ! empty( $orderby ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			$clauses = (array) apply_filters_ref_array('posts_clauses_request', array(compact($pieces), &$this));
 
 			$where    = isset($clauses['where']) ? $clauses['where'] : '';
@@ -4738,16 +5627,23 @@ class WP_Query
 			$groupby = 'GROUP BY ' . $groupby;
 		}
 		if (!empty($orderby)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$orderby = 'ORDER BY ' . $orderby;
 		}
 
 		$found_rows = '';
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! $q['no_found_rows'] && ! empty( $limits ) ) {
 =======
 		if (!$q['no_found_rows'] && !empty($limits)) {
 >>>>>>> D-12-Dien
+=======
+		if (!$q['no_found_rows'] && !empty($limits)) {
+>>>>>>> D-29-Oanh
 			$found_rows = 'SQL_CALC_FOUND_ROWS';
 		}
 
@@ -4763,10 +5659,14 @@ class WP_Query
 		$this->request = $old_request;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! $q['suppress_filters'] ) {
 =======
 		if (!$q['suppress_filters']) {
 >>>>>>> D-12-Dien
+=======
+		if (!$q['suppress_filters']) {
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the completed SQL query before sending.
 			 *
@@ -4776,10 +5676,14 @@ class WP_Query
 			 * @param WP_Query $query   The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$this->request = apply_filters_ref_array( 'posts_request', array( $this->request, &$this ) );
 =======
 			$this->request = apply_filters_ref_array('posts_request', array($this->request, &$this));
 >>>>>>> D-12-Dien
+=======
+			$this->request = apply_filters_ref_array('posts_request', array($this->request, &$this));
+>>>>>>> D-29-Oanh
 		}
 
 		/**
@@ -4799,10 +5703,14 @@ class WP_Query
 		 * @param WP_Query             $query The WP_Query instance (passed by reference).
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$this->posts = apply_filters_ref_array( 'posts_pre_query', array( null, &$this ) );
 =======
 		$this->posts = apply_filters_ref_array('posts_pre_query', array(null, &$this));
 >>>>>>> D-12-Dien
+=======
+		$this->posts = apply_filters_ref_array('posts_pre_query', array(null, &$this));
+>>>>>>> D-29-Oanh
 
 		/*
 		 * Ensure the ID database query is able to be cached.
@@ -4817,10 +5725,14 @@ class WP_Query
 		 * filters, then caching is disabled to prevent caching collisions.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$id_query_is_cacheable = ! str_contains( strtoupper( $orderby ), ' RAND(' );
 =======
 		$id_query_is_cacheable = !str_contains(strtoupper($orderby), ' RAND(');
 >>>>>>> D-12-Dien
+=======
+		$id_query_is_cacheable = !str_contains(strtoupper($orderby), ' RAND(');
+>>>>>>> D-29-Oanh
 
 		$cacheable_field_values = array(
 			"{$wpdb->posts}.*",
@@ -4828,6 +5740,7 @@ class WP_Query
 			"{$wpdb->posts}.ID",
 		);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! in_array( $fields, $cacheable_field_values, true ) ) {
 			$id_query_is_cacheable = false;
@@ -4863,6 +5776,8 @@ class WP_Query
 
 						foreach ( $this->posts as $key => $post ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!in_array($fields, $cacheable_field_values, true)) {
 			$id_query_is_cacheable = false;
 		}
@@ -4896,11 +5811,15 @@ class WP_Query
 						$post_parents = array();
 
 						foreach ($this->posts as $key => $post) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 							$obj              = new stdClass();
 							$obj->ID          = (int) $post->ID;
 							$obj->post_parent = (int) $post->post_parent;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 							$this->posts[ $key ] = $obj;
 
@@ -4910,6 +5829,11 @@ class WP_Query
 
 							$post_parents[$obj->ID] = $obj->post_parent;
 >>>>>>> D-12-Dien
+=======
+							$this->posts[$key] = $obj;
+
+							$post_parents[$obj->ID] = $obj->post_parent;
+>>>>>>> D-29-Oanh
 						}
 
 						return $post_parents;
@@ -4918,6 +5842,7 @@ class WP_Query
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( 'ids' === $q['fields'] ) {
 			if ( null === $this->posts ) {
@@ -4931,6 +5856,8 @@ class WP_Query
 
 			if ( $q['cache_results'] && $id_query_is_cacheable ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('ids' === $q['fields']) {
 			if (null === $this->posts) {
 				$this->posts = $wpdb->get_col($this->request);
@@ -4942,7 +5869,10 @@ class WP_Query
 			$this->set_found_posts($q, $limits);
 
 			if ($q['cache_results'] && $id_query_is_cacheable) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$cache_value = array(
 					'posts'         => $this->posts,
 					'found_posts'   => $this->found_posts,
@@ -4950,15 +5880,20 @@ class WP_Query
 				);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				wp_cache_set( $cache_key, $cache_value, 'post-queries' );
 =======
 				wp_cache_set($cache_key, $cache_value, 'post-queries');
 >>>>>>> D-12-Dien
+=======
+				wp_cache_set($cache_key, $cache_value, 'post-queries');
+>>>>>>> D-29-Oanh
 			}
 
 			return $this->posts;
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( 'id=>parent' === $q['fields'] ) {
 			if ( null === $this->posts ) {
@@ -4968,6 +5903,8 @@ class WP_Query
 			$this->post_count = count( $this->posts );
 			$this->set_found_posts( $q, $limits );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('id=>parent' === $q['fields']) {
 			if (null === $this->posts) {
 				$this->posts = $wpdb->get_results($this->request);
@@ -4975,12 +5912,16 @@ class WP_Query
 
 			$this->post_count = count($this->posts);
 			$this->set_found_posts($q, $limits);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 
 			/** @var int[] */
 			$post_parents = array();
 			$post_ids     = array();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			foreach ( $this->posts as $key => $post ) {
 				$this->posts[ $key ]->ID          = (int) $post->ID;
@@ -4992,6 +5933,8 @@ class WP_Query
 
 			if ( $q['cache_results'] && $id_query_is_cacheable ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			foreach ($this->posts as $key => $post) {
 				$this->posts[$key]->ID          = (int) $post->ID;
 				$this->posts[$key]->post_parent = (int) $post->post_parent;
@@ -5001,7 +5944,10 @@ class WP_Query
 			}
 
 			if ($q['cache_results'] && $id_query_is_cacheable) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$cache_value = array(
 					'posts'         => $post_ids,
 					'found_posts'   => $this->found_posts,
@@ -5009,15 +5955,20 @@ class WP_Query
 				);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				wp_cache_set( $cache_key, $cache_value, 'post-queries' );
 =======
 				wp_cache_set($cache_key, $cache_value, 'post-queries');
 >>>>>>> D-12-Dien
+=======
+				wp_cache_set($cache_key, $cache_value, 'post-queries');
+>>>>>>> D-29-Oanh
 			}
 
 			return $post_parents;
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( null === $this->posts ) {
 			$split_the_query = ( $old_request == $this->request && "{$wpdb->posts}.*" === $fields && ! empty( $limits ) && $q['posts_per_page'] < 500 );
@@ -5025,6 +5976,10 @@ class WP_Query
 		if (null === $this->posts) {
 			$split_the_query = ($old_request == $this->request && "{$wpdb->posts}.*" === $fields && !empty($limits) && $q['posts_per_page'] < 500);
 >>>>>>> D-12-Dien
+=======
+		if (null === $this->posts) {
+			$split_the_query = ($old_request == $this->request && "{$wpdb->posts}.*" === $fields && !empty($limits) && $q['posts_per_page'] < 500);
+>>>>>>> D-29-Oanh
 
 			/**
 			 * Filters whether to split the query.
@@ -5039,6 +5994,7 @@ class WP_Query
 			 * @param WP_Query $query           The WP_Query instance.
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$split_the_query = apply_filters( 'split_the_query', $split_the_query, $this );
 
 			if ( $split_the_query ) {
@@ -5047,6 +6003,11 @@ class WP_Query
 
 			if ($split_the_query) {
 >>>>>>> D-12-Dien
+=======
+			$split_the_query = apply_filters('split_the_query', $split_the_query, $this);
+
+			if ($split_the_query) {
+>>>>>>> D-29-Oanh
 				// First get the IDs and then fill in the objects.
 
 				$this->request = "
@@ -5067,6 +6028,7 @@ class WP_Query
 				 * @param WP_Query $query   The WP_Query instance.
 				 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$this->request = apply_filters( 'posts_request_ids', $this->request, $this );
 
 				$post_ids = $wpdb->get_col( $this->request );
@@ -5076,6 +6038,8 @@ class WP_Query
 					$this->set_found_posts( $q, $limits );
 					_prime_post_caches( $post_ids, $q['update_post_term_cache'], $q['update_post_meta_cache'] );
 =======
+=======
+>>>>>>> D-29-Oanh
 				$this->request = apply_filters('posts_request_ids', $this->request, $this);
 
 				$post_ids = $wpdb->get_col($this->request);
@@ -5084,11 +6048,15 @@ class WP_Query
 					$this->posts = $post_ids;
 					$this->set_found_posts($q, $limits);
 					_prime_post_caches($post_ids, $q['update_post_term_cache'], $q['update_post_meta_cache']);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				} else {
 					$this->posts = array();
 				}
 			} else {
+<<<<<<< HEAD
 <<<<<<< HEAD
 				$this->posts = $wpdb->get_results( $this->request );
 				$this->set_found_posts( $q, $limits );
@@ -5096,10 +6064,15 @@ class WP_Query
 				$this->posts = $wpdb->get_results($this->request);
 				$this->set_found_posts($q, $limits);
 >>>>>>> D-12-Dien
+=======
+				$this->posts = $wpdb->get_results($this->request);
+				$this->set_found_posts($q, $limits);
+>>>>>>> D-29-Oanh
 			}
 		}
 
 		// Convert to WP_Post objects.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $this->posts ) {
 			/** @var WP_Post[] */
@@ -5109,6 +6082,8 @@ class WP_Query
 		if ( $q['cache_results'] && $id_query_is_cacheable && ! $cache_found ) {
 			$post_ids = wp_list_pluck( $this->posts, 'ID' );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($this->posts) {
 			/** @var WP_Post[] */
 			$this->posts = array_map('get_post', $this->posts);
@@ -5116,7 +6091,10 @@ class WP_Query
 
 		if ($q['cache_results'] && $id_query_is_cacheable && !$cache_found) {
 			$post_ids = wp_list_pluck($this->posts, 'ID');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 
 			$cache_value = array(
 				'posts'         => $post_ids,
@@ -5125,16 +6103,22 @@ class WP_Query
 			);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			wp_cache_set( $cache_key, $cache_value, 'post-queries' );
 		}
 
 		if ( ! $q['suppress_filters'] ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			wp_cache_set($cache_key, $cache_value, 'post-queries');
 		}
 
 		if (!$q['suppress_filters']) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the raw post results array, prior to status checks.
 			 *
@@ -5143,6 +6127,7 @@ class WP_Query
 			 * @param WP_Post[] $posts Array of post objects.
 			 * @param WP_Query  $query The WP_Query instance (passed by reference).
 			 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 			$this->posts = apply_filters_ref_array( 'posts_results', array( $this->posts, &$this ) );
 		}
@@ -5190,6 +6175,8 @@ class WP_Query
 
 			if ( 'attachment' === $this->posts[0]->post_type && 0 === (int) $this->posts[0]->post_parent ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			$this->posts = apply_filters_ref_array('posts_results', array($this->posts, &$this));
 		}
 
@@ -5235,13 +6222,17 @@ class WP_Query
 			$status = get_post_status($this->posts[0]);
 
 			if ('attachment' === $this->posts[0]->post_type && 0 === (int) $this->posts[0]->post_parent) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$this->is_page       = false;
 				$this->is_single     = true;
 				$this->is_attachment = true;
 			}
 
 			// If the post_status was specifically requested, let it pass through.
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( ! in_array( $status, $q_status, true ) ) {
 				$post_status_obj = get_post_status_object( $status );
@@ -5264,6 +6255,8 @@ class WP_Query
 						} elseif ( $post_status_obj->private ) {
 							if ( ! current_user_can( $read_cap, $this->posts[0]->ID ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if (!in_array($status, $q_status, true)) {
 				$post_status_obj = get_post_status_object($status);
 
@@ -5284,13 +6277,17 @@ class WP_Query
 							}
 						} elseif ($post_status_obj->private) {
 							if (!current_user_can($read_cap, $this->posts[0]->ID)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 								$this->posts = array();
 							}
 						} else {
 							$this->posts = array();
 						}
 					}
+<<<<<<< HEAD
 <<<<<<< HEAD
 				} elseif ( ! $post_status_obj ) {
 					// Post status is not registered, assume it's not public.
@@ -5300,16 +6297,25 @@ class WP_Query
 					// Post status is not registered, assume it's not public.
 					if (!current_user_can($edit_cap, $this->posts[0]->ID)) {
 >>>>>>> D-12-Dien
+=======
+				} elseif (!$post_status_obj) {
+					// Post status is not registered, assume it's not public.
+					if (!current_user_can($edit_cap, $this->posts[0]->ID)) {
+>>>>>>> D-29-Oanh
 						$this->posts = array();
 					}
 				}
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( $this->is_preview && $this->posts && current_user_can( $edit_cap, $this->posts[0]->ID ) ) {
 =======
 			if ($this->is_preview && $this->posts && current_user_can($edit_cap, $this->posts[0]->ID)) {
 >>>>>>> D-12-Dien
+=======
+			if ($this->is_preview && $this->posts && current_user_can($edit_cap, $this->posts[0]->ID)) {
+>>>>>>> D-29-Oanh
 				/**
 				 * Filters the single post for preview mode.
 				 *
@@ -5319,14 +6325,19 @@ class WP_Query
 				 * @param WP_Query $query         The WP_Query instance (passed by reference).
 				 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$this->posts[0] = get_post( apply_filters_ref_array( 'the_preview', array( $this->posts[0], &$this ) ) );
 =======
 				$this->posts[0] = get_post(apply_filters_ref_array('the_preview', array($this->posts[0], &$this)));
 >>>>>>> D-12-Dien
+=======
+				$this->posts[0] = get_post(apply_filters_ref_array('the_preview', array($this->posts[0], &$this)));
+>>>>>>> D-29-Oanh
 			}
 		}
 
 		// Put sticky posts at the top of the posts array.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$sticky_posts = get_option( 'sticky_posts' );
 		if ( $this->is_home && $page <= 1 && is_array( $sticky_posts ) && ! empty( $sticky_posts ) && ! $q['ignore_sticky_posts'] ) {
@@ -5346,6 +6357,8 @@ class WP_Query
 					$offset = array_search( $sticky_post->ID, $sticky_posts, true );
 					unset( $sticky_posts[ $offset ] );
 =======
+=======
+>>>>>>> D-29-Oanh
 		$sticky_posts = get_option('sticky_posts');
 		if ($this->is_home && $page <= 1 && is_array($sticky_posts) && !empty($sticky_posts) && !$q['ignore_sticky_posts']) {
 			$num_posts     = count($this->posts);
@@ -5363,11 +6376,15 @@ class WP_Query
 					// Remove post from sticky posts array.
 					$offset = array_search($sticky_post->ID, $sticky_posts, true);
 					unset($sticky_posts[$offset]);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				}
 			}
 
 			// If any posts have been excluded specifically, Ignore those that are sticky.
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( ! empty( $sticky_posts ) && ! empty( $q['post__not_in'] ) ) {
 				$sticky_posts = array_diff( $sticky_posts, $q['post__not_in'] );
@@ -5376,23 +6393,32 @@ class WP_Query
 			// Fetch sticky posts that weren't in the query results.
 			if ( ! empty( $sticky_posts ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if (!empty($sticky_posts) && !empty($q['post__not_in'])) {
 				$sticky_posts = array_diff($sticky_posts, $q['post__not_in']);
 			}
 
 			// Fetch sticky posts that weren't in the query results.
 			if (!empty($sticky_posts)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$stickies = get_posts(
 					array(
 						'post__in'               => $sticky_posts,
 						'post_type'              => $post_type,
 						'post_status'            => 'publish',
 <<<<<<< HEAD
+<<<<<<< HEAD
 						'posts_per_page'         => count( $sticky_posts ),
 =======
 						'posts_per_page'         => count($sticky_posts),
 >>>>>>> D-12-Dien
+=======
+						'posts_per_page'         => count($sticky_posts),
+>>>>>>> D-29-Oanh
 						'suppress_filters'       => $q['suppress_filters'],
 						'cache_results'          => $q['cache_results'],
 						'update_post_meta_cache' => $q['update_post_meta_cache'],
@@ -5402,22 +6428,31 @@ class WP_Query
 				);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				foreach ( $stickies as $sticky_post ) {
 					array_splice( $this->posts, $sticky_offset, 0, array( $sticky_post ) );
 =======
 				foreach ($stickies as $sticky_post) {
 					array_splice($this->posts, $sticky_offset, 0, array($sticky_post));
 >>>>>>> D-12-Dien
+=======
+				foreach ($stickies as $sticky_post) {
+					array_splice($this->posts, $sticky_offset, 0, array($sticky_post));
+>>>>>>> D-29-Oanh
 					$sticky_offset++;
 				}
 			}
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! $q['suppress_filters'] ) {
 =======
 		if (!$q['suppress_filters']) {
 >>>>>>> D-12-Dien
+=======
+		if (!$q['suppress_filters']) {
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the array of retrieved posts after they've been fetched and
 			 * internally processed.
@@ -5428,16 +6463,21 @@ class WP_Query
 			 * @param WP_Query  $query The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$this->posts = apply_filters_ref_array( 'the_posts', array( $this->posts, &$this ) );
 =======
 			$this->posts = apply_filters_ref_array('the_posts', array($this->posts, &$this));
 >>>>>>> D-12-Dien
+=======
+			$this->posts = apply_filters_ref_array('the_posts', array($this->posts, &$this));
+>>>>>>> D-29-Oanh
 		}
 
 		/*
 		 * Ensure that any posts added/modified via one of the filters above are
 		 * of the type WP_Post and are filtered.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $this->posts ) {
 			$this->post_count = count( $this->posts );
@@ -5452,6 +6492,8 @@ class WP_Query
 			/** @var WP_Post */
 			$this->post = reset( $this->posts );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($this->posts) {
 			$this->post_count = count($this->posts);
 
@@ -5464,12 +6506,16 @@ class WP_Query
 
 			/** @var WP_Post */
 			$this->post = reset($this->posts);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		} else {
 			$this->post_count = 0;
 			$this->posts      = array();
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $this->posts ) && $q['update_menu_item_cache'] ) {
 			update_menu_item_cache( $this->posts );
@@ -5478,13 +6524,18 @@ class WP_Query
 		if ( $q['lazy_load_term_meta'] ) {
 			wp_queue_posts_for_term_meta_lazyload( $this->posts );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!empty($this->posts) && $q['update_menu_item_cache']) {
 			update_menu_item_cache($this->posts);
 		}
 
 		if ($q['lazy_load_term_meta']) {
 			wp_queue_posts_for_term_meta_lazyload($this->posts);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 
 		return $this->posts;
@@ -5502,11 +6553,16 @@ class WP_Query
 	 * @param string $limits LIMIT clauses of the query.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private function set_found_posts( $q, $limits ) {
 =======
 	private function set_found_posts($q, $limits)
 	{
 >>>>>>> D-12-Dien
+=======
+	private function set_found_posts($q, $limits)
+	{
+>>>>>>> D-29-Oanh
 		global $wpdb;
 
 		/*
@@ -5514,18 +6570,24 @@ class WP_Query
 		 * null, or false to accommodate caching plugins that fill posts later.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( $q['no_found_rows'] || ( is_array( $this->posts ) && ! $this->posts ) ) {
 			return;
 		}
 
 		if ( ! empty( $limits ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($q['no_found_rows'] || (is_array($this->posts) && !$this->posts)) {
 			return;
 		}
 
 		if (!empty($limits)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the query to run for retrieving the found posts.
 			 *
@@ -5534,6 +6596,7 @@ class WP_Query
 			 * @param string   $found_posts_query The query to run to find the found posts.
 			 * @param WP_Query $query             The WP_Query instance (passed by reference).
 			 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 			$found_posts_query = apply_filters_ref_array( 'found_posts_query', array( 'SELECT FOUND_ROWS()', &$this ) );
 
@@ -5544,6 +6607,8 @@ class WP_Query
 			} else {
 				if ( null === $this->posts ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			$found_posts_query = apply_filters_ref_array('found_posts_query', array('SELECT FOUND_ROWS()', &$this));
 
 			$this->found_posts = (int) $wpdb->get_var($found_posts_query);
@@ -5552,7 +6617,10 @@ class WP_Query
 				$this->found_posts = count($this->posts);
 			} else {
 				if (null === $this->posts) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$this->found_posts = 0;
 				} else {
 					$this->found_posts = 1;
@@ -5569,16 +6637,22 @@ class WP_Query
 		 * @param WP_Query $query       The WP_Query instance (passed by reference).
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$this->found_posts = (int) apply_filters_ref_array( 'found_posts', array( $this->found_posts, &$this ) );
 
 		if ( ! empty( $limits ) ) {
 			$this->max_num_pages = ceil( $this->found_posts / $q['posts_per_page'] );
 =======
+=======
+>>>>>>> D-29-Oanh
 		$this->found_posts = (int) apply_filters_ref_array('found_posts', array($this->found_posts, &$this));
 
 		if (!empty($limits)) {
 			$this->max_num_pages = ceil($this->found_posts / $q['posts_per_page']);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 	}
 
@@ -5590,20 +6664,29 @@ class WP_Query
 	 * @return WP_Post Next post.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function next_post() {
 =======
 	public function next_post()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function next_post()
+	{
+>>>>>>> D-29-Oanh
 
 		$this->current_post++;
 
 		/** @var WP_Post */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$this->post = $this->posts[ $this->current_post ];
 =======
 		$this->post = $this->posts[$this->current_post];
 >>>>>>> D-12-Dien
+=======
+		$this->post = $this->posts[$this->current_post];
+>>>>>>> D-29-Oanh
 		return $this->post;
 	}
 
@@ -5617,6 +6700,7 @@ class WP_Query
 	 *
 	 * @global WP_Post $post Global post object.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 	public function the_post() {
 		global $post;
@@ -5632,6 +6716,8 @@ class WP_Query
 			$post_objects = array_map( 'get_post', $this->posts );
 			update_post_author_caches( $post_objects );
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function the_post()
 	{
 		global $post;
@@ -5646,17 +6732,24 @@ class WP_Query
 			}
 			$post_objects = array_map('get_post', $this->posts);
 			update_post_author_caches($post_objects);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 
 		$this->in_the_loop = true;
 		$this->before_loop = false;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( -1 == $this->current_post ) { // Loop has just started.
 =======
 		if (-1 == $this->current_post) { // Loop has just started.
 >>>>>>> D-12-Dien
+=======
+		if (-1 == $this->current_post) { // Loop has just started.
+>>>>>>> D-29-Oanh
 			/**
 			 * Fires once the loop is started.
 			 *
@@ -5665,18 +6758,24 @@ class WP_Query
 			 * @param WP_Query $query The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			do_action_ref_array( 'loop_start', array( &$this ) );
 		}
 
 		$post = $this->next_post();
 		$this->setup_postdata( $post );
 =======
+=======
+>>>>>>> D-29-Oanh
 			do_action_ref_array('loop_start', array(&$this));
 		}
 
 		$post = $this->next_post();
 		$this->setup_postdata($post);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -5689,17 +6788,23 @@ class WP_Query
 	 * @return bool True if posts are available, false if end of the loop.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function have_posts() {
 		if ( $this->current_post + 1 < $this->post_count ) {
 			return true;
 		} elseif ( $this->current_post + 1 == $this->post_count && $this->post_count > 0 ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function have_posts()
 	{
 		if ($this->current_post + 1 < $this->post_count) {
 			return true;
 		} elseif ($this->current_post + 1 == $this->post_count && $this->post_count > 0) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			/**
 			 * Fires once the loop has ended.
 			 *
@@ -5708,16 +6813,22 @@ class WP_Query
 			 * @param WP_Query $query The WP_Query instance (passed by reference).
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			do_action_ref_array( 'loop_end', array( &$this ) );
 			// Do some cleaning up after the loop.
 			$this->rewind_posts();
 		} elseif ( 0 === $this->post_count ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			do_action_ref_array('loop_end', array(&$this));
 			// Do some cleaning up after the loop.
 			$this->rewind_posts();
 		} elseif (0 === $this->post_count) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$this->before_loop = false;
 
 			/**
@@ -5728,10 +6839,14 @@ class WP_Query
 			 * @param WP_Query $query The WP_Query instance.
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			do_action( 'loop_no_results', $this );
 =======
 			do_action('loop_no_results', $this);
 >>>>>>> D-12-Dien
+=======
+			do_action('loop_no_results', $this);
+>>>>>>> D-29-Oanh
 		}
 
 		$this->in_the_loop = false;
@@ -5744,15 +6859,21 @@ class WP_Query
 	 * @since 1.5.0
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function rewind_posts() {
 		$this->current_post = -1;
 		if ( $this->post_count > 0 ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function rewind_posts()
 	{
 		$this->current_post = -1;
 		if ($this->post_count > 0) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$this->post = $this->posts[0];
 		}
 	}
@@ -5765,19 +6886,25 @@ class WP_Query
 	 * @return WP_Comment Comment object.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function next_comment() {
 		$this->current_comment++;
 
 		/** @var WP_Comment */
 		$this->comment = $this->comments[ $this->current_comment ];
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function next_comment()
 	{
 		$this->current_comment++;
 
 		/** @var WP_Comment */
 		$this->comment = $this->comments[$this->current_comment];
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		return $this->comment;
 	}
 
@@ -5789,30 +6916,43 @@ class WP_Query
 	 * @global WP_Comment $comment Global comment object.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function the_comment() {
 =======
 	public function the_comment()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function the_comment()
+	{
+>>>>>>> D-29-Oanh
 		global $comment;
 
 		$comment = $this->next_comment();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( 0 == $this->current_comment ) {
 =======
 		if (0 == $this->current_comment) {
 >>>>>>> D-12-Dien
+=======
+		if (0 == $this->current_comment) {
+>>>>>>> D-29-Oanh
 			/**
 			 * Fires once the comment loop is started.
 			 *
 			 * @since 2.2.0
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			do_action( 'comment_loop_start' );
 =======
 			do_action('comment_loop_start');
 >>>>>>> D-12-Dien
+=======
+			do_action('comment_loop_start');
+>>>>>>> D-29-Oanh
 		}
 	}
 
@@ -5826,17 +6966,23 @@ class WP_Query
 	 * @return bool True if comments are available, false if no more comments.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function have_comments() {
 		if ( $this->current_comment + 1 < $this->comment_count ) {
 			return true;
 		} elseif ( $this->current_comment + 1 == $this->comment_count ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function have_comments()
 	{
 		if ($this->current_comment + 1 < $this->comment_count) {
 			return true;
 		} elseif ($this->current_comment + 1 == $this->comment_count) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$this->rewind_comments();
 		}
 
@@ -5849,15 +6995,21 @@ class WP_Query
 	 * @since 2.2.0
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function rewind_comments() {
 		$this->current_comment = -1;
 		if ( $this->comment_count > 0 ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function rewind_comments()
 	{
 		$this->current_comment = -1;
 		if ($this->comment_count > 0) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$this->comment = $this->comments[0];
 		}
 	}
@@ -5873,15 +7025,21 @@ class WP_Query
 	 * @return WP_Post[]|int[] Array of post objects or post IDs.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function query( $query ) {
 		$this->init();
 		$this->query      = wp_parse_args( $query );
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function query($query)
 	{
 		$this->init();
 		$this->query      = wp_parse_args($query);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		$this->query_vars = $this->query;
 		return $this->get_posts();
 	}
@@ -5898,6 +7056,7 @@ class WP_Query
 	 * @return WP_Term|WP_Post_Type|WP_Post|WP_User|null The queried object.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function get_queried_object() {
 		if ( isset( $this->queried_object ) ) {
 =======
@@ -5905,12 +7064,18 @@ class WP_Query
 	{
 		if (isset($this->queried_object)) {
 >>>>>>> D-12-Dien
+=======
+	public function get_queried_object()
+	{
+		if (isset($this->queried_object)) {
+>>>>>>> D-29-Oanh
 			return $this->queried_object;
 		}
 
 		$this->queried_object    = null;
 		$this->queried_object_id = null;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $this->is_category || $this->is_tag || $this->is_tax ) {
 			if ( $this->is_category ) {
@@ -5944,6 +7109,8 @@ class WP_Query
 						} else {
 							$term = get_term_by( $query['field'], reset( $query['terms'] ), $matched_taxonomy );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ($this->is_category || $this->is_tag || $this->is_tax) {
 			if ($this->is_category) {
 				$cat           = $this->get('cat');
@@ -5975,12 +7142,16 @@ class WP_Query
 							$term = get_term(reset($query['terms']), $matched_taxonomy);
 						} else {
 							$term = get_term_by($query['field'], reset($query['terms']), $matched_taxonomy);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 						}
 					}
 				}
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if ( ! empty( $term ) && ! is_wp_error( $term ) ) {
 				$this->queried_object    = $term;
@@ -6017,6 +7188,8 @@ class WP_Query
 
 				if ( $user ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			if (!empty($term) && !is_wp_error($term)) {
 				$this->queried_object    = $term;
 				$this->queried_object_id = (int) $term->term_id;
@@ -6051,16 +7224,23 @@ class WP_Query
 				$user = get_user_by('slug', $author_name);
 
 				if ($user) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$this->queried_object_id = $user->ID;
 				}
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$this->queried_object = get_userdata( $this->queried_object_id );
 =======
 			$this->queried_object = get_userdata($this->queried_object_id);
 >>>>>>> D-12-Dien
+=======
+			$this->queried_object = get_userdata($this->queried_object_id);
+>>>>>>> D-29-Oanh
 		}
 
 		return $this->queried_object;
@@ -6074,17 +7254,23 @@ class WP_Query
 	 * @return int
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function get_queried_object_id() {
 		$this->get_queried_object();
 
 		if ( isset( $this->queried_object_id ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function get_queried_object_id()
 	{
 		$this->get_queried_object();
 
 		if (isset($this->queried_object_id)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return $this->queried_object_id;
 		}
 
@@ -6103,15 +7289,21 @@ class WP_Query
 	 * @param string|array $query URL query string or array of vars.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function __construct( $query = '' ) {
 		if ( ! empty( $query ) ) {
 			$this->query( $query );
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function __construct($query = '')
 	{
 		if (!empty($query)) {
 			$this->query($query);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 	}
 
@@ -6124,6 +7316,7 @@ class WP_Query
 	 * @return mixed Property.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function __get( $name ) {
 		if ( in_array( $name, $this->compat_fields, true ) ) {
 =======
@@ -6131,6 +7324,11 @@ class WP_Query
 	{
 		if (in_array($name, $this->compat_fields, true)) {
 >>>>>>> D-12-Dien
+=======
+	public function __get($name)
+	{
+		if (in_array($name, $this->compat_fields, true)) {
+>>>>>>> D-29-Oanh
 			return $this->$name;
 		}
 	}
@@ -6144,15 +7342,21 @@ class WP_Query
 	 * @return bool Whether the property is set.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function __isset( $name ) {
 		if ( in_array( $name, $this->compat_fields, true ) ) {
 			return isset( $this->$name );
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function __isset($name)
 	{
 		if (in_array($name, $this->compat_fields, true)) {
 			return isset($this->$name);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 	}
 
@@ -6166,15 +7370,21 @@ class WP_Query
 	 * @return mixed|false Return value of the callback, false otherwise.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function __call( $name, $arguments ) {
 		if ( in_array( $name, $this->compat_methods, true ) ) {
 			return $this->$name( ...$arguments );
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function __call($name, $arguments)
 	{
 		if (in_array($name, $this->compat_methods, true)) {
 			return $this->$name(...$arguments);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 		return false;
 	}
@@ -6197,11 +7407,16 @@ class WP_Query
 	 * @return bool Whether the query is for an existing archive page.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_archive() {
 =======
 	public function is_archive()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_archive()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_archive;
 	}
 
@@ -6214,6 +7429,7 @@ class WP_Query
 	 *                                    to check against. Default empty.
 	 * @return bool Whether the query is for an existing post type archive page.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 	public function is_post_type_archive( $post_types = '' ) {
 		if ( empty( $post_types ) || ! $this->is_post_type_archive ) {
@@ -6232,6 +7448,8 @@ class WP_Query
 
 		return in_array( $post_type_object->name, (array) $post_types, true );
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_post_type_archive($post_types = '')
 	{
 		if (empty($post_types) || !$this->is_post_type_archive) {
@@ -6249,7 +7467,10 @@ class WP_Query
 		}
 
 		return in_array($post_type_object->name, (array) $post_types, true);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -6261,6 +7482,7 @@ class WP_Query
 	 *                                              to check against. Default empty.
 	 * @return bool Whether the query is for an existing attachment page.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 	public function is_attachment( $attachment = '' ) {
 		if ( ! $this->is_attachment ) {
@@ -6284,6 +7506,8 @@ class WP_Query
 			return true;
 		} elseif ( in_array( $post_obj->post_name, $attachment, true ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_attachment($attachment = '')
 	{
 		if (!$this->is_attachment) {
@@ -6306,7 +7530,10 @@ class WP_Query
 		} elseif (in_array($post_obj->post_title, $attachment, true)) {
 			return true;
 		} elseif (in_array($post_obj->post_name, $attachment, true)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 		return false;
@@ -6325,6 +7552,7 @@ class WP_Query
 	 * @return bool Whether the query is for an existing author archive page.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_author( $author = '' ) {
 		if ( ! $this->is_author ) {
 			return false;
@@ -6332,6 +7560,8 @@ class WP_Query
 
 		if ( empty( $author ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_author($author = '')
 	{
 		if (!$this->is_author) {
@@ -6339,11 +7569,15 @@ class WP_Query
 		}
 
 		if (empty($author)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 
 		$author_obj = $this->get_queried_object();
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! $author_obj ) {
 			return false;
@@ -6357,6 +7591,8 @@ class WP_Query
 			return true;
 		} elseif ( in_array( $author_obj->user_nicename, $author, true ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!$author_obj) {
 			return false;
 		}
@@ -6368,7 +7604,10 @@ class WP_Query
 		} elseif (in_array($author_obj->nickname, $author, true)) {
 			return true;
 		} elseif (in_array($author_obj->user_nicename, $author, true)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 
@@ -6388,6 +7627,7 @@ class WP_Query
 	 * @return bool Whether the query is for an existing category archive page.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_category( $category = '' ) {
 		if ( ! $this->is_category ) {
 			return false;
@@ -6395,6 +7635,8 @@ class WP_Query
 
 		if ( empty( $category ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_category($category = '')
 	{
 		if (!$this->is_category) {
@@ -6402,11 +7644,15 @@ class WP_Query
 		}
 
 		if (empty($category)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 
 		$cat_obj = $this->get_queried_object();
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! $cat_obj ) {
 			return false;
@@ -6420,6 +7666,8 @@ class WP_Query
 			return true;
 		} elseif ( in_array( $cat_obj->slug, $category, true ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!$cat_obj) {
 			return false;
 		}
@@ -6431,7 +7679,10 @@ class WP_Query
 		} elseif (in_array($cat_obj->name, $category, true)) {
 			return true;
 		} elseif (in_array($cat_obj->slug, $category, true)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 
@@ -6451,6 +7702,7 @@ class WP_Query
 	 * @return bool Whether the query is for an existing tag archive page.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_tag( $tag = '' ) {
 		if ( ! $this->is_tag ) {
 			return false;
@@ -6458,6 +7710,8 @@ class WP_Query
 
 		if ( empty( $tag ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_tag($tag = '')
 	{
 		if (!$this->is_tag) {
@@ -6465,11 +7719,15 @@ class WP_Query
 		}
 
 		if (empty($tag)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 
 		$tag_obj = $this->get_queried_object();
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! $tag_obj ) {
 			return false;
@@ -6483,6 +7741,8 @@ class WP_Query
 			return true;
 		} elseif ( in_array( $tag_obj->slug, $tag, true ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!$tag_obj) {
 			return false;
 		}
@@ -6494,7 +7754,10 @@ class WP_Query
 		} elseif (in_array($tag_obj->name, $tag, true)) {
 			return true;
 		} elseif (in_array($tag_obj->slug, $tag, true)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 
@@ -6524,6 +7787,7 @@ class WP_Query
 	 *              (category and tag archives).
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_tax( $taxonomy = '', $term = '' ) {
 		global $wp_taxonomies;
 
@@ -6533,6 +7797,8 @@ class WP_Query
 
 		if ( empty( $taxonomy ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_tax($taxonomy = '', $term = '')
 	{
 		global $wp_taxonomies;
@@ -6542,11 +7808,15 @@ class WP_Query
 		}
 
 		if (empty($taxonomy)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 
 		$queried_object = $this->get_queried_object();
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$tax_array      = array_intersect( array_keys( $wp_taxonomies ), (array) $taxonomy );
 		$term_array     = (array) $term;
@@ -6554,16 +7824,22 @@ class WP_Query
 		// Check that the taxonomy matches.
 		if ( ! ( isset( $queried_object->taxonomy ) && count( $tax_array ) && in_array( $queried_object->taxonomy, $tax_array, true ) ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		$tax_array      = array_intersect(array_keys($wp_taxonomies), (array) $taxonomy);
 		$term_array     = (array) $term;
 
 		// Check that the taxonomy matches.
 		if (!(isset($queried_object->taxonomy) && count($tax_array) && in_array($queried_object->taxonomy, $tax_array, true))) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return false;
 		}
 
 		// Only a taxonomy provided.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( empty( $term ) ) {
 			return true;
@@ -6574,6 +7850,8 @@ class WP_Query
 				array_intersect(
 					array( $queried_object->term_id, $queried_object->name, $queried_object->slug ),
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (empty($term)) {
 			return true;
 		}
@@ -6582,7 +7860,10 @@ class WP_Query
 			count(
 				array_intersect(
 					array($queried_object->term_id, $queried_object->name, $queried_object->slug),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					$term_array
 				)
 			);
@@ -6597,6 +7878,7 @@ class WP_Query
 	 * @return false Always returns false.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_comments_popup() {
 		_deprecated_function( __FUNCTION__, '4.5.0' );
 =======
@@ -6604,6 +7886,11 @@ class WP_Query
 	{
 		_deprecated_function(__FUNCTION__, '4.5.0');
 >>>>>>> D-12-Dien
+=======
+	public function is_comments_popup()
+	{
+		_deprecated_function(__FUNCTION__, '4.5.0');
+>>>>>>> D-29-Oanh
 
 		return false;
 	}
@@ -6616,11 +7903,16 @@ class WP_Query
 	 * @return bool Whether the query is for an existing date archive.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_date() {
 =======
 	public function is_date()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_date()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_date;
 	}
 
@@ -6632,11 +7924,16 @@ class WP_Query
 	 * @return bool Whether the query is for an existing day archive.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_day() {
 =======
 	public function is_day()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_day()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_day;
 	}
 
@@ -6650,6 +7947,7 @@ class WP_Query
 	 * @return bool Whether the query is for a feed.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_feed( $feeds = '' ) {
 		if ( empty( $feeds ) || ! $this->is_feed ) {
 			return (bool) $this->is_feed;
@@ -6662,6 +7960,8 @@ class WP_Query
 
 		return in_array( $qv, (array) $feeds, true );
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_feed($feeds = '')
 	{
 		if (empty($feeds) || !$this->is_feed) {
@@ -6674,7 +7974,10 @@ class WP_Query
 		}
 
 		return in_array($qv, (array) $feeds, true);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -6685,11 +7988,16 @@ class WP_Query
 	 * @return bool Whether the query is for a comments feed.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_comment_feed() {
 =======
 	public function is_comment_feed()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_comment_feed()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_comment_feed;
 	}
 
@@ -6710,6 +8018,7 @@ class WP_Query
 	 * @return bool Whether the query is for the front page of the site.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_front_page() {
 		// Most likely case.
 		if ( 'posts' === get_option( 'show_on_front' ) && $this->is_home() ) {
@@ -6717,6 +8026,8 @@ class WP_Query
 		} elseif ( 'page' === get_option( 'show_on_front' ) && get_option( 'page_on_front' )
 			&& $this->is_page( get_option( 'page_on_front' ) )
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_front_page()
 	{
 		// Most likely case.
@@ -6725,7 +8036,10 @@ class WP_Query
 		} elseif (
 			'page' === get_option('show_on_front') && get_option('page_on_front')
 			&& $this->is_page(get_option('page_on_front'))
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		) {
 			return true;
 		} else {
@@ -6750,11 +8064,16 @@ class WP_Query
 	 * @return bool Whether the query is for the blog homepage.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_home() {
 =======
 	public function is_home()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_home()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_home;
 	}
 
@@ -6772,16 +8091,22 @@ class WP_Query
 	 * @return bool Whether the query is for the Privacy Policy page.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_privacy_policy() {
 		if ( get_option( 'wp_page_for_privacy_policy' )
 			&& $this->is_page( get_option( 'wp_page_for_privacy_policy' ) )
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_privacy_policy()
 	{
 		if (
 			get_option('wp_page_for_privacy_policy')
 			&& $this->is_page(get_option('wp_page_for_privacy_policy'))
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		) {
 			return true;
 		} else {
@@ -6797,11 +8122,16 @@ class WP_Query
 	 * @return bool Whether the query is for an existing month archive.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_month() {
 =======
 	public function is_month()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_month()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_month;
 	}
 
@@ -6821,6 +8151,7 @@ class WP_Query
 	 * @return bool Whether the query is for an existing single page.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_page( $page = '' ) {
 		if ( ! $this->is_page ) {
 			return false;
@@ -6828,6 +8159,8 @@ class WP_Query
 
 		if ( empty( $page ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_page($page = '')
 	{
 		if (!$this->is_page) {
@@ -6835,11 +8168,15 @@ class WP_Query
 		}
 
 		if (empty($page)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 
 		$page_obj = $this->get_queried_object();
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! $page_obj ) {
 			return false;
@@ -6862,6 +8199,8 @@ class WP_Query
 
 				if ( $pagepath_obj && ( $pagepath_obj->ID == $page_obj->ID ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!$page_obj) {
 			return false;
 		}
@@ -6882,7 +8221,10 @@ class WP_Query
 				$pagepath_obj = get_page_by_path($pagepath);
 
 				if ($pagepath_obj && ($pagepath_obj->ID == $page_obj->ID)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					return true;
 				}
 			}
@@ -6899,11 +8241,16 @@ class WP_Query
 	 * @return bool Whether the query is for a paged result.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_paged() {
 =======
 	public function is_paged()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_paged()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_paged;
 	}
 
@@ -6915,11 +8262,16 @@ class WP_Query
 	 * @return bool Whether the query is for a post or page preview.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_preview() {
 =======
 	public function is_preview()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_preview()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_preview;
 	}
 
@@ -6931,11 +8283,16 @@ class WP_Query
 	 * @return bool Whether the query is for the robots.txt file.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_robots() {
 =======
 	public function is_robots()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_robots()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_robots;
 	}
 
@@ -6947,11 +8304,16 @@ class WP_Query
 	 * @return bool Whether the query is for the favicon.ico file.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_favicon() {
 =======
 	public function is_favicon()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_favicon()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_favicon;
 	}
 
@@ -6963,11 +8325,16 @@ class WP_Query
 	 * @return bool Whether the query is for a search.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_search() {
 =======
 	public function is_search()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_search()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_search;
 	}
 
@@ -6989,6 +8356,7 @@ class WP_Query
 	 * @return bool Whether the query is for an existing single post.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_single( $post = '' ) {
 		if ( ! $this->is_single ) {
 			return false;
@@ -6996,6 +8364,8 @@ class WP_Query
 
 		if ( empty( $post ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function is_single($post = '')
 	{
 		if (!$this->is_single) {
@@ -7003,11 +8373,15 @@ class WP_Query
 		}
 
 		if (empty($post)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return true;
 		}
 
 		$post_obj = $this->get_queried_object();
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! $post_obj ) {
 			return false;
@@ -7030,6 +8404,8 @@ class WP_Query
 
 				if ( $postpath_obj && ( $postpath_obj->ID == $post_obj->ID ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!$post_obj) {
 			return false;
 		}
@@ -7050,7 +8426,10 @@ class WP_Query
 				$postpath_obj = get_page_by_path($postpath, OBJECT, $post_obj->post_type);
 
 				if ($postpath_obj && ($postpath_obj->ID == $post_obj->ID)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					return true;
 				}
 			}
@@ -7076,6 +8455,7 @@ class WP_Query
 	 *              or any of the given post types.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_singular( $post_types = '' ) {
 		if ( empty( $post_types ) || ! $this->is_singular ) {
 =======
@@ -7083,10 +8463,16 @@ class WP_Query
 	{
 		if (empty($post_types) || !$this->is_singular) {
 >>>>>>> D-12-Dien
+=======
+	public function is_singular($post_types = '')
+	{
+		if (empty($post_types) || !$this->is_singular) {
+>>>>>>> D-29-Oanh
 			return (bool) $this->is_singular;
 		}
 
 		$post_obj = $this->get_queried_object();
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! $post_obj ) {
 			return false;
@@ -7094,12 +8480,17 @@ class WP_Query
 
 		return in_array( $post_obj->post_type, (array) $post_types, true );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!$post_obj) {
 			return false;
 		}
 
 		return in_array($post_obj->post_type, (array) $post_types, true);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -7110,11 +8501,16 @@ class WP_Query
 	 * @return bool Whether the query is for a specific time.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_time() {
 =======
 	public function is_time()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_time()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_time;
 	}
 
@@ -7126,11 +8522,16 @@ class WP_Query
 	 * @return bool Whether the query is for a trackback endpoint call.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_trackback() {
 =======
 	public function is_trackback()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_trackback()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_trackback;
 	}
 
@@ -7142,11 +8543,16 @@ class WP_Query
 	 * @return bool Whether the query is for an existing year archive.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_year() {
 =======
 	public function is_year()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_year()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_year;
 	}
 
@@ -7158,11 +8564,16 @@ class WP_Query
 	 * @return bool Whether the query is a 404 error.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_404() {
 =======
 	public function is_404()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_404()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_404;
 	}
 
@@ -7174,11 +8585,16 @@ class WP_Query
 	 * @return bool Whether the query is for an embedded post.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_embed() {
 =======
 	public function is_embed()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_embed()
+	{
+>>>>>>> D-29-Oanh
 		return (bool) $this->is_embed;
 	}
 
@@ -7192,11 +8608,16 @@ class WP_Query
 	 * @return bool Whether the query is the main query.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function is_main_query() {
 =======
 	public function is_main_query()
 	{
 >>>>>>> D-12-Dien
+=======
+	public function is_main_query()
+	{
+>>>>>>> D-29-Oanh
 		global $wp_the_query;
 		return $wp_the_query === $this;
 	}
@@ -7221,6 +8642,7 @@ class WP_Query
 	 * @return true True when finished.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function setup_postdata( $post ) {
 		global $id, $authordata, $currentday, $currentmonth, $page, $pages, $multipage, $more, $numpages;
 
@@ -7235,6 +8657,8 @@ class WP_Query
 		$elements = $this->generate_postdata( $post );
 		if ( false === $elements ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function setup_postdata($post)
 	{
 		global $id, $authordata, $currentday, $currentmonth, $page, $pages, $multipage, $more, $numpages;
@@ -7249,7 +8673,10 @@ class WP_Query
 
 		$elements = $this->generate_postdata($post);
 		if (false === $elements) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return;
 		}
 
@@ -7273,10 +8700,14 @@ class WP_Query
 		 * @param WP_Query $query The current Query object (passed by reference).
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		do_action_ref_array( 'the_post', array( &$post, &$this ) );
 =======
 		do_action_ref_array('the_post', array(&$post, &$this));
 >>>>>>> D-12-Dien
+=======
+		do_action_ref_array('the_post', array(&$post, &$this));
+>>>>>>> D-29-Oanh
 
 		return true;
 	}
@@ -7290,6 +8721,7 @@ class WP_Query
 	 * @return array|false Elements of post or false on failure.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function generate_postdata( $post ) {
 
 		if ( ! ( $post instanceof WP_Post ) ) {
@@ -7298,6 +8730,8 @@ class WP_Query
 
 		if ( ! $post ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function generate_postdata($post)
 	{
 
@@ -7306,22 +8740,30 @@ class WP_Query
 		}
 
 		if (!$post) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return false;
 		}
 
 		$id = (int) $post->ID;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$authordata = get_userdata( $post->post_author );
 =======
 		$authordata = get_userdata($post->post_author);
 >>>>>>> D-12-Dien
+=======
+		$authordata = get_userdata($post->post_author);
+>>>>>>> D-29-Oanh
 
 		$currentday   = false;
 		$currentmonth = false;
 
 		$post_date = $post->post_date;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $post_date ) && '0000-00-00 00:00:00' !== $post_date ) {
 			// Avoid using mysql2date for performance reasons.
@@ -7331,6 +8773,8 @@ class WP_Query
 
 			$currentday = sprintf( '%s.%s.%s', $day, $currentmonth, $year );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!empty($post_date) && '0000-00-00 00:00:00' !== $post_date) {
 			// Avoid using mysql2date for performance reasons.
 			$currentmonth = substr($post_date, 5, 2);
@@ -7338,11 +8782,15 @@ class WP_Query
 			$year         = substr($post_date, 2, 2);
 
 			$currentday = sprintf('%s.%s.%s', $day, $currentmonth, $year);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 
 		$numpages  = 1;
 		$multipage = 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$page      = $this->get( 'page' );
 		if ( ! $page ) {
@@ -7350,6 +8798,10 @@ class WP_Query
 		$page      = $this->get('page');
 		if (!$page) {
 >>>>>>> D-12-Dien
+=======
+		$page      = $this->get('page');
+		if (!$page) {
+>>>>>>> D-29-Oanh
 			$page = 1;
 		}
 
@@ -7357,6 +8809,7 @@ class WP_Query
 		 * Force full post content when viewing the permalink for the $post,
 		 * or when on an RSS feed. Otherwise respect the 'more' tag.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( get_queried_object_id() === $post->ID && ( $this->is_page() || $this->is_single() ) ) {
 			$more = 1;
@@ -7366,12 +8819,18 @@ class WP_Query
 			$more = 1;
 		} elseif ($this->is_feed()) {
 >>>>>>> D-12-Dien
+=======
+		if (get_queried_object_id() === $post->ID && ($this->is_page() || $this->is_single())) {
+			$more = 1;
+		} elseif ($this->is_feed()) {
+>>>>>>> D-29-Oanh
 			$more = 1;
 		} else {
 			$more = 0;
 		}
 
 		$content = $post->post_content;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( str_contains( $content, '<!--nextpage-->' ) ) {
 			$content = str_replace( "\n<!--nextpage-->\n", '<!--nextpage-->', $content );
@@ -7391,6 +8850,8 @@ class WP_Query
 		} else {
 			$pages = array( $post->post_content );
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (str_contains($content, '<!--nextpage-->')) {
 			$content = str_replace("\n<!--nextpage-->\n", '<!--nextpage-->', $content);
 			$content = str_replace("\n<!--nextpage-->", '<!--nextpage-->', $content);
@@ -7408,7 +8869,10 @@ class WP_Query
 			$pages = explode('<!--nextpage-->', $content);
 		} else {
 			$pages = array($post->post_content);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 
 		/**
@@ -7423,6 +8887,7 @@ class WP_Query
 		 * @param WP_Post  $post  Current post object.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$pages = apply_filters( 'content_pagination', $pages, $post );
 
 		$numpages = count( $pages );
@@ -7430,13 +8895,18 @@ class WP_Query
 		if ( $numpages > 1 ) {
 			if ( $page > 1 ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		$pages = apply_filters('content_pagination', $pages, $post);
 
 		$numpages = count($pages);
 
 		if ($numpages > 1) {
 			if ($page > 1) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$more = 1;
 			}
 			$multipage = 1;
@@ -7445,10 +8915,14 @@ class WP_Query
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$elements = compact( 'id', 'authordata', 'currentday', 'currentmonth', 'page', 'pages', 'multipage', 'more', 'numpages' );
 =======
 		$elements = compact('id', 'authordata', 'currentday', 'currentmonth', 'page', 'pages', 'multipage', 'more', 'numpages');
 >>>>>>> D-12-Dien
+=======
+		$elements = compact('id', 'authordata', 'currentday', 'currentmonth', 'page', 'pages', 'multipage', 'more', 'numpages');
+>>>>>>> D-29-Oanh
 
 		return $elements;
 	}
@@ -7465,11 +8939,16 @@ class WP_Query
 	 * @return string Cache key.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	protected function generate_cache_key( array $args, $sql ) {
 =======
 	protected function generate_cache_key(array $args, $sql)
 	{
 >>>>>>> D-12-Dien
+=======
+	protected function generate_cache_key(array $args, $sql)
+	{
+>>>>>>> D-29-Oanh
 		global $wpdb;
 
 		unset(
@@ -7494,6 +8973,7 @@ class WP_Query
 			 * array_walk_recursive() does not return an array.
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			static function ( &$value ) use ( $wpdb, $placeholder ) {
 				if ( is_string( $value ) && str_contains( $value, $placeholder ) ) {
 					$value = $wpdb->remove_placeholder_escape( $value );
@@ -7502,11 +8982,17 @@ class WP_Query
 				if (is_string($value) && str_contains($value, $placeholder)) {
 					$value = $wpdb->remove_placeholder_escape($value);
 >>>>>>> D-12-Dien
+=======
+			static function (&$value) use ($wpdb, $placeholder) {
+				if (is_string($value) && str_contains($value, $placeholder)) {
+					$value = $wpdb->remove_placeholder_escape($value);
+>>>>>>> D-29-Oanh
 				}
 			}
 		);
 
 		// Replace wpdb placeholder in the SQL statement used by the cache key.
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$sql = $wpdb->remove_placeholder_escape( $sql );
 		$key = md5( serialize( $args ) . $sql );
@@ -7515,13 +9001,18 @@ class WP_Query
 		if ( ! empty( $this->tax_query->queries ) ) {
 			$last_changed .= wp_cache_get_last_changed( 'terms' );
 =======
+=======
+>>>>>>> D-29-Oanh
 		$sql = $wpdb->remove_placeholder_escape($sql);
 		$key = md5(serialize($args) . $sql);
 
 		$last_changed = wp_cache_get_last_changed('posts');
 		if (!empty($this->tax_query->queries)) {
 			$last_changed .= wp_cache_get_last_changed('terms');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 
 		return "wp_query:$key:$last_changed";
@@ -7536,17 +9027,23 @@ class WP_Query
 	 * @global WP_Post $post Global post object.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function reset_postdata() {
 		if ( ! empty( $this->post ) ) {
 			$GLOBALS['post'] = $this->post;
 			$this->setup_postdata( $this->post );
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function reset_postdata()
 	{
 		if (!empty($this->post)) {
 			$GLOBALS['post'] = $this->post;
 			$this->setup_postdata($this->post);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		}
 	}
 
@@ -7561,6 +9058,7 @@ class WP_Query
 	 * @return mixed
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function lazyload_term_meta( $check, $term_id ) {
 		_deprecated_function( __METHOD__, '4.5.0' );
 =======
@@ -7568,6 +9066,11 @@ class WP_Query
 	{
 		_deprecated_function(__METHOD__, '4.5.0');
 >>>>>>> D-12-Dien
+=======
+	public function lazyload_term_meta($check, $term_id)
+	{
+		_deprecated_function(__METHOD__, '4.5.0');
+>>>>>>> D-29-Oanh
 		return $check;
 	}
 
@@ -7582,16 +9085,23 @@ class WP_Query
 	 * @return mixed
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function lazyload_comment_meta( $check, $comment_id ) {
 		_deprecated_function( __METHOD__, '4.5.0' );
 		return $check;
 	}
 }
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function lazyload_comment_meta($check, $comment_id)
 	{
 		_deprecated_function(__METHOD__, '4.5.0');
 		return $check;
 	}
+<<<<<<< HEAD
 }
 >>>>>>> D-12-Dien
+=======
+}
+>>>>>>> D-29-Oanh

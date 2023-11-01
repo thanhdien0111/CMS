@@ -1,12 +1,16 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
 =======
 session_start();
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * The template for displaying search results pages
  *
@@ -19,6 +23,7 @@ session_start();
 
 get_header();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 if ( have_posts() ) {
@@ -129,6 +134,8 @@ if ( have_posts() ) {
 	<div class="search-result-count default-max-width">
 		<?php
 =======
+=======
+>>>>>>> D-29-Oanh
 if (have_posts()) {
 
 ?>
@@ -165,7 +172,10 @@ if (have_posts()) {
 <!-- .page-content -->
 <div class="search-result-count default-max-width">
     <?php
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		printf(
 			esc_html(
 				/* translators: %d: The number of search results. */
@@ -180,18 +190,24 @@ if (have_posts()) {
 		);
 		?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	</div><!-- .search-result-count -->
 	<?php
 	// Start the Loop.
 	while ( have_posts() ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 </div><!-- .search-result-count -->
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <?php
 	// Start the Loop.
 	while (have_posts()) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		the_post();
 
 		/*
@@ -199,6 +215,7 @@ if (have_posts()) {
 		 * If you want to override this in a child theme, then include a file
 		 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		get_template_part( 'template-parts/content/content-excerpt', get_post_format() );
@@ -254,6 +271,16 @@ if (have_posts()) {
 
 get_footer();
 =======
+=======
+		get_template_part('template-parts/content/content-excerpt', get_post_format());
+	} // End the loop.
+
+	// Previous/next page navigation.
+	twenty_twenty_one_the_posts_navigation();
+
+	// If no content, include the "No posts found" template.
+} else {
+>>>>>>> D-29-Oanh
 	get_template_part('template-parts/content/content-none');
 }
 
@@ -274,8 +301,12 @@ get_footer();
 
 		echo
 		'<div class="container mt-5 mb-5">
+<<<<<<< HEAD
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
+=======
+		
+>>>>>>> D-29-Oanh
 				<h4>Latest News</h4>
 				<ul class="timeline">';
 		for ($i = 0; $i < count($posts); $i++) {
@@ -291,8 +322,12 @@ get_footer();
 		}
 		echo '
     </ul>
+<<<<<<< HEAD
 </div>
 </div>
+=======
+
+>>>>>>> D-29-Oanh
 </div>';
 		?>
     </ul>
@@ -341,6 +376,7 @@ ul.timeline>li:before {
     height: 20px;
     z-index: 400;
 }
+<<<<<<< HEAD
 </style>
 >>>>>>> D-12-Dien
 =======
@@ -392,3 +428,6 @@ ul.timeline>li:before {
 <!-- module 15(last posts) -->
 <?php get_footer(); ?>
 >>>>>>> D-01-LanAnh
+=======
+</style>
+>>>>>>> D-29-Oanh

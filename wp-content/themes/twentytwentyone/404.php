@@ -1,8 +1,12 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * The template for displaying 404 pages (not found)
  *
@@ -16,6 +20,7 @@
 get_header();
 ?>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	<header class="page-header alignwide">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing here', 'twentytwentyone' ); ?></h1>
@@ -31,6 +36,8 @@ get_header();
 <?php
 get_footer();
 =======
+=======
+>>>>>>> D-29-Oanh
 <header class="page-header alignwide">
     <h1 class="page-title"><?php esc_html_e('Nothing here', 'twentytwentyone'); ?></h1>
 </header><!-- .page-header -->
@@ -45,5 +52,9 @@ get_footer();
 </div><!-- .error-404 -->
 
 <?php
+<<<<<<< HEAD
 get_footer();
 >>>>>>> D-12-Dien
+=======
+get_footer();
+>>>>>>> D-29-Oanh

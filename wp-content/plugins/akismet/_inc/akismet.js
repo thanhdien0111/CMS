@@ -387,15 +387,19 @@ jQuery( function ( $ ) {
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$( '.akismet-enter-api-key-box a' ).on( 'click', function ( e ) {
 		e.preventDefault();
 
 		var div = $( '.enter-api-key' );
 =======
+=======
+>>>>>>> D-29-Oanh
 	$( '.akismet-enter-api-key-box__reveal' ).on( 'click', function ( e ) {
 		e.preventDefault();
 
 		var div = $( '.akismet-enter-api-key-box__form-wrapper' );
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$( '.akismet-enter-api-key-box__reveal' ).on( 'click', function ( e ) {
@@ -403,6 +407,8 @@ jQuery( function ( $ ) {
 
 		var div = $( '.akismet-enter-api-key-box__form-wrapper' );
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		div.show( 500 );
 		div.find( 'input[name=key]' ).focus();
 

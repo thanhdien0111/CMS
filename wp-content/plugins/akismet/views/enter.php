@@ -1,6 +1,7 @@
 <div class="akismet-enter-api-key-box centered">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<a href="#"><?php esc_html_e( 'Manually enter an API key', 'akismet' ); ?></a>
 	<div class="enter-api-key">
 =======
@@ -20,6 +21,8 @@
 </div>
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> D-29-Oanh
 	<button class="akismet-enter-api-key-box__reveal"><?php esc_html_e( 'Manually enter an API key', 'akismet' ); ?></button>
 	<div class="akismet-enter-api-key-box__form-wrapper">
 		<form action="<?php echo esc_url( Akismet_Admin::get_page_url() ); ?>" method="post">
@@ -33,6 +36,9 @@
 		</form>
 	</div>
 </div>
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh

@@ -1,8 +1,11 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 /**
  * Taxonomy API: Walker_Category class
  *
@@ -19,11 +22,15 @@
  * @see Walker
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 class Walker_Category extends Walker
 {
 =======
 class Walker_Category extends Walker {
 >>>>>>> D-12-Dien
+=======
+class Walker_Category extends Walker {
+>>>>>>> D-29-Oanh
 
 	/**
 	 * What the class handles.
@@ -62,6 +69,7 @@ class Walker_Category extends Walker {
 	 *                       value is 'list'. See wp_list_categories(). Default empty array.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function start_lvl(&$output, $depth = 0, $args = array())
 	{
 		if ('list' !== $args['style']) {
@@ -70,13 +78,18 @@ class Walker_Category extends Walker {
 
 		$indent  = str_repeat("\t", $depth);
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
 		if ( 'list' !== $args['style'] ) {
 			return;
 		}
 
 		$indent  = str_repeat( "\t", $depth );
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		$output .= "$indent<ul class='children'>\n";
 	}
 
@@ -93,6 +106,7 @@ class Walker_Category extends Walker {
 	 *                       value is 'list'. See wp_list_categories(). Default empty array.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function end_lvl(&$output, $depth = 0, $args = array())
 	{
 		if ('list' !== $args['style']) {
@@ -101,13 +115,18 @@ class Walker_Category extends Walker {
 
 		$indent  = str_repeat("\t", $depth);
 =======
+=======
+>>>>>>> D-29-Oanh
 	public function end_lvl( &$output, $depth = 0, $args = array() ) {
 		if ( 'list' !== $args['style'] ) {
 			return;
 		}
 
 		$indent  = str_repeat( "\t", $depth );
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		$output .= "$indent</ul>\n";
 	}
 
@@ -128,30 +147,41 @@ class Walker_Category extends Walker {
 	 * @param int     $current_object_id Optional. ID of the current category. Default 0.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function start_el(&$output, $data_object, $depth = 0, $args = array(), $current_object_id = 0)
 	{
 =======
 	public function start_el( &$output, $data_object, $depth = 0, $args = array(), $current_object_id = 0 ) {
 >>>>>>> D-12-Dien
+=======
+	public function start_el( &$output, $data_object, $depth = 0, $args = array(), $current_object_id = 0 ) {
+>>>>>>> D-29-Oanh
 		// Restores the more descriptive, specific name for use within this method.
 		$category = $data_object;
 
 		/** This filter is documented in wp-includes/category-template.php */
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$cat_name = apply_filters('list_cats', esc_attr($category->name), $category);
 
 		// Don't generate an element if the category name is empty.
 		if ('' === $cat_name) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		$cat_name = apply_filters( 'list_cats', esc_attr( $category->name ), $category );
 
 		// Don't generate an element if the category name is empty.
 		if ( '' === $cat_name ) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			return;
 		}
 
 		$atts         = array();
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$atts['href'] = get_term_link($category);
 
@@ -161,6 +191,11 @@ class Walker_Category extends Walker {
 
 		if ( $args['use_desc_for_title'] && ! empty( $category->description ) ) {
 >>>>>>> D-12-Dien
+=======
+		$atts['href'] = get_term_link( $category );
+
+		if ( $args['use_desc_for_title'] && ! empty( $category->description ) ) {
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the category description for display.
 			 *
@@ -170,10 +205,14 @@ class Walker_Category extends Walker {
 			 * @param WP_Term $category    Category object.
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$atts['title'] = strip_tags(apply_filters('category_description', $category->description, $category));
 =======
 			$atts['title'] = strip_tags( apply_filters( 'category_description', $category->description, $category ) );
 >>>>>>> D-12-Dien
+=======
+			$atts['title'] = strip_tags( apply_filters( 'category_description', $category->description, $category ) );
+>>>>>>> D-29-Oanh
 		}
 
 		/**
@@ -193,6 +232,7 @@ class Walker_Category extends Walker {
 		 * @param int     $current_object_id ID of the current category.
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$atts = apply_filters('category_list_link_attributes', $atts, $category, $depth, $args, $current_object_id);
 
 		$attributes = '';
@@ -200,12 +240,15 @@ class Walker_Category extends Walker {
 			if (is_scalar($value) && '' !== $value && false !== $value) {
 				$value       = ('href' === $attr) ? esc_url($value) : esc_attr($value);
 =======
+=======
+>>>>>>> D-29-Oanh
 		$atts = apply_filters( 'category_list_link_attributes', $atts, $category, $depth, $args, $current_object_id );
 
 		$attributes = '';
 		foreach ( $atts as $attr => $value ) {
 			if ( is_scalar( $value ) && '' !== $value && false !== $value ) {
 				$value       = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 				$attributes .= ' ' . $attr . '="' . $value . '"';
 			}
@@ -221,10 +264,19 @@ class Walker_Category extends Walker {
 =======
 			'<div class="border-bottom"><a%s>%s</a></div>',
 >>>>>>> D-01-LanAnh
+=======
+				$attributes .= ' ' . $attr . '="' . $value . '"';
+			}
+		}
+
+		$link = sprintf(
+			'<a%s>%s</a>',
+>>>>>>> D-29-Oanh
 			$attributes,
 			$cat_name
 		);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if (!empty($args['feed_image']) || !empty($args['feed'])) {
 			$link .= ' ';
@@ -243,6 +295,8 @@ class Walker_Category extends Walker {
 				$name  = $args['feed'];
 				$link .= empty($args['title']) ? '' : $args['title'];
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ( ! empty( $args['feed_image'] ) || ! empty( $args['feed'] ) ) {
 			$link .= ' ';
 
@@ -259,35 +313,49 @@ class Walker_Category extends Walker {
 				$alt   = ' alt="' . $args['feed'] . '"';
 				$name  = $args['feed'];
 				$link .= empty( $args['title'] ) ? '' : $args['title'];
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			}
 
 			$link .= '>';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			if (empty($args['feed_image'])) {
 				$link .= $name;
 			} else {
 				$link .= "<img src='" . esc_url($args['feed_image']) . "'$alt" . ' />';
 =======
+=======
+>>>>>>> D-29-Oanh
 			if ( empty( $args['feed_image'] ) ) {
 				$link .= $name;
 			} else {
 				$link .= "<img src='" . esc_url( $args['feed_image'] ) . "'$alt" . ' />';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			}
 
 			$link .= '</a>';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if (empty($args['feed_image'])) {
 =======
 			if ( empty( $args['feed_image'] ) ) {
 >>>>>>> D-12-Dien
+=======
+			if ( empty( $args['feed_image'] ) ) {
+>>>>>>> D-29-Oanh
 				$link .= ')';
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if (!empty($args['show_count'])) {
 			$link .= ' (' . number_format_i18n($category->count) . ')';
@@ -295,11 +363,14 @@ class Walker_Category extends Walker {
 
 		if ('list' === $args['style']) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ( ! empty( $args['show_count'] ) ) {
 			$link .= ' (' . number_format_i18n( $category->count ) . ')';
 		}
 
 		if ( 'list' === $args['style'] ) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 			$output     .= "\t<li";
 			$css_classes = array(
@@ -312,6 +383,15 @@ class Walker_Category extends Walker {
 =======
 			if ( ! empty( $args['current_category'] ) ) {
 >>>>>>> D-12-Dien
+=======
+			$output     .= "\t<li";
+			$css_classes = array(
+				'cat-item',
+				'cat-item-' . $category->term_id,
+			);
+
+			if ( ! empty( $args['current_category'] ) ) {
+>>>>>>> D-29-Oanh
 				// 'current_category' can be an array, so we use `get_terms()`.
 				$_current_terms = get_terms(
 					array(
@@ -321,6 +401,7 @@ class Walker_Category extends Walker {
 					)
 				);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				foreach ($_current_terms as $_current_term) {
 					if ($category->term_id === $_current_term->term_id) {
@@ -333,6 +414,8 @@ class Walker_Category extends Walker {
 					while ($_current_term->parent) {
 						if ($category->term_id === $_current_term->parent) {
 =======
+=======
+>>>>>>> D-29-Oanh
 				foreach ( $_current_terms as $_current_term ) {
 					if ( $category->term_id === $_current_term->term_id ) {
 						$css_classes[] = 'current-cat';
@@ -343,11 +426,15 @@ class Walker_Category extends Walker {
 
 					while ( $_current_term->parent ) {
 						if ( $category->term_id === $_current_term->parent ) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 							$css_classes[] = 'current-cat-ancestor';
 							break;
 						}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 						$_current_term = get_term($_current_term->parent, $category->taxonomy);
 =======
@@ -356,6 +443,11 @@ class Walker_Category extends Walker {
 					}
 				}
 				// $_SESSION['categories-detail'] = $output ;
+=======
+						$_current_term = get_term( $_current_term->parent, $category->taxonomy );
+					}
+				}
+>>>>>>> D-29-Oanh
 			}
 
 			/**
@@ -371,6 +463,7 @@ class Walker_Category extends Walker {
 			 * @param array    $args        An array of wp_list_categories() arguments.
 			 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$css_classes = implode(' ', apply_filters('category_css_class', $css_classes, $category, $depth, $args));
 			$css_classes = $css_classes ? ' class="' . esc_attr($css_classes) . '"' : '';
 
@@ -378,13 +471,18 @@ class Walker_Category extends Walker {
 			$output .= ">$link\n";
 		} elseif (isset($args['separator'])) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			$css_classes = implode( ' ', apply_filters( 'category_css_class', $css_classes, $category, $depth, $args ) );
 			$css_classes = $css_classes ? ' class="' . esc_attr( $css_classes ) . '"' : '';
 
 			$output .= $css_classes;
 			$output .= ">$link\n";
 		} elseif ( isset( $args['separator'] ) ) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 			$output .= "\t$link" . $args['separator'] . "\n";
 		} else {
 			$output .= "\t$link<br />\n";
@@ -406,6 +504,7 @@ class Walker_Category extends Walker {
 	 *                            append to output. See wp_list_categories(). Default empty array.
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public function end_el(&$output, $data_object, $depth = 0, $args = array())
 	{
 		if ('list' !== $args['style']) {
@@ -413,13 +512,21 @@ class Walker_Category extends Walker {
 	public function end_el( &$output, $data_object, $depth = 0, $args = array() ) {
 		if ( 'list' !== $args['style'] ) {
 >>>>>>> D-12-Dien
+=======
+	public function end_el( &$output, $data_object, $depth = 0, $args = array() ) {
+		if ( 'list' !== $args['style'] ) {
+>>>>>>> D-29-Oanh
 			return;
 		}
 
 		$output .= "</li>\n";
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-29-Oanh
 }

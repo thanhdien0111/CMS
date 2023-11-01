@@ -1,5 +1,8 @@
 <?php
+<<<<<<< HEAD
 
+=======
+>>>>>>> D-29-Oanh
 /**
  * The template for displaying author info below posts.
  *
@@ -9,6 +12,7 @@
  */
 
 ?>
+<<<<<<< HEAD
 <?php if ((bool) get_the_author_meta('description') && post_type_supports(get_post_type(), 'author')) : ?>
 	<div class="author-bio <?php echo get_option('show_avatars') ? 'show-avatars' : ''; ?>">
 		<?php echo get_avatar(get_the_author_meta('ID'), '85'); ?>
@@ -30,11 +34,38 @@
 				sprintf(
 					/* translators: %s: Author name. */
 					esc_html__('View all of %s\'s posts.', 'twentytwentyone'),
+=======
+<?php if ( (bool) get_the_author_meta( 'description' ) && post_type_supports( get_post_type(), 'author' ) ) : ?>
+	<div class="author-bio <?php echo get_option( 'show_avatars' ) ? 'show-avatars' : ''; ?>">
+		<?php echo get_avatar( get_the_author_meta( 'ID' ), '85' ); ?>
+		<div class="author-bio-content">
+			<h2 class="author-title">
+			<?php
+			printf(
+				/* translators: %s: Author name. */
+				esc_html__( 'By %s', 'twentytwentyone' ),
+				get_the_author()
+			);
+			?>
+			</h2><!-- .author-title -->
+			<p class="author-description"> <?php the_author_meta( 'description' ); ?></p><!-- .author-description -->
+			<?php
+			printf(
+				'<a class="author-link" href="%1$s" rel="author">%2$s</a>',
+				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+				sprintf(
+					/* translators: %s: Author name. */
+					esc_html__( 'View all of %s\'s posts.', 'twentytwentyone' ),
+>>>>>>> D-29-Oanh
 					get_the_author()
 				)
 			);
 			?>
 		</div><!-- .author-bio-content -->
 	</div><!-- .author-bio -->
+<<<<<<< HEAD
 <?php
+=======
+	<?php
+>>>>>>> D-29-Oanh
 endif;

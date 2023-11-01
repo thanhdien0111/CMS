@@ -75,9 +75,12 @@ class Akismet {
 		// Fluent Forms
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		add_filter( 'fluentform_form_element_start', array( 'Akismet', 'output_custom_form_fields' ) );
 		add_filter( 'fluentform_akismet_fields', array( 'Akismet', 'prepare_custom_form_values' ), 10, 2 );
 =======
+=======
+>>>>>>> D-29-Oanh
 		/*
 		 * The Fluent Forms  hook names were updated in version 5.0.0. The last version that supported
 		 * the original hook names was 4.3.25, and version 4.3.25 was tested up to WordPress version 6.1.
@@ -93,6 +96,7 @@ class Akismet {
 		// Current Fluent Form hooks.
 		add_filter( 'fluentform/form_element_start', array( 'Akismet', 'output_custom_form_fields' ) );
 		add_filter( 'fluentform/akismet_fields', array( 'Akismet', 'prepare_custom_form_values' ), 10, 2 );
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		/*
@@ -111,6 +115,8 @@ class Akismet {
 		add_filter( 'fluentform/form_element_start', array( 'Akismet', 'output_custom_form_fields' ) );
 		add_filter( 'fluentform/akismet_fields', array( 'Akismet', 'prepare_custom_form_values' ), 10, 2 );
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 		add_action( 'update_option_wordpress_api_key', array( 'Akismet', 'updated_option' ), 10, 2 );
 		add_action( 'add_option_wordpress_api_key', array( 'Akismet', 'added_option' ), 10, 2 );
@@ -1465,18 +1471,24 @@ class Akismet {
 	public static function output_custom_form_fields( $post_id ) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		if ( 'fluentform/form_element_start' === current_filter() && did_action( 'fluentform_form_element_start' ) ) {
 			// Already did this via the legacy filter.
 			return;
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		// phpcs:ignore WordPress.Security.EscapeOutput
 		echo self::get_akismet_form_fields();
 	}
@@ -1504,18 +1516,24 @@ class Akismet {
 	public static function prepare_custom_form_values( $form, $data = null ) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		if ( 'fluentform/akismet_fields' === current_filter() && did_filter( 'fluentform_akismet_fields' ) ) {
 			// Already updated the form fields via the legacy filter.
 			return $form;
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		if ( is_null( $data ) ) {
 			// phpcs:ignore WordPress.Security.NonceVerification.Missing
 			$data = $_POST;

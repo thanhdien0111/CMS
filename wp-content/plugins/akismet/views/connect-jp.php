@@ -9,6 +9,7 @@
 	<div class="akismet-jp-connect">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<h3><?php esc_html_e( 'Connect with Jetpack', 'akismet' ); ?></h3><?php
 		if ( in_array( $akismet_user->status, array( 'no-sub', 'missing' ) ) ) {?>
 		<p><?php esc_html_e( 'Use your Jetpack connection to set up Akismet.', 'akismet' ); ?></p>
@@ -106,6 +107,8 @@
 <<<<<<< HEAD
 		<?php Akismet::view( 'setup' );?>
 =======
+=======
+>>>>>>> D-29-Oanh
 		<h3><?php esc_html_e( 'Connect with Jetpack', 'akismet' ); ?></h3>
 		<?php if ( in_array( $akismet_user->status, array( 'no-sub', 'missing' ) ) ) { ?>
 			<p><?php esc_html_e( 'Use your Jetpack connection to set up Akismet.', 'akismet' ); ?></p>
@@ -185,10 +188,13 @@
 	</div>
 	<div class="akismet-ak-connect">
 		<?php Akismet::view( 'setup' ); ?>
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		<?php Akismet::view( 'setup' ); ?>
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	</div>
 	<div class="centered akismet-toggles">
 		<a href="#" class="toggle-jp-connect"><?php esc_html_e( 'Connect with Jetpack', 'akismet' ); ?></a>
@@ -197,6 +203,7 @@
 </div>
 <br/>
 <div class="akismet-box">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	<?php Akismet::view( 'enter' );?>
@@ -209,3 +216,7 @@
 	<?php Akismet::view( 'enter' ); ?>
 </div>
 >>>>>>> D-01-LanAnh
+=======
+	<?php Akismet::view( 'enter' ); ?>
+</div>
+>>>>>>> D-29-Oanh

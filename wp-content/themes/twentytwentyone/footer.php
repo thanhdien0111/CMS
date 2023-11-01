@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -10,6 +11,9 @@
 =======
 <?php
 >>>>>>> D-12-Dien
+=======
+<?php
+>>>>>>> D-29-Oanh
 /**
  * The template for displaying the footer
  *
@@ -23,6 +27,7 @@
  */
 
 ?>
+<<<<<<< HEAD
 <<<<<<< HEAD
 </main><!-- #main -->
 
@@ -137,6 +142,8 @@
 		<?php if (has_nav_menu('footer')) : ?>
 			<nav aria-label="<?php esc_attr_e('Secondary menu', 'twentytwentyone'); ?>" class="footer-navigation">
 =======
+=======
+>>>>>>> D-29-Oanh
 			</main><!-- #main -->
 		</div><!-- #primary -->
 	</div><!-- #content -->
@@ -147,6 +154,7 @@
 
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 				<ul class="footer-navigation-wrapper">
 					<!-- <?php
@@ -200,6 +208,25 @@
 
 </html>
 =======
+=======
+				<ul class="footer-navigation-wrapper">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'footer',
+							'items_wrap'     => '%3$s',
+							'container'      => false,
+							'depth'          => 1,
+							'link_before'    => '<span>',
+							'link_after'     => '</span>',
+							'fallback_cb'    => false,
+						)
+					);
+					?>
+				</ul><!-- .footer-navigation-wrapper -->
+			</nav><!-- .footer-navigation -->
+		<?php endif; ?>
+>>>>>>> D-29-Oanh
 		<div class="site-info">
 			<div class="site-name">
 				<?php if ( has_custom_logo() ) : ?>
@@ -240,4 +267,7 @@
 
 </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh

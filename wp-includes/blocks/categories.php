@@ -1,8 +1,11 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 /**
  * Server-side rendering of the `core/categories` block.
  *
@@ -17,16 +20,21 @@
  * @return string Returns the categories list/dropdown markup.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 function render_block_core_categories($attributes)
 {
 =======
 function render_block_core_categories( $attributes ) {
 >>>>>>> D-12-Dien
+=======
+function render_block_core_categories( $attributes ) {
+>>>>>>> D-29-Oanh
 	static $block_id = 0;
 	++$block_id;
 
 	$args = array(
 		'echo'         => false,
+<<<<<<< HEAD
 <<<<<<< HEAD
 		'hierarchical' => !empty($attributes['showHierarchy']),
 		'orderby'      => 'name',
@@ -52,6 +60,8 @@ function render_block_core_categories( $attributes ) {
 				'#(?<=</select>)#',
 				build_dropdown_script_block_core_categories($id),
 =======
+=======
+>>>>>>> D-29-Oanh
 		'hierarchical' => ! empty( $attributes['showHierarchy'] ),
 		'orderby'      => 'name',
 		'show_count'   => ! empty( $attributes['showPostCounts'] ),
@@ -75,13 +85,17 @@ function render_block_core_categories( $attributes ) {
 			$items_markup = preg_replace(
 				'#(?<=</select>)#',
 				build_dropdown_script_block_core_categories( $id ),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 				$items_markup,
 				1
 			);
 		}
 	} else {
 		$wrapper_markup = '<ul %1$s>%2$s</ul>';
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$items_markup   = wp_list_categories($args);
 		$type           = 'list';
@@ -91,16 +105,21 @@ function render_block_core_categories( $attributes ) {
 	$wrapper_attributes = get_block_wrapper_attributes(array('class' =>
 	"wp-block-categories-{$type} list-unstyled quick-links"));
 =======
+=======
+>>>>>>> D-29-Oanh
 		$items_markup   = wp_list_categories( $args );
 		$type           = 'list';
 	}
 
 	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => "wp-block-categories-{$type}" ) );
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	// hover
 	$wrapper_attributes = get_block_wrapper_attributes(array('class' => "wp-block-categories-{$type} list-unstyled quick-links"));
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	return sprintf(
 		$wrapper_markup,
@@ -116,6 +135,7 @@ function render_block_core_categories( $attributes ) {
  *
  * @return string Returns the dropdown onChange redirection script.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 function build_dropdown_script_block_core_categories($dropdown_id)
 {
@@ -137,6 +157,8 @@ function build_dropdown_script_block_core_categories($dropdown_id)
 	</script>
 <?php
 =======
+=======
+>>>>>>> D-29-Oanh
 function build_dropdown_script_block_core_categories( $dropdown_id ) {
 	ob_start();
 	?>
@@ -154,7 +176,10 @@ function build_dropdown_script_block_core_categories( $dropdown_id ) {
 	/* ]]> */
 	</script>
 	<?php
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 	return ob_get_clean();
 }
 
@@ -162,11 +187,15 @@ function build_dropdown_script_block_core_categories( $dropdown_id ) {
  * Registers the `core/categories` block on server.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 function register_block_core_categories()
 {
 =======
 function register_block_core_categories() {
 >>>>>>> D-12-Dien
+=======
+function register_block_core_categories() {
+>>>>>>> D-29-Oanh
 	register_block_type_from_metadata(
 		__DIR__ . '/categories',
 		array(
@@ -175,7 +204,11 @@ function register_block_core_categories() {
 	);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 add_action('init', 'register_block_core_categories');
 =======
 add_action( 'init', 'register_block_core_categories' );
 >>>>>>> D-12-Dien
+=======
+add_action( 'init', 'register_block_core_categories' );
+>>>>>>> D-29-Oanh

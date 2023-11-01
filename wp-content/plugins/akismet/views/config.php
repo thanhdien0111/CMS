@@ -153,6 +153,7 @@
 										<legend class="screen-reader-text">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 											<span><?php esc_html_e( 'Akismet anti-spam strictness', 'akismet' ); ?></span>
 =======
 											<span><?php esc_html_e( 'Akismet Anti-spam strictness', 'akismet' ); ?></span>
@@ -160,6 +161,9 @@
 =======
 											<span><?php esc_html_e( 'Akismet Anti-spam strictness', 'akismet' ); ?></span>
 >>>>>>> D-01-LanAnh
+=======
+											<span><?php esc_html_e( 'Akismet Anti-spam strictness', 'akismet' ); ?></span>
+>>>>>>> D-29-Oanh
 										</legend>
 										<div>
 											<label class="akismet-settings__row-input-label" for="akismet_strictness_1">

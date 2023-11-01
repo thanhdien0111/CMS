@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 === Akismet Anti-Spam ===
 =======
 === Akismet Anti-spam ===
@@ -7,6 +8,9 @@
 =======
 === Akismet Anti-spam ===
 >>>>>>> D-01-LanAnh
+=======
+=== Akismet Anti-spam ===
+>>>>>>> D-29-Oanh
 
 == Archived Changelog Entries ==
 

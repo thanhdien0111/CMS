@@ -1,8 +1,12 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * Template part for displaying page content in page.php
  *
@@ -14,6 +18,7 @@
  */
 
 ?>
+<<<<<<< HEAD
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <<<<<<< HEAD
 
@@ -34,6 +39,11 @@
 	<div class="entry-content">
 		<?php
 =======
+=======
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+>>>>>>> D-29-Oanh
     <?php if (!is_front_page()) : ?>
     <header class="entry-header alignwide">
         <?php get_template_part('template-parts/header/entry-header'); ?>
@@ -47,11 +57,15 @@
 
     <div class="entry-content">
         <?php
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 		the_content();
 
 		wp_link_pages(
 			array(
+<<<<<<< HEAD
 <<<<<<< HEAD
 				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
 				'after'    => '</nav>',
@@ -70,6 +84,8 @@
 					/* translators: %s: Post title. Only visible to screen readers. */
 					esc_html__( 'Edit %s', 'twentytwentyone' ),
 =======
+=======
+>>>>>>> D-29-Oanh
 				'before'   => '<nav class="page-links" aria-label="' . esc_attr__('Page', 'twentytwentyone') . '">',
 				'after'    => '</nav>',
 				/* translators: %: Page number. */
@@ -86,13 +102,17 @@
 				sprintf(
 					/* translators: %s: Post title. Only visible to screen readers. */
 					esc_html__('Edit %s', 'twentytwentyone'),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
+=======
+>>>>>>> D-29-Oanh
 					'<span class="screen-reader-text">' . get_the_title() . '</span>'
 				),
 				'<span class="edit-link">',
 				'</span>'
 			);
 			?>
+<<<<<<< HEAD
 <<<<<<< HEAD
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
@@ -102,3 +122,8 @@
     <?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->
 >>>>>>> D-12-Dien
+=======
+    </footer><!-- .entry-footer -->
+    <?php endif; ?>
+</article><!-- #post-<?php the_ID(); ?> -->
+>>>>>>> D-29-Oanh

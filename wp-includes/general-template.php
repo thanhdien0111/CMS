@@ -1,12 +1,16 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * General template tags that can go anywhere in a template.
  *
@@ -34,6 +38,7 @@
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_header( $name = null, $args = array() ) {
 =======
 function get_header($name = null, $args = array())
@@ -43,6 +48,10 @@ function get_header($name = null, $args = array())
 function get_header($name = null, $args = array())
 {
 >>>>>>> D-01-LanAnh
+=======
+function get_header($name = null, $args = array())
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Fires before the header template file is loaded.
 	 *
@@ -55,17 +64,21 @@ function get_header($name = null, $args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	do_action( 'get_header', $name, $args );
 
 	$templates = array();
 	$name      = (string) $name;
 	if ( '' !== $name ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	do_action('get_header', $name, $args);
 
 	$templates = array();
 	$name      = (string) $name;
 	if ('' !== $name) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	do_action('get_header', $name, $args);
@@ -74,11 +87,14 @@ function get_header($name = null, $args = array())
 	$name      = (string) $name;
 	if ('' !== $name) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$templates[] = "header-{$name}.php";
 	}
 
 	$templates[] = 'header.php';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ! locate_template( $templates, true, true, $args ) ) {
@@ -88,6 +104,9 @@ function get_header($name = null, $args = array())
 =======
 	if (!locate_template($templates, true, true, $args)) {
 >>>>>>> D-01-LanAnh
+=======
+	if (!locate_template($templates, true, true, $args)) {
+>>>>>>> D-29-Oanh
 		return false;
 	}
 }
@@ -112,6 +131,7 @@ function get_header($name = null, $args = array())
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_footer( $name = null, $args = array() ) {
 =======
 function get_footer($name = null, $args = array())
@@ -121,6 +141,10 @@ function get_footer($name = null, $args = array())
 function get_footer($name = null, $args = array())
 {
 >>>>>>> D-01-LanAnh
+=======
+function get_footer($name = null, $args = array())
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Fires before the footer template file is loaded.
 	 *
@@ -133,17 +157,21 @@ function get_footer($name = null, $args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	do_action( 'get_footer', $name, $args );
 
 	$templates = array();
 	$name      = (string) $name;
 	if ( '' !== $name ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	do_action('get_footer', $name, $args);
 
 	$templates = array();
 	$name      = (string) $name;
 	if ('' !== $name) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	do_action('get_footer', $name, $args);
@@ -152,11 +180,14 @@ function get_footer($name = null, $args = array())
 	$name      = (string) $name;
 	if ('' !== $name) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$templates[] = "footer-{$name}.php";
 	}
 
 	$templates[] = 'footer.php';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ! locate_template( $templates, true, true, $args ) ) {
@@ -166,6 +197,9 @@ function get_footer($name = null, $args = array())
 =======
 	if (!locate_template($templates, true, true, $args)) {
 >>>>>>> D-01-LanAnh
+=======
+	if (!locate_template($templates, true, true, $args)) {
+>>>>>>> D-29-Oanh
 		return false;
 	}
 }
@@ -190,6 +224,7 @@ function get_footer($name = null, $args = array())
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_sidebar( $name = null, $args = array() ) {
 =======
 function get_sidebar($name = null, $args = array())
@@ -199,6 +234,10 @@ function get_sidebar($name = null, $args = array())
 function get_sidebar($name = null, $args = array())
 {
 >>>>>>> D-01-LanAnh
+=======
+function get_sidebar($name = null, $args = array())
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Fires before the sidebar template file is loaded.
 	 *
@@ -211,17 +250,21 @@ function get_sidebar($name = null, $args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	do_action( 'get_sidebar', $name, $args );
 
 	$templates = array();
 	$name      = (string) $name;
 	if ( '' !== $name ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	do_action('get_sidebar', $name, $args);
 
 	$templates = array();
 	$name      = (string) $name;
 	if ('' !== $name) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	do_action('get_sidebar', $name, $args);
@@ -230,11 +273,14 @@ function get_sidebar($name = null, $args = array())
 	$name      = (string) $name;
 	if ('' !== $name) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$templates[] = "sidebar-{$name}.php";
 	}
 
 	$templates[] = 'sidebar.php';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ! locate_template( $templates, true, true, $args ) ) {
@@ -244,6 +290,9 @@ function get_sidebar($name = null, $args = array())
 =======
 	if (!locate_template($templates, true, true, $args)) {
 >>>>>>> D-01-LanAnh
+=======
+	if (!locate_template($templates, true, true, $args)) {
+>>>>>>> D-29-Oanh
 		return false;
 	}
 }
@@ -276,6 +325,7 @@ function get_sidebar($name = null, $args = array())
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_template_part( $slug, $name = null, $args = array() ) {
 =======
 function get_template_part($slug, $name = null, $args = array())
@@ -285,6 +335,10 @@ function get_template_part($slug, $name = null, $args = array())
 function get_template_part($slug, $name = null, $args = array())
 {
 >>>>>>> D-01-LanAnh
+=======
+function get_template_part($slug, $name = null, $args = array())
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Fires before the specified template part file is loaded.
 	 *
@@ -301,17 +355,21 @@ function get_template_part($slug, $name = null, $args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	do_action( "get_template_part_{$slug}", $slug, $name, $args );
 
 	$templates = array();
 	$name      = (string) $name;
 	if ( '' !== $name ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	do_action("get_template_part_{$slug}", $slug, $name, $args);
 
 	$templates = array();
 	$name      = (string) $name;
 	if ('' !== $name) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	do_action("get_template_part_{$slug}", $slug, $name, $args);
@@ -320,6 +378,8 @@ function get_template_part($slug, $name = null, $args = array())
 	$name      = (string) $name;
 	if ('' !== $name) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$templates[] = "{$slug}-{$name}.php";
 	}
 
@@ -339,6 +399,7 @@ function get_template_part($slug, $name = null, $args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	do_action( 'get_template_part', $slug, $name, $templates, $args );
 
 	if ( ! locate_template( $templates, true, false, $args ) ) {
@@ -352,6 +413,11 @@ function get_template_part($slug, $name = null, $args = array())
 
 	if (!locate_template($templates, true, false, $args)) {
 >>>>>>> D-01-LanAnh
+=======
+	do_action('get_template_part', $slug, $name, $templates, $args);
+
+	if (!locate_template($templates, true, false, $args)) {
+>>>>>>> D-29-Oanh
 		return false;
 	}
 }
@@ -388,6 +454,7 @@ function get_template_part($slug, $name = null, $args = array())
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_search_form( $args = array() ) {
 =======
 function get_search_form($args = array())
@@ -397,6 +464,10 @@ function get_search_form($args = array())
 function get_search_form($args = array())
 {
 >>>>>>> D-01-LanAnh
+=======
+function get_search_form($args = array())
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Fires before the search form is retrieved, at the start of get_search_form().
 	 *
@@ -411,17 +482,21 @@ function get_search_form($args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	do_action( 'pre_get_search_form', $args );
 
 	$echo = true;
 
 	if ( ! is_array( $args ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	do_action('pre_get_search_form', $args);
 
 	$echo = true;
 
 	if (!is_array($args)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	do_action('pre_get_search_form', $args);
@@ -430,6 +505,8 @@ function get_search_form($args = array())
 
 	if (!is_array($args)) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		/*
 		 * Back compat: to ensure previous uses of get_search_form() continue to
 		 * function as expected, we handle a value for the boolean $echo param removed
@@ -449,6 +526,7 @@ function get_search_form($args = array())
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$args = wp_parse_args( $args, $defaults );
 =======
 	$args = wp_parse_args($args, $defaults);
@@ -456,6 +534,9 @@ function get_search_form($args = array())
 =======
 	$args = wp_parse_args($args, $defaults);
 >>>>>>> D-01-LanAnh
+=======
+	$args = wp_parse_args($args, $defaults);
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the array of arguments used when generating the search form.
@@ -465,6 +546,7 @@ function get_search_form($args = array())
 	 * @param array $args The array of arguments for building the search form.
 	 *                    See get_search_form() for information on accepted arguments.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$args = apply_filters( 'search_form_args', $args );
@@ -478,16 +560,21 @@ function get_search_form($args = array())
 <<<<<<< HEAD
 	$format = current_theme_supports( 'html5', 'search-form' ) ? 'html5' : 'xhtml';
 =======
+=======
+>>>>>>> D-29-Oanh
 	$args = apply_filters('search_form_args', $args);
 
 	// Ensure that the filtered arguments contain all required default values.
 	$args = array_merge($defaults, $args);
 
 	$format = current_theme_supports('html5', 'search-form') ? 'html5' : 'xhtml';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$format = current_theme_supports('html5', 'search-form') ? 'html5' : 'xhtml';
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the HTML format of the search form.
@@ -502,6 +589,7 @@ function get_search_form($args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$format = apply_filters( 'search_form_format', $format, $args );
 =======
 	$format = apply_filters('search_form_format', $format, $args);
@@ -512,20 +600,26 @@ function get_search_form($args = array())
 <<<<<<< HEAD
 	if ( '' !== $search_form_template ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	$format = apply_filters('search_form_format', $format, $args);
 
 	$search_form_template = locate_template('searchform.php');
 
 	if ('' !== $search_form_template) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if ('' !== $search_form_template) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		ob_start();
 		require $search_form_template;
 		$form = ob_get_clean();
 	} else {
 		// Build a string containing an aria-label to use for the search form.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		if ( $args['aria_label'] ) {
@@ -538,6 +632,10 @@ function get_search_form($args = array())
 		if ($args['aria_label']) {
 			$aria_label = 'aria-label="' . esc_attr($args['aria_label']) . '" ';
 >>>>>>> D-01-LanAnh
+=======
+		if ($args['aria_label']) {
+			$aria_label = 'aria-label="' . esc_attr($args['aria_label']) . '" ';
+>>>>>>> D-29-Oanh
 		} else {
 			/*
 			 * If there's no custom aria-label, we can set a default here. At the
@@ -546,6 +644,7 @@ function get_search_form($args = array())
 			$aria_label = '';
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		if ( 'html5' === $format ) {
@@ -574,6 +673,8 @@ function get_search_form($args = array())
 <<<<<<< HEAD
 					<input type="submit" id="searchsubmit" value="' . esc_attr_x( 'Search', 'submit button' ) . '" />
 =======
+=======
+>>>>>>> D-29-Oanh
 		if ('html5' === $format) {
 			$form = '<form role="search" ' . $aria_label . 'method="get" class="search-form" action="' . esc_url(home_url('/')) . '">
 				<label>
@@ -594,10 +695,13 @@ function get_search_form($args = array())
 				'</label>
 					<input type="text" value="' . get_search_query() . '" name="s" id="s" />
 					<input type="submit" id="searchsubmit" value="' . esc_attr_x('Search', 'submit button') . '" />
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 					<input type="submit" id="searchsubmit" value="' . esc_attr_x('Search', 'submit button') . '" />
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				</div>
 			</form>';
 		}
@@ -613,6 +717,7 @@ function get_search_form($args = array())
 	 * @param array  $args The array of arguments for building the search form.
 	 *                     See get_search_form() for information on accepted arguments.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$result = apply_filters( 'get_search_form', $form, $args );
@@ -755,6 +860,8 @@ function get_search_form_header($args = array())
 	 *                     See get_search_form() for information on accepted arguments.
 	 */
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	$result = apply_filters('get_search_form', $form, $args);
 
 	if (null === $result) {
@@ -763,9 +870,12 @@ function get_search_form_header($args = array())
 
 	if ($args['echo']) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		echo $result;
 	} else {
 		return $result;
@@ -786,6 +896,7 @@ function get_search_form_header($args = array())
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_loginout( $redirect = '', $display = true ) {
 	if ( ! is_user_logged_in() ) {
 		$link = '<a href="' . esc_url( wp_login_url( $redirect ) ) . '">' . __( 'Log in' ) . '</a>';
@@ -802,6 +913,8 @@ function wp_loginout($redirect = '', $display = true)
 <<<<<<< HEAD
 	if ( $display ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_loginout($redirect = '', $display = true)
 {
 	if (!is_user_logged_in()) {
@@ -811,10 +924,13 @@ function wp_loginout($redirect = '', $display = true)
 	}
 
 	if ($display) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters the HTML output for the Log In/Log Out link.
 		 *
@@ -824,15 +940,19 @@ function wp_loginout($redirect = '', $display = true)
 		 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		echo apply_filters( 'loginout', $link );
 	} else {
 		/** This filter is documented in wp-includes/general-template.php */
 		return apply_filters( 'loginout', $link );
 =======
+=======
+>>>>>>> D-29-Oanh
 		echo apply_filters('loginout', $link);
 	} else {
 		/** This filter is documented in wp-includes/general-template.php */
 		return apply_filters('loginout', $link);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		echo apply_filters('loginout', $link);
@@ -840,6 +960,8 @@ function wp_loginout($redirect = '', $display = true)
 		/** This filter is documented in wp-includes/general-template.php */
 		return apply_filters('loginout', $link);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 }
 
@@ -853,6 +975,7 @@ function wp_loginout($redirect = '', $display = true)
  * @param string $redirect Path to redirect to on logout.
  * @return string The logout URL. Note: HTML-encoded via esc_html() in wp_nonce_url().
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function wp_logout_url( $redirect = '' ) {
@@ -869,6 +992,8 @@ function wp_logout_url($redirect = '')
 	$logout_url = add_query_arg( $args, site_url( 'wp-login.php?action=logout', 'login' ) );
 	$logout_url = wp_nonce_url( $logout_url, 'log-out' );
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_logout_url($redirect = '')
 {
 	$args = array();
@@ -878,11 +1003,14 @@ function wp_logout_url($redirect = '')
 
 	$logout_url = add_query_arg($args, site_url('wp-login.php?action=logout', 'login'));
 	$logout_url = wp_nonce_url($logout_url, 'log-out');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$logout_url = add_query_arg($args, site_url('wp-login.php?action=logout', 'login'));
 	$logout_url = wp_nonce_url($logout_url, 'log-out');
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the logout URL.
@@ -894,6 +1022,7 @@ function wp_logout_url($redirect = '')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'logout_url', $logout_url, $redirect );
 =======
 	return apply_filters('logout_url', $logout_url, $redirect);
@@ -901,6 +1030,9 @@ function wp_logout_url($redirect = '')
 =======
 	return apply_filters('logout_url', $logout_url, $redirect);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('logout_url', $logout_url, $redirect);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -913,6 +1045,7 @@ function wp_logout_url($redirect = '')
  *                             Default false.
  * @return string The login URL. Not HTML-encoded.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function wp_login_url( $redirect = '', $force_reauth = false ) {
@@ -931,6 +1064,8 @@ function wp_login_url($redirect = '', $force_reauth = false)
 	if ( $force_reauth ) {
 		$login_url = add_query_arg( 'reauth', '1', $login_url );
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_login_url($redirect = '', $force_reauth = false)
 {
 	$login_url = site_url('wp-login.php', 'login');
@@ -941,11 +1076,14 @@ function wp_login_url($redirect = '', $force_reauth = false)
 
 	if ($force_reauth) {
 		$login_url = add_query_arg('reauth', '1', $login_url);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if ($force_reauth) {
 		$login_url = add_query_arg('reauth', '1', $login_url);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -960,6 +1098,7 @@ function wp_login_url($redirect = '', $force_reauth = false)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'login_url', $login_url, $redirect, $force_reauth );
 =======
 	return apply_filters('login_url', $login_url, $redirect, $force_reauth);
@@ -967,6 +1106,9 @@ function wp_login_url($redirect = '', $force_reauth = false)
 =======
 	return apply_filters('login_url', $login_url, $redirect, $force_reauth);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('login_url', $login_url, $redirect, $force_reauth);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -978,6 +1120,7 @@ function wp_login_url($redirect = '', $force_reauth = false)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_registration_url() {
 =======
 function wp_registration_url()
@@ -987,6 +1130,10 @@ function wp_registration_url()
 function wp_registration_url()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_registration_url()
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Filters the user registration URL.
 	 *
@@ -996,6 +1143,7 @@ function wp_registration_url()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'register_url', site_url( 'wp-login.php?action=register', 'login' ) );
 =======
 	return apply_filters('register_url', site_url('wp-login.php?action=register', 'login'));
@@ -1003,6 +1151,9 @@ function wp_registration_url()
 =======
 	return apply_filters('register_url', site_url('wp-login.php?action=register', 'login'));
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('register_url', site_url('wp-login.php?action=register', 'login'));
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -1038,6 +1189,7 @@ function wp_registration_url()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_login_form( $args = array() ) {
 =======
 function wp_login_form($args = array())
@@ -1054,6 +1206,8 @@ function wp_login_form($args = array())
 		'label_remember' => __( 'Remember Me' ),
 		'label_log_in'   => __( 'Log In' ),
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_login_form($args = array())
 {
 	$defaults = array(
@@ -1061,16 +1215,22 @@ function wp_login_form($args = array())
 		// Default 'redirect' value takes the user back to the request URI.
 		'redirect'       => (is_ssl() ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
 		'form_id'        => 'loginform',
+<<<<<<< HEAD
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		'label_username' => __('Username or Email Address'),
 		'label_password' => __('Password'),
 		'label_remember' => __('Remember Me'),
 		'label_log_in'   => __('Log In'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		'id_username'    => 'user_login',
 		'id_password'    => 'user_pass',
 		'id_remember'    => 'rememberme',
@@ -1092,6 +1252,7 @@ function wp_login_form($args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$args = wp_parse_args( $args, apply_filters( 'login_form_defaults', $defaults ) );
 =======
 	$args = wp_parse_args($args, apply_filters('login_form_defaults', $defaults));
@@ -1099,6 +1260,9 @@ function wp_login_form($args = array())
 =======
 	$args = wp_parse_args($args, apply_filters('login_form_defaults', $defaults));
 >>>>>>> D-01-LanAnh
+=======
+	$args = wp_parse_args($args, apply_filters('login_form_defaults', $defaults));
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters content to display at the top of the login form.
@@ -1112,6 +1276,7 @@ function wp_login_form($args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$login_form_top = apply_filters( 'login_form_top', '', $args );
 =======
 	$login_form_top = apply_filters('login_form_top', '', $args);
@@ -1119,6 +1284,9 @@ function wp_login_form($args = array())
 =======
 	$login_form_top = apply_filters('login_form_top', '', $args);
 >>>>>>> D-01-LanAnh
+=======
+	$login_form_top = apply_filters('login_form_top', '', $args);
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters content to display in the middle of the login form.
@@ -1133,6 +1301,7 @@ function wp_login_form($args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$login_form_middle = apply_filters( 'login_form_middle', '', $args );
 =======
 	$login_form_middle = apply_filters('login_form_middle', '', $args);
@@ -1140,6 +1309,9 @@ function wp_login_form($args = array())
 =======
 	$login_form_middle = apply_filters('login_form_middle', '', $args);
 >>>>>>> D-01-LanAnh
+=======
+	$login_form_middle = apply_filters('login_form_middle', '', $args);
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters content to display at the bottom of the login form.
@@ -1153,6 +1325,7 @@ function wp_login_form($args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$login_form_bottom = apply_filters( 'login_form_bottom', '', $args );
 =======
 	$login_form_bottom = apply_filters('login_form_bottom', '', $args);
@@ -1160,10 +1333,14 @@ function wp_login_form($args = array())
 =======
 	$login_form_bottom = apply_filters('login_form_bottom', '', $args);
 >>>>>>> D-01-LanAnh
+=======
+	$login_form_bottom = apply_filters('login_form_bottom', '', $args);
+>>>>>>> D-29-Oanh
 
 	$form =
 		sprintf(
 			'<form name="%1$s" id="%1$s" action="%2$s" method="post">',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			esc_attr( $args['form_id'] ),
@@ -1176,6 +1353,10 @@ function wp_login_form($args = array())
 			esc_attr($args['form_id']),
 			esc_url(site_url('wp-login.php', 'login_post'))
 >>>>>>> D-01-LanAnh
+=======
+			esc_attr($args['form_id']),
+			esc_url(site_url('wp-login.php', 'login_post'))
+>>>>>>> D-29-Oanh
 		) .
 		$login_form_top .
 		sprintf(
@@ -1183,6 +1364,7 @@ function wp_login_form($args = array())
 				<label for="%1$s">%2$s</label>
 				<input type="text" name="log" id="%1$s" autocomplete="username" class="input" value="%3$s" size="20" />
 			</p>',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			esc_attr( $args['id_username'] ),
@@ -1198,12 +1380,18 @@ function wp_login_form($args = array())
 			esc_html($args['label_username']),
 			esc_attr($args['value_username'])
 >>>>>>> D-01-LanAnh
+=======
+			esc_attr($args['id_username']),
+			esc_html($args['label_username']),
+			esc_attr($args['value_username'])
+>>>>>>> D-29-Oanh
 		) .
 		sprintf(
 			'<p class="login-password">
 				<label for="%1$s">%2$s</label>
 				<input type="password" name="pwd" id="%1$s" autocomplete="current-password" spellcheck="false" class="input" value="" size="20" />
 			</p>',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			esc_attr( $args['id_password'] ),
@@ -1222,6 +1410,8 @@ function wp_login_form($args = array())
 				( $args['value_remember'] ? ' checked="checked"' : '' ),
 				esc_html( $args['label_remember'] )
 =======
+=======
+>>>>>>> D-29-Oanh
 			esc_attr($args['id_password']),
 			esc_html($args['label_password'])
 		) .
@@ -1232,12 +1422,15 @@ function wp_login_form($args = array())
 				esc_attr($args['id_remember']),
 				($args['value_remember'] ? ' checked="checked"' : ''),
 				esc_html($args['label_remember'])
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				esc_attr($args['id_remember']),
 				($args['value_remember'] ? ' checked="checked"' : ''),
 				esc_html($args['label_remember'])
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			) : ''
 		) .
 		sprintf(
@@ -1245,6 +1438,7 @@ function wp_login_form($args = array())
 				<input type="submit" name="wp-submit" id="%1$s" class="button button-primary" value="%2$s" />
 				<input type="hidden" name="redirect_to" value="%3$s" />
 			</p>',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			esc_attr( $args['id_submit'] ),
@@ -1260,10 +1454,16 @@ function wp_login_form($args = array())
 			esc_attr($args['label_log_in']),
 			esc_url($args['redirect'])
 >>>>>>> D-01-LanAnh
+=======
+			esc_attr($args['id_submit']),
+			esc_attr($args['label_log_in']),
+			esc_url($args['redirect'])
+>>>>>>> D-29-Oanh
 		) .
 		$login_form_bottom .
 		'</form>';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( $args['echo'] ) {
@@ -1273,6 +1473,9 @@ function wp_login_form($args = array())
 =======
 	if ($args['echo']) {
 >>>>>>> D-01-LanAnh
+=======
+	if ($args['echo']) {
+>>>>>>> D-29-Oanh
 		echo $form;
 	} else {
 		return $form;
@@ -1289,6 +1492,7 @@ function wp_login_form($args = array())
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_lostpassword_url( $redirect = '' ) {
 =======
 function wp_lostpassword_url($redirect = '')
@@ -1298,10 +1502,15 @@ function wp_lostpassword_url($redirect = '')
 function wp_lostpassword_url($redirect = '')
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_lostpassword_url($redirect = '')
+{
+>>>>>>> D-29-Oanh
 	$args = array(
 		'action' => 'lostpassword',
 	);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ! empty( $redirect ) ) {
@@ -1310,11 +1519,14 @@ function wp_lostpassword_url($redirect = '')
 
 	if ( is_multisite() ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (!empty($redirect)) {
 		$args['redirect_to'] = urlencode($redirect);
 	}
 
 	if (is_multisite()) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (!empty($redirect)) {
@@ -1323,12 +1535,15 @@ function wp_lostpassword_url($redirect = '')
 
 	if (is_multisite()) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$blog_details  = get_site();
 		$wp_login_path = $blog_details->path . 'wp-login.php';
 	} else {
 		$wp_login_path = 'wp-login.php';
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$lostpassword_url = add_query_arg( $args, network_site_url( $wp_login_path, 'login' ) );
@@ -1338,6 +1553,9 @@ function wp_lostpassword_url($redirect = '')
 =======
 	$lostpassword_url = add_query_arg($args, network_site_url($wp_login_path, 'login'));
 >>>>>>> D-01-LanAnh
+=======
+	$lostpassword_url = add_query_arg($args, network_site_url($wp_login_path, 'login'));
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the Lost Password URL.
@@ -1349,6 +1567,7 @@ function wp_lostpassword_url($redirect = '')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'lostpassword_url', $lostpassword_url, $redirect );
 =======
 	return apply_filters('lostpassword_url', $lostpassword_url, $redirect);
@@ -1356,6 +1575,9 @@ function wp_lostpassword_url($redirect = '')
 =======
 	return apply_filters('lostpassword_url', $lostpassword_url, $redirect);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('lostpassword_url', $lostpassword_url, $redirect);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -1374,6 +1596,7 @@ function wp_lostpassword_url($redirect = '')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_register( $before = '<li>', $after = '</li>', $display = true ) {
 	if ( ! is_user_logged_in() ) {
 		if ( get_option( 'users_can_register' ) ) {
@@ -1384,6 +1607,8 @@ function wp_register( $before = '<li>', $after = '</li>', $display = true ) {
 	} elseif ( current_user_can( 'read' ) ) {
 		$link = $before . '<a href="' . admin_url() . '">' . __( 'Site Admin' ) . '</a>' . $after;
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_register($before = '<li>', $after = '</li>', $display = true)
 {
 	if (!is_user_logged_in()) {
@@ -1394,6 +1619,7 @@ function wp_register($before = '<li>', $after = '</li>', $display = true)
 		}
 	} elseif (current_user_can('read')) {
 		$link = $before . '<a href="' . admin_url() . '">' . __('Site Admin') . '</a>' . $after;
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function wp_register($before = '<li>', $after = '</li>', $display = true)
@@ -1407,6 +1633,8 @@ function wp_register($before = '<li>', $after = '</li>', $display = true)
 	} elseif (current_user_can('read')) {
 		$link = $before . '<a href="' . admin_url() . '">' . __('Site Admin') . '</a>' . $after;
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	} else {
 		$link = '';
 	}
@@ -1423,6 +1651,7 @@ function wp_register($before = '<li>', $after = '</li>', $display = true)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$link = apply_filters( 'register', $link );
 
 	if ( $display ) {
@@ -1436,6 +1665,11 @@ function wp_register($before = '<li>', $after = '</li>', $display = true)
 
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+	$link = apply_filters('register', $link);
+
+	if ($display) {
+>>>>>>> D-29-Oanh
 		echo $link;
 	} else {
 		return $link;
@@ -1454,6 +1688,7 @@ function wp_register($before = '<li>', $after = '</li>', $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_meta() {
 =======
 function wp_meta()
@@ -1463,11 +1698,16 @@ function wp_meta()
 function wp_meta()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_meta()
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Fires before displaying echoed content in the sidebar.
 	 *
 	 * @since 1.5.0
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	do_action( 'wp_meta' );
@@ -1477,6 +1717,9 @@ function wp_meta()
 =======
 	do_action('wp_meta');
 >>>>>>> D-01-LanAnh
+=======
+	do_action('wp_meta');
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -1488,6 +1731,7 @@ function wp_meta()
  *
  * @param string $show Optional. Site information to display. Default empty.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function bloginfo( $show = '' ) {
@@ -1502,6 +1746,11 @@ function bloginfo($show = '')
 {
 	echo get_bloginfo($show, 'display');
 >>>>>>> D-01-LanAnh
+=======
+function bloginfo($show = '')
+{
+	echo get_bloginfo($show, 'display');
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -1553,6 +1802,7 @@ function bloginfo($show = '')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_bloginfo( $show = '', $filter = 'raw' ) {
 	switch ( $show ) {
 =======
@@ -1565,6 +1815,11 @@ function get_bloginfo($show = '', $filter = 'raw')
 {
 	switch ($show) {
 >>>>>>> D-01-LanAnh
+=======
+function get_bloginfo($show = '', $filter = 'raw')
+{
+	switch ($show) {
+>>>>>>> D-29-Oanh
 		case 'home':    // Deprecated.
 		case 'siteurl': // Deprecated.
 			_deprecated_argument(
@@ -1574,6 +1829,7 @@ function get_bloginfo($show = '', $filter = 'raw')
 					/* translators: 1: 'siteurl'/'home' argument, 2: bloginfo() function name, 3: 'url' argument. */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					__( 'The %1$s option is deprecated for the family of %2$s functions. Use the %3$s option instead.' ),
 =======
 					__('The %1$s option is deprecated for the family of %2$s functions. Use the %3$s option instead.'),
@@ -1581,6 +1837,9 @@ function get_bloginfo($show = '', $filter = 'raw')
 =======
 					__('The %1$s option is deprecated for the family of %2$s functions. Use the %3$s option instead.'),
 >>>>>>> D-01-LanAnh
+=======
+					__('The %1$s option is deprecated for the family of %2$s functions. Use the %3$s option instead.'),
+>>>>>>> D-29-Oanh
 					'<code>' . $show . '</code>',
 					'<code>bloginfo()</code>',
 					'<code>url</code>'
@@ -1594,6 +1853,7 @@ function get_bloginfo($show = '', $filter = 'raw')
 			$output = site_url();
 			break;
 		case 'description':
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$output = get_option( 'blogdescription' );
@@ -1623,6 +1883,8 @@ function get_bloginfo($show = '', $filter = 'raw')
 <<<<<<< HEAD
 			$output = site_url( 'xmlrpc.php' );
 =======
+=======
+>>>>>>> D-29-Oanh
 			$output = get_option('blogdescription');
 			break;
 		case 'rdf_url':
@@ -1645,10 +1907,13 @@ function get_bloginfo($show = '', $filter = 'raw')
 			break;
 		case 'pingback_url':
 			$output = site_url('xmlrpc.php');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 			$output = site_url('xmlrpc.php');
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			break;
 		case 'stylesheet_url':
 			$output = get_stylesheet_uri();
@@ -1663,17 +1928,21 @@ function get_bloginfo($show = '', $filter = 'raw')
 		case 'admin_email':
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$output = get_option( 'admin_email' );
 			break;
 		case 'charset':
 			$output = get_option( 'blog_charset' );
 			if ( '' === $output ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			$output = get_option('admin_email');
 			break;
 		case 'charset':
 			$output = get_option('blog_charset');
 			if ('' === $output) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 			$output = get_option('admin_email');
@@ -1682,10 +1951,13 @@ function get_bloginfo($show = '', $filter = 'raw')
 			$output = get_option('blog_charset');
 			if ('' === $output) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				$output = 'UTF-8';
 			}
 			break;
 		case 'html_type':
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$output = get_option( 'html_type' );
@@ -1695,6 +1967,9 @@ function get_bloginfo($show = '', $filter = 'raw')
 =======
 			$output = get_option('html_type');
 >>>>>>> D-01-LanAnh
+=======
+			$output = get_option('html_type');
+>>>>>>> D-29-Oanh
 			break;
 		case 'version':
 			global $wp_version;
@@ -1708,15 +1983,19 @@ function get_bloginfo($show = '', $filter = 'raw')
 			 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$output = __( 'html_lang_attribute' );
 			if ( 'html_lang_attribute' === $output || preg_match( '/[^a-zA-Z0-9-]/', $output ) ) {
 				$output = determine_locale();
 				$output = str_replace( '_', '-', $output );
 =======
+=======
+>>>>>>> D-29-Oanh
 			$output = __('html_lang_attribute');
 			if ('html_lang_attribute' === $output || preg_match('/[^a-zA-Z0-9-]/', $output)) {
 				$output = determine_locale();
 				$output = str_replace('_', '-', $output);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 			$output = __('html_lang_attribute');
@@ -1724,6 +2003,8 @@ function get_bloginfo($show = '', $filter = 'raw')
 				$output = determine_locale();
 				$output = str_replace('_', '-', $output);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			}
 			break;
 		case 'text_direction':
@@ -1734,6 +2015,7 @@ function get_bloginfo($show = '', $filter = 'raw')
 					/* translators: 1: 'text_direction' argument, 2: bloginfo() function name, 3: is_rtl() function name. */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					__( 'The %1$s option is deprecated for the family of %2$s functions. Use the %3$s function instead.' ),
 =======
 					__('The %1$s option is deprecated for the family of %2$s functions. Use the %3$s function instead.'),
@@ -1741,11 +2023,15 @@ function get_bloginfo($show = '', $filter = 'raw')
 =======
 					__('The %1$s option is deprecated for the family of %2$s functions. Use the %3$s function instead.'),
 >>>>>>> D-01-LanAnh
+=======
+					__('The %1$s option is deprecated for the family of %2$s functions. Use the %3$s function instead.'),
+>>>>>>> D-29-Oanh
 					'<code>' . $show . '</code>',
 					'<code>bloginfo()</code>',
 					'<code>is_rtl()</code>'
 				)
 			);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			if ( function_exists( 'is_rtl' ) ) {
@@ -1755,6 +2041,9 @@ function get_bloginfo($show = '', $filter = 'raw')
 =======
 			if (function_exists('is_rtl')) {
 >>>>>>> D-01-LanAnh
+=======
+			if (function_exists('is_rtl')) {
+>>>>>>> D-29-Oanh
 				$output = is_rtl() ? 'rtl' : 'ltr';
 			} else {
 				$output = 'ltr';
@@ -1764,6 +2053,7 @@ function get_bloginfo($show = '', $filter = 'raw')
 		default:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$output = get_option( 'blogname' );
 =======
 			$output = get_option('blogname');
@@ -1771,11 +2061,15 @@ function get_bloginfo($show = '', $filter = 'raw')
 =======
 			$output = get_option('blogname');
 >>>>>>> D-01-LanAnh
+=======
+			$output = get_option('blogname');
+>>>>>>> D-29-Oanh
 			break;
 	}
 
 	$url = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ! str_contains( $show, 'url' )
@@ -1784,18 +2078,24 @@ function get_bloginfo($show = '', $filter = 'raw')
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	if (
 		!str_contains($show, 'url')
 		&& !str_contains($show, 'directory')
 		&& !str_contains($show, 'home')
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	) {
 		$url = false;
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( 'display' === $filter ) {
@@ -1808,6 +2108,10 @@ function get_bloginfo($show = '', $filter = 'raw')
 	if ('display' === $filter) {
 		if ($url) {
 >>>>>>> D-01-LanAnh
+=======
+	if ('display' === $filter) {
+		if ($url) {
+>>>>>>> D-29-Oanh
 			/**
 			 * Filters the URL returned by get_bloginfo().
 			 *
@@ -1818,6 +2122,7 @@ function get_bloginfo($show = '', $filter = 'raw')
 			 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$output = apply_filters( 'bloginfo_url', $output, $show );
 =======
 			$output = apply_filters('bloginfo_url', $output, $show);
@@ -1825,6 +2130,9 @@ function get_bloginfo($show = '', $filter = 'raw')
 =======
 			$output = apply_filters('bloginfo_url', $output, $show);
 >>>>>>> D-01-LanAnh
+=======
+			$output = apply_filters('bloginfo_url', $output, $show);
+>>>>>>> D-29-Oanh
 		} else {
 			/**
 			 * Filters the site information returned by get_bloginfo().
@@ -1836,6 +2144,7 @@ function get_bloginfo($show = '', $filter = 'raw')
 			 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$output = apply_filters( 'bloginfo', $output, $show );
 =======
 			$output = apply_filters('bloginfo', $output, $show);
@@ -1843,6 +2152,9 @@ function get_bloginfo($show = '', $filter = 'raw')
 =======
 			$output = apply_filters('bloginfo', $output, $show);
 >>>>>>> D-01-LanAnh
+=======
+			$output = apply_filters('bloginfo', $output, $show);
+>>>>>>> D-29-Oanh
 		}
 	}
 
@@ -1859,6 +2171,7 @@ function get_bloginfo($show = '', $filter = 'raw')
  * @param int    $blog_id Optional. ID of the blog to get the site icon for. Default current blog.
  * @return string Site Icon URL.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_site_icon_url( $size = 512, $url = '', $blog_id = 0 ) {
@@ -1887,6 +2200,8 @@ function get_site_icon_url($size = 512, $url = '', $blog_id = 0)
 <<<<<<< HEAD
 	if ( $switched_blog ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_site_icon_url($size = 512, $url = '', $blog_id = 0)
 {
 	$switched_blog = false;
@@ -1908,10 +2223,13 @@ function get_site_icon_url($size = 512, $url = '', $blog_id = 0)
 	}
 
 	if ($switched_blog) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if ($switched_blog) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		restore_current_blog();
 	}
 
@@ -1926,6 +2244,7 @@ function get_site_icon_url($size = 512, $url = '', $blog_id = 0)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_site_icon_url', $url, $size, $blog_id );
 =======
 	return apply_filters('get_site_icon_url', $url, $size, $blog_id);
@@ -1933,6 +2252,9 @@ function get_site_icon_url($size = 512, $url = '', $blog_id = 0)
 =======
 	return apply_filters('get_site_icon_url', $url, $size, $blog_id);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_site_icon_url', $url, $size, $blog_id);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -1944,6 +2266,7 @@ function get_site_icon_url($size = 512, $url = '', $blog_id = 0)
  * @param string $url     Optional. Fallback url if no site icon is found. Default empty.
  * @param int    $blog_id Optional. ID of the blog to get the site icon for. Default current blog.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function site_icon_url( $size = 512, $url = '', $blog_id = 0 ) {
@@ -1958,6 +2281,11 @@ function site_icon_url($size = 512, $url = '', $blog_id = 0)
 {
 	echo esc_url(get_site_icon_url($size, $url, $blog_id));
 >>>>>>> D-01-LanAnh
+=======
+function site_icon_url($size = 512, $url = '', $blog_id = 0)
+{
+	echo esc_url(get_site_icon_url($size, $url, $blog_id));
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -1968,6 +2296,7 @@ function site_icon_url($size = 512, $url = '', $blog_id = 0)
  * @param int $blog_id Optional. ID of the blog in question. Default current blog.
  * @return bool Whether the site has a site icon or not.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function has_site_icon( $blog_id = 0 ) {
@@ -1982,6 +2311,11 @@ function has_site_icon($blog_id = 0)
 {
 	return (bool) get_site_icon_url(512, '', $blog_id);
 >>>>>>> D-01-LanAnh
+=======
+function has_site_icon($blog_id = 0)
+{
+	return (bool) get_site_icon_url(512, '', $blog_id);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -1992,6 +2326,7 @@ function has_site_icon($blog_id = 0)
  * @param int $blog_id Optional. ID of the blog in question. Default is the ID of the current blog.
  * @return bool Whether the site has a custom logo or not.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function has_custom_logo( $blog_id = 0 ) {
@@ -2011,6 +2346,8 @@ function has_custom_logo($blog_id = 0)
 <<<<<<< HEAD
 	if ( $switched_blog ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function has_custom_logo($blog_id = 0)
 {
 	$switched_blog = false;
@@ -2023,10 +2360,13 @@ function has_custom_logo($blog_id = 0)
 	$custom_logo_id = get_theme_mod('custom_logo');
 
 	if ($switched_blog) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if ($switched_blog) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		restore_current_blog();
 	}
 
@@ -2044,6 +2384,7 @@ function has_custom_logo($blog_id = 0)
  * @param int $blog_id Optional. ID of the blog in question. Default is the ID of the current blog.
  * @return string Custom logo markup.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_custom_logo( $blog_id = 0 ) {
@@ -2065,6 +2406,8 @@ function get_custom_logo($blog_id = 0)
 <<<<<<< HEAD
 	if ( $custom_logo_id ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_custom_logo($blog_id = 0)
 {
 	$html          = '';
@@ -2079,15 +2422,19 @@ function get_custom_logo($blog_id = 0)
 
 	// We have a logo. Logo is go.
 	if ($custom_logo_id) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if ($custom_logo_id) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$custom_logo_attr = array(
 			'class'   => 'custom-logo',
 			'loading' => false,
 		);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$unlink_homepage_logo = (bool) get_theme_support( 'custom-logo', 'unlink-homepage-logo' );
@@ -2103,6 +2450,11 @@ function get_custom_logo($blog_id = 0)
 
 		if ($unlink_homepage_logo && is_front_page() && !is_paged()) {
 >>>>>>> D-01-LanAnh
+=======
+		$unlink_homepage_logo = (bool) get_theme_support('custom-logo', 'unlink-homepage-logo');
+
+		if ($unlink_homepage_logo && is_front_page() && !is_paged()) {
+>>>>>>> D-29-Oanh
 			/*
 			 * If on the home page, set the logo alt attribute to an empty string,
 			 * as the image is decorative and doesn't need its purpose to be described.
@@ -2113,6 +2465,7 @@ function get_custom_logo($blog_id = 0)
 			 * If the logo alt attribute is empty, get the site title and explicitly pass it
 			 * to the attributes used by wp_get_attachment_image().
 			 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$image_alt = get_post_meta( $custom_logo_id, '_wp_attachment_image_alt', true );
@@ -2128,6 +2481,11 @@ function get_custom_logo($blog_id = 0)
 			if (empty($image_alt)) {
 				$custom_logo_attr['alt'] = get_bloginfo('name', 'display');
 >>>>>>> D-01-LanAnh
+=======
+			$image_alt = get_post_meta($custom_logo_id, '_wp_attachment_image_alt', true);
+			if (empty($image_alt)) {
+				$custom_logo_attr['alt'] = get_bloginfo('name', 'display');
+>>>>>>> D-29-Oanh
 			}
 		}
 
@@ -2142,6 +2500,7 @@ function get_custom_logo($blog_id = 0)
 		 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$custom_logo_attr = apply_filters( 'get_custom_logo_image_attributes', $custom_logo_attr, $custom_logo_id, $blog_id );
 =======
 		$custom_logo_attr = apply_filters('get_custom_logo_image_attributes', $custom_logo_attr, $custom_logo_id, $blog_id);
@@ -2149,11 +2508,15 @@ function get_custom_logo($blog_id = 0)
 =======
 		$custom_logo_attr = apply_filters('get_custom_logo_image_attributes', $custom_logo_attr, $custom_logo_id, $blog_id);
 >>>>>>> D-01-LanAnh
+=======
+		$custom_logo_attr = apply_filters('get_custom_logo_image_attributes', $custom_logo_attr, $custom_logo_id, $blog_id);
+>>>>>>> D-29-Oanh
 
 		/*
 		 * If the alt attribute is not empty, there's no need to explicitly pass it
 		 * because wp_get_attachment_image() already adds the alt attribute.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$image = wp_get_attachment_image( $custom_logo_id, 'full', false, $custom_logo_attr );
@@ -2169,6 +2532,11 @@ function get_custom_logo($blog_id = 0)
 
 		if ($unlink_homepage_logo && is_front_page() && !is_paged()) {
 >>>>>>> D-01-LanAnh
+=======
+		$image = wp_get_attachment_image($custom_logo_id, 'full', false, $custom_logo_attr);
+
+		if ($unlink_homepage_logo && is_front_page() && !is_paged()) {
+>>>>>>> D-29-Oanh
 			// If on the home page, don't link the logo to home.
 			$html = sprintf(
 				'<span class="custom-logo-link">%1$s</span>',
@@ -2177,17 +2545,21 @@ function get_custom_logo($blog_id = 0)
 		} else {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$aria_current = is_front_page() && ! is_paged() ? ' aria-current="page"' : '';
 
 			$html = sprintf(
 				'<a href="%1$s" class="custom-logo-link" rel="home"%2$s>%3$s</a>',
 				esc_url( home_url( '/' ) ),
 =======
+=======
+>>>>>>> D-29-Oanh
 			$aria_current = is_front_page() && !is_paged() ? ' aria-current="page"' : '';
 
 			$html = sprintf(
 				'<a href="%1$s" class="custom-logo-link" rel="home"%2$s>%3$s</a>',
 				esc_url(home_url('/')),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 			$aria_current = is_front_page() && !is_paged() ? ' aria-current="page"' : '';
@@ -2196,10 +2568,13 @@ function get_custom_logo($blog_id = 0)
 				'<a href="%1$s" class="custom-logo-link" rel="home"%2$s>%3$s</a>',
 				esc_url(home_url('/')),
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				$aria_current,
 				$image
 			);
 		}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	} elseif ( is_customize_preview() ) {
@@ -2216,6 +2591,8 @@ function get_custom_logo($blog_id = 0)
 <<<<<<< HEAD
 	if ( $switched_blog ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	} elseif (is_customize_preview()) {
 		// If no logo is set but we're in the Customizer, leave a placeholder (needed for the live preview).
 		$html = sprintf(
@@ -2225,10 +2602,13 @@ function get_custom_logo($blog_id = 0)
 	}
 
 	if ($switched_blog) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if ($switched_blog) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		restore_current_blog();
 	}
 
@@ -2243,6 +2623,7 @@ function get_custom_logo($blog_id = 0)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_custom_logo', $html, $blog_id );
 =======
 	return apply_filters('get_custom_logo', $html, $blog_id);
@@ -2250,6 +2631,9 @@ function get_custom_logo($blog_id = 0)
 =======
 	return apply_filters('get_custom_logo', $html, $blog_id);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_custom_logo', $html, $blog_id);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -2259,6 +2643,7 @@ function get_custom_logo($blog_id = 0)
  *
  * @param int $blog_id Optional. ID of the blog in question. Default is the ID of the current blog.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function the_custom_logo( $blog_id = 0 ) {
@@ -2273,6 +2658,11 @@ function the_custom_logo($blog_id = 0)
 {
 	echo get_custom_logo($blog_id);
 >>>>>>> D-01-LanAnh
+=======
+function the_custom_logo($blog_id = 0)
+{
+	echo get_custom_logo($blog_id);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -2287,6 +2677,7 @@ function the_custom_logo($blog_id = 0)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_get_document_title() {
 =======
 function wp_get_document_title()
@@ -2296,6 +2687,10 @@ function wp_get_document_title()
 function wp_get_document_title()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_get_document_title()
+{
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the document title before it is generated.
@@ -2309,6 +2704,7 @@ function wp_get_document_title()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$title = apply_filters( 'pre_get_document_title', '' );
 	if ( ! empty( $title ) ) {
 =======
@@ -2319,6 +2715,10 @@ function wp_get_document_title()
 	$title = apply_filters('pre_get_document_title', '');
 	if (!empty($title)) {
 >>>>>>> D-01-LanAnh
+=======
+	$title = apply_filters('pre_get_document_title', '');
+	if (!empty($title)) {
+>>>>>>> D-29-Oanh
 		return $title;
 	}
 
@@ -2329,6 +2729,7 @@ function wp_get_document_title()
 	);
 
 	// If it's a 404 page, use a "Page not found" title.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( is_404() ) {
@@ -2356,6 +2757,8 @@ function wp_get_document_title()
 	} elseif ( is_tax() ) {
 		$title['title'] = single_term_title( '', false );
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (is_404()) {
 		$title['title'] = __('Page not found');
 
@@ -2375,16 +2778,20 @@ function wp_get_document_title()
 		// If on a taxonomy archive, use the term title.
 	} elseif (is_tax()) {
 		$title['title'] = single_term_title('', false);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	} elseif (is_tax()) {
 		$title['title'] = single_term_title('', false);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 		/*
 		* If we're on the blog page that is not the homepage
 		* or a single post of any post type, use the post title.
 		*/
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	} elseif ( is_home() || is_singular() ) {
@@ -2402,6 +2809,8 @@ function wp_get_document_title()
 <<<<<<< HEAD
 	} elseif ( is_author() && get_queried_object() ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	} elseif (is_home() || is_singular()) {
 		$title['title'] = single_post_title('', false);
 
@@ -2411,14 +2820,18 @@ function wp_get_document_title()
 
 		// If on an author archive, use the author's display name.
 	} elseif (is_author() && get_queried_object()) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	} elseif (is_author() && get_queried_object()) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$author         = get_queried_object();
 		$title['title'] = $author->display_name;
 
 		// If it's a date archive, use the date as the title.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	} elseif ( is_year() ) {
@@ -2431,19 +2844,25 @@ function wp_get_document_title()
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	} elseif (is_year()) {
 		$title['title'] = get_the_date(_x('Y', 'yearly archives date format'));
 	} elseif (is_month()) {
 		$title['title'] = get_the_date(_x('F Y', 'monthly archives date format'));
 	} elseif (is_day()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$title['title'] = get_the_date();
 	}
 
 	// Add a page number if necessary.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
@@ -2461,6 +2880,8 @@ function wp_get_document_title()
 <<<<<<< HEAD
 		$title['site'] = get_bloginfo( 'name', 'display' );
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (($paged >= 2 || $page >= 2) && !is_404()) {
 		/* translators: %s: Page number. */
 		$title['page'] = sprintf(__('Page %s'), max($paged, $page));
@@ -2471,10 +2892,13 @@ function wp_get_document_title()
 		$title['tagline'] = get_bloginfo('description', 'display');
 	} else {
 		$title['site'] = get_bloginfo('name', 'display');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		$title['site'] = get_bloginfo('name', 'display');
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -2486,6 +2910,7 @@ function wp_get_document_title()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$sep = apply_filters( 'document_title_separator', '-' );
 =======
 	$sep = apply_filters('document_title_separator', '-');
@@ -2493,6 +2918,9 @@ function wp_get_document_title()
 =======
 	$sep = apply_filters('document_title_separator', '-');
 >>>>>>> D-01-LanAnh
+=======
+	$sep = apply_filters('document_title_separator', '-');
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the parts of the document title.
@@ -2510,6 +2938,7 @@ function wp_get_document_title()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$title = apply_filters( 'document_title_parts', $title );
 
 	$title = implode( " $sep ", array_filter( $title ) );
@@ -2523,6 +2952,11 @@ function wp_get_document_title()
 
 	$title = implode(" $sep ", array_filter($title));
 >>>>>>> D-01-LanAnh
+=======
+	$title = apply_filters('document_title_parts', $title);
+
+	$title = implode(" $sep ", array_filter($title));
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the document title.
@@ -2533,6 +2967,7 @@ function wp_get_document_title()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$title = apply_filters( 'document_title', $title );
 =======
 	$title = apply_filters('document_title', $title);
@@ -2540,6 +2975,9 @@ function wp_get_document_title()
 =======
 	$title = apply_filters('document_title', $title);
 >>>>>>> D-01-LanAnh
+=======
+	$title = apply_filters('document_title', $title);
+>>>>>>> D-29-Oanh
 
 	return $title;
 }
@@ -2554,6 +2992,7 @@ function wp_get_document_title()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function _wp_render_title_tag() {
 	if ( ! current_theme_supports( 'title-tag' ) ) {
 =======
@@ -2566,6 +3005,11 @@ function _wp_render_title_tag()
 {
 	if (!current_theme_supports('title-tag')) {
 >>>>>>> D-01-LanAnh
+=======
+function _wp_render_title_tag()
+{
+	if (!current_theme_supports('title-tag')) {
+>>>>>>> D-29-Oanh
 		return;
 	}
 
@@ -2599,6 +3043,7 @@ function _wp_render_title_tag()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_title( $sep = '&raquo;', $display = true, $seplocation = '' ) {
 	global $wp_locale;
 
@@ -2608,30 +3053,39 @@ function wp_title( $sep = '&raquo;', $display = true, $seplocation = '' ) {
 	$day      = get_query_var( 'day' );
 	$search   = get_query_var( 's' );
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 {
 	global $wp_locale;
 
+<<<<<<< HEAD
 =======
 function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 {
 	global $wp_locale;
 
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	$m        = get_query_var('m');
 	$year     = get_query_var('year');
 	$monthnum = get_query_var('monthnum');
 	$day      = get_query_var('day');
 	$search   = get_query_var('s');
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	$title    = '';
 
 	$t_sep = '%WP_TITLE_SEP%'; // Temporary separator, for accurate flipping, if necessary.
 
 	// If there is a post.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( is_single() || ( is_home() && ! is_front_page() ) || ( is_page() && ! is_front_page() ) ) {
@@ -2653,6 +3107,8 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 		if ( ! $post_type_object->has_archive ) {
 			$title = post_type_archive_title( '', false );
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (is_single() || (is_home() && !is_front_page()) || (is_page() && !is_front_page())) {
 		$title = single_post_title('', false);
 	}
@@ -2666,16 +3122,20 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 		$post_type_object = get_post_type_object($post_type);
 		if (!$post_type_object->has_archive) {
 			$title = post_type_archive_title('', false);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		$post_type_object = get_post_type_object($post_type);
 		if (!$post_type_object->has_archive) {
 			$title = post_type_archive_title('', false);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		}
 	}
 
 	// If there's a category or tag.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( is_category() || is_tag() ) {
@@ -2694,6 +3154,8 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 			$tax   = get_taxonomy( $term->taxonomy );
 			$title = single_term_title( $tax->labels->name . $t_sep, false );
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (is_category() || is_tag()) {
 		$title = single_term_title('', false);
 	}
@@ -2704,16 +3166,20 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 		if ($term) {
 			$tax   = get_taxonomy($term->taxonomy);
 			$title = single_term_title($tax->labels->name . $t_sep, false);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		if ($term) {
 			$tax   = get_taxonomy($term->taxonomy);
 			$title = single_term_title($tax->labels->name . $t_sep, false);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		}
 	}
 
 	// If there's an author.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( is_author() && ! is_post_type_archive() ) {
@@ -2729,11 +3195,17 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 		$author = get_queried_object();
 		if ($author) {
 >>>>>>> D-01-LanAnh
+=======
+	if (is_author() && !is_post_type_archive()) {
+		$author = get_queried_object();
+		if ($author) {
+>>>>>>> D-29-Oanh
 			$title = $author->display_name;
 		}
 	}
 
 	// Post type archives with has_archive should override terms.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( is_post_type_archive() && $post_type_object->has_archive ) {
@@ -2764,6 +3236,8 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 		if ( ! empty( $day ) ) {
 			$title .= $t_sep . zeroise( $day, 2 );
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (is_post_type_archive() && $post_type_object->has_archive) {
 		$title = post_type_archive_title('', false);
 	}
@@ -2786,15 +3260,19 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 		}
 		if (!empty($day)) {
 			$title .= $t_sep . zeroise($day, 2);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		if (!empty($day)) {
 			$title .= $t_sep . zeroise($day, 2);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		}
 	}
 
 	// If it's a search.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( is_search() ) {
@@ -2814,6 +3292,8 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 <<<<<<< HEAD
 	if ( ! empty( $title ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (is_search()) {
 		/* translators: 1: Separator, 2: Search query. */
 		$title = sprintf(__('Search Results %1$s %2$s'), $t_sep, strip_tags($search));
@@ -2826,10 +3306,13 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 
 	$prefix = '';
 	if (!empty($title)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (!empty($title)) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$prefix = " $sep ";
 	}
 
@@ -2840,6 +3323,7 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 	 *
 	 * @param string[] $title_array Array of parts of the page title.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$title_array = apply_filters( 'wp_title_parts', explode( $t_sep, $title ) );
@@ -2855,6 +3339,8 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 <<<<<<< HEAD
 		$title = $prefix . implode( " $sep ", $title_array );
 =======
+=======
+>>>>>>> D-29-Oanh
 	$title_array = apply_filters('wp_title_parts', explode($t_sep, $title));
 
 	// Determines position of the separator and direction of the breadcrumb.
@@ -2863,10 +3349,13 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 		$title       = implode(" $sep ", $title_array) . $prefix;
 	} else {
 		$title = $prefix . implode(" $sep ", $title_array);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		$title = $prefix . implode(" $sep ", $title_array);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -2880,15 +3369,19 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$title = apply_filters( 'wp_title', $title, $sep, $seplocation );
 
 	// Send it out.
 	if ( $display ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	$title = apply_filters('wp_title', $title, $sep, $seplocation);
 
 	// Send it out.
 	if ($display) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$title = apply_filters('wp_title', $title, $sep, $seplocation);
@@ -2896,6 +3389,8 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
 	// Send it out.
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		echo $title;
 	} else {
 		return $title;
@@ -2920,16 +3415,20 @@ function wp_title($sep = '&raquo;', $display = true, $seplocation = '')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function single_post_title( $prefix = '', $display = true ) {
 	$_post = get_queried_object();
 
 	if ( ! isset( $_post->post_title ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function single_post_title($prefix = '', $display = true)
 {
 	$_post = get_queried_object();
 
 	if (!isset($_post->post_title)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function single_post_title($prefix = '', $display = true)
@@ -2938,6 +3437,8 @@ function single_post_title($prefix = '', $display = true)
 
 	if (!isset($_post->post_title)) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		return;
 	}
 
@@ -2951,6 +3452,7 @@ function single_post_title($prefix = '', $display = true)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$title = apply_filters( 'single_post_title', $_post->post_title, $_post );
 	if ( $display ) {
 =======
@@ -2961,6 +3463,10 @@ function single_post_title($prefix = '', $display = true)
 	$title = apply_filters('single_post_title', $_post->post_title, $_post);
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+	$title = apply_filters('single_post_title', $_post->post_title, $_post);
+	if ($display) {
+>>>>>>> D-29-Oanh
 		echo $prefix . $title;
 	} else {
 		return $prefix . $title;
@@ -2981,6 +3487,7 @@ function single_post_title($prefix = '', $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function post_type_archive_title( $prefix = '', $display = true ) {
 	if ( ! is_post_type_archive() ) {
 =======
@@ -2999,6 +3506,8 @@ function post_type_archive_title($prefix = '', $display = true)
 <<<<<<< HEAD
 	$post_type_obj = get_post_type_object( $post_type );
 =======
+=======
+>>>>>>> D-29-Oanh
 function post_type_archive_title($prefix = '', $display = true)
 {
 	if (!is_post_type_archive()) {
@@ -3011,10 +3520,13 @@ function post_type_archive_title($prefix = '', $display = true)
 	}
 
 	$post_type_obj = get_post_type_object($post_type);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$post_type_obj = get_post_type_object($post_type);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the post type archive title.
@@ -3024,6 +3536,7 @@ function post_type_archive_title($prefix = '', $display = true)
 	 * @param string $post_type_name Post type 'name' label.
 	 * @param string $post_type      Post type.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$title = apply_filters( 'post_type_archive_title', $post_type_obj->labels->name, $post_type );
@@ -3039,6 +3552,11 @@ function post_type_archive_title($prefix = '', $display = true)
 
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+	$title = apply_filters('post_type_archive_title', $post_type_obj->labels->name, $post_type);
+
+	if ($display) {
+>>>>>>> D-29-Oanh
 		echo $prefix . $title;
 	} else {
 		return $prefix . $title;
@@ -3060,6 +3578,7 @@ function post_type_archive_title($prefix = '', $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function single_cat_title( $prefix = '', $display = true ) {
 	return single_term_title( $prefix, $display );
 =======
@@ -3072,6 +3591,11 @@ function single_cat_title($prefix = '', $display = true)
 {
 	return single_term_title($prefix, $display);
 >>>>>>> D-01-LanAnh
+=======
+function single_cat_title($prefix = '', $display = true)
+{
+	return single_term_title($prefix, $display);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -3089,6 +3613,7 @@ function single_cat_title($prefix = '', $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function single_tag_title( $prefix = '', $display = true ) {
 	return single_term_title( $prefix, $display );
 =======
@@ -3101,6 +3626,11 @@ function single_tag_title($prefix = '', $display = true)
 {
 	return single_term_title($prefix, $display);
 >>>>>>> D-01-LanAnh
+=======
+function single_tag_title($prefix = '', $display = true)
+{
+	return single_term_title($prefix, $display);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -3118,6 +3648,7 @@ function single_tag_title($prefix = '', $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function single_term_title( $prefix = '', $display = true ) {
 =======
 function single_term_title($prefix = '', $display = true)
@@ -3132,6 +3663,8 @@ function single_term_title($prefix = '', $display = true)
 <<<<<<< HEAD
 	if ( is_category() ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function single_term_title($prefix = '', $display = true)
 {
 	$term = get_queried_object();
@@ -3141,10 +3674,13 @@ function single_term_title($prefix = '', $display = true)
 	}
 
 	if (is_category()) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (is_category()) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters the category archive page title.
 		 *
@@ -3152,6 +3688,7 @@ function single_term_title($prefix = '', $display = true)
 		 *
 		 * @param string $term_name Category name for archive being displayed.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$term_name = apply_filters( 'single_cat_title', $term->name );
@@ -3164,6 +3701,10 @@ function single_term_title($prefix = '', $display = true)
 		$term_name = apply_filters('single_cat_title', $term->name);
 	} elseif (is_tag()) {
 >>>>>>> D-01-LanAnh
+=======
+		$term_name = apply_filters('single_cat_title', $term->name);
+	} elseif (is_tag()) {
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters the tag archive page title.
 		 *
@@ -3171,6 +3712,7 @@ function single_term_title($prefix = '', $display = true)
 		 *
 		 * @param string $term_name Tag name for archive being displayed.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$term_name = apply_filters( 'single_tag_title', $term->name );
@@ -3183,6 +3725,10 @@ function single_term_title($prefix = '', $display = true)
 		$term_name = apply_filters('single_tag_title', $term->name);
 	} elseif (is_tax()) {
 >>>>>>> D-01-LanAnh
+=======
+		$term_name = apply_filters('single_tag_title', $term->name);
+	} elseif (is_tax()) {
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters the custom taxonomy archive page title.
 		 *
@@ -3192,6 +3738,7 @@ function single_term_title($prefix = '', $display = true)
 		 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$term_name = apply_filters( 'single_term_title', $term->name );
 =======
 		$term_name = apply_filters('single_term_title', $term->name);
@@ -3199,10 +3746,14 @@ function single_term_title($prefix = '', $display = true)
 =======
 		$term_name = apply_filters('single_term_title', $term->name);
 >>>>>>> D-01-LanAnh
+=======
+		$term_name = apply_filters('single_term_title', $term->name);
+>>>>>>> D-29-Oanh
 	} else {
 		return;
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( empty( $term_name ) ) {
@@ -3211,11 +3762,14 @@ function single_term_title($prefix = '', $display = true)
 
 	if ( $display ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (empty($term_name)) {
 		return;
 	}
 
 	if ($display) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (empty($term_name)) {
@@ -3224,6 +3778,8 @@ function single_term_title($prefix = '', $display = true)
 
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		echo $prefix . $term_name;
 	} else {
 		return $prefix . $term_name;
@@ -3248,6 +3804,7 @@ function single_term_title($prefix = '', $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function single_month_title( $prefix = '', $display = true ) {
 =======
 function single_month_title($prefix = '', $display = true)
@@ -3270,6 +3827,8 @@ function single_month_title($prefix = '', $display = true)
 <<<<<<< HEAD
 	if ( empty( $my_month ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function single_month_title($prefix = '', $display = true)
 {
 	global $wp_locale;
@@ -3287,15 +3846,19 @@ function single_month_title($prefix = '', $display = true)
 	}
 
 	if (empty($my_month)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (empty($my_month)) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		return false;
 	}
 
 	$result = $prefix . $my_month . $prefix . $my_year;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ! $display ) {
@@ -3305,6 +3868,9 @@ function single_month_title($prefix = '', $display = true)
 =======
 	if (!$display) {
 >>>>>>> D-01-LanAnh
+=======
+	if (!$display) {
+>>>>>>> D-29-Oanh
 		return $result;
 	}
 	echo $result;
@@ -3322,16 +3888,20 @@ function single_month_title($prefix = '', $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_archive_title( $before = '', $after = '' ) {
 	$title = get_the_archive_title();
 
 	if ( ! empty( $title ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function the_archive_title($before = '', $after = '')
 {
 	$title = get_the_archive_title();
 
 	if (!empty($title)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function the_archive_title($before = '', $after = '')
@@ -3340,6 +3910,8 @@ function the_archive_title($before = '', $after = '')
 
 	if (!empty($title)) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		echo $before . $title . $after;
 	}
 }
@@ -3352,6 +3924,7 @@ function the_archive_title($before = '', $after = '')
  *
  * @return string Archive title.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_the_archive_title() {
@@ -3414,6 +3987,8 @@ function get_the_archive_title()
 <<<<<<< HEAD
 				_x( '%s:', 'taxonomy term archive title prefix' ),
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_the_archive_title()
 {
 	$title  = __('Archives');
@@ -3468,10 +4043,13 @@ function get_the_archive_title()
 			$prefix = sprintf(
 				/* translators: %s: Taxonomy singular name. */
 				_x('%s:', 'taxonomy term archive title prefix'),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				_x('%s:', 'taxonomy term archive title prefix'),
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				$tax->labels->singular_name
 			);
 		}
@@ -3488,17 +4066,21 @@ function get_the_archive_title()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$prefix = apply_filters( 'get_the_archive_title_prefix', $prefix );
 	if ( $prefix ) {
 		$title = sprintf(
 			/* translators: 1: Title prefix. 2: Title. */
 			_x( '%1$s %2$s', 'archive title' ),
 =======
+=======
+>>>>>>> D-29-Oanh
 	$prefix = apply_filters('get_the_archive_title_prefix', $prefix);
 	if ($prefix) {
 		$title = sprintf(
 			/* translators: 1: Title prefix. 2: Title. */
 			_x('%1$s %2$s', 'archive title'),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$prefix = apply_filters('get_the_archive_title_prefix', $prefix);
@@ -3507,6 +4089,8 @@ function get_the_archive_title()
 			/* translators: 1: Title prefix. 2: Title. */
 			_x('%1$s %2$s', 'archive title'),
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			$prefix,
 			'<span>' . $title . '</span>'
 		);
@@ -3524,6 +4108,7 @@ function get_the_archive_title()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_the_archive_title', $title, $original_title, $prefix );
 =======
 	return apply_filters('get_the_archive_title', $title, $original_title, $prefix);
@@ -3531,6 +4116,9 @@ function get_the_archive_title()
 =======
 	return apply_filters('get_the_archive_title', $title, $original_title, $prefix);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_the_archive_title', $title, $original_title, $prefix);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -3545,14 +4133,18 @@ function get_the_archive_title()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_archive_description( $before = '', $after = '' ) {
 	$description = get_the_archive_description();
 	if ( $description ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function the_archive_description($before = '', $after = '')
 {
 	$description = get_the_archive_description();
 	if ($description) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function the_archive_description($before = '', $after = '')
@@ -3560,6 +4152,8 @@ function the_archive_description($before = '', $after = '')
 	$description = get_the_archive_description();
 	if ($description) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		echo $before . $description . $after;
 	}
 }
@@ -3577,6 +4171,7 @@ function the_archive_description($before = '', $after = '')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_the_archive_description() {
 	if ( is_author() ) {
 		$description = get_the_author_meta( 'description' );
@@ -3584,15 +4179,20 @@ function get_the_archive_description() {
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 function get_the_archive_description()
 {
 	if (is_author()) {
 		$description = get_the_author_meta('description');
 	} elseif (is_post_type_archive()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$description = get_the_post_type_description();
 	} else {
 		$description = term_description();
@@ -3607,6 +4207,7 @@ function get_the_archive_description()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_the_archive_description', $description );
 =======
 	return apply_filters('get_the_archive_description', $description);
@@ -3614,6 +4215,9 @@ function get_the_archive_description()
 =======
 	return apply_filters('get_the_archive_description', $description);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_the_archive_description', $description);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -3623,6 +4227,7 @@ function get_the_archive_description()
  *
  * @return string The post type description.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_the_post_type_description() {
@@ -3643,6 +4248,8 @@ function get_the_post_type_description()
 <<<<<<< HEAD
 	if ( isset( $post_type_obj->description ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_the_post_type_description()
 {
 	$post_type = get_query_var('post_type');
@@ -3655,10 +4262,13 @@ function get_the_post_type_description()
 
 	// Check if a description is set.
 	if (isset($post_type_obj->description)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (isset($post_type_obj->description)) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$description = $post_type_obj->description;
 	} else {
 		$description = '';
@@ -3674,6 +4284,7 @@ function get_the_post_type_description()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_the_post_type_description', $description, $post_type_obj );
 =======
 	return apply_filters('get_the_post_type_description', $description, $post_type_obj);
@@ -3681,6 +4292,9 @@ function get_the_post_type_description()
 =======
 	return apply_filters('get_the_post_type_description', $description, $post_type_obj);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_the_post_type_description', $description, $post_type_obj);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -3720,6 +4334,7 @@ function get_the_post_type_description()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_archives_link( $url, $text, $format = 'html', $before = '', $after = '', $selected = false ) {
 	$text         = wptexturize( $text );
 	$url          = esc_url( $url );
@@ -3739,6 +4354,8 @@ function get_archives_link($url, $text, $format = 'html', $before = '', $after =
 <<<<<<< HEAD
 	} elseif ( 'html' === $format ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_archives_link($url, $text, $format = 'html', $before = '', $after = '', $selected = false)
 {
 	$text         = wptexturize($text);
@@ -3751,10 +4368,13 @@ function get_archives_link($url, $text, $format = 'html', $before = '', $after =
 		$selected_attr = $selected ? " selected='selected'" : '';
 		$link_html     = "\t<option value='$url'$selected_attr>$before $text $after</option>\n";
 	} elseif ('html' === $format) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	} elseif ('html' === $format) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$link_html = "\t<li>$before<a href='$url'$aria_current>$text</a>$after</li>\n";
 	} else { // Custom.
 		$link_html = "\t$before<a href='$url'$aria_current>$text</a>$after\n";
@@ -3777,6 +4397,7 @@ function get_archives_link($url, $text, $format = 'html', $before = '', $after =
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_archives_link', $link_html, $url, $text, $format, $before, $after, $selected );
 =======
 	return apply_filters('get_archives_link', $link_html, $url, $text, $format, $before, $after, $selected);
@@ -3784,6 +4405,9 @@ function get_archives_link($url, $text, $format = 'html', $before = '', $after =
 =======
 	return apply_filters('get_archives_link', $link_html, $url, $text, $format, $before, $after, $selected);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_archives_link', $link_html, $url, $text, $format, $before, $after, $selected);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -3828,6 +4452,7 @@ function get_archives_link($url, $text, $format = 'html', $before = '', $after =
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_get_archives( $args = '' ) {
 =======
 function wp_get_archives($args = '')
@@ -3837,6 +4462,10 @@ function wp_get_archives($args = '')
 function wp_get_archives($args = '')
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_get_archives($args = '')
+{
+>>>>>>> D-29-Oanh
 	global $wpdb, $wp_locale;
 
 	$defaults = array(
@@ -3849,6 +4478,7 @@ function wp_get_archives($args = '')
 		'echo'            => 1,
 		'order'           => 'DESC',
 		'post_type'       => 'post',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		'year'            => get_query_var( 'year' ),
@@ -3869,6 +4499,8 @@ function wp_get_archives($args = '')
 	$post_type_object = get_post_type_object( $parsed_args['post_type'] );
 	if ( ! is_post_type_viewable( $post_type_object ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		'year'            => get_query_var('year'),
 		'monthnum'        => get_query_var('monthnum'),
 		'day'             => get_query_var('day'),
@@ -3879,16 +4511,20 @@ function wp_get_archives($args = '')
 
 	$post_type_object = get_post_type_object($parsed_args['post_type']);
 	if (!is_post_type_viewable($post_type_object)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$post_type_object = get_post_type_object($parsed_args['post_type']);
 	if (!is_post_type_viewable($post_type_object)) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		return;
 	}
 
 	$parsed_args['post_type'] = $post_type_object->name;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( '' === $parsed_args['type'] ) {
@@ -3907,6 +4543,8 @@ function wp_get_archives($args = '')
 	$order = strtoupper( $parsed_args['order'] );
 	if ( 'ASC' !== $order ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	if ('' === $parsed_args['type']) {
 		$parsed_args['type'] = 'monthly';
 	}
@@ -3918,17 +4556,21 @@ function wp_get_archives($args = '')
 
 	$order = strtoupper($parsed_args['order']);
 	if ('ASC' !== $order) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$order = strtoupper($parsed_args['order']);
 	if ('ASC' !== $order) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$order = 'DESC';
 	}
 
 	// This is what will separate dates on weekly archive links.
 	$archive_week_separator = '&#8211;';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$sql_where = $wpdb->prepare( "WHERE post_type = %s AND post_status = 'publish'", $parsed_args['post_type'] );
@@ -3938,6 +4580,9 @@ function wp_get_archives($args = '')
 =======
 	$sql_where = $wpdb->prepare("WHERE post_type = %s AND post_status = 'publish'", $parsed_args['post_type']);
 >>>>>>> D-01-LanAnh
+=======
+	$sql_where = $wpdb->prepare("WHERE post_type = %s AND post_status = 'publish'", $parsed_args['post_type']);
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the SQL WHERE clause for retrieving archives.
@@ -3949,6 +4594,7 @@ function wp_get_archives($args = '')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$where = apply_filters( 'getarchives_where', $sql_where, $parsed_args );
 =======
 	$where = apply_filters('getarchives_where', $sql_where, $parsed_args);
@@ -3956,6 +4602,9 @@ function wp_get_archives($args = '')
 =======
 	$where = apply_filters('getarchives_where', $sql_where, $parsed_args);
 >>>>>>> D-01-LanAnh
+=======
+	$where = apply_filters('getarchives_where', $sql_where, $parsed_args);
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the SQL JOIN clause for retrieving archives.
@@ -3965,6 +4614,7 @@ function wp_get_archives($args = '')
 	 * @param string $sql_join    Portion of SQL query containing JOIN clause.
 	 * @param array  $parsed_args An array of default arguments.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$join = apply_filters( 'getarchives_join', '', $parsed_args );
@@ -4074,6 +4724,8 @@ function wp_get_archives($args = '')
 					$arc_week_start = date_i18n( get_option( 'date_format' ), $arc_week['start'] );
 					$arc_week_end   = date_i18n( get_option( 'date_format' ), $arc_week['end'] );
 =======
+=======
+>>>>>>> D-29-Oanh
 	$join = apply_filters('getarchives_join', '', $parsed_args);
 
 	$output = '';
@@ -4176,17 +4828,21 @@ function wp_get_archives($args = '')
 					$arc_week       = get_weekstartend($result->yyyymmdd, get_option('start_of_week'));
 					$arc_week_start = date_i18n(get_option('date_format'), $arc_week['start']);
 					$arc_week_end   = date_i18n(get_option('date_format'), $arc_week['end']);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 					$arc_week       = get_weekstartend($result->yyyymmdd, get_option('start_of_week'));
 					$arc_week_start = date_i18n(get_option('date_format'), $arc_week['start']);
 					$arc_week_end   = date_i18n(get_option('date_format'), $arc_week['end']);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					$url            = add_query_arg(
 						array(
 							'm' => $arc_year,
 							'w' => $result->week,
 						),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 						home_url( '/' )
@@ -4225,6 +4881,8 @@ function wp_get_archives($args = '')
 <<<<<<< HEAD
 						$text = strip_tags( apply_filters( 'the_title', $result->post_title, $result->ID ) );
 =======
+=======
+>>>>>>> D-29-Oanh
 						home_url('/')
 					);
 					if ('post' !== $parsed_args['post_type']) {
@@ -4256,14 +4914,18 @@ function wp_get_archives($args = '')
 					if ($result->post_title) {
 						/** This filter is documented in wp-includes/post-template.php */
 						$text = strip_tags(apply_filters('the_title', $result->post_title, $result->ID));
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 						$text = strip_tags(apply_filters('the_title', $result->post_title, $result->ID));
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					} else {
 						$text = $result->ID;
 					}
 					$selected = get_the_ID() === $result->ID;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 					$output  .= get_archives_link( $url, $text, $parsed_args['format'], $parsed_args['before'], $parsed_args['after'], $selected );
@@ -4273,11 +4935,15 @@ function wp_get_archives($args = '')
 =======
 					$output  .= get_archives_link($url, $text, $parsed_args['format'], $parsed_args['before'], $parsed_args['after'], $selected);
 >>>>>>> D-01-LanAnh
+=======
+					$output  .= get_archives_link($url, $text, $parsed_args['format'], $parsed_args['before'], $parsed_args['after'], $selected);
+>>>>>>> D-29-Oanh
 				}
 			}
 		}
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( $parsed_args['echo'] ) {
@@ -4287,6 +4953,9 @@ function wp_get_archives($args = '')
 =======
 	if ($parsed_args['echo']) {
 >>>>>>> D-01-LanAnh
+=======
+	if ($parsed_args['echo']) {
+>>>>>>> D-29-Oanh
 		echo $output;
 	} else {
 		return $output;
@@ -4303,14 +4972,18 @@ function wp_get_archives($args = '')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function calendar_week_mod( $num ) {
 	$base = 7;
 	return ( $num - $base * floor( $num / $base ) );
 =======
+=======
+>>>>>>> D-29-Oanh
 function calendar_week_mod($num)
 {
 	$base = 7;
 	return ($num - $base * floor($num / $base));
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function calendar_week_mod($num)
@@ -4318,6 +4991,8 @@ function calendar_week_mod($num)
 	$base = 7;
 	return ($num - $base * floor($num / $base));
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -4341,6 +5016,7 @@ function calendar_week_mod($num)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_calendar( $initial = true, $display = true ) {
 =======
 function get_calendar($initial = true, $display = true)
@@ -4358,6 +5034,8 @@ function get_calendar($initial = true, $display = true)
 <<<<<<< HEAD
 		if ( $display ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_calendar($initial = true, $display = true)
 {
 	global $wpdb, $m, $monthnum, $year, $wp_locale, $posts;
@@ -4370,10 +5048,13 @@ function get_calendar($initial = true, $display = true)
 		$output = apply_filters('get_calendar', $cache[$key]);
 
 		if ($display) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			echo $output;
 			return;
 		}
@@ -4383,6 +5064,7 @@ function get_calendar($initial = true, $display = true)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( ! is_array( $cache ) ) {
 =======
 	if (!is_array($cache)) {
@@ -4390,10 +5072,14 @@ function get_calendar($initial = true, $display = true)
 =======
 	if (!is_array($cache)) {
 >>>>>>> D-01-LanAnh
+=======
+	if (!is_array($cache)) {
+>>>>>>> D-29-Oanh
 		$cache = array();
 	}
 
 	// Quick check. If we have no posts at all, abort!
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ! $posts ) {
@@ -4404,19 +5090,25 @@ function get_calendar($initial = true, $display = true)
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	if (!$posts) {
 		$gotsome = $wpdb->get_var("SELECT 1 as test FROM $wpdb->posts WHERE post_type = 'post' AND post_status = 'publish' LIMIT 1");
 		if (!$gotsome) {
 			$cache[$key] = '';
 			wp_cache_set('get_calendar', $cache, 'calendar');
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			return;
 		}
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( isset( $_GET['w'] ) ) {
@@ -4454,6 +5146,8 @@ function get_calendar($initial = true, $display = true)
 	$unixmonth = mktime( 0, 0, 0, $thismonth, 1, $thisyear );
 	$last_day  = gmdate( 't', $unixmonth );
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (isset($_GET['w'])) {
 		$w = (int) $_GET['w'];
 	}
@@ -4484,11 +5178,14 @@ function get_calendar($initial = true, $display = true)
 
 	$unixmonth = mktime(0, 0, 0, $thismonth, 1, $thisyear);
 	$last_day  = gmdate('t', $unixmonth);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$unixmonth = mktime(0, 0, 0, $thismonth, 1, $thisyear);
 	$last_day  = gmdate('t', $unixmonth);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	// Get the next and previous month and year with at least one post.
 	$previous = $wpdb->get_row(
@@ -4511,6 +5208,7 @@ function get_calendar($initial = true, $display = true)
 	/* translators: Calendar caption: 1: Month name, 2: 4-digit year. */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$calendar_caption = _x( '%1$s %2$s', 'calendar caption' );
 	$calendar_output  = '<table id="wp-calendar" class="wp-calendar-table">
 	<caption>' . sprintf(
@@ -4518,12 +5216,15 @@ function get_calendar($initial = true, $display = true)
 		$wp_locale->get_month( $thismonth ),
 		gmdate( 'Y', $unixmonth )
 =======
+=======
+>>>>>>> D-29-Oanh
 	$calendar_caption = _x('%1$s %2$s', 'calendar caption');
 	$calendar_output  = '<table id="wp-calendar" class="wp-calendar-table">
 	<caption>' . sprintf(
 		$calendar_caption,
 		$wp_locale->get_month($thismonth),
 		gmdate('Y', $unixmonth)
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$calendar_caption = _x('%1$s %2$s', 'calendar caption');
@@ -4533,12 +5234,15 @@ function get_calendar($initial = true, $display = true)
 		$wp_locale->get_month($thismonth),
 		gmdate('Y', $unixmonth)
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	) . '</caption>
 	<thead>
 	<tr>';
 
 	$myweek = array();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	for ( $wdcount = 0; $wdcount <= 6; $wdcount++ ) {
@@ -4549,6 +5253,8 @@ function get_calendar($initial = true, $display = true)
 		$day_name         = $initial ? $wp_locale->get_weekday_initial( $wd ) : $wp_locale->get_weekday_abbrev( $wd );
 		$wd               = esc_attr( $wd );
 =======
+=======
+>>>>>>> D-29-Oanh
 	for ($wdcount = 0; $wdcount <= 6; $wdcount++) {
 		$myweek[] = $wp_locale->get_weekday(($wdcount + $week_begins) % 7);
 	}
@@ -4556,6 +5262,7 @@ function get_calendar($initial = true, $display = true)
 	foreach ($myweek as $wd) {
 		$day_name         = $initial ? $wp_locale->get_weekday_initial($wd) : $wp_locale->get_weekday_abbrev($wd);
 		$wd               = esc_attr($wd);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	for ($wdcount = 0; $wdcount <= 6; $wdcount++) {
@@ -4566,6 +5273,8 @@ function get_calendar($initial = true, $display = true)
 		$day_name         = $initial ? $wp_locale->get_weekday_initial($wd) : $wp_locale->get_weekday_abbrev($wd);
 		$wd               = esc_attr($wd);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$calendar_output .= "\n\t\t<th scope=\"col\" title=\"$wd\">$day_name</th>";
 	}
 
@@ -4588,6 +5297,7 @@ function get_calendar($initial = true, $display = true)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( $dayswithposts ) {
 		foreach ( (array) $dayswithposts as $daywith ) {
 =======
@@ -4598,11 +5308,16 @@ function get_calendar($initial = true, $display = true)
 	if ($dayswithposts) {
 		foreach ((array) $dayswithposts as $daywith) {
 >>>>>>> D-01-LanAnh
+=======
+	if ($dayswithposts) {
+		foreach ((array) $dayswithposts as $daywith) {
+>>>>>>> D-29-Oanh
 			$daywithpost[] = (int) $daywith[0];
 		}
 	}
 
 	// See how much we should pad in the beginning.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$pad = calendar_week_mod( gmdate( 'w', $unixmonth ) - $week_begins );
@@ -4622,6 +5337,8 @@ function get_calendar($initial = true, $display = true)
 	for ( $day = 1; $day <= $daysinmonth; ++$day ) {
 		if ( isset( $newrow ) && $newrow ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	$pad = calendar_week_mod(gmdate('w', $unixmonth) - $week_begins);
 	if (0 != $pad) {
 		$calendar_output .= "\n\t\t" . '<td colspan="' . esc_attr($pad) . '" class="pad">&nbsp;</td>';
@@ -4632,15 +5349,19 @@ function get_calendar($initial = true, $display = true)
 
 	for ($day = 1; $day <= $daysinmonth; ++$day) {
 		if (isset($newrow) && $newrow) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	for ($day = 1; $day <= $daysinmonth; ++$day) {
 		if (isset($newrow) && $newrow) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			$calendar_output .= "\n\t</tr>\n\t<tr>\n\t\t";
 		}
 		$newrow = false;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		if ( current_time( 'j' ) == $day &&
@@ -4649,20 +5370,26 @@ function get_calendar($initial = true, $display = true)
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		if (
 			current_time('j') == $day &&
 			current_time('m') == $thismonth &&
 			current_time('Y') == $thisyear
 		) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			$calendar_output .= '<td id="today">';
 		} else {
 			$calendar_output .= '<td>';
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		if ( in_array( $day, $daywithpost, true ) ) {
@@ -4679,6 +5406,8 @@ function get_calendar($initial = true, $display = true)
 				get_day_link( $thisyear, $thismonth, $day ),
 				esc_attr( $label ),
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (in_array($day, $daywithpost, true)) {
 			// Any posts today?
 			$date_format = gmdate(_x('F j, Y', 'daily archives date format'), strtotime("{$thisyear}-{$thismonth}-{$day}"));
@@ -4688,11 +5417,14 @@ function get_calendar($initial = true, $display = true)
 				'<a href="%s" aria-label="%s">%s</a>',
 				get_day_link($thisyear, $thismonth, $day),
 				esc_attr($label),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				get_day_link($thisyear, $thismonth, $day),
 				esc_attr($label),
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				$day
 			);
 		} else {
@@ -4703,6 +5435,7 @@ function get_calendar($initial = true, $display = true)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( 6 == calendar_week_mod( gmdate( 'w', mktime( 0, 0, 0, $thismonth, $day, $thisyear ) ) - $week_begins ) ) {
 =======
 		if (6 == calendar_week_mod(gmdate('w', mktime(0, 0, 0, $thismonth, $day, $thisyear)) - $week_begins)) {
@@ -4710,10 +5443,14 @@ function get_calendar($initial = true, $display = true)
 =======
 		if (6 == calendar_week_mod(gmdate('w', mktime(0, 0, 0, $thismonth, $day, $thisyear)) - $week_begins)) {
 >>>>>>> D-01-LanAnh
+=======
+		if (6 == calendar_week_mod(gmdate('w', mktime(0, 0, 0, $thismonth, $day, $thisyear)) - $week_begins)) {
+>>>>>>> D-29-Oanh
 			$newrow = true;
 		}
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$pad = 7 - calendar_week_mod( gmdate( 'w', mktime( 0, 0, 0, $thismonth, $day, $thisyear ) ) - $week_begins );
@@ -4729,12 +5466,18 @@ function get_calendar($initial = true, $display = true)
 	if (0 != $pad && 7 != $pad) {
 		$calendar_output .= "\n\t\t" . '<td class="pad" colspan="' . esc_attr($pad) . '">&nbsp;</td>';
 >>>>>>> D-01-LanAnh
+=======
+	$pad = 7 - calendar_week_mod(gmdate('w', mktime(0, 0, 0, $thismonth, $day, $thisyear)) - $week_begins);
+	if (0 != $pad && 7 != $pad) {
+		$calendar_output .= "\n\t\t" . '<td class="pad" colspan="' . esc_attr($pad) . '">&nbsp;</td>';
+>>>>>>> D-29-Oanh
 	}
 
 	$calendar_output .= "\n\t</tr>\n\t</tbody>";
 
 	$calendar_output .= "\n\t</table>";
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$calendar_output .= '<nav aria-label="' . __( 'Previous and next months' ) . '" class="wp-calendar-nav">';
@@ -4750,20 +5493,28 @@ function get_calendar($initial = true, $display = true)
 	$calendar_output .= '<nav aria-label="' . __('Previous and next months') . '" class="wp-calendar-nav">';
 
 >>>>>>> D-01-LanAnh
+=======
+	$calendar_output .= '<nav aria-label="' . __('Previous and next months') . '" class="wp-calendar-nav">';
+
+>>>>>>> D-29-Oanh
 	if ($previous) {
 		$calendar_output .= "\n\t\t" . '<span class="wp-calendar-nav-prev"><a href="' . get_month_link($previous->year, $previous->month) . '">&laquo; ' .
 			$wp_locale->get_month_abbrev($wp_locale->get_month($previous->month)) .
 			'</a></span>';
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	} else {
 		$calendar_output .= "\n\t\t" . '<span class="wp-calendar-nav-prev">&nbsp;</span>';
 	}
 
 	$calendar_output .= "\n\t\t" . '<span class="pad">&nbsp;</span>';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( $next ) {
@@ -4773,14 +5524,19 @@ function get_calendar($initial = true, $display = true)
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	if ($next) {
 		$calendar_output .= "\n\t\t" . '<span class="wp-calendar-nav-next"><a href="' . get_month_link($next->year, $next->month) . '">' .
 			$wp_locale->get_month_abbrev($wp_locale->get_month($next->month)) .
 			' &raquo;</a></span>';
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	} else {
 		$calendar_output .= "\n\t\t" . '<span class="wp-calendar-nav-next">&nbsp;</span>';
 	}
@@ -4790,15 +5546,19 @@ function get_calendar($initial = true, $display = true)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$cache[ $key ] = $calendar_output;
 	wp_cache_set( 'get_calendar', $cache, 'calendar' );
 
 	if ( $display ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	$cache[$key] = $calendar_output;
 	wp_cache_set('get_calendar', $cache, 'calendar');
 
 	if ($display) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$cache[$key] = $calendar_output;
@@ -4806,6 +5566,8 @@ function get_calendar($initial = true, $display = true)
 
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters the HTML calendar output.
 		 *
@@ -4815,17 +5577,21 @@ function get_calendar($initial = true, $display = true)
 		 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		echo apply_filters( 'get_calendar', $calendar_output );
 		return;
 	}
 	/** This filter is documented in wp-includes/general-template.php */
 	return apply_filters( 'get_calendar', $calendar_output );
 =======
+=======
+>>>>>>> D-29-Oanh
 		echo apply_filters('get_calendar', $calendar_output);
 		return;
 	}
 	/** This filter is documented in wp-includes/general-template.php */
 	return apply_filters('get_calendar', $calendar_output);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		echo apply_filters('get_calendar', $calendar_output);
@@ -4834,6 +5600,8 @@ function get_calendar($initial = true, $display = true)
 	/** This filter is documented in wp-includes/general-template.php */
 	return apply_filters('get_calendar', $calendar_output);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -4842,6 +5610,7 @@ function get_calendar($initial = true, $display = true)
  * @see get_calendar()
  * @since 2.1.0
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function delete_get_calendar_cache() {
@@ -4856,6 +5625,11 @@ function delete_get_calendar_cache()
 {
 	wp_cache_delete('get_calendar', 'calendar');
 >>>>>>> D-01-LanAnh
+=======
+function delete_get_calendar_cache()
+{
+	wp_cache_delete('get_calendar', 'calendar');
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -4873,6 +5647,7 @@ function delete_get_calendar_cache()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function allowed_tags() {
 =======
 function allowed_tags()
@@ -4886,6 +5661,8 @@ function allowed_tags()
 		if ( 0 < count( $attributes ) ) {
 			foreach ( $attributes as $attribute => $limits ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function allowed_tags()
 {
 	global $allowedtags;
@@ -4894,16 +5671,20 @@ function allowed_tags()
 		$allowed .= '<' . $tag;
 		if (0 < count($attributes)) {
 			foreach ($attributes as $attribute => $limits) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		if (0 < count($attributes)) {
 			foreach ($attributes as $attribute => $limits) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				$allowed .= ' ' . $attribute . '=""';
 			}
 		}
 		$allowed .= '> ';
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	return htmlentities( $allowed );
@@ -4913,6 +5694,9 @@ function allowed_tags()
 =======
 	return htmlentities($allowed);
 >>>>>>> D-01-LanAnh
+=======
+	return htmlentities($allowed);
+>>>>>>> D-29-Oanh
 }
 
 /***** Date/Time tags */
@@ -4922,6 +5706,7 @@ function allowed_tags()
  *
  * @since 1.0.0
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function the_date_xml() {
@@ -4936,6 +5721,11 @@ function the_date_xml()
 {
 	echo mysql2date('Y-m-d', get_post()->post_date, false);
 >>>>>>> D-01-LanAnh
+=======
+function the_date_xml()
+{
+	echo mysql2date('Y-m-d', get_post()->post_date, false);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -4963,6 +5753,7 @@ function the_date_xml()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_date( $format = '', $before = '', $after = '', $display = true ) {
 =======
 function the_date($format = '', $before = '', $after = '', $display = true)
@@ -4972,10 +5763,15 @@ function the_date($format = '', $before = '', $after = '', $display = true)
 function the_date($format = '', $before = '', $after = '', $display = true)
 {
 >>>>>>> D-01-LanAnh
+=======
+function the_date($format = '', $before = '', $after = '', $display = true)
+{
+>>>>>>> D-29-Oanh
 	global $currentday, $previousday;
 
 	$the_date = '';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( is_new_day() ) {
@@ -4988,6 +5784,10 @@ function the_date($format = '', $before = '', $after = '', $display = true)
 	if (is_new_day()) {
 		$the_date    = $before . get_the_date($format) . $after;
 >>>>>>> D-01-LanAnh
+=======
+	if (is_new_day()) {
+		$the_date    = $before . get_the_date($format) . $after;
+>>>>>>> D-29-Oanh
 		$previousday = $currentday;
 	}
 
@@ -5003,6 +5803,7 @@ function the_date($format = '', $before = '', $after = '', $display = true)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$the_date = apply_filters( 'the_date', $the_date, $format, $before, $after );
 
 	if ( $display ) {
@@ -5016,6 +5817,11 @@ function the_date($format = '', $before = '', $after = '', $display = true)
 
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+	$the_date = apply_filters('the_date', $the_date, $format, $before, $after);
+
+	if ($display) {
+>>>>>>> D-29-Oanh
 		echo $the_date;
 	} else {
 		return $the_date;
@@ -5036,6 +5842,7 @@ function the_date($format = '', $before = '', $after = '', $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_the_date( $format = '', $post = null ) {
 	$post = get_post( $post );
 =======
@@ -5053,6 +5860,8 @@ function get_the_date($format = '', $post = null)
 <<<<<<< HEAD
 	$the_date = get_post_time( $_format, false, $post, true );
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_the_date($format = '', $post = null)
 {
 	$post = get_post($post);
@@ -5064,10 +5873,13 @@ function get_the_date($format = '', $post = null)
 	$_format = !empty($format) ? $format : get_option('date_format');
 
 	$the_date = get_post_time($_format, false, $post, true);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$the_date = get_post_time($_format, false, $post, true);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the date a post was published.
@@ -5080,6 +5892,7 @@ function get_the_date($format = '', $post = null)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_the_date', $the_date, $format, $post );
 =======
 	return apply_filters('get_the_date', $the_date, $format, $post);
@@ -5087,6 +5900,9 @@ function get_the_date($format = '', $post = null)
 =======
 	return apply_filters('get_the_date', $the_date, $format, $post);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_the_date', $the_date, $format, $post);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5102,6 +5918,7 @@ function get_the_date($format = '', $post = null)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_modified_date( $format = '', $before = '', $after = '', $display = true ) {
 	$the_modified_date = $before . get_the_modified_date( $format ) . $after;
 =======
@@ -5114,6 +5931,11 @@ function the_modified_date($format = '', $before = '', $after = '', $display = t
 {
 	$the_modified_date = $before . get_the_modified_date($format) . $after;
 >>>>>>> D-01-LanAnh
+=======
+function the_modified_date($format = '', $before = '', $after = '', $display = true)
+{
+	$the_modified_date = $before . get_the_modified_date($format) . $after;
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the date a post was last modified for display.
@@ -5125,6 +5947,7 @@ function the_modified_date($format = '', $before = '', $after = '', $display = t
 	 * @param string       $before            HTML output before the date.
 	 * @param string       $after             HTML output after the date.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$the_modified_date = apply_filters( 'the_modified_date', $the_modified_date, $format, $before, $after );
@@ -5140,10 +5963,16 @@ function the_modified_date($format = '', $before = '', $after = '', $display = t
 
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+	$the_modified_date = apply_filters('the_modified_date', $the_modified_date, $format, $before, $after);
+
+	if ($display) {
+>>>>>>> D-29-Oanh
 		echo $the_modified_date;
 	} else {
 		return $the_modified_date;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -5151,6 +5980,8 @@ function the_modified_date($format = '', $before = '', $after = '', $display = t
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5163,6 +5994,7 @@ function the_modified_date($format = '', $before = '', $after = '', $display = t
  * @param int|WP_Post $post   Optional. Post ID or WP_Post object. Default current post.
  * @return string|int|false Date the current post was modified. False on failure.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_the_modified_date( $format = '', $post = null ) {
@@ -5182,6 +6014,8 @@ function get_the_modified_date($format = '', $post = null)
 <<<<<<< HEAD
 		$the_time = get_post_modified_time( $_format, false, $post, true );
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_the_modified_date($format = '', $post = null)
 {
 	$post = get_post($post);
@@ -5193,10 +6027,13 @@ function get_the_modified_date($format = '', $post = null)
 		$_format = !empty($format) ? $format : get_option('date_format');
 
 		$the_time = get_post_modified_time($_format, false, $post, true);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		$the_time = get_post_modified_time($_format, false, $post, true);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -5211,6 +6048,7 @@ function get_the_modified_date($format = '', $post = null)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_the_modified_date', $the_time, $format, $post );
 =======
 	return apply_filters('get_the_modified_date', $the_time, $format, $post);
@@ -5218,6 +6056,9 @@ function get_the_modified_date($format = '', $post = null)
 =======
 	return apply_filters('get_the_modified_date', $the_time, $format, $post);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_the_modified_date', $the_time, $format, $post);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5231,6 +6072,7 @@ function get_the_modified_date($format = '', $post = null)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_time( $format = '' ) {
 =======
 function the_time($format = '')
@@ -5240,6 +6082,10 @@ function the_time($format = '')
 function the_time($format = '')
 {
 >>>>>>> D-01-LanAnh
+=======
+function the_time($format = '')
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Filters the time a post was written for display.
 	 *
@@ -5251,6 +6097,7 @@ function the_time($format = '')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	echo apply_filters( 'the_time', get_the_time( $format ), $format );
 =======
 	echo apply_filters('the_time', get_the_time($format), $format);
@@ -5258,6 +6105,9 @@ function the_time($format = '')
 =======
 	echo apply_filters('the_time', get_the_time($format), $format);
 >>>>>>> D-01-LanAnh
+=======
+	echo apply_filters('the_time', get_the_time($format), $format);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5272,6 +6122,7 @@ function the_time($format = '')
  * @return string|int|false Formatted date string or Unix timestamp if `$format` is 'U' or 'G'.
  *                          False on failure.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_the_time( $format = '', $post = null ) {
@@ -5291,6 +6142,8 @@ function get_the_time($format = '', $post = null)
 <<<<<<< HEAD
 	$the_time = get_post_time( $_format, false, $post, true );
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_the_time($format = '', $post = null)
 {
 	$post = get_post($post);
@@ -5302,10 +6155,13 @@ function get_the_time($format = '', $post = null)
 	$_format = !empty($format) ? $format : get_option('time_format');
 
 	$the_time = get_post_time($_format, false, $post, true);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$the_time = get_post_time($_format, false, $post, true);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the time a post was written.
@@ -5319,6 +6175,7 @@ function get_the_time($format = '', $post = null)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_the_time', $the_time, $format, $post );
 =======
 	return apply_filters('get_the_time', $the_time, $format, $post);
@@ -5326,6 +6183,9 @@ function get_the_time($format = '', $post = null)
 =======
 	return apply_filters('get_the_time', $the_time, $format, $post);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_the_time', $the_time, $format, $post);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5341,6 +6201,7 @@ function get_the_time($format = '', $post = null)
  * @return string|int|false Formatted date string or Unix timestamp if `$format` is 'U' or 'G'.
  *                          False on failure.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_post_time( $format = 'U', $gmt = false, $post = null, $translate = false ) {
@@ -5379,6 +6240,8 @@ function get_post_time($format = 'U', $gmt = false, $post = null, $translate = f
 <<<<<<< HEAD
 		$time = $datetime->format( $format );
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_post_time($format = 'U', $gmt = false, $post = null, $translate = false)
 {
 	$post = get_post($post);
@@ -5409,10 +6272,13 @@ function get_post_time($format = 'U', $gmt = false, $post = null, $translate = f
 		}
 
 		$time = $datetime->format($format);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		$time = $datetime->format($format);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -5427,6 +6293,7 @@ function get_post_time($format = 'U', $gmt = false, $post = null, $translate = f
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_post_time', $time, $format, $gmt );
 =======
 	return apply_filters('get_post_time', $time, $format, $gmt);
@@ -5434,6 +6301,9 @@ function get_post_time($format = 'U', $gmt = false, $post = null, $translate = f
 =======
 	return apply_filters('get_post_time', $time, $format, $gmt);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_post_time', $time, $format, $gmt);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5457,16 +6327,20 @@ function get_post_time($format = 'U', $gmt = false, $post = null, $translate = f
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_post_datetime( $post = null, $field = 'date', $source = 'local' ) {
 	$post = get_post( $post );
 
 	if ( ! $post ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_post_datetime($post = null, $field = 'date', $source = 'local')
 {
 	$post = get_post($post);
 
 	if (!$post) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function get_post_datetime($post = null, $field = 'date', $source = 'local')
@@ -5475,11 +6349,14 @@ function get_post_datetime($post = null, $field = 'date', $source = 'local')
 
 	if (!$post) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		return false;
 	}
 
 	$wp_timezone = wp_timezone();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( 'gmt' === $source ) {
@@ -5508,6 +6385,8 @@ function get_post_datetime($post = null, $field = 'date', $source = 'local')
 <<<<<<< HEAD
 	return $datetime->setTimezone( $wp_timezone );
 =======
+=======
+>>>>>>> D-29-Oanh
 	if ('gmt' === $source) {
 		$time     = ('modified' === $field) ? $post->post_modified_gmt : $post->post_date_gmt;
 		$timezone = new DateTimeZone('UTC');
@@ -5527,10 +6406,13 @@ function get_post_datetime($post = null, $field = 'date', $source = 'local')
 	}
 
 	return $datetime->setTimezone($wp_timezone);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	return $datetime->setTimezone($wp_timezone);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5548,16 +6430,20 @@ function get_post_datetime($post = null, $field = 'date', $source = 'local')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_post_timestamp( $post = null, $field = 'date' ) {
 	$datetime = get_post_datetime( $post, $field );
 
 	if ( false === $datetime ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_post_timestamp($post = null, $field = 'date')
 {
 	$datetime = get_post_datetime($post, $field);
 
 	if (false === $datetime) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function get_post_timestamp($post = null, $field = 'date')
@@ -5566,6 +6452,8 @@ function get_post_timestamp($post = null, $field = 'date')
 
 	if (false === $datetime) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		return false;
 	}
 
@@ -5583,6 +6471,7 @@ function get_post_timestamp($post = null, $field = 'date')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_modified_time( $format = '' ) {
 =======
 function the_modified_time($format = '')
@@ -5592,6 +6481,10 @@ function the_modified_time($format = '')
 function the_modified_time($format = '')
 {
 >>>>>>> D-01-LanAnh
+=======
+function the_modified_time($format = '')
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Filters the localized time a post was last modified, for display.
 	 *
@@ -5603,6 +6496,7 @@ function the_modified_time($format = '')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	echo apply_filters( 'the_modified_time', get_the_modified_time( $format ), $format );
 =======
 	echo apply_filters('the_modified_time', get_the_modified_time($format), $format);
@@ -5610,6 +6504,9 @@ function the_modified_time($format = '')
 =======
 	echo apply_filters('the_modified_time', get_the_modified_time($format), $format);
 >>>>>>> D-01-LanAnh
+=======
+	echo apply_filters('the_modified_time', get_the_modified_time($format), $format);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5624,6 +6521,7 @@ function the_modified_time($format = '')
  * @param int|WP_Post $post   Optional. Post ID or WP_Post object. Default current post.
  * @return string|int|false Formatted date string or Unix timestamp. False on failure.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_the_modified_time( $format = '', $post = null ) {
@@ -5643,6 +6541,8 @@ function get_the_modified_time($format = '', $post = null)
 <<<<<<< HEAD
 		$the_time = get_post_modified_time( $_format, false, $post, true );
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_the_modified_time($format = '', $post = null)
 {
 	$post = get_post($post);
@@ -5654,10 +6554,13 @@ function get_the_modified_time($format = '', $post = null)
 		$_format = !empty($format) ? $format : get_option('time_format');
 
 		$the_time = get_post_modified_time($_format, false, $post, true);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		$the_time = get_post_modified_time($_format, false, $post, true);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -5673,6 +6576,7 @@ function get_the_modified_time($format = '', $post = null)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_the_modified_time', $the_time, $format, $post );
 =======
 	return apply_filters('get_the_modified_time', $the_time, $format, $post);
@@ -5680,6 +6584,9 @@ function get_the_modified_time($format = '', $post = null)
 =======
 	return apply_filters('get_the_modified_time', $the_time, $format, $post);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_the_modified_time', $the_time, $format, $post);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5695,6 +6602,7 @@ function get_the_modified_time($format = '', $post = null)
  * @return string|int|false Formatted date string or Unix timestamp if `$format` is 'U' or 'G'.
  *                          False on failure.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_post_modified_time( $format = 'U', $gmt = false, $post = null, $translate = false ) {
@@ -5733,6 +6641,8 @@ function get_post_modified_time($format = 'U', $gmt = false, $post = null, $tran
 <<<<<<< HEAD
 		$time = $datetime->format( $format );
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_post_modified_time($format = 'U', $gmt = false, $post = null, $translate = false)
 {
 	$post = get_post($post);
@@ -5763,10 +6673,13 @@ function get_post_modified_time($format = 'U', $gmt = false, $post = null, $tran
 		}
 
 		$time = $datetime->format($format);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		$time = $datetime->format($format);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -5781,6 +6694,7 @@ function get_post_modified_time($format = 'U', $gmt = false, $post = null, $tran
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'get_post_modified_time', $time, $format, $gmt );
 =======
 	return apply_filters('get_post_modified_time', $time, $format, $gmt);
@@ -5788,6 +6702,9 @@ function get_post_modified_time($format = 'U', $gmt = false, $post = null, $tran
 =======
 	return apply_filters('get_post_modified_time', $time, $format, $gmt);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('get_post_modified_time', $time, $format, $gmt);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5799,6 +6716,7 @@ function get_post_modified_time($format = 'U', $gmt = false, $post = null, $tran
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_weekday() {
 =======
 function the_weekday()
@@ -5808,10 +6726,15 @@ function the_weekday()
 function the_weekday()
 {
 >>>>>>> D-01-LanAnh
+=======
+function the_weekday()
+{
+>>>>>>> D-29-Oanh
 	global $wp_locale;
 
 	$post = get_post();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ! $post ) {
@@ -5820,11 +6743,14 @@ function the_weekday()
 
 	$the_weekday = $wp_locale->get_weekday( get_post_time( 'w', false, $post ) );
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (!$post) {
 		return;
 	}
 
 	$the_weekday = $wp_locale->get_weekday(get_post_time('w', false, $post));
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (!$post) {
@@ -5833,6 +6759,8 @@ function the_weekday()
 
 	$the_weekday = $wp_locale->get_weekday(get_post_time('w', false, $post));
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the weekday on which the post was written, for display.
@@ -5843,6 +6771,7 @@ function the_weekday()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	echo apply_filters( 'the_weekday', $the_weekday );
 =======
 	echo apply_filters('the_weekday', $the_weekday);
@@ -5850,6 +6779,9 @@ function the_weekday()
 =======
 	echo apply_filters('the_weekday', $the_weekday);
 >>>>>>> D-01-LanAnh
+=======
+	echo apply_filters('the_weekday', $the_weekday);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5869,6 +6801,7 @@ function the_weekday()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_weekday_date( $before = '', $after = '' ) {
 =======
 function the_weekday_date($before = '', $after = '')
@@ -5878,10 +6811,15 @@ function the_weekday_date($before = '', $after = '')
 function the_weekday_date($before = '', $after = '')
 {
 >>>>>>> D-01-LanAnh
+=======
+function the_weekday_date($before = '', $after = '')
+{
+>>>>>>> D-29-Oanh
 	global $wp_locale, $currentday, $previousweekday;
 
 	$post = get_post();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( ! $post ) {
@@ -5891,11 +6829,15 @@ function the_weekday_date($before = '', $after = '')
 =======
 	if (!$post) {
 >>>>>>> D-01-LanAnh
+=======
+	if (!$post) {
+>>>>>>> D-29-Oanh
 		return;
 	}
 
 	$the_weekday_date = '';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( $currentday !== $previousweekday ) {
@@ -5911,6 +6853,11 @@ function the_weekday_date($before = '', $after = '')
 		$the_weekday_date .= $before;
 		$the_weekday_date .= $wp_locale->get_weekday(get_post_time('w', false, $post));
 >>>>>>> D-01-LanAnh
+=======
+	if ($currentday !== $previousweekday) {
+		$the_weekday_date .= $before;
+		$the_weekday_date .= $wp_locale->get_weekday(get_post_time('w', false, $post));
+>>>>>>> D-29-Oanh
 		$the_weekday_date .= $after;
 		$previousweekday   = $currentday;
 	}
@@ -5926,6 +6873,7 @@ function the_weekday_date($before = '', $after = '')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	echo apply_filters( 'the_weekday_date', $the_weekday_date, $before, $after );
 =======
 	echo apply_filters('the_weekday_date', $the_weekday_date, $before, $after);
@@ -5933,6 +6881,9 @@ function the_weekday_date($before = '', $after = '')
 =======
 	echo apply_filters('the_weekday_date', $the_weekday_date, $before, $after);
 >>>>>>> D-01-LanAnh
+=======
+	echo apply_filters('the_weekday_date', $the_weekday_date, $before, $after);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5944,6 +6895,7 @@ function the_weekday_date($before = '', $after = '')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_head() {
 =======
 function wp_head()
@@ -5953,11 +6905,16 @@ function wp_head()
 function wp_head()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_head()
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Prints scripts or data in the head tag on the front end.
 	 *
 	 * @since 1.5.0
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	do_action( 'wp_head' );
@@ -5967,6 +6924,9 @@ function wp_head()
 =======
 	do_action('wp_head');
 >>>>>>> D-01-LanAnh
+=======
+	do_action('wp_head');
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -5978,6 +6938,7 @@ function wp_head()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_footer() {
 =======
 function wp_footer()
@@ -5987,11 +6948,16 @@ function wp_footer()
 function wp_footer()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_footer()
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Prints scripts or data before the closing body tag on the front end.
 	 *
 	 * @since 1.5.1
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	do_action( 'wp_footer' );
@@ -6001,6 +6967,9 @@ function wp_footer()
 =======
 	do_action('wp_footer');
 >>>>>>> D-01-LanAnh
+=======
+	do_action('wp_footer');
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -6012,6 +6981,7 @@ function wp_footer()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_body_open() {
 =======
 function wp_body_open()
@@ -6021,11 +6991,16 @@ function wp_body_open()
 function wp_body_open()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_body_open()
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Triggered after the opening body tag.
 	 *
 	 * @since 5.2.0
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	do_action( 'wp_body_open' );
@@ -6035,6 +7010,9 @@ function wp_body_open()
 =======
 	do_action('wp_body_open');
 >>>>>>> D-01-LanAnh
+=======
+	do_action('wp_body_open');
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -6044,6 +7022,7 @@ function wp_body_open()
  *
  * @param array $args Optional arguments.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function feed_links( $args = array() ) {
@@ -6058,11 +7037,17 @@ function feed_links($args = array())
 {
 	if (!current_theme_supports('automatic-feed-links')) {
 >>>>>>> D-01-LanAnh
+=======
+function feed_links($args = array())
+{
+	if (!current_theme_supports('automatic-feed-links')) {
+>>>>>>> D-29-Oanh
 		return;
 	}
 
 	$defaults = array(
 		/* translators: Separator between site name and feed type in feed links. */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		'separator' => _x( '&raquo;', 'feed link' ),
@@ -6078,6 +7063,8 @@ function feed_links($args = array())
 <<<<<<< HEAD
 	$args = wp_parse_args( $args, $defaults );
 =======
+=======
+>>>>>>> D-29-Oanh
 		'separator' => _x('&raquo;', 'feed link'),
 		/* translators: 1: Site title, 2: Separator (raquo). */
 		'feedtitle' => __('%1$s %2$s Feed'),
@@ -6086,10 +7073,13 @@ function feed_links($args = array())
 	);
 
 	$args = wp_parse_args($args, $defaults);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$args = wp_parse_args($args, $defaults);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters whether to display the posts feed link.
@@ -6100,6 +7090,7 @@ function feed_links($args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( apply_filters( 'feed_links_show_posts_feed', true ) ) {
 		printf(
 			'<link rel="alternate" type="%s" title="%s" href="%s" />' . "\n",
@@ -6107,12 +7098,15 @@ function feed_links($args = array())
 			esc_attr( sprintf( $args['feedtitle'], get_bloginfo( 'name' ), $args['separator'] ) ),
 			esc_url( get_feed_link() )
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (apply_filters('feed_links_show_posts_feed', true)) {
 		printf(
 			'<link rel="alternate" type="%s" title="%s" href="%s" />' . "\n",
 			feed_content_type(),
 			esc_attr(sprintf($args['feedtitle'], get_bloginfo('name'), $args['separator'])),
 			esc_url(get_feed_link())
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (apply_filters('feed_links_show_posts_feed', true)) {
@@ -6122,6 +7116,8 @@ function feed_links($args = array())
 			esc_attr(sprintf($args['feedtitle'], get_bloginfo('name'), $args['separator'])),
 			esc_url(get_feed_link())
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		);
 	}
 
@@ -6134,6 +7130,7 @@ function feed_links($args = array())
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( apply_filters( 'feed_links_show_comments_feed', true ) ) {
 		printf(
 			'<link rel="alternate" type="%s" title="%s" href="%s" />' . "\n",
@@ -6141,12 +7138,15 @@ function feed_links($args = array())
 			esc_attr( sprintf( $args['comstitle'], get_bloginfo( 'name' ), $args['separator'] ) ),
 			esc_url( get_feed_link( 'comments_' . get_default_feed() ) )
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (apply_filters('feed_links_show_comments_feed', true)) {
 		printf(
 			'<link rel="alternate" type="%s" title="%s" href="%s" />' . "\n",
 			feed_content_type(),
 			esc_attr(sprintf($args['comstitle'], get_bloginfo('name'), $args['separator'])),
 			esc_url(get_feed_link('comments_' . get_default_feed()))
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (apply_filters('feed_links_show_comments_feed', true)) {
@@ -6156,6 +7156,8 @@ function feed_links($args = array())
 			esc_attr(sprintf($args['comstitle'], get_bloginfo('name'), $args['separator'])),
 			esc_url(get_feed_link('comments_' . get_default_feed()))
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		);
 	}
 }
@@ -6167,6 +7169,7 @@ function feed_links($args = array())
  *
  * @param array $args Optional arguments.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function feed_links_extra( $args = array() ) {
@@ -6203,6 +7206,8 @@ function feed_links_extra($args = array())
 <<<<<<< HEAD
 		$show_comments_feed = apply_filters( 'feed_links_show_comments_feed', true );
 =======
+=======
+>>>>>>> D-29-Oanh
 function feed_links_extra($args = array())
 {
 	$defaults = array(
@@ -6232,10 +7237,13 @@ function feed_links_extra($args = array())
 
 		/** This filter is documented in wp-includes/general-template.php */
 		$show_comments_feed = apply_filters('feed_links_show_comments_feed', true);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		$show_comments_feed = apply_filters('feed_links_show_comments_feed', true);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 		/**
 		 * Filters whether to display the post comments feed link.
@@ -6250,6 +7258,7 @@ function feed_links_extra($args = array())
 		 * @param bool $show_comments_feed Whether to display the post comments feed link. Defaults to
 		 *                                 the {@see 'feed_links_show_comments_feed'} filter result.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$show_post_comments_feed = apply_filters( 'feed_links_extra_show_post_comments_feed', $show_comments_feed );
@@ -6274,6 +7283,8 @@ function feed_links_extra($args = array())
 <<<<<<< HEAD
 	} elseif ( is_post_type_archive() ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		$show_post_comments_feed = apply_filters('feed_links_extra_show_post_comments_feed', $show_comments_feed);
 
 		if ($show_post_comments_feed && (comments_open() || pings_open() || $post->comment_count > 0)) {
@@ -6291,10 +7302,13 @@ function feed_links_extra($args = array())
 			}
 		}
 	} elseif (is_post_type_archive()) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	} elseif (is_post_type_archive()) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters whether to display the post type archive feed link.
 		 *
@@ -6302,6 +7316,7 @@ function feed_links_extra($args = array())
 		 *
 		 * @param bool $show Whether to display the post type archive feed link. Default true.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$show_post_type_archive_feed = apply_filters( 'feed_links_extra_show_post_type_archive_feed', true );
@@ -6323,6 +7338,8 @@ function feed_links_extra($args = array())
 <<<<<<< HEAD
 				get_bloginfo( 'name' ),
 =======
+=======
+>>>>>>> D-29-Oanh
 		$show_post_type_archive_feed = apply_filters('feed_links_extra_show_post_type_archive_feed', true);
 
 		if ($show_post_type_archive_feed) {
@@ -6337,14 +7354,18 @@ function feed_links_extra($args = array())
 			$title = sprintf(
 				$args['posttypetitle'],
 				get_bloginfo('name'),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				get_bloginfo('name'),
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				$args['separator'],
 				$post_type_obj->labels->name
 			);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$href = get_post_type_archive_feed_link( $post_type_obj->name );
@@ -6360,6 +7381,11 @@ function feed_links_extra($args = array())
 		}
 	} elseif (is_category()) {
 >>>>>>> D-01-LanAnh
+=======
+			$href = get_post_type_archive_feed_link($post_type_obj->name);
+		}
+	} elseif (is_category()) {
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters whether to display the category feed link.
 		 *
@@ -6367,6 +7393,7 @@ function feed_links_extra($args = array())
 		 *
 		 * @param bool $show Whether to display the category feed link. Default true.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$show_category_feed = apply_filters( 'feed_links_extra_show_category_feed', true );
@@ -6383,6 +7410,8 @@ function feed_links_extra($args = array())
 <<<<<<< HEAD
 					get_bloginfo( 'name' ),
 =======
+=======
+>>>>>>> D-29-Oanh
 		$show_category_feed = apply_filters('feed_links_extra_show_category_feed', true);
 
 		if ($show_category_feed) {
@@ -6392,14 +7421,18 @@ function feed_links_extra($args = array())
 				$title = sprintf(
 					$args['cattitle'],
 					get_bloginfo('name'),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 					get_bloginfo('name'),
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					$args['separator'],
 					$term->name
 				);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				$href = get_category_feed_link( $term->term_id );
@@ -6407,10 +7440,13 @@ function feed_links_extra($args = array())
 		}
 	} elseif ( is_tag() ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 				$href = get_category_feed_link($term->term_id);
 			}
 		}
 	} elseif (is_tag()) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				$href = get_category_feed_link($term->term_id);
@@ -6418,6 +7454,8 @@ function feed_links_extra($args = array())
 		}
 	} elseif (is_tag()) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters whether to display the tag feed link.
 		 *
@@ -6425,6 +7463,7 @@ function feed_links_extra($args = array())
 		 *
 		 * @param bool $show Whether to display the tag feed link. Default true.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$show_tag_feed = apply_filters( 'feed_links_extra_show_tag_feed', true );
@@ -6441,6 +7480,8 @@ function feed_links_extra($args = array())
 <<<<<<< HEAD
 					get_bloginfo( 'name' ),
 =======
+=======
+>>>>>>> D-29-Oanh
 		$show_tag_feed = apply_filters('feed_links_extra_show_tag_feed', true);
 
 		if ($show_tag_feed) {
@@ -6450,14 +7491,18 @@ function feed_links_extra($args = array())
 				$title = sprintf(
 					$args['tagtitle'],
 					get_bloginfo('name'),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 					get_bloginfo('name'),
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					$args['separator'],
 					$term->name
 				);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				$href = get_tag_feed_link( $term->term_id );
@@ -6465,10 +7510,13 @@ function feed_links_extra($args = array())
 		}
 	} elseif ( is_tax() ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 				$href = get_tag_feed_link($term->term_id);
 			}
 		}
 	} elseif (is_tax()) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				$href = get_tag_feed_link($term->term_id);
@@ -6476,6 +7524,8 @@ function feed_links_extra($args = array())
 		}
 	} elseif (is_tax()) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters whether to display the custom taxonomy feed link.
 		 *
@@ -6483,6 +7533,7 @@ function feed_links_extra($args = array())
 		 *
 		 * @param bool $show Whether to display the custom taxonomy feed link. Default true.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$show_tax_feed = apply_filters( 'feed_links_extra_show_tax_feed', true );
@@ -6501,6 +7552,8 @@ function feed_links_extra($args = array())
 <<<<<<< HEAD
 					get_bloginfo( 'name' ),
 =======
+=======
+>>>>>>> D-29-Oanh
 		$show_tax_feed = apply_filters('feed_links_extra_show_tax_feed', true);
 
 		if ($show_tax_feed) {
@@ -6512,10 +7565,13 @@ function feed_links_extra($args = array())
 				$title = sprintf(
 					$args['taxtitle'],
 					get_bloginfo('name'),
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 					get_bloginfo('name'),
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					$args['separator'],
 					$term->name,
 					$tax->labels->singular_name
@@ -6523,15 +7579,19 @@ function feed_links_extra($args = array())
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$href = get_term_feed_link( $term->term_id, $term->taxonomy );
 			}
 		}
 	} elseif ( is_author() ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 				$href = get_term_feed_link($term->term_id, $term->taxonomy);
 			}
 		}
 	} elseif (is_author()) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				$href = get_term_feed_link($term->term_id, $term->taxonomy);
@@ -6539,6 +7599,8 @@ function feed_links_extra($args = array())
 		}
 	} elseif (is_author()) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters whether to display the author feed link.
 		 *
@@ -6546,6 +7608,7 @@ function feed_links_extra($args = array())
 		 *
 		 * @param bool $show Whether to display the author feed link. Default true.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$show_author_feed = apply_filters( 'feed_links_extra_show_author_feed', true );
@@ -6568,6 +7631,8 @@ function feed_links_extra($args = array())
 <<<<<<< HEAD
 	} elseif ( is_search() ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		$show_author_feed = apply_filters('feed_links_extra_show_author_feed', true);
 
 		if ($show_author_feed) {
@@ -6583,10 +7648,13 @@ function feed_links_extra($args = array())
 			$href = get_author_feed_link($author_id);
 		}
 	} elseif (is_search()) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	} elseif (is_search()) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		/**
 		 * Filters whether to display the search results feed link.
 		 *
@@ -6594,6 +7662,7 @@ function feed_links_extra($args = array())
 		 *
 		 * @param bool $show Whether to display the search results feed link. Default true.
 		 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$show_search_feed = apply_filters( 'feed_links_extra_show_search_feed', true );
@@ -6609,6 +7678,8 @@ function feed_links_extra($args = array())
 <<<<<<< HEAD
 				get_search_query( false )
 =======
+=======
+>>>>>>> D-29-Oanh
 		$show_search_feed = apply_filters('feed_links_extra_show_search_feed', true);
 
 		if ($show_search_feed) {
@@ -6617,16 +7688,20 @@ function feed_links_extra($args = array())
 				get_bloginfo('name'),
 				$args['separator'],
 				get_search_query(false)
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				get_search_query(false)
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			);
 
 			$href = get_search_feed_link();
 		}
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( isset( $title ) && isset( $href ) ) {
@@ -6636,12 +7711,15 @@ function feed_links_extra($args = array())
 			esc_attr( $title ),
 			esc_url( $href )
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (isset($title) && isset($href)) {
 		printf(
 			'<link rel="alternate" type="%s" title="%s" href="%s" />' . "\n",
 			feed_content_type(),
 			esc_attr($title),
 			esc_url($href)
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if (isset($title) && isset($href)) {
@@ -6651,6 +7729,8 @@ function feed_links_extra($args = array())
 			esc_attr($title),
 			esc_url($href)
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		);
 	}
 }
@@ -6663,16 +7743,20 @@ function feed_links_extra($args = array())
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function rsd_link() {
 	printf(
 		'<link rel="EditURI" type="application/rsd+xml" title="RSD" href="%s" />' . "\n",
 		esc_url( site_url( 'xmlrpc.php?rsd', 'rpc' ) )
 =======
+=======
+>>>>>>> D-29-Oanh
 function rsd_link()
 {
 	printf(
 		'<link rel="EditURI" type="application/rsd+xml" title="RSD" href="%s" />' . "\n",
 		esc_url(site_url('xmlrpc.php?rsd', 'rpc'))
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function rsd_link()
@@ -6681,6 +7765,8 @@ function rsd_link()
 		'<link rel="EditURI" type="application/rsd+xml" title="RSD" href="%s" />' . "\n",
 		esc_url(site_url('xmlrpc.php?rsd', 'rpc'))
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	);
 }
 
@@ -6698,16 +7784,20 @@ function rsd_link()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_strict_cross_origin_referrer() {
 	?>
 	<meta name='referrer' content='strict-origin-when-cross-origin' />
 	<?php
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_strict_cross_origin_referrer()
 {
 ?>
 <meta name='referrer' content='strict-origin-when-cross-origin' />
 <?php
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function wp_strict_cross_origin_referrer()
@@ -6716,6 +7806,8 @@ function wp_strict_cross_origin_referrer()
 	<meta name='referrer' content='strict-origin-when-cross-origin' />
 <?php
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -6725,6 +7817,7 @@ function wp_strict_cross_origin_referrer()
  *
  * @link https://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#rel-icon HTML5 specification link icon.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function wp_site_icon() {
@@ -6739,10 +7832,16 @@ function wp_site_icon()
 {
 	if (!has_site_icon() && !is_customize_preview()) {
 >>>>>>> D-01-LanAnh
+=======
+function wp_site_icon()
+{
+	if (!has_site_icon() && !is_customize_preview()) {
+>>>>>>> D-29-Oanh
 		return;
 	}
 
 	$meta_tags = array();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$icon_32   = get_site_icon_url( 32 );
@@ -6769,6 +7868,8 @@ function wp_site_icon()
 	if ( $icon_270 ) {
 		$meta_tags[] = sprintf( '<meta name="msapplication-TileImage" content="%s" />', esc_url( $icon_270 ) );
 =======
+=======
+>>>>>>> D-29-Oanh
 	$icon_32   = get_site_icon_url(32);
 	if (empty($icon_32) && is_customize_preview()) {
 		$icon_32 = '/favicon.ico'; // Serve default favicon URL in customizer so element can be updated for preview.
@@ -6787,12 +7888,15 @@ function wp_site_icon()
 	$icon_270 = get_site_icon_url(270);
 	if ($icon_270) {
 		$meta_tags[] = sprintf('<meta name="msapplication-TileImage" content="%s" />', esc_url($icon_270));
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$icon_270 = get_site_icon_url(270);
 	if ($icon_270) {
 		$meta_tags[] = sprintf('<meta name="msapplication-TileImage" content="%s" />', esc_url($icon_270));
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -6804,15 +7908,19 @@ function wp_site_icon()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$meta_tags = apply_filters( 'site_icon_meta_tags', $meta_tags );
 	$meta_tags = array_filter( $meta_tags );
 
 	foreach ( $meta_tags as $meta_tag ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	$meta_tags = apply_filters('site_icon_meta_tags', $meta_tags);
 	$meta_tags = array_filter($meta_tags);
 
 	foreach ($meta_tags as $meta_tag) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$meta_tags = apply_filters('site_icon_meta_tags', $meta_tags);
@@ -6820,6 +7928,8 @@ function wp_site_icon()
 
 	foreach ($meta_tags as $meta_tag) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		echo "$meta_tag\n";
 	}
 }
@@ -6838,6 +7948,7 @@ function wp_site_icon()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_resource_hints() {
 =======
 function wp_resource_hints()
@@ -6847,6 +7958,10 @@ function wp_resource_hints()
 function wp_resource_hints()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_resource_hints()
+{
+>>>>>>> D-29-Oanh
 	$hints = array(
 		'dns-prefetch' => wp_dependencies_unique_hosts(),
 		'preconnect'   => array(),
@@ -6856,6 +7971,7 @@ function wp_resource_hints()
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	foreach ( $hints as $relation_type => $urls ) {
 =======
 	foreach ($hints as $relation_type => $urls) {
@@ -6863,6 +7979,9 @@ function wp_resource_hints()
 =======
 	foreach ($hints as $relation_type => $urls) {
 >>>>>>> D-01-LanAnh
+=======
+	foreach ($hints as $relation_type => $urls) {
+>>>>>>> D-29-Oanh
 		$unique_urls = array();
 
 		/**
@@ -6891,6 +8010,7 @@ function wp_resource_hints()
 		 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$urls = apply_filters( 'wp_resource_hints', $urls, $relation_type );
 =======
 		$urls = apply_filters('wp_resource_hints', $urls, $relation_type);
@@ -6903,6 +8023,8 @@ function wp_resource_hints()
 			if ( is_array( $url ) ) {
 				if ( isset( $url['href'] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		$urls = apply_filters('wp_resource_hints', $urls, $relation_type);
 
 		foreach ($urls as $key => $url) {
@@ -6910,11 +8032,14 @@ function wp_resource_hints()
 
 			if (is_array($url)) {
 				if (isset($url['href'])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 			if (is_array($url)) {
 				if (isset($url['href'])) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					$atts = $url;
 					$url  = $url['href'];
 				} else {
@@ -6922,6 +8047,7 @@ function wp_resource_hints()
 				}
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$url = esc_url( $url, array( 'http', 'https' ) );
@@ -6947,6 +8073,8 @@ function wp_resource_hints()
 <<<<<<< HEAD
 				if ( 'preconnect' === $relation_type && ! empty( $parsed['scheme'] ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 			$url = esc_url($url, array('http', 'https'));
 
 			if (!$url) {
@@ -6965,10 +8093,13 @@ function wp_resource_hints()
 				}
 
 				if ('preconnect' === $relation_type && !empty($parsed['scheme'])) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				if ('preconnect' === $relation_type && !empty($parsed['scheme'])) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					$url = $parsed['scheme'] . '://' . $parsed['host'];
 				} else {
 					// Use protocol-relative URLs for dns-prefetch or if scheme is missing.
@@ -6979,6 +8110,7 @@ function wp_resource_hints()
 			$atts['rel']  = $relation_type;
 			$atts['href'] = $url;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$unique_urls[ $url ] = $atts;
@@ -6995,27 +8127,36 @@ function wp_resource_hints()
 				if ( ! is_scalar( $value )
 					|| ( ! in_array( $attr, array( 'as', 'crossorigin', 'href', 'pr', 'rel', 'type' ), true ) && ! is_numeric( $attr ) )
 =======
+=======
+>>>>>>> D-29-Oanh
 			$unique_urls[$url] = $atts;
 		}
 
 		foreach ($unique_urls as $atts) {
 			$html = '';
 
+<<<<<<< HEAD
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			foreach ($atts as $attr => $value) {
 				if (
 					!is_scalar($value)
 					|| (!in_array($attr, array('as', 'crossorigin', 'href', 'pr', 'rel', 'type'), true) && !is_numeric($attr))
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				) {
 
 					continue;
 				}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				$value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
@@ -7031,12 +8172,18 @@ function wp_resource_hints()
 
 				if (!is_string($attr)) {
 >>>>>>> D-01-LanAnh
+=======
+				$value = ('href' === $attr) ? esc_url($value) : esc_attr($value);
+
+				if (!is_string($attr)) {
+>>>>>>> D-29-Oanh
 					$html .= " $value";
 				} else {
 					$html .= " $attr='$value'";
 				}
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$html = trim( $html );
@@ -7046,6 +8193,9 @@ function wp_resource_hints()
 =======
 			$html = trim($html);
 >>>>>>> D-01-LanAnh
+=======
+			$html = trim($html);
+>>>>>>> D-29-Oanh
 
 			echo "<link $html />\n";
 		}
@@ -7070,6 +8220,7 @@ function wp_resource_hints()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_preload_resources() {
 =======
 function wp_preload_resources()
@@ -7079,6 +8230,10 @@ function wp_preload_resources()
 function wp_preload_resources()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_preload_resources()
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Filters domains and URLs for resource preloads.
 	 *
@@ -7103,6 +8258,7 @@ function wp_preload_resources()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$preload_resources = apply_filters( 'wp_preload_resources', array() );
 
 	if ( ! is_array( $preload_resources ) ) {
@@ -7116,12 +8272,18 @@ function wp_preload_resources()
 
 	if (!is_array($preload_resources)) {
 >>>>>>> D-01-LanAnh
+=======
+	$preload_resources = apply_filters('wp_preload_resources', array());
+
+	if (!is_array($preload_resources)) {
+>>>>>>> D-29-Oanh
 		return;
 	}
 
 	$unique_resources = array();
 
 	// Parse the complete resource list and extract unique resources.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	foreach ( $preload_resources as $resource ) {
@@ -7134,10 +8296,15 @@ function wp_preload_resources()
 	foreach ($preload_resources as $resource) {
 		if (!is_array($resource)) {
 >>>>>>> D-01-LanAnh
+=======
+	foreach ($preload_resources as $resource) {
+		if (!is_array($resource)) {
+>>>>>>> D-29-Oanh
 			continue;
 		}
 
 		$attributes = $resource;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		if ( isset( $resource['href'] ) ) {
@@ -7159,6 +8326,8 @@ function wp_preload_resources()
 <<<<<<< HEAD
 			$unique_resources[ $resource['imagesrcset'] ] = $attributes;
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (isset($resource['href'])) {
 			$href = $resource['href'];
 			if (isset($unique_resources[$href])) {
@@ -7173,10 +8342,13 @@ function wp_preload_resources()
 				continue;
 			}
 			$unique_resources[$resource['imagesrcset']] = $attributes;
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 			$unique_resources[$resource['imagesrcset']] = $attributes;
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		} else {
 			continue;
 		}
@@ -7185,17 +8357,21 @@ function wp_preload_resources()
 	// Build and output the HTML for each unique resource.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	foreach ( $unique_resources as $unique_resource ) {
 		$html = '';
 
 		foreach ( $unique_resource as $resource_key => $resource_value ) {
 			if ( ! is_scalar( $resource_value ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	foreach ($unique_resources as $unique_resource) {
 		$html = '';
 
 		foreach ($unique_resource as $resource_key => $resource_value) {
 			if (!is_scalar($resource_value)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	foreach ($unique_resources as $unique_resource) {
@@ -7204,10 +8380,13 @@ function wp_preload_resources()
 		foreach ($unique_resource as $resource_key => $resource_value) {
 			if (!is_scalar($resource_value)) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				continue;
 			}
 
 			// Ignore non-supported attributes.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$non_supported_attributes = array( 'as', 'crossorigin', 'href', 'imagesrcset', 'imagesizes', 'type', 'media' );
@@ -7220,10 +8399,15 @@ function wp_preload_resources()
 			$non_supported_attributes = array('as', 'crossorigin', 'href', 'imagesrcset', 'imagesizes', 'type', 'media');
 			if (!in_array($resource_key, $non_supported_attributes, true) && !is_numeric($resource_key)) {
 >>>>>>> D-01-LanAnh
+=======
+			$non_supported_attributes = array('as', 'crossorigin', 'href', 'imagesrcset', 'imagesizes', 'type', 'media');
+			if (!in_array($resource_key, $non_supported_attributes, true) && !is_numeric($resource_key)) {
+>>>>>>> D-29-Oanh
 				continue;
 			}
 
 			// imagesrcset only usable when preloading image, ignore otherwise.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			if ( ( 'imagesrcset' === $resource_key ) && ( ! isset( $unique_resource['as'] ) || ( 'image' !== $unique_resource['as'] ) ) ) {
@@ -7233,10 +8417,14 @@ function wp_preload_resources()
 =======
 			if (('imagesrcset' === $resource_key) && (!isset($unique_resource['as']) || ('image' !== $unique_resource['as']))) {
 >>>>>>> D-01-LanAnh
+=======
+			if (('imagesrcset' === $resource_key) && (!isset($unique_resource['as']) || ('image' !== $unique_resource['as']))) {
+>>>>>>> D-29-Oanh
 				continue;
 			}
 
 			// imagesizes only usable when preloading image and imagesrcset present, ignore otherwise.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			if ( ( 'imagesizes' === $resource_key ) &&
@@ -7249,10 +8437,15 @@ function wp_preload_resources()
 			if (('imagesizes' === $resource_key) &&
 				(!isset($unique_resource['as']) || ('image' !== $unique_resource['as']) || !isset($unique_resource['imagesrcset']))
 >>>>>>> D-01-LanAnh
+=======
+			if (('imagesizes' === $resource_key) &&
+				(!isset($unique_resource['as']) || ('image' !== $unique_resource['as']) || !isset($unique_resource['imagesrcset']))
+>>>>>>> D-29-Oanh
 			) {
 				continue;
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$resource_value = ( 'href' === $resource_key ) ? esc_url( $resource_value, array( 'http', 'https' ) ) : esc_attr( $resource_value );
@@ -7268,11 +8461,17 @@ function wp_preload_resources()
 
 			if (!is_string($resource_key)) {
 >>>>>>> D-01-LanAnh
+=======
+			$resource_value = ('href' === $resource_key) ? esc_url($resource_value, array('http', 'https')) : esc_attr($resource_value);
+
+			if (!is_string($resource_key)) {
+>>>>>>> D-29-Oanh
 				$html .= " $resource_value";
 			} else {
 				$html .= " $resource_key='$resource_value'";
 			}
 		}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		$html = trim( $html );
@@ -7288,6 +8487,11 @@ function wp_preload_resources()
 
 		printf("<link rel='preload' %s />\n", $html);
 >>>>>>> D-01-LanAnh
+=======
+		$html = trim($html);
+
+		printf("<link rel='preload' %s />\n", $html);
+>>>>>>> D-29-Oanh
 	}
 }
 
@@ -7303,6 +8507,7 @@ function wp_preload_resources()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_dependencies_unique_hosts() {
 =======
 function wp_dependencies_unique_hosts()
@@ -7312,10 +8517,15 @@ function wp_dependencies_unique_hosts()
 function wp_dependencies_unique_hosts()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_dependencies_unique_hosts()
+{
+>>>>>>> D-29-Oanh
 	global $wp_scripts, $wp_styles;
 
 	$unique_hosts = array();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	foreach ( array( $wp_scripts, $wp_styles ) as $dependencies ) {
@@ -7325,18 +8535,24 @@ function wp_dependencies_unique_hosts()
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	foreach (array($wp_scripts, $wp_styles) as $dependencies) {
 		if ($dependencies instanceof WP_Dependencies && !empty($dependencies->queue)) {
 			foreach ($dependencies->queue as $handle) {
 				if (!isset($dependencies->registered[$handle])) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					continue;
 				}
 
 				/* @var _WP_Dependency $dependency */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				$dependency = $dependencies->registered[ $handle ];
@@ -7345,12 +8561,15 @@ function wp_dependencies_unique_hosts()
 				if ( ! empty( $parsed['host'] )
 					&& ! in_array( $parsed['host'], $unique_hosts, true ) && $parsed['host'] !== $_SERVER['SERVER_NAME']
 =======
+=======
+>>>>>>> D-29-Oanh
 				$dependency = $dependencies->registered[$handle];
 				$parsed     = wp_parse_url($dependency->src);
 
 				if (
 					!empty($parsed['host'])
 					&& !in_array($parsed['host'], $unique_hosts, true) && $parsed['host'] !== $_SERVER['SERVER_NAME']
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 				$dependency = $dependencies->registered[$handle];
@@ -7360,6 +8579,8 @@ function wp_dependencies_unique_hosts()
 					!empty($parsed['host'])
 					&& !in_array($parsed['host'], $unique_hosts, true) && $parsed['host'] !== $_SERVER['SERVER_NAME']
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				) {
 					$unique_hosts[] = $parsed['host'];
 				}
@@ -7389,6 +8610,7 @@ function wp_dependencies_unique_hosts()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function user_can_richedit() {
 =======
 function user_can_richedit()
@@ -7407,6 +8629,8 @@ function user_can_richedit()
 				$wp_rich_edit = str_contains( $_SERVER['HTTP_USER_AGENT'], 'Trident/7.0;' );
 			} elseif ( $is_gecko || $is_chrome || $is_edge || ( $is_opera && ! wp_is_mobile() ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function user_can_richedit()
 {
 	global $wp_rich_edit, $is_gecko, $is_opera, $is_safari, $is_chrome, $is_IE, $is_edge;
@@ -7414,8 +8638,11 @@ function user_can_richedit()
 	if (!isset($wp_rich_edit)) {
 		$wp_rich_edit = false;
 
+<<<<<<< HEAD
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		if ('true' === get_user_option('rich_editing') || !is_user_logged_in()) { // Default to 'true' for logged out users.
 			if ($is_safari) {
 				$wp_rich_edit = !wp_is_mobile() || (preg_match('!AppleWebKit/(\d+)!', $_SERVER['HTTP_USER_AGENT'], $match) && (int) $match[1] >= 534);
@@ -7423,9 +8650,12 @@ function user_can_richedit()
 				$wp_rich_edit = str_contains($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0;');
 			} elseif ($is_gecko || $is_chrome || $is_edge || ($is_opera && !wp_is_mobile())) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				$wp_rich_edit = true;
 			}
 		}
@@ -7440,6 +8670,7 @@ function user_can_richedit()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'user_can_richedit', $wp_rich_edit );
 =======
 	return apply_filters('user_can_richedit', $wp_rich_edit);
@@ -7447,6 +8678,9 @@ function user_can_richedit()
 =======
 	return apply_filters('user_can_richedit', $wp_rich_edit);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('user_can_richedit', $wp_rich_edit);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -7461,18 +8695,22 @@ function user_can_richedit()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_default_editor() {
 	$r = user_can_richedit() ? 'tinymce' : 'html'; // Defaults.
 	if ( wp_get_current_user() ) { // Look for cookie.
 		$ed = get_user_setting( 'editor', 'tinymce' );
 		$r  = ( in_array( $ed, array( 'tinymce', 'html', 'test' ), true ) ) ? $ed : $r;
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_default_editor()
 {
 	$r = user_can_richedit() ? 'tinymce' : 'html'; // Defaults.
 	if (wp_get_current_user()) { // Look for cookie.
 		$ed = get_user_setting('editor', 'tinymce');
 		$r  = (in_array($ed, array('tinymce', 'html', 'test'), true)) ? $ed : $r;
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function wp_default_editor()
@@ -7482,6 +8720,8 @@ function wp_default_editor()
 		$ed = get_user_setting('editor', 'tinymce');
 		$r  = (in_array($ed, array('tinymce', 'html', 'test'), true)) ? $ed : $r;
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	/**
@@ -7493,6 +8733,7 @@ function wp_default_editor()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'wp_default_editor', $r );
 =======
 	return apply_filters('wp_default_editor', $r);
@@ -7500,6 +8741,9 @@ function wp_default_editor()
 =======
 	return apply_filters('wp_default_editor', $r);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('wp_default_editor', $r);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -7525,18 +8769,22 @@ function wp_default_editor()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_editor( $content, $editor_id, $settings = array() ) {
 	if ( ! class_exists( '_WP_Editors', false ) ) {
 		require ABSPATH . WPINC . '/class-wp-editor.php';
 	}
 	_WP_Editors::editor( $content, $editor_id, $settings );
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_editor($content, $editor_id, $settings = array())
 {
 	if (!class_exists('_WP_Editors', false)) {
 		require ABSPATH . WPINC . '/class-wp-editor.php';
 	}
 	_WP_Editors::editor($content, $editor_id, $settings);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function wp_editor($content, $editor_id, $settings = array())
@@ -7546,6 +8794,8 @@ function wp_editor($content, $editor_id, $settings = array())
 	}
 	_WP_Editors::editor($content, $editor_id, $settings);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -7557,6 +8807,7 @@ function wp_editor($content, $editor_id, $settings = array())
  * @uses _WP_Editors
  * @since 4.8.0
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function wp_enqueue_editor() {
@@ -7571,6 +8822,11 @@ function wp_enqueue_editor()
 {
 	if (!class_exists('_WP_Editors', false)) {
 >>>>>>> D-01-LanAnh
+=======
+function wp_enqueue_editor()
+{
+	if (!class_exists('_WP_Editors', false)) {
+>>>>>>> D-29-Oanh
 		require ABSPATH . WPINC . '/class-wp-editor.php';
 	}
 
@@ -7602,6 +8858,7 @@ function wp_enqueue_editor()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_enqueue_code_editor( $args ) {
 	if ( is_user_logged_in() && 'false' === wp_get_current_user()->syntax_highlighting ) {
 =======
@@ -7626,6 +8883,8 @@ function wp_enqueue_code_editor($args)
 <<<<<<< HEAD
 		if ( is_string( $mode ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_enqueue_code_editor($args)
 {
 	if (is_user_logged_in() && 'false' === wp_get_current_user()->syntax_highlighting) {
@@ -7644,15 +8903,19 @@ function wp_enqueue_code_editor($args)
 	if (isset($settings['codemirror']['mode'])) {
 		$mode = $settings['codemirror']['mode'];
 		if (is_string($mode)) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		if (is_string($mode)) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			$mode = array(
 				'name' => $mode,
 			);
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		if ( ! empty( $settings['codemirror']['lint'] ) ) {
@@ -7665,10 +8928,15 @@ function wp_enqueue_code_editor($args)
 		if (!empty($settings['codemirror']['lint'])) {
 			switch ($mode['name']) {
 >>>>>>> D-01-LanAnh
+=======
+		if (!empty($settings['codemirror']['lint'])) {
+			switch ($mode['name']) {
+>>>>>>> D-29-Oanh
 				case 'css':
 				case 'text/css':
 				case 'text/x-scss':
 				case 'text/x-less':
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 					wp_enqueue_script( 'csslint' );
@@ -7678,12 +8946,16 @@ function wp_enqueue_code_editor($args)
 =======
 					wp_enqueue_script('csslint');
 >>>>>>> D-01-LanAnh
+=======
+					wp_enqueue_script('csslint');
+>>>>>>> D-29-Oanh
 					break;
 				case 'htmlmixed':
 				case 'text/html':
 				case 'php':
 				case 'application/x-httpd-php':
 				case 'text/x-php':
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 					wp_enqueue_script( 'htmlhint' );
@@ -7694,15 +8966,20 @@ function wp_enqueue_code_editor($args)
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					wp_enqueue_script('htmlhint');
 					wp_enqueue_script('csslint');
 					wp_enqueue_script('jshint');
 					if (!current_user_can('unfiltered_html')) {
 						wp_enqueue_script('htmlhint-kses');
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 					}
 					break;
 				case 'javascript':
@@ -7712,6 +8989,7 @@ function wp_enqueue_code_editor($args)
 				case 'application/ld+json':
 				case 'text/typescript':
 				case 'application/typescript':
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 					wp_enqueue_script( 'jshint' );
@@ -7724,11 +9002,16 @@ function wp_enqueue_code_editor($args)
 					wp_enqueue_script('jshint');
 					wp_enqueue_script('jsonlint');
 >>>>>>> D-01-LanAnh
+=======
+					wp_enqueue_script('jshint');
+					wp_enqueue_script('jsonlint');
+>>>>>>> D-29-Oanh
 					break;
 			}
 		}
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	wp_add_inline_script( 'code-editor', sprintf( 'jQuery.extend( wp.codeEditor.defaultSettings, %s );', wp_json_encode( $settings ) ) );
@@ -7738,6 +9021,9 @@ function wp_enqueue_code_editor($args)
 =======
 	wp_add_inline_script('code-editor', sprintf('jQuery.extend( wp.codeEditor.defaultSettings, %s );', wp_json_encode($settings)));
 >>>>>>> D-01-LanAnh
+=======
+	wp_add_inline_script('code-editor', sprintf('jQuery.extend( wp.codeEditor.defaultSettings, %s );', wp_json_encode($settings)));
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Fires when scripts and styles are enqueued for the code editor.
@@ -7748,6 +9034,7 @@ function wp_enqueue_code_editor($args)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	do_action( 'wp_enqueue_code_editor', $settings );
 =======
 	do_action('wp_enqueue_code_editor', $settings);
@@ -7755,6 +9042,9 @@ function wp_enqueue_code_editor($args)
 =======
 	do_action('wp_enqueue_code_editor', $settings);
 >>>>>>> D-01-LanAnh
+=======
+	do_action('wp_enqueue_code_editor', $settings);
+>>>>>>> D-29-Oanh
 
 	return $settings;
 }
@@ -7782,6 +9072,7 @@ function wp_enqueue_code_editor($args)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_get_code_editor_settings( $args ) {
 =======
 function wp_get_code_editor_settings($args)
@@ -7791,6 +9082,10 @@ function wp_get_code_editor_settings($args)
 function wp_get_code_editor_settings($args)
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_get_code_editor_settings($args)
+{
+>>>>>>> D-29-Oanh
 	$settings = array(
 		'codemirror' => array(
 			'indentUnit'       => 4,
@@ -7865,6 +9160,7 @@ function wp_get_code_editor_settings($args)
 	$type = '';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( isset( $args['type'] ) ) {
 =======
 	if (isset($args['type'])) {
@@ -7881,6 +9177,8 @@ function wp_get_code_editor_settings($args)
 		foreach ( wp_get_mime_types() as $exts => $mime ) {
 			if ( preg_match( '!^(' . $exts . ')$!i', $extension ) ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (isset($args['type'])) {
 		$type = $args['type'];
 
@@ -7888,22 +9186,29 @@ function wp_get_code_editor_settings($args)
 		if ('application/x-patch' === $type || 'text/x-patch' === $type) {
 			$type = 'text/x-diff';
 		}
+<<<<<<< HEAD
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	} elseif (isset($args['file']) && str_contains(basename($args['file']), '.')) {
 		$extension = strtolower(pathinfo($args['file'], PATHINFO_EXTENSION));
 		foreach (wp_get_mime_types() as $exts => $mime) {
 			if (preg_match('!^(' . $exts . ')$!i', $extension)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				$type = $mime;
 				break;
 			}
 		}
 
 		// Supply any types that are not matched by wp_get_mime_types().
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		if ( empty( $type ) ) {
@@ -7916,6 +9221,10 @@ function wp_get_code_editor_settings($args)
 		if (empty($type)) {
 			switch ($extension) {
 >>>>>>> D-01-LanAnh
+=======
+		if (empty($type)) {
+			switch ($extension) {
+>>>>>>> D-29-Oanh
 				case 'conf':
 					$type = 'text/nginx';
 					break;
@@ -7990,6 +9299,7 @@ function wp_get_code_editor_settings($args)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( in_array( $type, array( 'text/css', 'text/x-scss', 'text/x-less', 'text/x-sass' ), true ) ) {
 =======
 	if (in_array($type, array('text/css', 'text/x-scss', 'text/x-less', 'text/x-sass'), true)) {
@@ -7997,6 +9307,9 @@ function wp_get_code_editor_settings($args)
 =======
 	if (in_array($type, array('text/css', 'text/x-scss', 'text/x-less', 'text/x-sass'), true)) {
 >>>>>>> D-01-LanAnh
+=======
+	if (in_array($type, array('text/css', 'text/x-scss', 'text/x-less', 'text/x-sass'), true)) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8008,6 +9321,7 @@ function wp_get_code_editor_settings($args)
 		);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} elseif ( 'text/x-diff' === $type ) {
 =======
 	} elseif ('text/x-diff' === $type) {
@@ -8015,12 +9329,16 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif ('text/x-diff' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif ('text/x-diff' === $type) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
 				'mode' => 'diff',
 			)
 		);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	} elseif ( 'text/html' === $type ) {
@@ -8030,6 +9348,9 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif ('text/html' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif ('text/html' === $type) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8045,15 +9366,19 @@ function wp_get_code_editor_settings($args)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( ! current_user_can( 'unfiltered_html' ) ) {
 			$settings['htmlhint']['kses'] = wp_kses_allowed_html( 'post' );
 		}
 	} elseif ( 'text/x-gfm' === $type ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 		if (!current_user_can('unfiltered_html')) {
 			$settings['htmlhint']['kses'] = wp_kses_allowed_html('post');
 		}
 	} elseif ('text/x-gfm' === $type) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		if (!current_user_can('unfiltered_html')) {
@@ -8061,6 +9386,8 @@ function wp_get_code_editor_settings($args)
 		}
 	} elseif ('text/x-gfm' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8070,6 +9397,7 @@ function wp_get_code_editor_settings($args)
 		);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} elseif ( 'application/javascript' === $type || 'text/javascript' === $type ) {
 =======
 	} elseif ('application/javascript' === $type || 'text/javascript' === $type) {
@@ -8077,6 +9405,9 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif ('application/javascript' === $type || 'text/javascript' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif ('application/javascript' === $type || 'text/javascript' === $type) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8088,6 +9419,7 @@ function wp_get_code_editor_settings($args)
 		);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} elseif ( str_contains( $type, 'json' ) ) {
 =======
 	} elseif (str_contains($type, 'json')) {
@@ -8095,6 +9427,9 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif (str_contains($type, 'json')) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif (str_contains($type, 'json')) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8108,6 +9443,7 @@ function wp_get_code_editor_settings($args)
 		);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( 'application/ld+json' === $type ) {
 =======
 		if ('application/ld+json' === $type) {
@@ -8115,10 +9451,14 @@ function wp_get_code_editor_settings($args)
 =======
 		if ('application/ld+json' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+		if ('application/ld+json' === $type) {
+>>>>>>> D-29-Oanh
 			$settings['codemirror']['mode']['jsonld'] = true;
 		} else {
 			$settings['codemirror']['mode']['json'] = true;
 		}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	} elseif ( str_contains( $type, 'jsx' ) ) {
@@ -8128,6 +9468,9 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif (str_contains($type, 'jsx')) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif (str_contains($type, 'jsx')) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8138,6 +9481,7 @@ function wp_get_code_editor_settings($args)
 		);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} elseif ( 'text/x-markdown' === $type ) {
 =======
 	} elseif ('text/x-markdown' === $type) {
@@ -8145,6 +9489,9 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif ('text/x-markdown' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif ('text/x-markdown' === $type) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8154,6 +9501,7 @@ function wp_get_code_editor_settings($args)
 		);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} elseif ( 'text/nginx' === $type ) {
 =======
 	} elseif ('text/nginx' === $type) {
@@ -8161,12 +9509,16 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif ('text/nginx' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif ('text/nginx' === $type) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
 				'mode' => 'nginx',
 			)
 		);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	} elseif ( 'application/x-httpd-php' === $type ) {
@@ -8176,6 +9528,9 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif ('application/x-httpd-php' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif ('application/x-httpd-php' === $type) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8190,6 +9545,7 @@ function wp_get_code_editor_settings($args)
 		);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} elseif ( 'text/x-sql' === $type || 'text/x-mysql' === $type ) {
 =======
 	} elseif ('text/x-sql' === $type || 'text/x-mysql' === $type) {
@@ -8197,6 +9553,9 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif ('text/x-sql' === $type || 'text/x-mysql' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif ('text/x-sql' === $type || 'text/x-mysql' === $type) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8207,6 +9566,7 @@ function wp_get_code_editor_settings($args)
 		);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} elseif ( str_contains( $type, 'xml' ) ) {
 =======
 	} elseif (str_contains($type, 'xml')) {
@@ -8214,6 +9574,9 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif (str_contains($type, 'xml')) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif (str_contains($type, 'xml')) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8227,6 +9590,7 @@ function wp_get_code_editor_settings($args)
 		);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} elseif ( 'text/x-yaml' === $type ) {
 =======
 	} elseif ('text/x-yaml' === $type) {
@@ -8234,6 +9598,9 @@ function wp_get_code_editor_settings($args)
 =======
 	} elseif ('text/x-yaml' === $type) {
 >>>>>>> D-01-LanAnh
+=======
+	} elseif ('text/x-yaml' === $type) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror'] = array_merge(
 			$settings['codemirror'],
 			array(
@@ -8246,6 +9613,7 @@ function wp_get_code_editor_settings($args)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( ! empty( $settings['codemirror']['lint'] ) ) {
 =======
 	if (!empty($settings['codemirror']['lint'])) {
@@ -8253,10 +9621,14 @@ function wp_get_code_editor_settings($args)
 =======
 	if (!empty($settings['codemirror']['lint'])) {
 >>>>>>> D-01-LanAnh
+=======
+	if (!empty($settings['codemirror']['lint'])) {
+>>>>>>> D-29-Oanh
 		$settings['codemirror']['gutters'][] = 'CodeMirror-lint-markers';
 	}
 
 	// Let settings supplied via args override any defaults.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	foreach ( wp_array_slice_assoc( $args, array( 'codemirror', 'csslint', 'jshint', 'htmlhint' ) ) as $key => $value ) {
@@ -8272,6 +9644,11 @@ function wp_get_code_editor_settings($args)
 		$settings[$key] = array_merge(
 			$settings[$key],
 >>>>>>> D-01-LanAnh
+=======
+	foreach (wp_array_slice_assoc($args, array('codemirror', 'csslint', 'jshint', 'htmlhint')) as $key => $value) {
+		$settings[$key] = array_merge(
+			$settings[$key],
+>>>>>>> D-29-Oanh
 			$value
 		);
 	}
@@ -8300,6 +9677,7 @@ function wp_get_code_editor_settings($args)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'wp_code_editor_settings', $settings, $args );
 =======
 	return apply_filters('wp_code_editor_settings', $settings, $args);
@@ -8307,6 +9685,9 @@ function wp_get_code_editor_settings($args)
 =======
 	return apply_filters('wp_code_editor_settings', $settings, $args);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('wp_code_editor_settings', $settings, $args);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -8323,6 +9704,7 @@ function wp_get_code_editor_settings($args)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function get_search_query( $escaped = true ) {
 =======
 function get_search_query($escaped = true)
@@ -8332,6 +9714,10 @@ function get_search_query($escaped = true)
 function get_search_query($escaped = true)
 {
 >>>>>>> D-01-LanAnh
+=======
+function get_search_query($escaped = true)
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Filters the contents of the search query variable.
 	 *
@@ -8341,15 +9727,19 @@ function get_search_query($escaped = true)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$query = apply_filters( 'get_search_query', get_query_var( 's' ) );
 
 	if ( $escaped ) {
 		$query = esc_attr( $query );
 =======
+=======
+>>>>>>> D-29-Oanh
 	$query = apply_filters('get_search_query', get_query_var('s'));
 
 	if ($escaped) {
 		$query = esc_attr($query);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$query = apply_filters('get_search_query', get_query_var('s'));
@@ -8357,6 +9747,8 @@ function get_search_query($escaped = true)
 	if ($escaped) {
 		$query = esc_attr($query);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 	return $query;
 }
@@ -8371,6 +9763,7 @@ function get_search_query($escaped = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_search_query() {
 =======
 function the_search_query()
@@ -8380,6 +9773,10 @@ function the_search_query()
 function the_search_query()
 {
 >>>>>>> D-01-LanAnh
+=======
+function the_search_query()
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Filters the contents of the search query variable for display.
 	 *
@@ -8389,6 +9786,7 @@ function the_search_query()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	echo esc_attr( apply_filters( 'the_search_query', get_search_query( false ) ) );
 =======
 	echo esc_attr(apply_filters('the_search_query', get_search_query(false)));
@@ -8396,6 +9794,9 @@ function the_search_query()
 =======
 	echo esc_attr(apply_filters('the_search_query', get_search_query(false)));
 >>>>>>> D-01-LanAnh
+=======
+	echo esc_attr(apply_filters('the_search_query', get_search_query(false)));
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -8409,6 +9810,7 @@ function the_search_query()
  * @param string $doctype Optional. The type of HTML document. Accepts 'xhtml' or 'html'. Default 'html'.
  * @return string A space-separated list of language attributes.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_language_attributes( $doctype = 'html' ) {
@@ -8436,6 +9838,8 @@ function get_language_attributes($doctype = 'html')
 <<<<<<< HEAD
 	$output = implode( ' ', $attributes );
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_language_attributes($doctype = 'html')
 {
 	$attributes = array();
@@ -8456,10 +9860,13 @@ function get_language_attributes($doctype = 'html')
 	}
 
 	$output = implode(' ', $attributes);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$output = implode(' ', $attributes);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the language attributes for display in the 'html' tag.
@@ -8472,6 +9879,7 @@ function get_language_attributes($doctype = 'html')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'language_attributes', $output, $doctype );
 =======
 	return apply_filters('language_attributes', $output, $doctype);
@@ -8479,6 +9887,9 @@ function get_language_attributes($doctype = 'html')
 =======
 	return apply_filters('language_attributes', $output, $doctype);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('language_attributes', $output, $doctype);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -8494,6 +9905,7 @@ function get_language_attributes($doctype = 'html')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function language_attributes( $doctype = 'html' ) {
 	echo get_language_attributes( $doctype );
 =======
@@ -8506,6 +9918,11 @@ function language_attributes($doctype = 'html')
 {
 	echo get_language_attributes($doctype);
 >>>>>>> D-01-LanAnh
+=======
+function language_attributes($doctype = 'html')
+{
+	echo get_language_attributes($doctype);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -8589,6 +10006,7 @@ function language_attributes($doctype = 'html')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function paginate_links( $args = '' ) {
 =======
 function paginate_links($args = '')
@@ -8612,6 +10030,8 @@ function paginate_links($args = '')
 	$format  = $wp_rewrite->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
 	$format .= $wp_rewrite->using_permalinks() ? user_trailingslashit( $wp_rewrite->pagination_base . '/%#%', 'paged' ) : '?paged=%#%';
 =======
+=======
+>>>>>>> D-29-Oanh
 function paginate_links($args = '')
 {
 	global $wp_query, $wp_rewrite;
@@ -8630,11 +10050,14 @@ function paginate_links($args = '')
 	// URL base depends on permalink settings.
 	$format  = $wp_rewrite->using_index_permalinks() && !strpos($pagenum_link, 'index.php') ? 'index.php/' : '';
 	$format .= $wp_rewrite->using_permalinks() ? user_trailingslashit($wp_rewrite->pagination_base . '/%#%', 'paged') : '?paged=%#%';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$format  = $wp_rewrite->using_index_permalinks() && !strpos($pagenum_link, 'index.php') ? 'index.php/' : '';
 	$format .= $wp_rewrite->using_permalinks() ? user_trailingslashit($wp_rewrite->pagination_base . '/%#%', 'paged') : '?paged=%#%';
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	$defaults = array(
 		'base'               => $pagenum_link, // http://example.com/all_posts.php%_% : %_% is replaced by format (below).
@@ -8644,6 +10067,7 @@ function paginate_links($args = '')
 		'aria_current'       => 'page',
 		'show_all'           => false,
 		'prev_next'          => true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		'prev_text'          => __( '&laquo; Previous' ),
@@ -8656,6 +10080,10 @@ function paginate_links($args = '')
 		'prev_text'          => __('&laquo; Previous'),
 		'next_text'          => __('Next &raquo;'),
 >>>>>>> D-01-LanAnh
+=======
+		'prev_text'          => __('&laquo; Previous'),
+		'next_text'          => __('Next &raquo;'),
+>>>>>>> D-29-Oanh
 		'end_size'           => 1,
 		'mid_size'           => 2,
 		'type'               => 'plain',
@@ -8665,6 +10093,7 @@ function paginate_links($args = '')
 		'after_page_number'  => '',
 	);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$args = wp_parse_args( $args, $defaults );
@@ -8680,10 +10109,16 @@ function paginate_links($args = '')
 
 	if (!is_array($args['add_args'])) {
 >>>>>>> D-01-LanAnh
+=======
+	$args = wp_parse_args($args, $defaults);
+
+	if (!is_array($args['add_args'])) {
+>>>>>>> D-29-Oanh
 		$args['add_args'] = array();
 	}
 
 	// Merge additional query vars found in the original URL into 'add_args' array.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( isset( $url_parts[1] ) ) {
@@ -8706,6 +10141,8 @@ function paginate_links($args = '')
 <<<<<<< HEAD
 		$args['add_args'] = array_merge( $args['add_args'], urlencode_deep( $url_query_args ) );
 =======
+=======
+>>>>>>> D-29-Oanh
 	if (isset($url_parts[1])) {
 		// Find the format argument.
 		$format       = explode('?', str_replace('%_%', $args['format'], $args['base']));
@@ -8721,14 +10158,18 @@ function paginate_links($args = '')
 		}
 
 		$args['add_args'] = array_merge($args['add_args'], urlencode_deep($url_query_args));
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		$args['add_args'] = array_merge($args['add_args'], urlencode_deep($url_query_args));
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 
 	// Who knows what else people pass in $args.
 	$total = (int) $args['total'];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( $total < 2 ) {
@@ -8738,10 +10179,14 @@ function paginate_links($args = '')
 =======
 	if ($total < 2) {
 >>>>>>> D-01-LanAnh
+=======
+	if ($total < 2) {
+>>>>>>> D-29-Oanh
 		return;
 	}
 	$current  = (int) $args['current'];
 	$end_size = (int) $args['end_size']; // Out of bounds? Make it the default.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( $end_size < 1 ) {
@@ -8750,11 +10195,14 @@ function paginate_links($args = '')
 	$mid_size = (int) $args['mid_size'];
 	if ( $mid_size < 0 ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 	if ($end_size < 1) {
 		$end_size = 1;
 	}
 	$mid_size = (int) $args['mid_size'];
 	if ($mid_size < 0) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	if ($end_size < 1) {
@@ -8763,6 +10211,8 @@ function paginate_links($args = '')
 	$mid_size = (int) $args['mid_size'];
 	if ($mid_size < 0) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		$mid_size = 2;
 	}
 
@@ -8773,6 +10223,7 @@ function paginate_links($args = '')
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( $args['prev_next'] && $current && 1 < $current ) :
 		$link = str_replace( '%_%', 2 == $current ? '' : $args['format'], $args['base'] );
 		$link = str_replace( '%#%', $current - 1, $link );
@@ -8781,15 +10232,20 @@ function paginate_links($args = '')
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	if ($args['prev_next'] && $current && 1 < $current) :
 		$link = str_replace('%_%', 2 == $current ? '' : $args['format'], $args['base']);
 		$link = str_replace('%#%', $current - 1, $link);
 		if ($add_args) {
 			$link = add_query_arg($add_args, $link);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		}
 		$link .= $args['add_fragment'];
 
@@ -8804,6 +10260,7 @@ function paginate_links($args = '')
 			 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			esc_url( apply_filters( 'paginate_links', $link ) ),
 =======
 			esc_url(apply_filters('paginate_links', $link)),
@@ -8811,10 +10268,14 @@ function paginate_links($args = '')
 =======
 			esc_url(apply_filters('paginate_links', $link)),
 >>>>>>> D-01-LanAnh
+=======
+			esc_url(apply_filters('paginate_links', $link)),
+>>>>>>> D-29-Oanh
 			$args['prev_text']
 		);
 	endif;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	for ( $n = 1; $n <= $total; $n++ ) :
@@ -8824,12 +10285,15 @@ function paginate_links($args = '')
 				esc_attr( $args['aria_current'] ),
 				$args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number']
 =======
+=======
+>>>>>>> D-29-Oanh
 	for ($n = 1; $n <= $total; $n++) :
 		if ($n == $current) :
 			$page_links[] = sprintf(
 				'<span aria-current="%s" class="page-numbers current">%s</span>',
 				esc_attr($args['aria_current']),
 				$args['before_page_number'] . number_format_i18n($n) . $args['after_page_number']
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	for ($n = 1; $n <= $total; $n++) :
@@ -8839,10 +10303,13 @@ function paginate_links($args = '')
 				esc_attr($args['aria_current']),
 				$args['before_page_number'] . number_format_i18n($n) . $args['after_page_number']
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			);
 
 			$dots = true;
 		else :
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			if ( $args['show_all'] || ( $n <= $end_size || ( $current && $n >= $current - $mid_size && $n <= $current + $mid_size ) || $n > $total - $end_size ) ) :
@@ -8853,21 +10320,27 @@ function paginate_links($args = '')
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			if ($args['show_all'] || ($n <= $end_size || ($current && $n >= $current - $mid_size && $n <= $current + $mid_size) || $n > $total - $end_size)) :
 				$link = str_replace('%_%', 1 == $n ? '' : $args['format'], $args['base']);
 				$link = str_replace('%#%', $n, $link);
 				if ($add_args) {
 					$link = add_query_arg($add_args, $link);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 				}
 				$link .= $args['add_fragment'];
 
 				$page_links[] = sprintf(
 					'<a class="page-numbers" href="%s">%s</a>',
 					/** This filter is documented in wp-includes/general-template.php */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 					esc_url( apply_filters( 'paginate_links', $link ) ),
@@ -8878,6 +10351,8 @@ function paginate_links($args = '')
 			elseif ( $dots && ! $args['show_all'] ) :
 				$page_links[] = '<span class="page-numbers dots">' . __( '&hellip;' ) . '</span>';
 =======
+=======
+>>>>>>> D-29-Oanh
 					esc_url(apply_filters('paginate_links', $link)),
 					$args['before_page_number'] . number_format_i18n($n) . $args['after_page_number']
 				);
@@ -8885,6 +10360,7 @@ function paginate_links($args = '')
 				$dots = true;
 			elseif ($dots && !$args['show_all']) :
 				$page_links[] = '<span class="page-numbers dots">' . __('&hellip;') . '</span>';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 					esc_url(apply_filters('paginate_links', $link)),
@@ -8895,12 +10371,15 @@ function paginate_links($args = '')
 			elseif ($dots && !$args['show_all']) :
 				$page_links[] = '<span class="page-numbers dots">' . __('&hellip;') . '</span>';
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 				$dots = false;
 			endif;
 		endif;
 	endfor;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( $args['prev_next'] && $current && $current < $total ) :
@@ -8911,21 +10390,27 @@ function paginate_links($args = '')
 =======
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	if ($args['prev_next'] && $current && $current < $total) :
 		$link = str_replace('%_%', $args['format'], $args['base']);
 		$link = str_replace('%#%', $current + 1, $link);
 		if ($add_args) {
 			$link = add_query_arg($add_args, $link);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		}
 		$link .= $args['add_fragment'];
 
 		$page_links[] = sprintf(
 			'<a class="next page-numbers" href="%s">%s</a>',
 			/** This filter is documented in wp-includes/general-template.php */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			esc_url( apply_filters( 'paginate_links', $link ) ),
@@ -8935,10 +10420,14 @@ function paginate_links($args = '')
 =======
 			esc_url(apply_filters('paginate_links', $link)),
 >>>>>>> D-01-LanAnh
+=======
+			esc_url(apply_filters('paginate_links', $link)),
+>>>>>>> D-29-Oanh
 			$args['next_text']
 		);
 	endif;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	switch ( $args['type'] ) {
@@ -8948,11 +10437,15 @@ function paginate_links($args = '')
 =======
 	switch ($args['type']) {
 >>>>>>> D-01-LanAnh
+=======
+	switch ($args['type']) {
+>>>>>>> D-29-Oanh
 		case 'array':
 			return $page_links;
 
 		case 'list':
 			$r .= "<ul class='page-numbers'>\n\t<li>";
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$r .= implode( "</li>\n\t<li>", $page_links );
@@ -8962,10 +10455,14 @@ function paginate_links($args = '')
 =======
 			$r .= implode("</li>\n\t<li>", $page_links);
 >>>>>>> D-01-LanAnh
+=======
+			$r .= implode("</li>\n\t<li>", $page_links);
+>>>>>>> D-29-Oanh
 			$r .= "</li>\n</ul>\n";
 			break;
 
 		default:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 			$r = implode( "\n", $page_links );
@@ -8975,6 +10472,9 @@ function paginate_links($args = '')
 =======
 			$r = implode("\n", $page_links);
 >>>>>>> D-01-LanAnh
+=======
+			$r = implode("\n", $page_links);
+>>>>>>> D-29-Oanh
 			break;
 	}
 
@@ -8989,6 +10489,7 @@ function paginate_links($args = '')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$r = apply_filters( 'paginate_links_output', $r, $args );
 =======
 	$r = apply_filters('paginate_links_output', $r, $args);
@@ -8996,6 +10497,9 @@ function paginate_links($args = '')
 =======
 	$r = apply_filters('paginate_links_output', $r, $args);
 >>>>>>> D-01-LanAnh
+=======
+	$r = apply_filters('paginate_links_output', $r, $args);
+>>>>>>> D-29-Oanh
 
 	return $r;
 }
@@ -9028,6 +10532,7 @@ function paginate_links($args = '')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_admin_css_color( $key, $name, $url, $colors = array(), $icons = array() ) {
 =======
 function wp_admin_css_color($key, $name, $url, $colors = array(), $icons = array())
@@ -9042,6 +10547,8 @@ function wp_admin_css_color($key, $name, $url, $colors = array(), $icons = array
 <<<<<<< HEAD
 	$_wp_admin_css_colors[ $key ] = (object) array(
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_admin_css_color($key, $name, $url, $colors = array(), $icons = array())
 {
 	global $_wp_admin_css_colors;
@@ -9051,10 +10558,13 @@ function wp_admin_css_color($key, $name, $url, $colors = array(), $icons = array
 	}
 
 	$_wp_admin_css_colors[$key] = (object) array(
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$_wp_admin_css_colors[$key] = (object) array(
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		'name'        => $name,
 		'url'         => $url,
 		'colors'      => $colors,
@@ -9074,6 +10584,7 @@ function wp_admin_css_color($key, $name, $url, $colors = array(), $icons = array
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function register_admin_color_schemes() {
 =======
 function register_admin_color_schemes()
@@ -9083,11 +10594,16 @@ function register_admin_color_schemes()
 function register_admin_color_schemes()
 {
 >>>>>>> D-01-LanAnh
+=======
+function register_admin_color_schemes()
+{
+>>>>>>> D-29-Oanh
 	$suffix  = is_rtl() ? '-rtl' : '';
 	$suffix .= SCRIPT_DEBUG ? '' : '.min';
 
 	wp_admin_css_color(
 		'fresh',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		_x( 'Default', 'admin color scheme' ),
@@ -9103,6 +10619,11 @@ function register_admin_color_schemes()
 		false,
 		array('#1d2327', '#2c3338', '#2271b1', '#72aee6'),
 >>>>>>> D-01-LanAnh
+=======
+		_x('Default', 'admin color scheme'),
+		false,
+		array('#1d2327', '#2c3338', '#2271b1', '#72aee6'),
+>>>>>>> D-29-Oanh
 		array(
 			'base'    => '#a7aaad',
 			'focus'   => '#72aee6',
@@ -9112,6 +10633,7 @@ function register_admin_color_schemes()
 
 	wp_admin_css_color(
 		'light',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		_x( 'Light', 'admin color scheme' ),
@@ -9127,6 +10649,11 @@ function register_admin_color_schemes()
 		admin_url("css/colors/light/colors$suffix.css"),
 		array('#e5e5e5', '#999', '#d64e07', '#04a4cc'),
 >>>>>>> D-01-LanAnh
+=======
+		_x('Light', 'admin color scheme'),
+		admin_url("css/colors/light/colors$suffix.css"),
+		array('#e5e5e5', '#999', '#d64e07', '#04a4cc'),
+>>>>>>> D-29-Oanh
 		array(
 			'base'    => '#999',
 			'focus'   => '#ccc',
@@ -9136,6 +10663,7 @@ function register_admin_color_schemes()
 
 	wp_admin_css_color(
 		'modern',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		_x( 'Modern', 'admin color scheme' ),
@@ -9151,6 +10679,11 @@ function register_admin_color_schemes()
 		admin_url("css/colors/modern/colors$suffix.css"),
 		array('#1e1e1e', '#3858e9', '#33f078'),
 >>>>>>> D-01-LanAnh
+=======
+		_x('Modern', 'admin color scheme'),
+		admin_url("css/colors/modern/colors$suffix.css"),
+		array('#1e1e1e', '#3858e9', '#33f078'),
+>>>>>>> D-29-Oanh
 		array(
 			'base'    => '#f3f1f1',
 			'focus'   => '#fff',
@@ -9160,6 +10693,7 @@ function register_admin_color_schemes()
 
 	wp_admin_css_color(
 		'blue',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		_x( 'Blue', 'admin color scheme' ),
@@ -9175,6 +10709,11 @@ function register_admin_color_schemes()
 		admin_url("css/colors/blue/colors$suffix.css"),
 		array('#096484', '#4796b3', '#52accc', '#74B6CE'),
 >>>>>>> D-01-LanAnh
+=======
+		_x('Blue', 'admin color scheme'),
+		admin_url("css/colors/blue/colors$suffix.css"),
+		array('#096484', '#4796b3', '#52accc', '#74B6CE'),
+>>>>>>> D-29-Oanh
 		array(
 			'base'    => '#e5f8ff',
 			'focus'   => '#fff',
@@ -9184,6 +10723,7 @@ function register_admin_color_schemes()
 
 	wp_admin_css_color(
 		'midnight',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		_x( 'Midnight', 'admin color scheme' ),
@@ -9199,6 +10739,11 @@ function register_admin_color_schemes()
 		admin_url("css/colors/midnight/colors$suffix.css"),
 		array('#25282b', '#363b3f', '#69a8bb', '#e14d43'),
 >>>>>>> D-01-LanAnh
+=======
+		_x('Midnight', 'admin color scheme'),
+		admin_url("css/colors/midnight/colors$suffix.css"),
+		array('#25282b', '#363b3f', '#69a8bb', '#e14d43'),
+>>>>>>> D-29-Oanh
 		array(
 			'base'    => '#f1f2f3',
 			'focus'   => '#fff',
@@ -9208,6 +10753,7 @@ function register_admin_color_schemes()
 
 	wp_admin_css_color(
 		'sunrise',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		_x( 'Sunrise', 'admin color scheme' ),
@@ -9223,6 +10769,11 @@ function register_admin_color_schemes()
 		admin_url("css/colors/sunrise/colors$suffix.css"),
 		array('#b43c38', '#cf4944', '#dd823b', '#ccaf0b'),
 >>>>>>> D-01-LanAnh
+=======
+		_x('Sunrise', 'admin color scheme'),
+		admin_url("css/colors/sunrise/colors$suffix.css"),
+		array('#b43c38', '#cf4944', '#dd823b', '#ccaf0b'),
+>>>>>>> D-29-Oanh
 		array(
 			'base'    => '#f3f1f1',
 			'focus'   => '#fff',
@@ -9232,6 +10783,7 @@ function register_admin_color_schemes()
 
 	wp_admin_css_color(
 		'ectoplasm',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		_x( 'Ectoplasm', 'admin color scheme' ),
@@ -9247,6 +10799,11 @@ function register_admin_color_schemes()
 		admin_url("css/colors/ectoplasm/colors$suffix.css"),
 		array('#413256', '#523f6d', '#a3b745', '#d46f15'),
 >>>>>>> D-01-LanAnh
+=======
+		_x('Ectoplasm', 'admin color scheme'),
+		admin_url("css/colors/ectoplasm/colors$suffix.css"),
+		array('#413256', '#523f6d', '#a3b745', '#d46f15'),
+>>>>>>> D-29-Oanh
 		array(
 			'base'    => '#ece6f6',
 			'focus'   => '#fff',
@@ -9256,6 +10813,7 @@ function register_admin_color_schemes()
 
 	wp_admin_css_color(
 		'ocean',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		_x( 'Ocean', 'admin color scheme' ),
@@ -9271,6 +10829,11 @@ function register_admin_color_schemes()
 		admin_url("css/colors/ocean/colors$suffix.css"),
 		array('#627c83', '#738e96', '#9ebaa0', '#aa9d88'),
 >>>>>>> D-01-LanAnh
+=======
+		_x('Ocean', 'admin color scheme'),
+		admin_url("css/colors/ocean/colors$suffix.css"),
+		array('#627c83', '#738e96', '#9ebaa0', '#aa9d88'),
+>>>>>>> D-29-Oanh
 		array(
 			'base'    => '#f2fcff',
 			'focus'   => '#fff',
@@ -9280,6 +10843,7 @@ function register_admin_color_schemes()
 
 	wp_admin_css_color(
 		'coffee',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		_x( 'Coffee', 'admin color scheme' ),
@@ -9295,6 +10859,11 @@ function register_admin_color_schemes()
 		admin_url("css/colors/coffee/colors$suffix.css"),
 		array('#46403c', '#59524c', '#c7a589', '#9ea476'),
 >>>>>>> D-01-LanAnh
+=======
+		_x('Coffee', 'admin color scheme'),
+		admin_url("css/colors/coffee/colors$suffix.css"),
+		array('#46403c', '#59524c', '#c7a589', '#9ea476'),
+>>>>>>> D-29-Oanh
 		array(
 			'base'    => '#f3f2f1',
 			'focus'   => '#fff',
@@ -9303,11 +10872,14 @@ function register_admin_color_schemes()
 	);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> D-12-Dien
 =======
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -9320,6 +10892,7 @@ function register_admin_color_schemes()
  * @param string $file file relative to wp-admin/ without its ".css" extension.
  * @return string
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function wp_admin_css_uri( $file = 'wp-admin' ) {
@@ -9336,6 +10909,8 @@ function wp_admin_css_uri($file = 'wp-admin')
 <<<<<<< HEAD
 	$_file = add_query_arg( 'version', get_bloginfo( 'version' ), $_file );
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_admin_css_uri($file = 'wp-admin')
 {
 	if (defined('WP_INSTALLING')) {
@@ -9344,10 +10919,13 @@ function wp_admin_css_uri($file = 'wp-admin')
 		$_file = admin_url("$file.css");
 	}
 	$_file = add_query_arg('version', get_bloginfo('version'), $_file);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 	$_file = add_query_arg('version', get_bloginfo('version'), $_file);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the URI of a WordPress admin CSS file.
@@ -9359,6 +10937,7 @@ function wp_admin_css_uri($file = 'wp-admin')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'wp_admin_css_uri', $_file, $file );
 =======
 	return apply_filters('wp_admin_css_uri', $_file, $file);
@@ -9366,6 +10945,9 @@ function wp_admin_css_uri($file = 'wp-admin')
 =======
 	return apply_filters('wp_admin_css_uri', $_file, $file);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('wp_admin_css_uri', $_file, $file);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -9390,6 +10972,7 @@ function wp_admin_css_uri($file = 'wp-admin')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_admin_css( $file = 'wp-admin', $force_echo = false ) {
 =======
 function wp_admin_css($file = 'wp-admin', $force_echo = false)
@@ -9407,6 +10990,8 @@ function wp_admin_css($file = 'wp-admin', $force_echo = false)
 <<<<<<< HEAD
 			wp_enqueue_style( $handle );
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_admin_css($file = 'wp-admin', $force_echo = false)
 {
 	// For backward compatibility.
@@ -9419,16 +11004,20 @@ function wp_admin_css($file = 'wp-admin', $force_echo = false)
 		} else {
 			// Add to style queue.
 			wp_enqueue_style($handle);
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 			wp_enqueue_style($handle);
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 		}
 		return;
 	}
 
 	$stylesheet_link = sprintf(
 		"<link rel='stylesheet' href='%s' type='text/css' />\n",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		esc_url( wp_admin_css_uri( $file ) )
@@ -9438,6 +11027,9 @@ function wp_admin_css($file = 'wp-admin', $force_echo = false)
 =======
 		esc_url(wp_admin_css_uri($file))
 >>>>>>> D-01-LanAnh
+=======
+		esc_url(wp_admin_css_uri($file))
+>>>>>>> D-29-Oanh
 	);
 
 	/**
@@ -9451,6 +11043,7 @@ function wp_admin_css($file = 'wp-admin', $force_echo = false)
 	 * @param string $file            Style handle name or filename (without ".css" extension)
 	 *                                relative to wp-admin/. Defaults to 'wp-admin'.
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	echo apply_filters( 'wp_admin_css', $stylesheet_link, $file );
@@ -9468,6 +11061,8 @@ function wp_admin_css($file = 'wp-admin', $force_echo = false)
 <<<<<<< HEAD
 		echo apply_filters( 'wp_admin_css', $rtl_stylesheet_link, "$file-rtl" );
 =======
+=======
+>>>>>>> D-29-Oanh
 	echo apply_filters('wp_admin_css', $stylesheet_link, $file);
 
 	if (function_exists('is_rtl') && is_rtl()) {
@@ -9478,10 +11073,13 @@ function wp_admin_css($file = 'wp-admin', $force_echo = false)
 
 		/** This filter is documented in wp-includes/general-template.php */
 		echo apply_filters('wp_admin_css', $rtl_stylesheet_link, "$file-rtl");
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		echo apply_filters('wp_admin_css', $rtl_stylesheet_link, "$file-rtl");
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 }
 
@@ -9496,6 +11094,7 @@ function wp_admin_css($file = 'wp-admin', $force_echo = false)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function add_thickbox() {
 	wp_enqueue_script( 'thickbox' );
 	wp_enqueue_style( 'thickbox' );
@@ -9503,6 +11102,8 @@ function add_thickbox() {
 	if ( is_network_admin() ) {
 		add_action( 'admin_head', '_thickbox_path_admin_subfolder' );
 =======
+=======
+>>>>>>> D-29-Oanh
 function add_thickbox()
 {
 	wp_enqueue_script('thickbox');
@@ -9510,6 +11111,7 @@ function add_thickbox()
 
 	if (is_network_admin()) {
 		add_action('admin_head', '_thickbox_path_admin_subfolder');
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function add_thickbox()
@@ -9520,6 +11122,8 @@ function add_thickbox()
 	if (is_network_admin()) {
 		add_action('admin_head', '_thickbox_path_admin_subfolder');
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	}
 }
 
@@ -9532,6 +11136,7 @@ function add_thickbox()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_generator() {
 =======
 function wp_generator()
@@ -9541,6 +11146,10 @@ function wp_generator()
 function wp_generator()
 {
 >>>>>>> D-01-LanAnh
+=======
+function wp_generator()
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Filters the output of the XHTML generator tag.
 	 *
@@ -9550,6 +11159,7 @@ function wp_generator()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	the_generator( apply_filters( 'wp_generator_type', 'xhtml' ) );
 =======
 	the_generator(apply_filters('wp_generator_type', 'xhtml'));
@@ -9557,6 +11167,9 @@ function wp_generator()
 =======
 	the_generator(apply_filters('wp_generator_type', 'xhtml'));
 >>>>>>> D-01-LanAnh
+=======
+	the_generator(apply_filters('wp_generator_type', 'xhtml'));
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -9571,6 +11184,7 @@ function wp_generator()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function the_generator( $type ) {
 =======
 function the_generator($type)
@@ -9580,6 +11194,10 @@ function the_generator($type)
 function the_generator($type)
 {
 >>>>>>> D-01-LanAnh
+=======
+function the_generator($type)
+{
+>>>>>>> D-29-Oanh
 	/**
 	 * Filters the output of the XHTML generator tag for display.
 	 *
@@ -9591,6 +11209,7 @@ function the_generator($type)
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	echo apply_filters( 'the_generator', get_the_generator( $type ), $type ) . "\n";
 =======
 	echo apply_filters('the_generator', get_the_generator($type), $type) . "\n";
@@ -9598,6 +11217,9 @@ function the_generator($type)
 =======
 	echo apply_filters('the_generator', get_the_generator($type), $type) . "\n";
 >>>>>>> D-01-LanAnh
+=======
+	echo apply_filters('the_generator', get_the_generator($type), $type) . "\n";
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -9612,6 +11234,7 @@ function the_generator($type)
  * @param string $type The type of generator to return - (html|xhtml|atom|rss2|rdf|comment|export).
  * @return string|void The HTML content for the generator.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function get_the_generator( $type = '' ) {
@@ -9630,6 +11253,8 @@ function get_the_generator($type = '')
 <<<<<<< HEAD
 		switch ( $current_filter ) {
 =======
+=======
+>>>>>>> D-29-Oanh
 function get_the_generator($type = '')
 {
 	if (empty($type)) {
@@ -9640,10 +11265,13 @@ function get_the_generator($type = '')
 		}
 
 		switch ($current_filter) {
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 		switch ($current_filter) {
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			case 'rss2_head':
 			case 'commentsrss2_head':
 				$type = 'rss2';
@@ -9663,6 +11291,7 @@ function get_the_generator($type = '')
 		}
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	switch ( $type ) {
@@ -9691,6 +11320,8 @@ function get_the_generator($type = '')
 <<<<<<< HEAD
 			$gen = '<!-- generator="WordPress/' . esc_attr( get_bloginfo_rss( 'version' ) ) . '" created="' . gmdate( 'Y-m-d H:i' ) . '" -->';
 =======
+=======
+>>>>>>> D-29-Oanh
 	switch ($type) {
 		case 'html':
 			$gen = '<meta name="generator" content="WordPress ' . esc_attr(get_bloginfo('version')) . '">';
@@ -9712,10 +11343,13 @@ function get_the_generator($type = '')
 			break;
 		case 'export':
 			$gen = '<!-- generator="WordPress/' . esc_attr(get_bloginfo_rss('version')) . '" created="' . gmdate('Y-m-d H:i') . '" -->';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 			$gen = '<!-- generator="WordPress/' . esc_attr(get_bloginfo_rss('version')) . '" created="' . gmdate('Y-m-d H:i') . '" -->';
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 			break;
 	}
 
@@ -9742,6 +11376,7 @@ function get_the_generator($type = '')
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( "get_the_generator_{$type}", $gen, $type );
 =======
 	return apply_filters("get_the_generator_{$type}", $gen, $type);
@@ -9749,6 +11384,9 @@ function get_the_generator($type = '')
 =======
 	return apply_filters("get_the_generator_{$type}", $gen, $type);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters("get_the_generator_{$type}", $gen, $type);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -9767,6 +11405,7 @@ function get_the_generator($type = '')
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function checked( $checked, $current = true, $display = true ) {
 	return __checked_selected_helper( $checked, $current, $display, 'checked' );
 =======
@@ -9779,6 +11418,11 @@ function checked($checked, $current = true, $display = true)
 {
 	return __checked_selected_helper($checked, $current, $display, 'checked');
 >>>>>>> D-01-LanAnh
+=======
+function checked($checked, $current = true, $display = true)
+{
+	return __checked_selected_helper($checked, $current, $display, 'checked');
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -9797,6 +11441,7 @@ function checked($checked, $current = true, $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function selected( $selected, $current = true, $display = true ) {
 	return __checked_selected_helper( $selected, $current, $display, 'selected' );
 =======
@@ -9809,6 +11454,11 @@ function selected($selected, $current = true, $display = true)
 {
 	return __checked_selected_helper($selected, $current, $display, 'selected');
 >>>>>>> D-01-LanAnh
+=======
+function selected($selected, $current = true, $display = true)
+{
+	return __checked_selected_helper($selected, $current, $display, 'selected');
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -9827,6 +11477,7 @@ function selected($selected, $current = true, $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function disabled( $disabled, $current = true, $display = true ) {
 	return __checked_selected_helper( $disabled, $current, $display, 'disabled' );
 =======
@@ -9839,6 +11490,11 @@ function disabled($disabled, $current = true, $display = true)
 {
 	return __checked_selected_helper($disabled, $current, $display, 'disabled');
 >>>>>>> D-01-LanAnh
+=======
+function disabled($disabled, $current = true, $display = true)
+{
+	return __checked_selected_helper($disabled, $current, $display, 'disabled');
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -9857,6 +11513,7 @@ function disabled($disabled, $current = true, $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_readonly( $readonly_value, $current = true, $display = true ) {
 	return __checked_selected_helper( $readonly_value, $current, $display, 'readonly' );
 =======
@@ -9869,6 +11526,11 @@ function wp_readonly($readonly_value, $current = true, $display = true)
 {
 	return __checked_selected_helper($readonly_value, $current, $display, 'readonly');
 >>>>>>> D-01-LanAnh
+=======
+function wp_readonly($readonly_value, $current = true, $display = true)
+{
+	return __checked_selected_helper($readonly_value, $current, $display, 'readonly');
+>>>>>>> D-29-Oanh
 }
 
 /*
@@ -9879,6 +11541,7 @@ function wp_readonly($readonly_value, $current = true, $display = true)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 if ( PHP_VERSION_ID < 80100 ) {
 =======
 if (PHP_VERSION_ID < 80100) {
@@ -9886,6 +11549,9 @@ if (PHP_VERSION_ID < 80100) {
 =======
 if (PHP_VERSION_ID < 80100) {
 >>>>>>> D-01-LanAnh
+=======
+if (PHP_VERSION_ID < 80100) {
+>>>>>>> D-29-Oanh
 	require_once __DIR__ . '/php-compat/readonly.php';
 }
 
@@ -9905,6 +11571,7 @@ if (PHP_VERSION_ID < 80100) {
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function __checked_selected_helper( $helper, $current, $display, $type ) { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
 	if ( (string) $helper === (string) $current ) {
 =======
@@ -9917,11 +11584,17 @@ function __checked_selected_helper($helper, $current, $display, $type)
 { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
 	if ((string) $helper === (string) $current) {
 >>>>>>> D-01-LanAnh
+=======
+function __checked_selected_helper($helper, $current, $display, $type)
+{ // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
+	if ((string) $helper === (string) $current) {
+>>>>>>> D-29-Oanh
 		$result = " $type='$type'";
 	} else {
 		$result = '';
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	if ( $display ) {
@@ -9931,6 +11604,9 @@ function __checked_selected_helper($helper, $current, $display, $type)
 =======
 	if ($display) {
 >>>>>>> D-01-LanAnh
+=======
+	if ($display) {
+>>>>>>> D-29-Oanh
 		echo $result;
 	}
 
@@ -9946,16 +11622,20 @@ function __checked_selected_helper($helper, $current, $display, $type)
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_required_field_indicator() {
 	/* translators: Character to identify required form fields. */
 	$glyph     = __( '*' );
 	$indicator = '<span class="required">' . esc_html( $glyph ) . '</span>';
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_required_field_indicator()
 {
 	/* translators: Character to identify required form fields. */
 	$glyph     = __('*');
 	$indicator = '<span class="required">' . esc_html($glyph) . '</span>';
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function wp_required_field_indicator()
@@ -9964,6 +11644,8 @@ function wp_required_field_indicator()
 	$glyph     = __('*');
 	$indicator = '<span class="required">' . esc_html($glyph) . '</span>';
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 
 	/**
 	 * Filters the markup for a visual indicator of required form fields.
@@ -9974,6 +11656,7 @@ function wp_required_field_indicator()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'wp_required_field_indicator', $indicator );
 =======
 	return apply_filters('wp_required_field_indicator', $indicator);
@@ -9981,6 +11664,9 @@ function wp_required_field_indicator()
 =======
 	return apply_filters('wp_required_field_indicator', $indicator);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('wp_required_field_indicator', $indicator);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -9992,18 +11678,22 @@ function wp_required_field_indicator()
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 function wp_required_field_message() {
 	$message = sprintf(
 		'<span class="required-field-message">%s</span>',
 		/* translators: %s: Asterisk symbol (*). */
 		sprintf( __( 'Required fields are marked %s' ), wp_required_field_indicator() )
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_required_field_message()
 {
 	$message = sprintf(
 		'<span class="required-field-message">%s</span>',
 		/* translators: %s: Asterisk symbol (*). */
 		sprintf(__('Required fields are marked %s'), wp_required_field_indicator())
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 function wp_required_field_message()
@@ -10013,6 +11703,8 @@ function wp_required_field_message()
 		/* translators: %s: Asterisk symbol (*). */
 		sprintf(__(''), wp_required_field_indicator())
 >>>>>>> D-01-LanAnh
+=======
+>>>>>>> D-29-Oanh
 	);
 
 	/**
@@ -10024,6 +11716,7 @@ function wp_required_field_message()
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return apply_filters( 'wp_required_field_message', $message );
 =======
 	return apply_filters('wp_required_field_message', $message);
@@ -10031,6 +11724,9 @@ function wp_required_field_message()
 =======
 	return apply_filters('wp_required_field_message', $message);
 >>>>>>> D-01-LanAnh
+=======
+	return apply_filters('wp_required_field_message', $message);
+>>>>>>> D-29-Oanh
 }
 
 /**
@@ -10043,6 +11739,7 @@ function wp_required_field_message()
  * @param array $settings
  * @return array Heartbeat settings.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 function wp_heartbeat_settings( $settings ) {
@@ -10063,6 +11760,8 @@ function wp_heartbeat_settings($settings)
 	return $settings;
 }
 =======
+=======
+>>>>>>> D-29-Oanh
 function wp_heartbeat_settings($settings)
 {
 	if (!is_admin()) {
@@ -10074,5 +11773,9 @@ function wp_heartbeat_settings($settings)
 	}
 
 	return $settings;
+<<<<<<< HEAD
 }
 >>>>>>> D-12-Dien
+=======
+}
+>>>>>>> D-29-Oanh

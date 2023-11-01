@@ -1,12 +1,16 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
 =======
 session_start();
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * Template part for displaying posts
  *
@@ -18,6 +22,7 @@ session_start();
  */
 
 ?>
+<<<<<<< HEAD
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -140,6 +145,11 @@ $post_year = get_the_date('y', $post->ID);
 <<<<<<< HEAD
 </article><!-- #post-<?php the_ID(); ?> -->
 =======
+=======
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+>>>>>>> D-29-Oanh
     <header class="entry-header alignwide">
         <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
         <?php twenty_twenty_one_post_thumbnail(); ?>
@@ -225,7 +235,11 @@ $post_year = get_the_date('y', $post->ID);
             );
             ?>
         </div>
+<<<<<<< HEAD
         <div class="col-md-3">
+=======
+        <div class="col-md-3" style="margin: 0">
+>>>>>>> D-29-Oanh
             <div class="widget topworks_itdc">
                 <div class="panel panel-default">
                     <h2>Recent Post</h2>
@@ -242,6 +256,10 @@ $post_year = get_the_date('y', $post->ID);
                                 $date = get_the_date();
                                 $chuoi = esc_html(get_the_date(DATE_W3C));
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> D-29-Oanh
                                 // Chuyển đổi chuỗi thành đối tượng datetime
                                 $datetime = date_create($chuoi);
 
@@ -293,8 +311,12 @@ $post_year = get_the_date('y', $post->ID);
     <?php get_template_part('template-parts/post/author-bio'); ?>
     <?php endif; ?>
 
+<<<<<<< HEAD
 </article><!-- #post-<?php the_ID(); ?> -->
 >>>>>>> D-12-Dien
 =======
 </article><!-- #post-<?php the_ID(); ?> -->
 >>>>>>> D-01-LanAnh
+=======
+</article><!-- #post-<?php the_ID(); ?> -->
+>>>>>>> D-29-Oanh

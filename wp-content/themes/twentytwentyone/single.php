@@ -1,12 +1,16 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> D-12-Dien
 =======
 
 >>>>>>> D-01-LanAnh
+=======
+
+>>>>>>> D-29-Oanh
 /**
  * The template for displaying all single posts
  *
@@ -20,6 +24,7 @@
 get_header();
 
 /* Start the Loop */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 while ( have_posts() ) :
@@ -112,6 +117,38 @@ while (have_posts()) :
 	the_post_navigation(
 		array(
 			'next_text' => '<p class="meta-nav">' . $twentytwentyone_next_label . $twentytwentyone_next . '</p> <div class="list_news">
+=======
+while (have_posts()) :
+    the_post();
+
+    get_template_part('template-parts/content/content-single');
+
+    if (is_attachment()) {
+        // Parent post navigation.
+        the_post_navigation(
+            array(
+                /* translators: %s: Parent post link. */
+                'prev_text' => sprintf(__('<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentytwentyone'), '%title'),
+            )
+        );
+    }
+
+    // If comments are open or there is at least one comment, load up the comment template.
+    if (comments_open() || get_comments_number()) {
+        comments_template();
+    }
+
+    // Previous/next post navigation.
+    $twentytwentyone_next = is_rtl() ? twenty_twenty_one_get_icon_svg('ui', 'arrow_left') : twenty_twenty_one_get_icon_svg('ui', 'arrow_right');
+    $twentytwentyone_prev = is_rtl() ? twenty_twenty_one_get_icon_svg('ui', 'arrow_right') : twenty_twenty_one_get_icon_svg('ui', 'arrow_left');
+
+    $twentytwentyone_next_label     = esc_html__('Next post', 'twentytwentyone');
+    $twentytwentyone_previous_label = esc_html__('Previous post', 'twentytwentyone');
+
+    the_post_navigation(
+        array(
+            'next_text' => '<p class="meta-nav">' . $twentytwentyone_next_label . $twentytwentyone_next . '</p> <div class="list_news">
+>>>>>>> D-29-Oanh
       <div class="headlines">
         <ul>
           <li>
@@ -123,16 +160,25 @@ while (have_posts()) :
               <div class="headlinesyear">22</div>
             </div>
             <div class="headlinestitle">
+<<<<<<< HEAD
                         </p><p class="post-title">%title</p>
+=======
+						</p><p class="post-title">%title</p>
+>>>>>>> D-29-Oanh
             </div>
           </li>
         </ul>
       </div>
     </div>',
+<<<<<<< HEAD
 			'prev_text' => '<p class="meta-nav">' . $twentytwentyone_prev . $twentytwentyone_previous_label . '
 
 			 <div class="list_news">
 
+=======
+            'prev_text' => '<p class="meta-nav">' . $twentytwentyone_prev . $twentytwentyone_previous_label . '
+			 <div class="list_news">
+>>>>>>> D-29-Oanh
       <div class="headlines">
         <ul>
           <li>
@@ -144,12 +190,17 @@ while (have_posts()) :
               <div class="headlinesyear">22</div>
             </div>
             <div class="headlinestitle">
+<<<<<<< HEAD
                         </p><p class="post-title">%title</p>
+=======
+						</p><p class="post-title">%title</p>
+>>>>>>> D-29-Oanh
             </div>
           </li>
         </ul>
       </div>
     </div>',
+<<<<<<< HEAD
 >>>>>>> D-12-Dien
 =======
 
@@ -710,6 +761,15 @@ get_footer();
 		border-bottom: 1px solid #fff;
 	}
 
+=======
+        )
+    );
+endwhile; // End of the loop.
+
+get_footer();
+?>
+<style>
+>>>>>>> D-29-Oanh
 .bodytimeline {
     padding: 0;
     background: none;
@@ -1153,6 +1213,10 @@ get_footer();
     margin-top: 12px;
     text-align: center;
     padding-left: 0;
+<<<<<<< HEAD
+=======
+}
+>>>>>>> D-29-Oanh
 
 .list_new_view .top_news_block_desc .topnewstime {
     padding-left: 15px;
@@ -1230,6 +1294,10 @@ get_footer();
 .detail .headlinesdate .headlinesday {
     border-bottom: 1px solid #fff;
 }
+<<<<<<< HEAD
 
 </style>
 >>>>>>> D-12-Dien
+=======
+</style>
+>>>>>>> D-29-Oanh
